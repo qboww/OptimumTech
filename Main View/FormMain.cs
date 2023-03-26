@@ -1,25 +1,13 @@
 
-using Optimum_Tech.Controls;
+using OptimumTech.Controls;
+using OptimumTech.Controls.Products;
+using System.Runtime.CompilerServices;
 using System.Security.Principal;
 
 namespace OptimumTech
 {
-    public partial class FormMainScreen : Form
+    public partial class FormMain : Form
     {
-        //private static FormMainScreen instance;
-
-        //public static FormMainScreen Instance
-        //{
-        //    get
-        //    {
-        //        if (instance == null)
-        //        {
-        //            instance = new FormMainScreen();
-        //        }
-        //        return instance;
-        //    }
-        //}
-
         #region properties
 
         private int maximizeCount;
@@ -34,7 +22,20 @@ namespace OptimumTech
 
         #endregion
 
-        public FormMainScreen()
+        private static FormMain? instance;
+        internal static FormMain Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new FormMain();
+                }
+                return instance;
+            }
+        }
+
+        public FormMain()
         {
             InitializeComponent();
 
@@ -45,6 +46,8 @@ namespace OptimumTech
 
             tempWidth = this.Width - panelSlide.Width;
             tempHeight = this.Height - panelSlide.Height;
+
+
         }
 
         #region timers_events
@@ -76,7 +79,6 @@ namespace OptimumTech
                 }
             }
         }
-
         private void timer2_Tick(object sender, EventArgs e)
         {
             timer2.Stop();
@@ -91,14 +93,12 @@ namespace OptimumTech
         {
             mov = 0;
         }
-
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             mov = 1;
             movX = e.X;
             movY = e.Y;
         }
-
         private void panelTitleBar_MouseMove(object sender, MouseEventArgs e)
         {
             if (mov == 1)
@@ -115,17 +115,14 @@ namespace OptimumTech
         {
             timer1.Start();
         }
-
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void buttonMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
         private void buttonMaximize_Click(object sender, EventArgs e)
         {
             if (maximizeCount % 2 == 0)
@@ -141,7 +138,6 @@ namespace OptimumTech
 
             maximizeCount++;
         }
-
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             if (textBoxSearch.Visible)
@@ -158,17 +154,37 @@ namespace OptimumTech
 
             textBoxSearch.Clear();
         }
-
         private void buttonCategory_Click(object sender, EventArgs e)
         {
+            Category category = new Category();
 
+            category.Size = panelMain.Size;
+            category.Location = panelMain.Location;
+
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(category);
+
+            category.Parent = this.panelMain;
+            category.Anchor = AnchorStyles.Bottom | AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+
+            category.Left = (panelMain.Width - category.Width) / 2;
+            category.Top = (panelMain.Height - category.Height) / 2;
+        }
+
+        private void pictureBoxProcessors_Click(object sender, EventArgs e)
+        {
+            // handle the button click event here
         }
 
         #endregion
+
+        #region textbox_events
 
         private void textBoxSearch_Click(object sender, EventArgs e)
         {
             textBoxSearch.Clear();
         }
+
+        #endregion
     }
 }

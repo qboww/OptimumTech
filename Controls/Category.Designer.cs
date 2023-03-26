@@ -1,6 +1,6 @@
-﻿namespace Optimum_Tech.Controls
+﻿namespace OptimumTech.Controls
 {
-    partial class PanelCategory
+    partial class Category
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelCategory));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category));
             flowLayoutPanelCategory = new FlowLayoutPanel();
             panelProcessors = new Panel();
             labelProccessors = new Label();
@@ -105,7 +105,7 @@
             // 
             labelProccessors.BackColor = Color.FromArgb(31, 31, 31);
             labelProccessors.Dock = DockStyle.Bottom;
-            labelProccessors.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelProccessors.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelProccessors.ForeColor = Color.White;
             labelProccessors.Location = new Point(0, 148);
             labelProccessors.Name = "labelProccessors";
@@ -152,7 +152,7 @@
             // 
             labelGraphicsCards.BackColor = Color.FromArgb(31, 31, 31);
             labelGraphicsCards.Dock = DockStyle.Bottom;
-            labelGraphicsCards.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelGraphicsCards.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelGraphicsCards.ForeColor = Color.White;
             labelGraphicsCards.Location = new Point(0, 148);
             labelGraphicsCards.Name = "labelGraphicsCards";
@@ -187,7 +187,7 @@
             // 
             labelMemory.BackColor = Color.FromArgb(31, 31, 31);
             labelMemory.Dock = DockStyle.Bottom;
-            labelMemory.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelMemory.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelMemory.ForeColor = Color.White;
             labelMemory.Location = new Point(0, 148);
             labelMemory.Name = "labelMemory";
@@ -222,7 +222,7 @@
             // 
             labelMotherboards.BackColor = Color.FromArgb(31, 31, 31);
             labelMotherboards.Dock = DockStyle.Bottom;
-            labelMotherboards.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelMotherboards.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelMotherboards.ForeColor = Color.White;
             labelMotherboards.Location = new Point(0, 148);
             labelMotherboards.Name = "labelMotherboards";
@@ -257,7 +257,7 @@
             // 
             labelPowerSupply.BackColor = Color.FromArgb(31, 31, 31);
             labelPowerSupply.Dock = DockStyle.Bottom;
-            labelPowerSupply.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPowerSupply.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelPowerSupply.ForeColor = Color.White;
             labelPowerSupply.Location = new Point(0, 148);
             labelPowerSupply.Name = "labelPowerSupply";
@@ -292,7 +292,7 @@
             // 
             labelCases.BackColor = Color.FromArgb(31, 31, 31);
             labelCases.Dock = DockStyle.Bottom;
-            labelCases.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCases.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelCases.ForeColor = Color.White;
             labelCases.Location = new Point(0, 148);
             labelCases.Name = "labelCases";
@@ -327,7 +327,7 @@
             // 
             labelDrives.BackColor = Color.FromArgb(31, 31, 31);
             labelDrives.Dock = DockStyle.Bottom;
-            labelDrives.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelDrives.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelDrives.ForeColor = Color.White;
             labelDrives.Location = new Point(0, 148);
             labelDrives.Name = "labelDrives";
@@ -362,7 +362,7 @@
             // 
             labelCoolingSystems.BackColor = Color.FromArgb(31, 31, 31);
             labelCoolingSystems.Dock = DockStyle.Bottom;
-            labelCoolingSystems.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCoolingSystems.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelCoolingSystems.ForeColor = Color.White;
             labelCoolingSystems.Location = new Point(0, 148);
             labelCoolingSystems.Name = "labelCoolingSystems";
@@ -371,13 +371,13 @@
             labelCoolingSystems.Text = "Cooling Systems";
             labelCoolingSystems.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // PanelCategory
+            // Category
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(31, 31, 31);
             Controls.Add(flowLayoutPanelCategory);
-            Name = "PanelCategory";
+            Name = "Category";
             Size = new Size(844, 433);
             flowLayoutPanelCategory.ResumeLayout(false);
             panelProcessors.ResumeLayout(false);

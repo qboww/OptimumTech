@@ -1,4 +1,5 @@
-﻿using OptimumTech;
+﻿using OptimumTech.Controls.Products;
+using OptimumTech;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,11 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Optimum_Tech.Controls
+namespace OptimumTech.Controls
 {
-    public partial class PanelCategory : UserControl
+    public partial class Category : UserControl
     {
-        public PanelCategory()
+        public Category()
         {
             InitializeComponent();
         }

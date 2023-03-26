@@ -1,6 +1,6 @@
-﻿namespace Optimum_Tech.Controls
+﻿namespace OptimumTech.Controls
 {
-    partial class PanelProduct
+    partial class Product
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelProduct));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             pictureBoxProduct = new PictureBox();
             labelProductResponses = new Label();
             labelProductPrice = new Label();
@@ -68,7 +68,7 @@
             // labelProductPrice
             // 
             labelProductPrice.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            labelProductPrice.Font = new Font("Poppins", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelProductPrice.Font = new Font("Poppins", 20F, FontStyle.Regular, GraphicsUnit.Point);
             labelProductPrice.Location = new Point(5, 318);
             labelProductPrice.Name = "labelProductPrice";
             labelProductPrice.Size = new Size(224, 40);
@@ -79,7 +79,7 @@
             // pictureBoxCart
             // 
             pictureBoxCart.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            pictureBoxCart.Image = Properties.Resources.basket_empty;
+            pictureBoxCart.Image = (Image)resources.GetObject("pictureBoxCart.Image");
             pictureBoxCart.Location = new Point(235, 318);
             pictureBoxCart.Name = "pictureBoxCart";
             pictureBoxCart.Size = new Size(40, 40);
@@ -89,7 +89,8 @@
             // 
             // pictureBoxRating
             // 
-            pictureBoxRating.Image = (Image)resources.GetObject("pictureBoxRating.Image");
+            pictureBoxRating.ErrorImage = null;
+            pictureBoxRating.Image = Optimum_Tech.Properties.Resources.four_stars;
             pictureBoxRating.Location = new Point(5, 280);
             pictureBoxRating.Name = "pictureBoxRating";
             pictureBoxRating.Size = new Size(100, 20);
@@ -110,7 +111,7 @@
             // 
             // pictureBoxFavorite
             // 
-            pictureBoxFavorite.Image = Properties.Resources.favorite_empty;
+            pictureBoxFavorite.Image = (Image)resources.GetObject("pictureBoxFavorite.Image");
             pictureBoxFavorite.Location = new Point(235, 3);
             pictureBoxFavorite.Name = "pictureBoxFavorite";
             pictureBoxFavorite.Size = new Size(40, 40);
@@ -118,7 +119,7 @@
             pictureBoxFavorite.TabIndex = 6;
             pictureBoxFavorite.TabStop = false;
             // 
-            // PanelProduct
+            // Product
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -131,7 +132,7 @@
             Controls.Add(labelProductPrice);
             Controls.Add(labelProductResponses);
             Controls.Add(pictureBoxProduct);
-            Name = "PanelProduct";
+            Name = "Product";
             Size = new Size(278, 368);
             ((System.ComponentModel.ISupportInitialize)pictureBoxProduct).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCart).EndInit();

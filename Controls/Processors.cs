@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Optimum_Tech.Controls
+namespace OptimumTech.Controls.Products
 {
-    public partial class PanelProduct : UserControl
+    public partial class Processors : UserControl
     {
-        public PanelProduct()
+        public Processors()
         {
             InitializeComponent();
         }

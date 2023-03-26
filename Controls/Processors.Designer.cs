@@ -1,6 +1,6 @@
-﻿namespace Optimum_Tech.Controls
+﻿namespace OptimumTech.Controls.Products
 {
-    partial class PanelProcessors
+    partial class Processors
     {
         /// <summary> 
         /// Required designer variable.
@@ -33,25 +33,21 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.BackColor = Color.White;
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(10);
-            flowLayoutPanel1.Size = new Size(887, 692);
+            flowLayoutPanel1.Size = new Size(937, 634);
             flowLayoutPanel1.TabIndex = 0;
             // 
-            // PanelProcessors
+            // Processors
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(flowLayoutPanel1);
-            Name = "PanelProcessors";
-            Size = new Size(887, 692);
+            Name = "Processors";
+            Size = new Size(937, 634);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
