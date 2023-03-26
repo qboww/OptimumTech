@@ -17,16 +17,5 @@ namespace Optimum_Tech.Controls
         {
             InitializeComponent();
         }
-
-        private void pictureBoxProcessors_Click(object sender, EventArgs e)
-        {
-            FormMainScreen.Instance.Controls.Clear();
-
-            this.Anchor = AnchorStyles.None;
-            this.Left = (FormMainScreen.Instance.Width - this.Width) / 2;
-            this.Top = (FormMainScreen.Instance.Height - this.Height) / 2;
-
-            FormMainScreen.Instance.Controls.Add(this);
-        }
     }
 }

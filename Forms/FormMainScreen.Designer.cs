@@ -84,10 +84,9 @@ namespace OptimumTech
             // 
             // buttonMinimize
             // 
-            buttonMinimize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonMinimize.FlatAppearance.BorderSize = 0;
             buttonMinimize.FlatStyle = FlatStyle.Flat;
-            buttonMinimize.Image = (Image)resources.GetObject("buttonMinimize.Image");
+            buttonMinimize.Image = Optimum_Tech.Properties.Resources.minimize;
             buttonMinimize.Location = new Point(1158, 0);
             buttonMinimize.Name = "buttonMinimize";
             buttonMinimize.Size = new Size(25, 27);
@@ -97,10 +96,9 @@ namespace OptimumTech
             // 
             // buttonClose
             // 
-            buttonClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonClose.FlatAppearance.BorderSize = 0;
             buttonClose.FlatStyle = FlatStyle.Flat;
-            buttonClose.Image = (Image)resources.GetObject("buttonClose.Image");
+            buttonClose.Image = Optimum_Tech.Properties.Resources.close;
             buttonClose.Location = new Point(1220, 0);
             buttonClose.Name = "buttonClose";
             buttonClose.Size = new Size(25, 27);
@@ -109,11 +107,10 @@ namespace OptimumTech
             // 
             // buttonMaximize
             // 
-            buttonMaximize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonMaximize.FlatAppearance.BorderSize = 0;
             buttonMaximize.FlatStyle = FlatStyle.Flat;
             buttonMaximize.ForeColor = Color.White;
-            buttonMaximize.Image = (Image)resources.GetObject("buttonMaximize.Image");
+            buttonMaximize.Image = Optimum_Tech.Properties.Resources.maximize;
             buttonMaximize.Location = new Point(1189, 0);
             buttonMaximize.Name = "buttonMaximize";
             buttonMaximize.Size = new Size(25, 27);
@@ -144,7 +141,7 @@ namespace OptimumTech
             // 
             buttonDrawer.FlatAppearance.BorderSize = 0;
             buttonDrawer.FlatStyle = FlatStyle.Flat;
-            buttonDrawer.Image = (Image)resources.GetObject("buttonDrawer.Image");
+            buttonDrawer.Image = Optimum_Tech.Properties.Resources.drawer;
             buttonDrawer.Location = new Point(0, 16);
             buttonDrawer.Name = "buttonDrawer";
             buttonDrawer.Size = new Size(46, 30);
@@ -157,7 +154,7 @@ namespace OptimumTech
             buttonSearch.FlatAppearance.BorderSize = 0;
             buttonSearch.FlatStyle = FlatStyle.Flat;
             buttonSearch.ForeColor = SystemColors.ControlText;
-            buttonSearch.Image = (Image)resources.GetObject("buttonSearch.Image");
+            buttonSearch.Image = Optimum_Tech.Properties.Resources.search;
             buttonSearch.Location = new Point(0, 87);
             buttonSearch.Name = "buttonSearch";
             buttonSearch.Size = new Size(46, 30);
@@ -170,7 +167,7 @@ namespace OptimumTech
             buttonAdmin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonAdmin.FlatAppearance.BorderSize = 0;
             buttonAdmin.FlatStyle = FlatStyle.Flat;
-            buttonAdmin.Image = (Image)resources.GetObject("buttonAdmin.Image");
+            buttonAdmin.Image = Optimum_Tech.Properties.Resources.admin;
             buttonAdmin.Location = new Point(-1, 679);
             buttonAdmin.Name = "buttonAdmin";
             buttonAdmin.Size = new Size(47, 30);
@@ -182,7 +179,7 @@ namespace OptimumTech
             // 
             buttonCategory.FlatAppearance.BorderSize = 0;
             buttonCategory.FlatStyle = FlatStyle.Flat;
-            buttonCategory.Image = (Image)resources.GetObject("buttonCategory.Image");
+            buttonCategory.Image = Optimum_Tech.Properties.Resources.category;
             buttonCategory.Location = new Point(0, 168);
             buttonCategory.Name = "buttonCategory";
             buttonCategory.Size = new Size(47, 30);
@@ -197,7 +194,7 @@ namespace OptimumTech
             buttonSettings.FlatStyle = FlatStyle.Flat;
             buttonSettings.Font = new Font("Ubuntu", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSettings.ForeColor = Color.White;
-            buttonSettings.Image = (Image)resources.GetObject("buttonSettings.Image");
+            buttonSettings.Image = Optimum_Tech.Properties.Resources.settings;
             buttonSettings.Location = new Point(0, 751);
             buttonSettings.Name = "buttonSettings";
             buttonSettings.Size = new Size(47, 30);
@@ -210,7 +207,7 @@ namespace OptimumTech
             buttonContact.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonContact.FlatAppearance.BorderSize = 0;
             buttonContact.FlatStyle = FlatStyle.Flat;
-            buttonContact.Image = (Image)resources.GetObject("buttonContact.Image");
+            buttonContact.Image = Optimum_Tech.Properties.Resources.contact;
             buttonContact.Location = new Point(-1, 715);
             buttonContact.Name = "buttonContact";
             buttonContact.Size = new Size(47, 30);
@@ -221,7 +218,7 @@ namespace OptimumTech
             // 
             buttonHome.FlatAppearance.BorderSize = 0;
             buttonHome.FlatStyle = FlatStyle.Flat;
-            buttonHome.Image = (Image)resources.GetObject("buttonHome.Image");
+            buttonHome.Image = Optimum_Tech.Properties.Resources.home;
             buttonHome.Location = new Point(0, 204);
             buttonHome.Name = "buttonHome";
             buttonHome.Size = new Size(47, 30);
@@ -232,7 +229,7 @@ namespace OptimumTech
             // 
             buttonAccount.FlatAppearance.BorderSize = 0;
             buttonAccount.FlatStyle = FlatStyle.Flat;
-            buttonAccount.Image = (Image)resources.GetObject("buttonAccount.Image");
+            buttonAccount.Image = Optimum_Tech.Properties.Resources.account;
             buttonAccount.Location = new Point(0, 240);
             buttonAccount.Name = "buttonAccount";
             buttonAccount.Size = new Size(47, 30);
@@ -243,7 +240,7 @@ namespace OptimumTech
             // 
             buttonFavourites.FlatAppearance.BorderSize = 0;
             buttonFavourites.FlatStyle = FlatStyle.Flat;
-            buttonFavourites.Image = (Image)resources.GetObject("buttonFavourites.Image");
+            buttonFavourites.Image = Optimum_Tech.Properties.Resources.favorite;
             buttonFavourites.Location = new Point(0, 312);
             buttonFavourites.Name = "buttonFavourites";
             buttonFavourites.Size = new Size(47, 30);
@@ -254,7 +251,7 @@ namespace OptimumTech
             // 
             buttonCart.FlatAppearance.BorderSize = 0;
             buttonCart.FlatStyle = FlatStyle.Flat;
-            buttonCart.Image = (Image)resources.GetObject("buttonCart.Image");
+            buttonCart.Image = Optimum_Tech.Properties.Resources.cart;
             buttonCart.Location = new Point(0, 276);
             buttonCart.Name = "buttonCart";
             buttonCart.Size = new Size(47, 30);

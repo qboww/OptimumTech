@@ -79,7 +79,7 @@
             // pictureBoxCart
             // 
             pictureBoxCart.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            pictureBoxCart.Image = (Image)resources.GetObject("pictureBoxCart.Image");
+            pictureBoxCart.Image = Properties.Resources.basket_empty;
             pictureBoxCart.Location = new Point(235, 318);
             pictureBoxCart.Name = "pictureBoxCart";
             pictureBoxCart.Size = new Size(40, 40);
@@ -110,7 +110,7 @@
             // 
             // pictureBoxFavorite
             // 
-            pictureBoxFavorite.Image = (Image)resources.GetObject("pictureBoxFavorite.Image");
+            pictureBoxFavorite.Image = Properties.Resources.favorite_empty;
             pictureBoxFavorite.Location = new Point(235, 3);
             pictureBoxFavorite.Name = "pictureBoxFavorite";
             pictureBoxFavorite.Size = new Size(40, 40);

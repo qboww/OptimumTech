@@ -125,7 +125,6 @@
             pictureBoxProcessors.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBoxProcessors.TabIndex = 0;
             pictureBoxProcessors.TabStop = false;
-            pictureBoxProcessors.Click += pictureBoxProcessors_Click;
             // 
             // panelGraphicsCards
             // 

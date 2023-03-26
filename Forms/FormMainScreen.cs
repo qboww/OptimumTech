@@ -6,21 +6,21 @@ namespace OptimumTech
 {
     public partial class FormMainScreen : Form
     {
-        PanelCategory panelCategory = new PanelCategory();
+        //private static FormMainScreen instance;
 
-        private static FormMainScreen instance;
+        //public static FormMainScreen Instance
+        //{
+        //    get
+        //    {
+        //        if (instance == null)
+        //        {
+        //            instance = new FormMainScreen();
+        //        }
+        //        return instance;
+        //    }
+        //}
 
-        public static FormMainScreen Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new FormMainScreen();
-                }
-                return instance;
-            }
-        }
+        #region properties
 
         private int maximizeCount;
         private int tempWidth;
@@ -31,6 +31,8 @@ namespace OptimumTech
         private int mov;
         private int movX;
         private int movY;
+
+        #endregion
 
         public FormMainScreen()
         {
@@ -159,23 +161,7 @@ namespace OptimumTech
 
         private void buttonCategory_Click(object sender, EventArgs e)
         {
-            //PanelCategory panelCategory = new PanelCategory();
 
-            //panelCategory.Location = panelMain.Location;
-            //panelCategory.Size = panelMain.Size;
-
-            //panelMain.Controls.Remove(panelCategory);
-            //panelMain.Dispose();
-
-
-
-            panelMain.Controls.Clear();
-
-            panelCategory.Anchor = AnchorStyles.None;
-            panelCategory.Left = (panelMain.Width - panelCategory.Width) / 2;
-            panelCategory.Top = (panelMain.Height - panelCategory.Height) / 2;
-
-            panelMain.Controls.Add(panelCategory);
         }
 
         #endregion
