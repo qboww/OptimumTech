@@ -29,94 +29,94 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelProduct));
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            textBox1 = new TextBox();
-            pictureBox4 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            pictureBoxProduct = new PictureBox();
+            labelProductResponses = new Label();
+            labelProductPrice = new Label();
+            pictureBoxCart = new PictureBox();
+            pictureBoxRating = new PictureBox();
+            textBoxProductName = new TextBox();
+            pictureBoxFavorite = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxProduct).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCart).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxRating).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFavorite).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxProduct
             // 
-            pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(278, 236);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pictureBoxProduct.Dock = DockStyle.Top;
+            pictureBoxProduct.Image = (Image)resources.GetObject("pictureBoxProduct.Image");
+            pictureBoxProduct.Location = new Point(0, 0);
+            pictureBoxProduct.Name = "pictureBoxProduct";
+            pictureBoxProduct.Size = new Size(278, 236);
+            pictureBoxProduct.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBoxProduct.TabIndex = 0;
+            pictureBoxProduct.TabStop = false;
             // 
-            // label1
+            // labelProductResponses
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(64, 64, 64);
-            label1.Location = new Point(111, 277);
-            label1.Name = "label1";
-            label1.Size = new Size(164, 23);
-            label1.TabIndex = 1;
-            label1.Text = "43 Responses";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
+            labelProductResponses.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            labelProductResponses.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            labelProductResponses.ForeColor = Color.FromArgb(64, 64, 64);
+            labelProductResponses.Location = new Point(111, 280);
+            labelProductResponses.Name = "labelProductResponses";
+            labelProductResponses.Size = new Size(164, 20);
+            labelProductResponses.TabIndex = 1;
+            labelProductResponses.Text = "43 Responses";
+            labelProductResponses.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // labelProductPrice
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label2.Font = new Font("Poppins", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(6, 315);
-            label2.Name = "label2";
-            label2.Size = new Size(214, 40);
-            label2.TabIndex = 2;
-            label2.Text = "$592.99";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
+            labelProductPrice.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelProductPrice.Font = new Font("Poppins", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelProductPrice.Location = new Point(5, 318);
+            labelProductPrice.Name = "labelProductPrice";
+            labelProductPrice.Size = new Size(224, 40);
+            labelProductPrice.TabIndex = 2;
+            labelProductPrice.Text = "$592.99";
+            labelProductPrice.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // pictureBox2
+            // pictureBoxCart
             // 
-            pictureBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(235, 315);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 40);
-            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
+            pictureBoxCart.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            pictureBoxCart.Image = (Image)resources.GetObject("pictureBoxCart.Image");
+            pictureBoxCart.Location = new Point(235, 318);
+            pictureBoxCart.Name = "pictureBoxCart";
+            pictureBoxCart.Size = new Size(40, 40);
+            pictureBoxCart.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBoxCart.TabIndex = 3;
+            pictureBoxCart.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBoxRating
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(5, 277);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(100, 23);
-            pictureBox3.TabIndex = 4;
-            pictureBox3.TabStop = false;
+            pictureBoxRating.Image = (Image)resources.GetObject("pictureBoxRating.Image");
+            pictureBoxRating.Location = new Point(5, 280);
+            pictureBoxRating.Name = "pictureBoxRating";
+            pictureBoxRating.Size = new Size(100, 20);
+            pictureBoxRating.TabIndex = 4;
+            pictureBoxRating.TabStop = false;
             // 
-            // textBox1
+            // textBoxProductName
             // 
-            textBox1.BackColor = Color.White;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(5, 242);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(270, 32);
-            textBox1.TabIndex = 5;
-            textBox1.Text = "Intel Core i9-13900K";
+            textBoxProductName.BackColor = Color.White;
+            textBoxProductName.BorderStyle = BorderStyle.None;
+            textBoxProductName.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxProductName.Location = new Point(5, 242);
+            textBoxProductName.Name = "textBoxProductName";
+            textBoxProductName.ReadOnly = true;
+            textBoxProductName.Size = new Size(270, 32);
+            textBoxProductName.TabIndex = 5;
+            textBoxProductName.Text = "Intel Core i9-13900K";
             // 
-            // pictureBox4
+            // pictureBoxFavorite
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(235, 3);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(40, 40);
-            pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox4.TabIndex = 6;
-            pictureBox4.TabStop = false;
+            pictureBoxFavorite.Image = (Image)resources.GetObject("pictureBoxFavorite.Image");
+            pictureBoxFavorite.Location = new Point(235, 3);
+            pictureBoxFavorite.Name = "pictureBoxFavorite";
+            pictureBoxFavorite.Size = new Size(40, 40);
+            pictureBoxFavorite.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBoxFavorite.TabIndex = 6;
+            pictureBoxFavorite.TabStop = false;
             // 
             // PanelProduct
             // 
@@ -124,31 +124,31 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BorderStyle = BorderStyle.FixedSingle;
-            Controls.Add(pictureBox4);
-            Controls.Add(textBox1);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBoxFavorite);
+            Controls.Add(textBoxProductName);
+            Controls.Add(pictureBoxRating);
+            Controls.Add(pictureBoxCart);
+            Controls.Add(labelProductPrice);
+            Controls.Add(labelProductResponses);
+            Controls.Add(pictureBoxProduct);
             Name = "PanelProduct";
             Size = new Size(278, 368);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxProduct).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCart).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxRating).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFavorite).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private Label label1;
-        private Label label2;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private TextBox textBox1;
-        private PictureBox pictureBox4;
+        private PictureBox pictureBoxProduct;
+        private Label labelProductResponses;
+        private Label labelProductPrice;
+        private PictureBox pictureBoxCart;
+        private PictureBox pictureBoxRating;
+        private TextBox textBoxProductName;
+        private PictureBox pictureBoxFavorite;
     }
 }

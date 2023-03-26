@@ -399,7 +399,7 @@ namespace OptimumTech
             // 
             // panelMain
             // 
-            panelMain.BackColor = Color.FromArgb(43, 43, 43);
+            panelMain.BackColor = Color.White;
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(216, 27);
             panelMain.Name = "panelMain";

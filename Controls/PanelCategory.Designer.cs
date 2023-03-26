@@ -75,7 +75,7 @@
             // 
             // flowLayoutPanelCategory
             // 
-            flowLayoutPanelCategory.BackColor = Color.FromArgb(43, 43, 43);
+            flowLayoutPanelCategory.BackColor = Color.White;
             flowLayoutPanelCategory.Controls.Add(panelProcessors);
             flowLayoutPanelCategory.Controls.Add(panelGraphicsCards);
             flowLayoutPanelCategory.Controls.Add(panelMemory);

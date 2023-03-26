@@ -159,6 +159,16 @@ namespace OptimumTech
 
         private void buttonCategory_Click(object sender, EventArgs e)
         {
+            //PanelCategory panelCategory = new PanelCategory();
+
+            //panelCategory.Location = panelMain.Location;
+            //panelCategory.Size = panelMain.Size;
+
+            //panelMain.Controls.Remove(panelCategory);
+            //panelMain.Dispose();
+
+
+
             panelMain.Controls.Clear();
 
             panelCategory.Anchor = AnchorStyles.None;
