@@ -1,9 +1,8 @@
-﻿using OptimumTech.Controls;
-using System.Windows.Forms.VisualStyles;
+﻿using OptimumTech;
 
-namespace OptimumTech
+namespace Optimum_Tech.Forms
 {
-    partial class FormMain
+    partial class MDIMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -32,7 +31,6 @@ namespace OptimumTech
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             panelTitleBar = new Panel();
             buttonMinimize = new Button();
             buttonClose = new Button();
@@ -76,7 +74,7 @@ namespace OptimumTech
             panelTitleBar.Dock = DockStyle.Top;
             panelTitleBar.Location = new Point(0, 0);
             panelTitleBar.Name = "panelTitleBar";
-            panelTitleBar.Size = new Size(1098, 27);
+            panelTitleBar.Size = new Size(1291, 27);
             panelTitleBar.TabIndex = 0;
             panelTitleBar.MouseDown += panelTitleBar_MouseDown;
             panelTitleBar.MouseMove += panelTitleBar_MouseMove;
@@ -87,8 +85,8 @@ namespace OptimumTech
             buttonMinimize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonMinimize.FlatAppearance.BorderSize = 0;
             buttonMinimize.FlatStyle = FlatStyle.Flat;
-            buttonMinimize.Image = (Image)resources.GetObject("buttonMinimize.Image");
-            buttonMinimize.Location = new Point(1011, 0);
+            buttonMinimize.Image = Properties.Resources.minimize;
+            buttonMinimize.Location = new Point(1204, 0);
             buttonMinimize.Name = "buttonMinimize";
             buttonMinimize.Size = new Size(25, 27);
             buttonMinimize.TabIndex = 0;
@@ -100,8 +98,8 @@ namespace OptimumTech
             buttonClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonClose.FlatAppearance.BorderSize = 0;
             buttonClose.FlatStyle = FlatStyle.Flat;
-            buttonClose.Image = (Image)resources.GetObject("buttonClose.Image");
-            buttonClose.Location = new Point(1073, 0);
+            buttonClose.Image = Properties.Resources.close;
+            buttonClose.Location = new Point(1266, 0);
             buttonClose.Name = "buttonClose";
             buttonClose.Size = new Size(25, 27);
             buttonClose.TabIndex = 0;
@@ -113,8 +111,8 @@ namespace OptimumTech
             buttonMaximize.FlatAppearance.BorderSize = 0;
             buttonMaximize.FlatStyle = FlatStyle.Flat;
             buttonMaximize.ForeColor = Color.White;
-            buttonMaximize.Image = (Image)resources.GetObject("buttonMaximize.Image");
-            buttonMaximize.Location = new Point(1042, 0);
+            buttonMaximize.Image = Properties.Resources.maximize;
+            buttonMaximize.Location = new Point(1235, 0);
             buttonMaximize.Name = "buttonMaximize";
             buttonMaximize.Size = new Size(25, 27);
             buttonMaximize.TabIndex = 0;
@@ -144,7 +142,7 @@ namespace OptimumTech
             // 
             buttonDrawer.FlatAppearance.BorderSize = 0;
             buttonDrawer.FlatStyle = FlatStyle.Flat;
-            buttonDrawer.Image = (Image)resources.GetObject("buttonDrawer.Image");
+            buttonDrawer.Image = Properties.Resources.drawer;
             buttonDrawer.Location = new Point(0, 16);
             buttonDrawer.Name = "buttonDrawer";
             buttonDrawer.Size = new Size(46, 30);
@@ -157,10 +155,10 @@ namespace OptimumTech
             buttonSearch.FlatAppearance.BorderSize = 0;
             buttonSearch.FlatStyle = FlatStyle.Flat;
             buttonSearch.ForeColor = SystemColors.ControlText;
-            buttonSearch.Image = (Image)resources.GetObject("buttonSearch.Image");
-            buttonSearch.Location = new Point(0, 87);
+            buttonSearch.Image = Properties.Resources.search;
+            buttonSearch.Location = new Point(0, 89);
             buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(46, 30);
+            buttonSearch.Size = new Size(46, 28);
             buttonSearch.TabIndex = 0;
             buttonSearch.UseVisualStyleBackColor = true;
             buttonSearch.Click += buttonSearch_Click;
@@ -170,7 +168,7 @@ namespace OptimumTech
             buttonAdmin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonAdmin.FlatAppearance.BorderSize = 0;
             buttonAdmin.FlatStyle = FlatStyle.Flat;
-            buttonAdmin.Image = (Image)resources.GetObject("buttonAdmin.Image");
+            buttonAdmin.Image = Properties.Resources.admin;
             buttonAdmin.Location = new Point(-1, 575);
             buttonAdmin.Name = "buttonAdmin";
             buttonAdmin.Size = new Size(47, 30);
@@ -182,7 +180,7 @@ namespace OptimumTech
             // 
             buttonCategory.FlatAppearance.BorderSize = 0;
             buttonCategory.FlatStyle = FlatStyle.Flat;
-            buttonCategory.Image = (Image)resources.GetObject("buttonCategory.Image");
+            buttonCategory.Image = Properties.Resources.category;
             buttonCategory.Location = new Point(0, 168);
             buttonCategory.Name = "buttonCategory";
             buttonCategory.Size = new Size(47, 30);
@@ -197,12 +195,12 @@ namespace OptimumTech
             buttonSettings.FlatStyle = FlatStyle.Flat;
             buttonSettings.Font = new Font("Ubuntu", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSettings.ForeColor = Color.White;
-            buttonSettings.Image = (Image)resources.GetObject("buttonSettings.Image");
+            buttonSettings.Image = Properties.Resources.settings;
             buttonSettings.Location = new Point(0, 647);
             buttonSettings.Name = "buttonSettings";
             buttonSettings.Size = new Size(47, 30);
             buttonSettings.TabIndex = 0;
-            buttonSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            buttonSettings.TextAlign = ContentAlignment.MiddleRight;
             buttonSettings.UseVisualStyleBackColor = true;
             // 
             // buttonContact
@@ -210,7 +208,7 @@ namespace OptimumTech
             buttonContact.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonContact.FlatAppearance.BorderSize = 0;
             buttonContact.FlatStyle = FlatStyle.Flat;
-            buttonContact.Image = (Image)resources.GetObject("buttonContact.Image");
+            buttonContact.Image = Properties.Resources.contact;
             buttonContact.Location = new Point(-1, 611);
             buttonContact.Name = "buttonContact";
             buttonContact.Size = new Size(47, 30);
@@ -221,7 +219,7 @@ namespace OptimumTech
             // 
             buttonHome.FlatAppearance.BorderSize = 0;
             buttonHome.FlatStyle = FlatStyle.Flat;
-            buttonHome.Image = (Image)resources.GetObject("buttonHome.Image");
+            buttonHome.Image = Properties.Resources.home;
             buttonHome.Location = new Point(0, 204);
             buttonHome.Name = "buttonHome";
             buttonHome.Size = new Size(47, 30);
@@ -232,7 +230,7 @@ namespace OptimumTech
             // 
             buttonAccount.FlatAppearance.BorderSize = 0;
             buttonAccount.FlatStyle = FlatStyle.Flat;
-            buttonAccount.Image = (Image)resources.GetObject("buttonAccount.Image");
+            buttonAccount.Image = Properties.Resources.account;
             buttonAccount.Location = new Point(0, 240);
             buttonAccount.Name = "buttonAccount";
             buttonAccount.Size = new Size(47, 30);
@@ -243,7 +241,7 @@ namespace OptimumTech
             // 
             buttonFavourites.FlatAppearance.BorderSize = 0;
             buttonFavourites.FlatStyle = FlatStyle.Flat;
-            buttonFavourites.Image = (Image)resources.GetObject("buttonFavourites.Image");
+            buttonFavourites.Image = Properties.Resources.favorite;
             buttonFavourites.Location = new Point(0, 312);
             buttonFavourites.Name = "buttonFavourites";
             buttonFavourites.Size = new Size(47, 30);
@@ -254,7 +252,7 @@ namespace OptimumTech
             // 
             buttonCart.FlatAppearance.BorderSize = 0;
             buttonCart.FlatStyle = FlatStyle.Flat;
-            buttonCart.Image = (Image)resources.GetObject("buttonCart.Image");
+            buttonCart.Image = Properties.Resources.cart;
             buttonCart.Location = new Point(0, 276);
             buttonCart.Name = "buttonCart";
             buttonCart.Size = new Size(47, 30);
@@ -290,7 +288,7 @@ namespace OptimumTech
             labelAdmin.Size = new Size(75, 30);
             labelAdmin.TabIndex = 0;
             labelAdmin.Text = "Admin";
-            labelAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelAdmin.TextAlign = ContentAlignment.MiddleLeft;
             labelAdmin.Visible = false;
             // 
             // labelContact
@@ -303,7 +301,7 @@ namespace OptimumTech
             labelContact.Size = new Size(93, 30);
             labelContact.TabIndex = 11;
             labelContact.Text = "Contact";
-            labelContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelContact.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelCategory
             // 
@@ -314,7 +312,7 @@ namespace OptimumTech
             labelCategory.Size = new Size(93, 30);
             labelCategory.TabIndex = 9;
             labelCategory.Text = "Category";
-            labelCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelCategory.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelSettings
             // 
@@ -326,7 +324,7 @@ namespace OptimumTech
             labelSettings.Size = new Size(85, 30);
             labelSettings.TabIndex = 8;
             labelSettings.Text = "Settings";
-            labelSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelSettings.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelFavourites
             // 
@@ -337,7 +335,7 @@ namespace OptimumTech
             labelFavourites.Size = new Size(93, 30);
             labelFavourites.TabIndex = 7;
             labelFavourites.Text = "Favourites";
-            labelFavourites.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelFavourites.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelCart
             // 
@@ -348,7 +346,7 @@ namespace OptimumTech
             labelCart.Size = new Size(52, 30);
             labelCart.TabIndex = 6;
             labelCart.Text = "Cart";
-            labelCart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelCart.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelAccount
             // 
@@ -359,7 +357,7 @@ namespace OptimumTech
             labelAccount.Size = new Size(85, 30);
             labelAccount.TabIndex = 5;
             labelAccount.Text = "Account";
-            labelAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelAccount.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelHome
             // 
@@ -370,7 +368,7 @@ namespace OptimumTech
             labelHome.Size = new Size(75, 30);
             labelHome.TabIndex = 4;
             labelHome.Text = "Home";
-            labelHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelHome.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelSearch
             // 
@@ -378,10 +376,10 @@ namespace OptimumTech
             labelSearch.ForeColor = Color.White;
             labelSearch.Location = new Point(0, 89);
             labelSearch.Name = "labelSearch";
-            labelSearch.Size = new Size(85, 29);
+            labelSearch.Size = new Size(85, 28);
             labelSearch.TabIndex = 3;
             labelSearch.Text = "Search";
-            labelSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelSearch.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // textBoxSearch
             // 
@@ -404,7 +402,7 @@ namespace OptimumTech
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(216, 27);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(882, 689);
+            panelMain.Size = new Size(1075, 689);
             panelMain.TabIndex = 3;
             // 
             // timer1
@@ -417,19 +415,18 @@ namespace OptimumTech
             timer2.Interval = 3000;
             timer2.Tick += timer2_Tick;
             // 
-            // MainForm
+            // MDIMain
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Desktop;
-            ClientSize = new Size(1098, 716);
+            ClientSize = new Size(1291, 716);
             Controls.Add(panelMain);
             Controls.Add(panelSlide);
             Controls.Add(panelCollapsed);
             Controls.Add(panelTitleBar);
             FormBorderStyle = FormBorderStyle.None;
-            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
-            Name = "MainForm";
+            Name = "MDIMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Optimum Tech";
             panelTitleBar.ResumeLayout(false);
@@ -444,7 +441,7 @@ namespace OptimumTech
         private Panel panelTitleBar;
         private Panel panelCollapsed;
         private Panel panelSlide;
-        private Panel panelMain;
+        internal Panel panelMain;
         private Button buttonDrawer;
         private System.Windows.Forms.Timer timer1;
         private Button buttonClose;
@@ -472,3 +469,6 @@ namespace OptimumTech
         private Label labelContact;
     }
 }
+
+
+

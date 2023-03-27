@@ -103,6 +103,16 @@ namespace Optimum_Tech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap basket_filled {
+            get {
+                object obj = ResourceManager.GetObject("basket_filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cart {
             get {
                 object obj = ResourceManager.GetObject("cart", resourceCulture);

@@ -1,13 +1,13 @@
-﻿namespace OptimumTech.Controls.Products
+﻿namespace Optimum_Tech.Forms
 {
-    partial class Processors
+    partial class FormProcessors
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -33,21 +33,30 @@
             // 
             // flowLayoutPanel1
             // 
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.BackColor = Color.FromArgb(230, 230, 230);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Margin = new Padding(0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(937, 634);
+            flowLayoutPanel1.Padding = new Padding(10, 0, 10, 0);
+            flowLayoutPanel1.Size = new Size(1064, 735);
             flowLayoutPanel1.TabIndex = 0;
             // 
-            // Processors
+            // FormProcessors
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            ClientSize = new Size(1064, 735);
             Controls.Add(flowLayoutPanel1);
-            Name = "Processors";
-            Size = new Size(937, 634);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FormProcessors";
+            Text = "FormProcessors";
+            Load += FormProcessors_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

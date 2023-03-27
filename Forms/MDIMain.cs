@@ -1,12 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
-using OptimumTech.Controls;
-using OptimumTech.Controls.Products;
-using System.Runtime.CompilerServices;
-using System.Security.Principal;
-
-namespace OptimumTech
+namespace Optimum_Tech.Forms
 {
-    public partial class FormMain : Form
+    public partial class MDIMain : Form
     {
         #region properties
 
@@ -22,22 +27,11 @@ namespace OptimumTech
 
         #endregion
 
-        private static FormMain? instance;
-        internal static FormMain Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new FormMain();
-                }
-                return instance;
-            }
-        }
-
-        public FormMain()
+        public MDIMain()
         {
             InitializeComponent();
+
+            this.IsMdiContainer = true;
 
             panelWidth = panelSlide.Width;
             hidden = true;
@@ -46,8 +40,6 @@ namespace OptimumTech
 
             tempWidth = this.Width - panelSlide.Width;
             tempHeight = this.Height - panelSlide.Height;
-
-
         }
 
         #region timers_events
@@ -156,24 +148,13 @@ namespace OptimumTech
         }
         private void buttonCategory_Click(object sender, EventArgs e)
         {
-            Category category = new Category();
+            Form childForm = new FormCategory(this) { _parent = this };
 
-            category.Size = panelMain.Size;
-            category.Location = panelMain.Location;
+            childForm.MdiParent = this;
+            panelMain.Controls.Add(childForm);
+            childForm.Dock = DockStyle.Fill;
 
-            panelMain.Controls.Clear();
-            panelMain.Controls.Add(category);
-
-            category.Parent = this.panelMain;
-            category.Anchor = AnchorStyles.Bottom | AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-
-            category.Left = (panelMain.Width - category.Width) / 2;
-            category.Top = (panelMain.Height - category.Height) / 2;
-        }
-
-        private void pictureBoxProcessors_Click(object sender, EventArgs e)
-        {
-            // handle the button click event here
+            childForm.Show();
         }
 
         #endregion
