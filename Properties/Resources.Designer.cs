@@ -95,7 +95,7 @@ namespace Optimum_Tech.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap basket_empty {
             get {
-                object obj = ResourceManager.GetObject("basket-empty", resourceCulture);
+                object obj = ResourceManager.GetObject("basket_empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -195,7 +195,7 @@ namespace Optimum_Tech.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap favorite_empty {
             get {
-                object obj = ResourceManager.GetObject("favorite-empty", resourceCulture);
+                object obj = ResourceManager.GetObject("favorite_empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,7 +205,7 @@ namespace Optimum_Tech.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap favorite_filled {
             get {
-                object obj = ResourceManager.GetObject("favorite-filled", resourceCulture);
+                object obj = ResourceManager.GetObject("favorite_filled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +283,16 @@ namespace Optimum_Tech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap no_stars {
+            get {
+                object obj = ResourceManager.GetObject("no_stars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap one_star {
             get {
                 object obj = ResourceManager.GetObject("one_star", resourceCulture);
@@ -306,16 +316,6 @@ namespace Optimum_Tech.Properties {
         internal static System.Drawing.Bitmap processor {
             get {
                 object obj = ResourceManager.GetObject("processor", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap product_processor_i9_13900K {
-            get {
-                object obj = ResourceManager.GetObject("product_processor_i9_13900K", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

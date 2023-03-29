@@ -31,6 +31,7 @@ namespace Optimum_Tech.Forms
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIMain));
             panelTitleBar = new Panel();
             buttonMinimize = new Button();
             buttonClose = new Button();
@@ -47,19 +48,20 @@ namespace Optimum_Tech.Forms
             buttonFavourites = new Button();
             buttonCart = new Button();
             panelSlide = new Panel();
-            labelAdmin = new Label();
-            labelContact = new Label();
-            labelCategory = new Label();
-            labelSettings = new Label();
-            labelFavourites = new Label();
-            labelCart = new Label();
-            labelAccount = new Label();
-            labelHome = new Label();
-            labelSearch = new Label();
+            textBoxSearchText = new TextBox();
+            textBoxCategories = new TextBox();
+            textBoxHome = new TextBox();
+            textBoxAccount = new TextBox();
+            textBoxCart = new TextBox();
+            textBoxFavorites = new TextBox();
+            textBoxContact = new TextBox();
+            textBoxAdmin = new TextBox();
+            textBoxSettings = new TextBox();
             textBoxSearch = new TextBox();
             panelMain = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
+            textBoxDrawer = new TextBox();
             panelTitleBar.SuspendLayout();
             panelCollapsed.SuspendLayout();
             panelSlide.SuspendLayout();
@@ -121,7 +123,7 @@ namespace Optimum_Tech.Forms
             // 
             // panelCollapsed
             // 
-            panelCollapsed.BackColor = Color.FromArgb(35, 35, 35);
+            panelCollapsed.BackColor = Color.FromArgb(30, 30, 30);
             panelCollapsed.Controls.Add(buttonDrawer);
             panelCollapsed.Controls.Add(buttonSearch);
             panelCollapsed.Controls.Add(buttonAdmin);
@@ -135,7 +137,7 @@ namespace Optimum_Tech.Forms
             panelCollapsed.Dock = DockStyle.Left;
             panelCollapsed.Location = new Point(0, 27);
             panelCollapsed.Name = "panelCollapsed";
-            panelCollapsed.Size = new Size(46, 689);
+            panelCollapsed.Size = new Size(45, 689);
             panelCollapsed.TabIndex = 1;
             // 
             // buttonDrawer
@@ -145,20 +147,21 @@ namespace Optimum_Tech.Forms
             buttonDrawer.Image = Properties.Resources.drawer;
             buttonDrawer.Location = new Point(0, 16);
             buttonDrawer.Name = "buttonDrawer";
-            buttonDrawer.Size = new Size(46, 30);
+            buttonDrawer.Size = new Size(45, 30);
             buttonDrawer.TabIndex = 0;
             buttonDrawer.UseVisualStyleBackColor = true;
             buttonDrawer.Click += buttonDrawer_Click;
             // 
             // buttonSearch
             // 
+            buttonSearch.AutoSize = true;
             buttonSearch.FlatAppearance.BorderSize = 0;
             buttonSearch.FlatStyle = FlatStyle.Flat;
             buttonSearch.ForeColor = SystemColors.ControlText;
             buttonSearch.Image = Properties.Resources.search;
-            buttonSearch.Location = new Point(0, 89);
+            buttonSearch.Location = new Point(0, 88);
             buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(46, 28);
+            buttonSearch.Size = new Size(45, 30);
             buttonSearch.TabIndex = 0;
             buttonSearch.UseVisualStyleBackColor = true;
             buttonSearch.Click += buttonSearch_Click;
@@ -166,24 +169,26 @@ namespace Optimum_Tech.Forms
             // buttonAdmin
             // 
             buttonAdmin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonAdmin.AutoSize = true;
             buttonAdmin.FlatAppearance.BorderSize = 0;
             buttonAdmin.FlatStyle = FlatStyle.Flat;
             buttonAdmin.Image = Properties.Resources.admin;
-            buttonAdmin.Location = new Point(-1, 575);
+            buttonAdmin.Location = new Point(0, 564);
             buttonAdmin.Name = "buttonAdmin";
-            buttonAdmin.Size = new Size(47, 30);
+            buttonAdmin.Size = new Size(45, 30);
             buttonAdmin.TabIndex = 10;
             buttonAdmin.UseVisualStyleBackColor = true;
             buttonAdmin.Visible = false;
             // 
             // buttonCategory
             // 
+            buttonCategory.AutoSize = true;
             buttonCategory.FlatAppearance.BorderSize = 0;
             buttonCategory.FlatStyle = FlatStyle.Flat;
             buttonCategory.Image = Properties.Resources.category;
             buttonCategory.Location = new Point(0, 168);
             buttonCategory.Name = "buttonCategory";
-            buttonCategory.Size = new Size(47, 30);
+            buttonCategory.Size = new Size(45, 30);
             buttonCategory.TabIndex = 0;
             buttonCategory.UseVisualStyleBackColor = true;
             buttonCategory.Click += buttonCategory_Click;
@@ -191,14 +196,15 @@ namespace Optimum_Tech.Forms
             // buttonSettings
             // 
             buttonSettings.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonSettings.AutoSize = true;
             buttonSettings.FlatAppearance.BorderSize = 0;
             buttonSettings.FlatStyle = FlatStyle.Flat;
             buttonSettings.Font = new Font("Ubuntu", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSettings.ForeColor = Color.White;
             buttonSettings.Image = Properties.Resources.settings;
-            buttonSettings.Location = new Point(0, 647);
+            buttonSettings.Location = new Point(0, 636);
             buttonSettings.Name = "buttonSettings";
-            buttonSettings.Size = new Size(47, 30);
+            buttonSettings.Size = new Size(45, 30);
             buttonSettings.TabIndex = 0;
             buttonSettings.TextAlign = ContentAlignment.MiddleRight;
             buttonSettings.UseVisualStyleBackColor = true;
@@ -206,203 +212,224 @@ namespace Optimum_Tech.Forms
             // buttonContact
             // 
             buttonContact.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonContact.AutoSize = true;
             buttonContact.FlatAppearance.BorderSize = 0;
             buttonContact.FlatStyle = FlatStyle.Flat;
             buttonContact.Image = Properties.Resources.contact;
-            buttonContact.Location = new Point(-1, 611);
+            buttonContact.Location = new Point(0, 600);
             buttonContact.Name = "buttonContact";
-            buttonContact.Size = new Size(47, 30);
+            buttonContact.Size = new Size(45, 30);
             buttonContact.TabIndex = 0;
             buttonContact.UseVisualStyleBackColor = true;
             // 
             // buttonHome
             // 
+            buttonHome.AutoSize = true;
             buttonHome.FlatAppearance.BorderSize = 0;
             buttonHome.FlatStyle = FlatStyle.Flat;
             buttonHome.Image = Properties.Resources.home;
             buttonHome.Location = new Point(0, 204);
             buttonHome.Name = "buttonHome";
-            buttonHome.Size = new Size(47, 30);
+            buttonHome.Size = new Size(45, 30);
             buttonHome.TabIndex = 0;
             buttonHome.UseVisualStyleBackColor = true;
             // 
             // buttonAccount
             // 
+            buttonAccount.AutoSize = true;
             buttonAccount.FlatAppearance.BorderSize = 0;
             buttonAccount.FlatStyle = FlatStyle.Flat;
             buttonAccount.Image = Properties.Resources.account;
             buttonAccount.Location = new Point(0, 240);
             buttonAccount.Name = "buttonAccount";
-            buttonAccount.Size = new Size(47, 30);
+            buttonAccount.Size = new Size(45, 30);
             buttonAccount.TabIndex = 0;
             buttonAccount.UseVisualStyleBackColor = true;
             // 
             // buttonFavourites
             // 
+            buttonFavourites.AutoSize = true;
             buttonFavourites.FlatAppearance.BorderSize = 0;
             buttonFavourites.FlatStyle = FlatStyle.Flat;
             buttonFavourites.Image = Properties.Resources.favorite;
             buttonFavourites.Location = new Point(0, 312);
             buttonFavourites.Name = "buttonFavourites";
-            buttonFavourites.Size = new Size(47, 30);
+            buttonFavourites.Size = new Size(45, 30);
             buttonFavourites.TabIndex = 0;
             buttonFavourites.UseVisualStyleBackColor = true;
             // 
             // buttonCart
             // 
+            buttonCart.AutoSize = true;
             buttonCart.FlatAppearance.BorderSize = 0;
             buttonCart.FlatStyle = FlatStyle.Flat;
             buttonCart.Image = Properties.Resources.cart;
             buttonCart.Location = new Point(0, 276);
             buttonCart.Name = "buttonCart";
-            buttonCart.Size = new Size(47, 30);
+            buttonCart.Size = new Size(45, 30);
             buttonCart.TabIndex = 0;
             buttonCart.UseVisualStyleBackColor = true;
             // 
             // panelSlide
             // 
             panelSlide.BackColor = Color.FromArgb(35, 35, 35);
-            panelSlide.Controls.Add(labelAdmin);
-            panelSlide.Controls.Add(labelContact);
-            panelSlide.Controls.Add(labelCategory);
-            panelSlide.Controls.Add(labelSettings);
-            panelSlide.Controls.Add(labelFavourites);
-            panelSlide.Controls.Add(labelCart);
-            panelSlide.Controls.Add(labelAccount);
-            panelSlide.Controls.Add(labelHome);
-            panelSlide.Controls.Add(labelSearch);
+            panelSlide.Controls.Add(textBoxDrawer);
+            panelSlide.Controls.Add(textBoxSearchText);
+            panelSlide.Controls.Add(textBoxCategories);
+            panelSlide.Controls.Add(textBoxHome);
+            panelSlide.Controls.Add(textBoxAccount);
+            panelSlide.Controls.Add(textBoxCart);
+            panelSlide.Controls.Add(textBoxFavorites);
+            panelSlide.Controls.Add(textBoxContact);
+            panelSlide.Controls.Add(textBoxAdmin);
+            panelSlide.Controls.Add(textBoxSettings);
             panelSlide.Controls.Add(textBoxSearch);
             panelSlide.Dock = DockStyle.Left;
-            panelSlide.Location = new Point(46, 27);
+            panelSlide.Location = new Point(45, 27);
             panelSlide.Name = "panelSlide";
-            panelSlide.Size = new Size(170, 689);
+            panelSlide.Size = new Size(163, 689);
             panelSlide.TabIndex = 2;
             // 
-            // labelAdmin
+            // textBoxSearchText
             // 
-            labelAdmin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            labelAdmin.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelAdmin.ForeColor = Color.White;
-            labelAdmin.Location = new Point(0, 575);
-            labelAdmin.Name = "labelAdmin";
-            labelAdmin.Size = new Size(75, 30);
-            labelAdmin.TabIndex = 0;
-            labelAdmin.Text = "Admin";
-            labelAdmin.TextAlign = ContentAlignment.MiddleLeft;
-            labelAdmin.Visible = false;
+            textBoxSearchText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxSearchText.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxSearchText.BorderStyle = BorderStyle.None;
+            textBoxSearchText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSearchText.ForeColor = Color.White;
+            textBoxSearchText.Location = new Point(6, 94);
+            textBoxSearchText.Name = "textBoxSearchText";
+            textBoxSearchText.ReadOnly = true;
+            textBoxSearchText.Size = new Size(151, 24);
+            textBoxSearchText.TabIndex = 20;
+            textBoxSearchText.Text = "Search";
             // 
-            // labelContact
+            // textBoxCategories
             // 
-            labelContact.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            labelContact.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelContact.ForeColor = Color.White;
-            labelContact.Location = new Point(0, 611);
-            labelContact.Name = "labelContact";
-            labelContact.Size = new Size(93, 30);
-            labelContact.TabIndex = 11;
-            labelContact.Text = "Contact";
-            labelContact.TextAlign = ContentAlignment.MiddleLeft;
+            textBoxCategories.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxCategories.BorderStyle = BorderStyle.None;
+            textBoxCategories.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCategories.ForeColor = Color.White;
+            textBoxCategories.Location = new Point(6, 174);
+            textBoxCategories.Name = "textBoxCategories";
+            textBoxCategories.ReadOnly = true;
+            textBoxCategories.Size = new Size(100, 24);
+            textBoxCategories.TabIndex = 19;
+            textBoxCategories.Text = "Categories";
             // 
-            // labelCategory
+            // textBoxHome
             // 
-            labelCategory.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCategory.ForeColor = Color.White;
-            labelCategory.Location = new Point(0, 168);
-            labelCategory.Name = "labelCategory";
-            labelCategory.Size = new Size(93, 30);
-            labelCategory.TabIndex = 9;
-            labelCategory.Text = "Category";
-            labelCategory.TextAlign = ContentAlignment.MiddleLeft;
+            textBoxHome.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxHome.BorderStyle = BorderStyle.None;
+            textBoxHome.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxHome.ForeColor = Color.White;
+            textBoxHome.Location = new Point(6, 210);
+            textBoxHome.Name = "textBoxHome";
+            textBoxHome.ReadOnly = true;
+            textBoxHome.Size = new Size(100, 24);
+            textBoxHome.TabIndex = 18;
+            textBoxHome.Text = "Home";
             // 
-            // labelSettings
+            // textBoxAccount
             // 
-            labelSettings.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            labelSettings.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSettings.ForeColor = Color.White;
-            labelSettings.Location = new Point(0, 647);
-            labelSettings.Name = "labelSettings";
-            labelSettings.Size = new Size(85, 30);
-            labelSettings.TabIndex = 8;
-            labelSettings.Text = "Settings";
-            labelSettings.TextAlign = ContentAlignment.MiddleLeft;
+            textBoxAccount.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxAccount.BorderStyle = BorderStyle.None;
+            textBoxAccount.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccount.ForeColor = Color.White;
+            textBoxAccount.Location = new Point(6, 246);
+            textBoxAccount.Name = "textBoxAccount";
+            textBoxAccount.ReadOnly = true;
+            textBoxAccount.Size = new Size(100, 24);
+            textBoxAccount.TabIndex = 17;
+            textBoxAccount.Text = "Account";
             // 
-            // labelFavourites
+            // textBoxCart
             // 
-            labelFavourites.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelFavourites.ForeColor = Color.White;
-            labelFavourites.Location = new Point(0, 312);
-            labelFavourites.Name = "labelFavourites";
-            labelFavourites.Size = new Size(93, 30);
-            labelFavourites.TabIndex = 7;
-            labelFavourites.Text = "Favourites";
-            labelFavourites.TextAlign = ContentAlignment.MiddleLeft;
+            textBoxCart.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxCart.BorderStyle = BorderStyle.None;
+            textBoxCart.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCart.ForeColor = Color.White;
+            textBoxCart.Location = new Point(6, 282);
+            textBoxCart.Name = "textBoxCart";
+            textBoxCart.ReadOnly = true;
+            textBoxCart.Size = new Size(100, 24);
+            textBoxCart.TabIndex = 16;
+            textBoxCart.Text = "Cart";
             // 
-            // labelCart
+            // textBoxFavorites
             // 
-            labelCart.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCart.ForeColor = Color.White;
-            labelCart.Location = new Point(0, 276);
-            labelCart.Name = "labelCart";
-            labelCart.Size = new Size(52, 30);
-            labelCart.TabIndex = 6;
-            labelCart.Text = "Cart";
-            labelCart.TextAlign = ContentAlignment.MiddleLeft;
+            textBoxFavorites.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxFavorites.BorderStyle = BorderStyle.None;
+            textBoxFavorites.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxFavorites.ForeColor = Color.White;
+            textBoxFavorites.Location = new Point(6, 318);
+            textBoxFavorites.Name = "textBoxFavorites";
+            textBoxFavorites.ReadOnly = true;
+            textBoxFavorites.Size = new Size(100, 24);
+            textBoxFavorites.TabIndex = 15;
+            textBoxFavorites.Text = "Favorites";
             // 
-            // labelAccount
+            // textBoxContact
             // 
-            labelAccount.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelAccount.ForeColor = Color.White;
-            labelAccount.Location = new Point(0, 240);
-            labelAccount.Name = "labelAccount";
-            labelAccount.Size = new Size(85, 30);
-            labelAccount.TabIndex = 5;
-            labelAccount.Text = "Account";
-            labelAccount.TextAlign = ContentAlignment.MiddleLeft;
+            textBoxContact.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxContact.BorderStyle = BorderStyle.None;
+            textBoxContact.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxContact.ForeColor = Color.White;
+            textBoxContact.Location = new Point(6, 606);
+            textBoxContact.Name = "textBoxContact";
+            textBoxContact.ReadOnly = true;
+            textBoxContact.Size = new Size(100, 24);
+            textBoxContact.TabIndex = 14;
+            textBoxContact.Text = "Contact";
             // 
-            // labelHome
+            // textBoxAdmin
             // 
-            labelHome.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelHome.ForeColor = Color.White;
-            labelHome.Location = new Point(0, 204);
-            labelHome.Name = "labelHome";
-            labelHome.Size = new Size(75, 30);
-            labelHome.TabIndex = 4;
-            labelHome.Text = "Home";
-            labelHome.TextAlign = ContentAlignment.MiddleLeft;
+            textBoxAdmin.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxAdmin.BorderStyle = BorderStyle.None;
+            textBoxAdmin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAdmin.ForeColor = Color.White;
+            textBoxAdmin.Location = new Point(6, 570);
+            textBoxAdmin.Name = "textBoxAdmin";
+            textBoxAdmin.ReadOnly = true;
+            textBoxAdmin.Size = new Size(100, 24);
+            textBoxAdmin.TabIndex = 13;
+            textBoxAdmin.Text = "Admin";
+            textBoxAdmin.Visible = false;
             // 
-            // labelSearch
+            // textBoxSettings
             // 
-            labelSearch.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSearch.ForeColor = Color.White;
-            labelSearch.Location = new Point(0, 89);
-            labelSearch.Name = "labelSearch";
-            labelSearch.Size = new Size(85, 28);
-            labelSearch.TabIndex = 3;
-            labelSearch.Text = "Search";
-            labelSearch.TextAlign = ContentAlignment.MiddleLeft;
+            textBoxSettings.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxSettings.BorderStyle = BorderStyle.None;
+            textBoxSettings.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSettings.ForeColor = Color.White;
+            textBoxSettings.Location = new Point(6, 642);
+            textBoxSettings.Name = "textBoxSettings";
+            textBoxSettings.ReadOnly = true;
+            textBoxSettings.Size = new Size(100, 24);
+            textBoxSettings.TabIndex = 12;
+            textBoxSettings.Text = "Settings";
             // 
             // textBoxSearch
             // 
             textBoxSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxSearch.BackColor = Color.White;
-            textBoxSearch.BorderStyle = BorderStyle.FixedSingle;
-            textBoxSearch.Font = new Font("Poppins", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSearch.ForeColor = Color.FromArgb(31, 31, 31);
-            textBoxSearch.Location = new Point(0, 88);
-            textBoxSearch.Multiline = true;
+            textBoxSearch.BorderStyle = BorderStyle.None;
+            textBoxSearch.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSearch.ForeColor = Color.FromArgb(27, 27, 27);
+            textBoxSearch.Location = new Point(6, 94);
             textBoxSearch.Name = "textBoxSearch";
-            textBoxSearch.Size = new Size(164, 30);
+            textBoxSearch.ReadOnly = true;
+            textBoxSearch.Size = new Size(151, 24);
             textBoxSearch.TabIndex = 0;
-            textBoxSearch.Visible = false;
             textBoxSearch.Click += textBoxSearch_Click;
             // 
             // panelMain
             // 
             panelMain.BackColor = Color.White;
             panelMain.Dock = DockStyle.Fill;
-            panelMain.Location = new Point(216, 27);
+            panelMain.Location = new Point(208, 27);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(1075, 689);
+            panelMain.Size = new Size(1083, 689);
             panelMain.TabIndex = 3;
             // 
             // timer1
@@ -415,6 +442,19 @@ namespace Optimum_Tech.Forms
             timer2.Interval = 3000;
             timer2.Tick += timer2_Tick;
             // 
+            // textBoxDrawer
+            // 
+            textBoxDrawer.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxDrawer.BorderStyle = BorderStyle.None;
+            textBoxDrawer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxDrawer.ForeColor = Color.White;
+            textBoxDrawer.Location = new Point(6, 22);
+            textBoxDrawer.Name = "textBoxDrawer";
+            textBoxDrawer.ReadOnly = true;
+            textBoxDrawer.Size = new Size(100, 24);
+            textBoxDrawer.TabIndex = 21;
+            textBoxDrawer.Text = "Drawer";
+            // 
             // MDIMain
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -425,12 +465,14 @@ namespace Optimum_Tech.Forms
             Controls.Add(panelCollapsed);
             Controls.Add(panelTitleBar);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             Name = "MDIMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Optimum Tech";
             panelTitleBar.ResumeLayout(false);
             panelCollapsed.ResumeLayout(false);
+            panelCollapsed.PerformLayout();
             panelSlide.ResumeLayout(false);
             panelSlide.PerformLayout();
             ResumeLayout(false);
@@ -467,6 +509,16 @@ namespace Optimum_Tech.Forms
         private Label labelAdmin;
         private Button buttonContact;
         private Label labelContact;
+        private TextBox textBoxSettings;
+        private TextBox textBoxCategories;
+        private TextBox textBoxHome;
+        private TextBox textBoxAccount;
+        private TextBox textBoxCart;
+        private TextBox textBoxFavorites;
+        private TextBox textBoxContact;
+        private TextBox textBoxAdmin;
+        private TextBox textBoxSearchText;
+        private TextBox textBoxDrawer;
     }
 }
 

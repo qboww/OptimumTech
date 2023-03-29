@@ -15,15 +15,14 @@ namespace Optimum_Tech.Forms
     {
         #region properties
 
-        private int maximizeCount;
         private int tempWidth;
-        private int tempHeight;
-        private int panelWidth;
+        private short tempHeight;
+        private short panelWidth;
         private bool hidden;
 
-        private int mov;
-        private int movX;
-        private int movY;
+        private short mov;
+        private short movX;
+        private short movY;
 
         #endregion
 
@@ -33,13 +32,12 @@ namespace Optimum_Tech.Forms
 
             this.IsMdiContainer = true;
 
-            panelWidth = panelSlide.Width;
+            panelWidth = (short)panelSlide.Width;
             hidden = true;
             panelSlide.Width = 0;
-            maximizeCount = 0;
 
             tempWidth = this.Width - panelSlide.Width;
-            tempHeight = this.Height - panelSlide.Height;
+            tempHeight = (short)(this.Height - panelSlide.Height);
         }
 
         #region timers_events
@@ -88,8 +86,8 @@ namespace Optimum_Tech.Forms
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             mov = 1;
-            movX = e.X;
-            movY = e.Y;
+            movX = (short)e.X;
+            movY = (short)e.Y;
         }
         private void panelTitleBar_MouseMove(object sender, MouseEventArgs e)
         {
@@ -117,7 +115,7 @@ namespace Optimum_Tech.Forms
         }
         private void buttonMaximize_Click(object sender, EventArgs e)
         {
-            if (maximizeCount % 2 == 0)
+            if (this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
             }
@@ -128,23 +126,45 @@ namespace Optimum_Tech.Forms
                 this.CenterToScreen();
             }
 
-            maximizeCount++;
-        }
-        private void buttonSearch_Click(object sender, EventArgs e)
-        {
-            if (textBoxSearch.Visible)
+            if (this.Tag == null)
             {
-                labelSearch.Visible = true;
-                textBoxSearch.Visible = false;
+                this.Tag = 1;
             }
             else
             {
-                labelSearch.Visible = false;
-                textBoxSearch.Visible = true;
-                textBoxSearch.Focus();
+                this.WindowState = FormWindowState.Normal;
+                this.Location = new Point(tempWidth, tempHeight);
+                this.CenterToScreen();
+                this.Tag = null;
+            }
+        }
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            if (textBoxSearch.ReadOnly == true)
+            {
+                textBoxSearch.Clear();
+                textBoxSearch.ReadOnly = false;
+                textBoxSearch.BringToFront();
+                textBoxSearchText.SendToBack();
+            }
+            else
+            {
+                textBoxSearch.Clear();
+                textBoxSearchText.BringToFront();
+                textBoxSearch.SendToBack();
             }
 
-            textBoxSearch.Clear();
+            if (textBoxSearch.Tag == null)
+            {
+                textBoxSearch.Tag = 1;
+            }
+            else
+            {
+                textBoxSearch.Clear();
+                textBoxSearchText.BringToFront();
+                textBoxSearchText.SendToBack();
+                textBoxSearch.Tag = null;
+            }
         }
         private void buttonCategory_Click(object sender, EventArgs e)
         {
@@ -152,7 +172,10 @@ namespace Optimum_Tech.Forms
 
             childForm.MdiParent = this;
             panelMain.Controls.Add(childForm);
-            childForm.Dock = DockStyle.Fill;
+
+            childForm.Anchor = AnchorStyles.None;
+            childForm.Left = (panelMain.Width - childForm.Width) / 2;
+            childForm.Top = (panelMain.Height - childForm.Height) / 2;
 
             childForm.Show();
         }

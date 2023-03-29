@@ -30,14 +30,9 @@ namespace Optimum_Tech.Forms
 
             childForm.MdiParent = instance;
             instance.panelMain.Controls.Add(childForm);
-
-            //childForm.Left = (instance.panelMain.Width - childForm.Width) / 2;
-            //childForm.Top = (instance.panelMain.Height - childForm.Height) / 2;
-
             childForm.Dock = DockStyle.Fill;
 
             childForm.Show();
-
             Close();
         }
     }
