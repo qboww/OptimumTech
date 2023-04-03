@@ -13,7 +13,8 @@
     "Threads": 32,
     "ClockSpeedDefault": 3200,
     "ClockSpeedBoost": 5800,
-    "ImageResourceName": "Intel_Core_i9_13900K.png"
+    "ImageResourceName": "Intel_Core_i9_13900K.png",
+    "IsAvailable": true
   },
   {
     "Name": "AMD Ryzen 9 7950X3D",
@@ -29,6 +30,6 @@
     "Threads": 32,
     "ClockSpeedDefault": 4200,
     "ClockSpeedBoost": 5700,
-    "ImageResourceName": "AMD_Ryzen_9_7950X3D.png"
+    "IsAvailable": true
   }
 ]

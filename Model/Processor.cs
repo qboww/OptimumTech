@@ -31,7 +31,7 @@ namespace Optimum_Tech.Model
 
         public Processor(string name, decimal price, int responses, int rating, string manufacturer, string series,
             bool isFavorite, bool isSelected, int cores, string socket, int threads, double clockSpeedDefault,
-            double clockSpeedBoost, string imageResourceName) : base(isFavorite, isSelected, imageResourceName)
+            double clockSpeedBoost, string imageResourceName, bool isAvailable) : base(isFavorite, isSelected, imageResourceName, isAvailable)
         {
             Name = name;
             Price = price;
@@ -40,10 +40,10 @@ namespace Optimum_Tech.Model
             Series = series;
             Rating = rating;
             Manufacturer = manufacturer;
-            Series = series;
 
             IsFavorite = isFavorite;
             IsSelected = isSelected;
+            IsAvailable = isAvailable;
 
             Socket = socket;
             Cores = cores;

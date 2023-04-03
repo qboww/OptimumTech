@@ -8,11 +8,12 @@ namespace Optimum_Tech.Model
 {
     public abstract class Category
     {
-        public Category(bool isFavorite, bool isSelected, string imageResourceName) 
+        public Category(bool isFavorite, bool isSelected, string imageResourceName, bool isAvailable) 
         {
             IsSelected = isSelected;
             IsFavorite = isFavorite;
             ImageResourceName = imageResourceName;
+            IsAvailable = isAvailable;
         }
 
         public abstract string Name { get; set; }
@@ -22,6 +23,7 @@ namespace Optimum_Tech.Model
         public bool IsFavorite { get; set; } = false;
         public bool IsSelected { get; set; } = false;
         public string ImageResourceName { get; set; }
+        public bool IsAvailable { get; set; }
         public bool Available { get; set; } = true;
     }
 }

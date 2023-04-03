@@ -30,10 +30,11 @@ namespace Optimum_Tech.Forms
 
             childForm.MdiParent = instance;
             instance.panelMain.Controls.Add(childForm);
+
             childForm.Dock = DockStyle.Fill;
 
             childForm.Show();
-            Close();
+            Hide();
         }
     }
 }

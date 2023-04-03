@@ -12,7 +12,8 @@ namespace OptimumTech.Controls
             textBoxProductName.Text = product.Name;
             textBoxPrice.Text = $"{product.Price}$";
             textBoxResponses.Text = $"{product.Responses} Reviews";
-            textBoxAvailable.Text = GetStatus(product.Available);
+            GetStatus(product);
+
             pictureBoxRating.Image = GetRating(product);
             pictureBoxProduct.Image = GetImage(product);
 
@@ -36,10 +37,18 @@ namespace OptimumTech.Controls
             return null;
         }
 
-        public string GetStatus(bool available)
+        public void GetStatus(Category product)
         {
-            if (available == true) return "Available";
-            else return "Out of stock";
+            if (product.IsAvailable == true)
+            {
+                this.textBoxAvailable.ForeColor = Color.FromArgb(0, 160, 70);
+                this.textBoxAvailable.Text = "Available";
+            }
+            else if (product.IsAvailable == false)
+            {
+                this.textBoxAvailable.ForeColor = Color.Red;
+                this.textBoxAvailable.Text = "Out of stock";
+            }
         }
 
         public Image GetRating(Category product)
@@ -64,7 +73,7 @@ namespace OptimumTech.Controls
 
         private void pictureBoxCart_Click(object? sender, EventArgs e, Category product)
         {
-            if (product != null)
+            if (product != null && product.IsAvailable == true)
             {
                 if (product.IsSelected == false)
                 {
@@ -83,7 +92,7 @@ namespace OptimumTech.Controls
         {
             if (product != null)
             {
-                if (product.IsFavorite == false)
+                if (product.IsFavorite == false && product.IsAvailable == true)
                 {
                     product.IsFavorite = true;
                     this.pictureBoxFavorite.Image = Resources.favorite_filled;

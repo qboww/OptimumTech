@@ -160,7 +160,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(panelProduct);
-            Margin = new Padding(1);
+            Margin = new Padding(5);
             Name = "Product";
             Size = new Size(245, 350);
             ((System.ComponentModel.ISupportInitialize)pictureBoxProduct).EndInit();
