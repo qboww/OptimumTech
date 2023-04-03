@@ -1,6 +1,6 @@
 ﻿namespace Optimum_Tech.Forms
 {
-    partial class FormCategory
+    partial class CategoryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategory));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoryForm));
             flowLayoutPanelCategory = new FlowLayoutPanel();
             panelProcessors = new Panel();
             labelProccessors = new Label();

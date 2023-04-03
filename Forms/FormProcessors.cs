@@ -1,4 +1,5 @@
-﻿using OptimumTech.Controls;
+﻿using Optimum_Tech.Model;
+using OptimumTech.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,15 +16,15 @@ namespace Optimum_Tech.Forms
     public partial class FormProcessors : Form
     {
         //Form? childForm;
-        public MDIMain? _parent { get; set; }
+        public MainForm? _parent { get; set; }
 
-        public FormProcessors(MDIMain parent)
+        public FormProcessors(MainForm parent)
         {
             InitializeComponent();
 
-            for (int i = 0; i < 30; i++)
+            foreach(Processor processor in Processor.Storage)
             {
-                Product product = new();
+                Product product = new(processor);
                 flowLayoutPanel1.Controls.Add(product);
             }
         }

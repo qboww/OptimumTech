@@ -2,7 +2,7 @@
 
 namespace Optimum_Tech.Forms
 {
-    partial class MDIMain
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,7 +31,7 @@ namespace Optimum_Tech.Forms
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             panelTitleBar = new Panel();
             buttonMinimize = new Button();
             buttonClose = new Button();

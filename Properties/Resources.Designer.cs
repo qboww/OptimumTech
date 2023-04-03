@@ -93,6 +93,16 @@ namespace Optimum_Tech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AMD_Ryzen_9_7950X3D {
+            get {
+                object obj = ResourceManager.GetObject("AMD_Ryzen_9_7950X3D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap basket_empty {
             get {
                 object obj = ResourceManager.GetObject("basket_empty", resourceCulture);
@@ -246,6 +256,16 @@ namespace Optimum_Tech.Properties {
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Intel_Core_i9_13900K {
+            get {
+                object obj = ResourceManager.GetObject("Intel_Core_i9_13900K", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

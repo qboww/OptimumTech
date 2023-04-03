@@ -11,7 +11,7 @@ using static System.Windows.Forms.DataFormats;
 
 namespace Optimum_Tech.Forms
 {
-    public partial class MDIMain : Form
+    public partial class MainForm : Form
     {
         #region properties
 
@@ -26,7 +26,7 @@ namespace Optimum_Tech.Forms
 
         #endregion
 
-        public MDIMain()
+        public MainForm()
         {
             InitializeComponent();
 
@@ -168,7 +168,7 @@ namespace Optimum_Tech.Forms
         }
         private void buttonCategory_Click(object sender, EventArgs e)
         {
-            Form childForm = new FormCategory(this) { _parent = this };
+            Form childForm = new CategoryForm(this) { _parent = this };
 
             childForm.MdiParent = this;
             panelMain.Controls.Add(childForm);

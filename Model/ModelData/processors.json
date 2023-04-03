@@ -1,0 +1,34 @@
+﻿[
+  {
+    "Name": "Intel Core i9 13900KF",
+    "Price": 579.99,
+    "Responses": 32,
+    "Rating": 3,
+    "Manufacturer": "Intel",
+    "Series": "Raptor Lake",
+    "Socket": "1700",
+    "IsFavorite": false,
+    "IsSelected": false,
+    "Cores": 24,
+    "Threads": 32,
+    "ClockSpeedDefault": 3200,
+    "ClockSpeedBoost": 5800,
+    "ImageResourceName": "Intel_Core_i9_13900K.png"
+  },
+  {
+    "Name": "AMD Ryzen 9 7950X3D",
+    "Price": 997.99,
+    "Responses": 54,
+    "Rating": 4,
+    "Manufacturer": "AMD",
+    "Series": "Zen 4",
+    "Socket": "AM5",
+    "IsFavorite": false,
+    "IsSelected": false,
+    "Cores": 16,
+    "Threads": 32,
+    "ClockSpeedDefault": 4200,
+    "ClockSpeedBoost": 5700,
+    "ImageResourceName": "AMD_Ryzen_9_7950X3D.png"
+  }
+]

@@ -12,19 +12,19 @@ using static System.Windows.Forms.DataFormats;
 
 namespace Optimum_Tech.Forms
 {
-    public partial class FormCategory : Form
+    public partial class CategoryForm : Form
     {
         Form? childForm;
-        public MDIMain? _parent { get; set; }
+        public MainForm? _parent { get; set; }
 
-        public FormCategory(MDIMain parent)
+        public CategoryForm(MainForm parent)
         {
             InitializeComponent();
         }
 
         private void pictureBoxProcessors_Click(object sender, EventArgs e)
         {
-            var instance = (MDIMain)Application.OpenForms[0];
+            var instance = (MainForm)Application.OpenForms[0];
 
             childForm = new FormProcessors(instance);
 
