@@ -1,6 +1,6 @@
 ﻿namespace Optimum_Tech.Forms
 {
-    partial class FormProcessors
+    partial class FormProduct
     {
         /// <summary>
         /// Required designer variable.

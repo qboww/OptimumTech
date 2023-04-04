@@ -69,7 +69,7 @@ namespace Optimum_Tech.Forms
             // 
             // panelTitleBar
             // 
-            panelTitleBar.BackColor = Color.FromArgb(27, 27, 27);
+            panelTitleBar.BackColor = Color.FromArgb(20, 20, 20);
             panelTitleBar.Controls.Add(buttonMinimize);
             panelTitleBar.Controls.Add(buttonClose);
             panelTitleBar.Controls.Add(buttonMaximize);
@@ -271,7 +271,7 @@ namespace Optimum_Tech.Forms
             // 
             // panelSlide
             // 
-            panelSlide.BackColor = Color.FromArgb(35, 35, 35);
+            panelSlide.BackColor = Color.FromArgb(40, 40, 40);
             panelSlide.Controls.Add(textBoxDrawer);
             panelSlide.Controls.Add(textBoxSearchText);
             panelSlide.Controls.Add(textBoxCategories);
@@ -291,7 +291,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxDrawer
             // 
-            textBoxDrawer.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxDrawer.BackColor = Color.FromArgb(40, 40, 40);
             textBoxDrawer.BorderStyle = BorderStyle.None;
             textBoxDrawer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxDrawer.ForeColor = Color.White;
@@ -305,7 +305,7 @@ namespace Optimum_Tech.Forms
             // textBoxSearchText
             // 
             textBoxSearchText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxSearchText.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxSearchText.BackColor = Color.FromArgb(40, 40, 40);
             textBoxSearchText.BorderStyle = BorderStyle.None;
             textBoxSearchText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSearchText.ForeColor = Color.White;
@@ -318,7 +318,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxCategories
             // 
-            textBoxCategories.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxCategories.BackColor = Color.FromArgb(40, 40, 40);
             textBoxCategories.BorderStyle = BorderStyle.None;
             textBoxCategories.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCategories.ForeColor = Color.White;
@@ -331,7 +331,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxHome
             // 
-            textBoxHome.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxHome.BackColor = Color.FromArgb(40, 40, 40);
             textBoxHome.BorderStyle = BorderStyle.None;
             textBoxHome.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxHome.ForeColor = Color.White;
@@ -344,7 +344,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxAccount
             // 
-            textBoxAccount.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxAccount.BackColor = Color.FromArgb(40, 40, 40);
             textBoxAccount.BorderStyle = BorderStyle.None;
             textBoxAccount.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccount.ForeColor = Color.White;
@@ -357,7 +357,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxCart
             // 
-            textBoxCart.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxCart.BackColor = Color.FromArgb(40, 40, 40);
             textBoxCart.BorderStyle = BorderStyle.None;
             textBoxCart.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCart.ForeColor = Color.White;
@@ -370,7 +370,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxFavorites
             // 
-            textBoxFavorites.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxFavorites.BackColor = Color.FromArgb(40, 40, 40);
             textBoxFavorites.BorderStyle = BorderStyle.None;
             textBoxFavorites.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxFavorites.ForeColor = Color.White;
@@ -383,7 +383,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxContact
             // 
-            textBoxContact.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxContact.BackColor = Color.FromArgb(40, 40, 40);
             textBoxContact.BorderStyle = BorderStyle.None;
             textBoxContact.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxContact.ForeColor = Color.White;
@@ -396,7 +396,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxAdmin
             // 
-            textBoxAdmin.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxAdmin.BackColor = Color.FromArgb(40, 40, 40);
             textBoxAdmin.BorderStyle = BorderStyle.None;
             textBoxAdmin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAdmin.ForeColor = Color.White;
@@ -410,7 +410,7 @@ namespace Optimum_Tech.Forms
             // 
             // textBoxSettings
             // 
-            textBoxSettings.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxSettings.BackColor = Color.FromArgb(40, 40, 40);
             textBoxSettings.BorderStyle = BorderStyle.None;
             textBoxSettings.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSettings.ForeColor = Color.White;
@@ -424,7 +424,7 @@ namespace Optimum_Tech.Forms
             // textBoxSearch
             // 
             textBoxSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxSearch.BackColor = Color.White;
+            textBoxSearch.BackColor = Color.FromArgb(40, 40, 40);
             textBoxSearch.BorderStyle = BorderStyle.None;
             textBoxSearch.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSearch.ForeColor = Color.FromArgb(27, 27, 27);
@@ -437,7 +437,7 @@ namespace Optimum_Tech.Forms
             // 
             // panelMain
             // 
-            panelMain.BackColor = SystemColors.ControlLight;
+            panelMain.BackColor = SystemColors.Control;
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(208, 27);
             panelMain.Name = "panelMain";

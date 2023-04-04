@@ -3,11 +3,11 @@ using OptimumTech.Controls;
 
 namespace Optimum_Tech.Forms
 {
-    public partial class FormProcessors : Form
+    public partial class FormProduct : Form
     {
         private readonly FormMain formMain;
 
-        public FormProcessors(FormMain form)
+        public FormProduct(FormMain form)
         {
             InitializeComponent();
             this.formMain = formMain;

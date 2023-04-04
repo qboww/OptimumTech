@@ -7,6 +7,7 @@ namespace Optimum_Tech.Model
 {
     public class Processor : Category
     {
+        public override Guid Id { get; set; } = Guid.NewGuid();
         public override string Name { get; set; }
         public override decimal Price { get; set; }
         public override int Responses { get; set; }

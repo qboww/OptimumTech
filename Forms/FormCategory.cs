@@ -25,7 +25,7 @@ namespace Optimum_Tech.Forms
         private void pictureBoxProcessors_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var form = new FormProcessors(formMain);
+            var form = new FormProduct(formMain);
             formMain.OpenChildForm(form);
         }
     }

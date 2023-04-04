@@ -16,6 +16,7 @@ namespace Optimum_Tech.Model
             IsAvailable = isAvailable;
         }
 
+        public abstract Guid Id { get; set; }
         public abstract string Name { get; set; }
         public abstract decimal Price { get; set; }
         public abstract int Responses { get; set; }

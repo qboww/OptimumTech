@@ -1,5 +1,6 @@
 ﻿[
   {
+    "Id": "9aaffacf-813d-41a5-9eba-aebab28d7c42",
     "Name": "Intel Core i9 13900KF",
     "Price": 579.99,
     "Responses": 32,
@@ -17,6 +18,7 @@
     "IsAvailable": true
   },
   {
+    "Id": "2bd2d52f-7701-40ef-ae9b-1817e58cb553",
     "Name": "AMD Ryzen 9 7950X3D",
     "Price": 997.99,
     "Responses": 54,
