@@ -437,7 +437,7 @@ namespace Optimum_Tech.Forms
             // 
             // panelMain
             // 
-            panelMain.BackColor = Color.FromArgb(50, 50, 50);
+            panelMain.BackColor = SystemColors.ControlLight;
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(208, 27);
             panelMain.Name = "panelMain";

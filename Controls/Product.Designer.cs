@@ -57,6 +57,7 @@
             // pictureBoxCart
             // 
             pictureBoxCart.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            pictureBoxCart.Image = Optimum_Tech.Properties.Resources.basket_empty;
             pictureBoxCart.Location = new Point(200, 298);
             pictureBoxCart.Name = "pictureBoxCart";
             pictureBoxCart.Size = new Size(38, 38);
@@ -67,6 +68,7 @@
             // pictureBoxRating
             // 
             pictureBoxRating.ErrorImage = null;
+            pictureBoxRating.Image = Optimum_Tech.Properties.Resources.five_stars;
             pictureBoxRating.Location = new Point(7, 247);
             pictureBoxRating.Name = "pictureBoxRating";
             pictureBoxRating.Size = new Size(85, 17);
@@ -89,6 +91,7 @@
             // pictureBoxFavorite
             // 
             pictureBoxFavorite.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBoxFavorite.Image = Optimum_Tech.Properties.Resources.favorite_empty;
             pictureBoxFavorite.Location = new Point(200, 10);
             pictureBoxFavorite.Name = "pictureBoxFavorite";
             pictureBoxFavorite.Size = new Size(35, 35);
