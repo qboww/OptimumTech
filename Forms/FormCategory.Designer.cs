@@ -1,6 +1,6 @@
 ﻿namespace Optimum_Tech.Forms
 {
-    partial class CategoryForm
+    partial class FormCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoryForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategory));
             flowLayoutPanelCategory = new FlowLayoutPanel();
             panelProcessors = new Panel();
             labelProccessors = new Label();
@@ -75,7 +75,6 @@
             // 
             // flowLayoutPanelCategory
             // 
-            flowLayoutPanelCategory.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flowLayoutPanelCategory.BackColor = Color.White;
             flowLayoutPanelCategory.Controls.Add(panelProcessors);
             flowLayoutPanelCategory.Controls.Add(panelGraphicsCards);
@@ -85,9 +84,11 @@
             flowLayoutPanelCategory.Controls.Add(panelCases);
             flowLayoutPanelCategory.Controls.Add(panelDrives);
             flowLayoutPanelCategory.Controls.Add(panelCoolingSystems);
-            flowLayoutPanelCategory.Location = new Point(143, 142);
+            flowLayoutPanelCategory.Dock = DockStyle.Fill;
+            flowLayoutPanelCategory.Location = new Point(5, 5);
+            flowLayoutPanelCategory.Margin = new Padding(5);
             flowLayoutPanelCategory.Name = "flowLayoutPanelCategory";
-            flowLayoutPanelCategory.Size = new Size(827, 414);
+            flowLayoutPanelCategory.Size = new Size(1227, 724);
             flowLayoutPanelCategory.TabIndex = 0;
             // 
             // panelProcessors
@@ -95,7 +96,8 @@
             panelProcessors.BackColor = Color.FromArgb(31, 31, 31);
             panelProcessors.Controls.Add(labelProccessors);
             panelProcessors.Controls.Add(pictureBoxProcessors);
-            panelProcessors.Location = new Point(3, 3);
+            panelProcessors.Location = new Point(5, 5);
+            panelProcessors.Margin = new Padding(5);
             panelProcessors.Name = "panelProcessors";
             panelProcessors.Size = new Size(200, 200);
             panelProcessors.TabIndex = 24;
@@ -131,7 +133,8 @@
             panelGraphicsCards.BackColor = Color.FromArgb(31, 31, 31);
             panelGraphicsCards.Controls.Add(pictureBoxGraphicsCards);
             panelGraphicsCards.Controls.Add(labelGraphicsCards);
-            panelGraphicsCards.Location = new Point(209, 3);
+            panelGraphicsCards.Location = new Point(215, 5);
+            panelGraphicsCards.Margin = new Padding(5);
             panelGraphicsCards.Name = "panelGraphicsCards";
             panelGraphicsCards.Size = new Size(200, 200);
             panelGraphicsCards.TabIndex = 25;
@@ -166,7 +169,8 @@
             panelMemory.BackColor = Color.FromArgb(31, 31, 31);
             panelMemory.Controls.Add(pictureBoxMemory);
             panelMemory.Controls.Add(labelMemory);
-            panelMemory.Location = new Point(415, 3);
+            panelMemory.Location = new Point(425, 5);
+            panelMemory.Margin = new Padding(5);
             panelMemory.Name = "panelMemory";
             panelMemory.Size = new Size(200, 200);
             panelMemory.TabIndex = 26;
@@ -201,7 +205,8 @@
             panelMotherboards.BackColor = Color.FromArgb(31, 31, 31);
             panelMotherboards.Controls.Add(pictureBoxMotherboards);
             panelMotherboards.Controls.Add(labelMotherboards);
-            panelMotherboards.Location = new Point(621, 3);
+            panelMotherboards.Location = new Point(635, 5);
+            panelMotherboards.Margin = new Padding(5);
             panelMotherboards.Name = "panelMotherboards";
             panelMotherboards.Size = new Size(200, 200);
             panelMotherboards.TabIndex = 30;
@@ -236,7 +241,8 @@
             panelPowerSupply.BackColor = Color.FromArgb(31, 31, 31);
             panelPowerSupply.Controls.Add(pictureBoxPowerSupply);
             panelPowerSupply.Controls.Add(labelPowerSupply);
-            panelPowerSupply.Location = new Point(3, 209);
+            panelPowerSupply.Location = new Point(845, 5);
+            panelPowerSupply.Margin = new Padding(5);
             panelPowerSupply.Name = "panelPowerSupply";
             panelPowerSupply.Size = new Size(200, 200);
             panelPowerSupply.TabIndex = 29;
@@ -271,7 +277,8 @@
             panelCases.BackColor = Color.FromArgb(31, 31, 31);
             panelCases.Controls.Add(pictureBoxCases);
             panelCases.Controls.Add(labelCases);
-            panelCases.Location = new Point(209, 209);
+            panelCases.Location = new Point(5, 215);
+            panelCases.Margin = new Padding(5);
             panelCases.Name = "panelCases";
             panelCases.Size = new Size(200, 200);
             panelCases.TabIndex = 27;
@@ -306,7 +313,8 @@
             panelDrives.BackColor = Color.FromArgb(31, 31, 31);
             panelDrives.Controls.Add(pictureBoxDrives);
             panelDrives.Controls.Add(labelDrives);
-            panelDrives.Location = new Point(415, 209);
+            panelDrives.Location = new Point(215, 215);
+            panelDrives.Margin = new Padding(5);
             panelDrives.Name = "panelDrives";
             panelDrives.Size = new Size(200, 200);
             panelDrives.TabIndex = 28;
@@ -341,7 +349,8 @@
             panelCoolingSystems.BackColor = Color.FromArgb(31, 31, 31);
             panelCoolingSystems.Controls.Add(pictureBoxCoolingSystems);
             panelCoolingSystems.Controls.Add(labelCoolingSystems);
-            panelCoolingSystems.Location = new Point(621, 209);
+            panelCoolingSystems.Location = new Point(425, 215);
+            panelCoolingSystems.Margin = new Padding(5);
             panelCoolingSystems.Name = "panelCoolingSystems";
             panelCoolingSystems.Size = new Size(200, 200);
             panelCoolingSystems.TabIndex = 31;
@@ -376,10 +385,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1198, 734);
+            ClientSize = new Size(1237, 734);
             Controls.Add(flowLayoutPanelCategory);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormCategory";
+            Padding = new Padding(5);
             Text = "FormCategory";
             flowLayoutPanelCategory.ResumeLayout(false);
             panelProcessors.ResumeLayout(false);

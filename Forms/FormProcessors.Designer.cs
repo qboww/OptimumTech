@@ -37,9 +37,9 @@
             flowLayoutPanel1.BackColor = SystemColors.ControlLight;
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Margin = new Padding(1);
+            flowLayoutPanel1.Margin = new Padding(5);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(20, 1, 0, 0);
+            flowLayoutPanel1.Padding = new Padding(5);
             flowLayoutPanel1.Size = new Size(1064, 735);
             flowLayoutPanel1.TabIndex = 0;
             // 
@@ -53,6 +53,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormProcessors";
             Text = "FormProcessors";
+            Load += FormProcessors_Load;
             ResumeLayout(false);
         }
 

@@ -12,29 +12,21 @@ using static System.Windows.Forms.DataFormats;
 
 namespace Optimum_Tech.Forms
 {
-    public partial class CategoryForm : Form
+    public partial class FormCategory : Form
     {
-        Form? childForm;
-        public MainForm? _parent { get; set; }
+        private readonly FormMain formMain;
 
-        public CategoryForm(MainForm parent)
+        public FormCategory(FormMain formMain)
         {
             InitializeComponent();
+            this.formMain = formMain;
         }
 
         private void pictureBoxProcessors_Click(object sender, EventArgs e)
         {
-            var instance = (MainForm)Application.OpenForms[0];
-
-            childForm = new FormProcessors(instance);
-
-            childForm.MdiParent = instance;
-            instance.panelMain.Controls.Add(childForm);
-
-            childForm.Dock = DockStyle.Fill;
-
-            childForm.Show();
-            Hide();
+            this.Hide();
+            var form = new FormProcessors(formMain);
+            formMain.OpenChildForm(form);
         }
     }
 }

@@ -5,13 +5,16 @@ namespace Optimum_Tech.Forms
 {
     public partial class FormProcessors : Form
     {
-        private readonly MainForm _parent;
+        private readonly FormMain formMain;
 
-        public FormProcessors(MainForm parent)
+        public FormProcessors(FormMain form)
         {
             InitializeComponent();
-            _parent = parent;
+            this.formMain = formMain;
+        }
 
+        private void FormProcessors_Load(object sender, EventArgs e)
+        {
             foreach (Processor processor in Processor.Storage)
             {
                 Product product = new Product(processor);

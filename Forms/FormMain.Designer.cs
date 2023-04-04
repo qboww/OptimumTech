@@ -2,7 +2,7 @@
 
 namespace Optimum_Tech.Forms
 {
-    partial class MainForm
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,7 +31,7 @@ namespace Optimum_Tech.Forms
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             panelTitleBar = new Panel();
             buttonMinimize = new Button();
             buttonClose = new Button();
@@ -48,6 +48,7 @@ namespace Optimum_Tech.Forms
             buttonFavourites = new Button();
             buttonCart = new Button();
             panelSlide = new Panel();
+            textBoxDrawer = new TextBox();
             textBoxSearchText = new TextBox();
             textBoxCategories = new TextBox();
             textBoxHome = new TextBox();
@@ -61,7 +62,6 @@ namespace Optimum_Tech.Forms
             panelMain = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
-            textBoxDrawer = new TextBox();
             panelTitleBar.SuspendLayout();
             panelCollapsed.SuspendLayout();
             panelSlide.SuspendLayout();
@@ -76,7 +76,7 @@ namespace Optimum_Tech.Forms
             panelTitleBar.Dock = DockStyle.Top;
             panelTitleBar.Location = new Point(0, 0);
             panelTitleBar.Name = "panelTitleBar";
-            panelTitleBar.Size = new Size(1291, 27);
+            panelTitleBar.Size = new Size(1325, 27);
             panelTitleBar.TabIndex = 0;
             panelTitleBar.MouseDown += panelTitleBar_MouseDown;
             panelTitleBar.MouseMove += panelTitleBar_MouseMove;
@@ -88,7 +88,7 @@ namespace Optimum_Tech.Forms
             buttonMinimize.FlatAppearance.BorderSize = 0;
             buttonMinimize.FlatStyle = FlatStyle.Flat;
             buttonMinimize.Image = Properties.Resources.minimize;
-            buttonMinimize.Location = new Point(1204, 0);
+            buttonMinimize.Location = new Point(1238, 0);
             buttonMinimize.Name = "buttonMinimize";
             buttonMinimize.Size = new Size(25, 27);
             buttonMinimize.TabIndex = 0;
@@ -101,7 +101,7 @@ namespace Optimum_Tech.Forms
             buttonClose.FlatAppearance.BorderSize = 0;
             buttonClose.FlatStyle = FlatStyle.Flat;
             buttonClose.Image = Properties.Resources.close;
-            buttonClose.Location = new Point(1266, 0);
+            buttonClose.Location = new Point(1300, 0);
             buttonClose.Name = "buttonClose";
             buttonClose.Size = new Size(25, 27);
             buttonClose.TabIndex = 0;
@@ -114,7 +114,7 @@ namespace Optimum_Tech.Forms
             buttonMaximize.FlatStyle = FlatStyle.Flat;
             buttonMaximize.ForeColor = Color.White;
             buttonMaximize.Image = Properties.Resources.maximize;
-            buttonMaximize.Location = new Point(1235, 0);
+            buttonMaximize.Location = new Point(1269, 0);
             buttonMaximize.Name = "buttonMaximize";
             buttonMaximize.Size = new Size(25, 27);
             buttonMaximize.TabIndex = 0;
@@ -191,7 +191,6 @@ namespace Optimum_Tech.Forms
             buttonCategory.Size = new Size(45, 30);
             buttonCategory.TabIndex = 0;
             buttonCategory.UseVisualStyleBackColor = true;
-            buttonCategory.Click += buttonCategory_Click;
             // 
             // buttonSettings
             // 
@@ -289,6 +288,19 @@ namespace Optimum_Tech.Forms
             panelSlide.Name = "panelSlide";
             panelSlide.Size = new Size(163, 689);
             panelSlide.TabIndex = 2;
+            // 
+            // textBoxDrawer
+            // 
+            textBoxDrawer.BackColor = Color.FromArgb(35, 35, 35);
+            textBoxDrawer.BorderStyle = BorderStyle.None;
+            textBoxDrawer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxDrawer.ForeColor = Color.White;
+            textBoxDrawer.Location = new Point(6, 22);
+            textBoxDrawer.Name = "textBoxDrawer";
+            textBoxDrawer.ReadOnly = true;
+            textBoxDrawer.Size = new Size(100, 24);
+            textBoxDrawer.TabIndex = 21;
+            textBoxDrawer.Text = "Drawer";
             // 
             // textBoxSearchText
             // 
@@ -425,11 +437,11 @@ namespace Optimum_Tech.Forms
             // 
             // panelMain
             // 
-            panelMain.BackColor = Color.White;
+            panelMain.BackColor = Color.FromArgb(50, 50, 50);
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(208, 27);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(1083, 689);
+            panelMain.Size = new Size(1117, 689);
             panelMain.TabIndex = 3;
             // 
             // timer1
@@ -442,24 +454,11 @@ namespace Optimum_Tech.Forms
             timer2.Interval = 3000;
             timer2.Tick += timer2_Tick;
             // 
-            // textBoxDrawer
-            // 
-            textBoxDrawer.BackColor = Color.FromArgb(35, 35, 35);
-            textBoxDrawer.BorderStyle = BorderStyle.None;
-            textBoxDrawer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxDrawer.ForeColor = Color.White;
-            textBoxDrawer.Location = new Point(6, 22);
-            textBoxDrawer.Name = "textBoxDrawer";
-            textBoxDrawer.ReadOnly = true;
-            textBoxDrawer.Size = new Size(100, 24);
-            textBoxDrawer.TabIndex = 21;
-            textBoxDrawer.Text = "Drawer";
-            // 
-            // MDIMain
+            // FormMain
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Desktop;
-            ClientSize = new Size(1291, 716);
+            ClientSize = new Size(1325, 716);
             Controls.Add(panelMain);
             Controls.Add(panelSlide);
             Controls.Add(panelCollapsed);
@@ -467,7 +466,7 @@ namespace Optimum_Tech.Forms
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
-            Name = "MDIMain";
+            Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Optimum Tech";
             panelTitleBar.ResumeLayout(false);

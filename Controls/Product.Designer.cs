@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             pictureBoxProduct = new PictureBox();
             pictureBoxCart = new PictureBox();
             pictureBoxRating = new PictureBox();
@@ -48,7 +47,6 @@
             // pictureBoxProduct
             // 
             pictureBoxProduct.Dock = DockStyle.Top;
-            pictureBoxProduct.Image = (Image)resources.GetObject("pictureBoxProduct.Image");
             pictureBoxProduct.Location = new Point(7, 7);
             pictureBoxProduct.Name = "pictureBoxProduct";
             pictureBoxProduct.Size = new Size(231, 202);
@@ -59,7 +57,6 @@
             // pictureBoxCart
             // 
             pictureBoxCart.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            pictureBoxCart.Image = (Image)resources.GetObject("pictureBoxCart.Image");
             pictureBoxCart.Location = new Point(200, 298);
             pictureBoxCart.Name = "pictureBoxCart";
             pictureBoxCart.Size = new Size(38, 38);
@@ -70,7 +67,6 @@
             // pictureBoxRating
             // 
             pictureBoxRating.ErrorImage = null;
-            pictureBoxRating.Image = (Image)resources.GetObject("pictureBoxRating.Image");
             pictureBoxRating.Location = new Point(7, 247);
             pictureBoxRating.Name = "pictureBoxRating";
             pictureBoxRating.Size = new Size(85, 17);
@@ -88,12 +84,11 @@
             textBoxProductName.ReadOnly = true;
             textBoxProductName.Size = new Size(229, 26);
             textBoxProductName.TabIndex = 5;
-            textBoxProductName.Text = "Intel Core i9-13900K";
+            textBoxProductName.Text = "Product name";
             // 
             // pictureBoxFavorite
             // 
             pictureBoxFavorite.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBoxFavorite.Image = (Image)resources.GetObject("pictureBoxFavorite.Image");
             pictureBoxFavorite.Location = new Point(200, 10);
             pictureBoxFavorite.Name = "pictureBoxFavorite";
             pictureBoxFavorite.Size = new Size(35, 35);
@@ -128,7 +123,7 @@
             textBoxResponses.Name = "textBoxResponses";
             textBoxResponses.Size = new Size(135, 18);
             textBoxResponses.TabIndex = 10;
-            textBoxResponses.Text = "43 Responses";
+            textBoxResponses.Text = "Responses";
             // 
             // textBoxAvailable
             // 
@@ -152,7 +147,7 @@
             textBoxPrice.ReadOnly = true;
             textBoxPrice.Size = new Size(187, 38);
             textBoxPrice.TabIndex = 8;
-            textBoxPrice.Text = "592.99$";
+            textBoxPrice.Text = "000.00$";
             // 
             // Product
             // 

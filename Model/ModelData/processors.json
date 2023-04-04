@@ -30,6 +30,6 @@
     "Threads": 32,
     "ClockSpeedDefault": 4200,
     "ClockSpeedBoost": 5700,
-    "IsAvailable": true
+    "IsAvailable": false
   }
 ]

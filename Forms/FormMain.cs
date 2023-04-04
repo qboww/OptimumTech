@@ -11,7 +11,7 @@ using static System.Windows.Forms.DataFormats;
 
 namespace Optimum_Tech.Forms
 {
-    public partial class MainForm : Form
+    public partial class FormMain : Form
     {
         #region properties
 
@@ -26,7 +26,7 @@ namespace Optimum_Tech.Forms
 
         #endregion
 
-        public MainForm()
+        public FormMain()
         {
             InitializeComponent();
 
@@ -38,6 +38,8 @@ namespace Optimum_Tech.Forms
 
             tempWidth = this.Width - panelSlide.Width;
             tempHeight = (short)(this.Height - panelSlide.Height);
+
+            buttonCategory.Click += buttonCategory_Click;
         }
 
         #region timers_events
@@ -168,17 +170,21 @@ namespace Optimum_Tech.Forms
         }
         private void buttonCategory_Click(object sender, EventArgs e)
         {
-            Form childForm = new CategoryForm(this) { _parent = this };
+            var form = new FormCategory(this);
+            this.OpenChildForm(form);
+        }
 
-            childForm.MdiParent = this;
+        public void OpenChildForm(Form childForm)
+        {
+            panelMain.Controls.Clear();
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
             panelMain.Controls.Add(childForm);
-
-            childForm.Anchor = AnchorStyles.None;
-            childForm.Left = (panelMain.Width - childForm.Width) / 2;
-            childForm.Top = (panelMain.Height - childForm.Height) / 2;
-
+            panelMain.Tag = childForm;
             childForm.Show();
         }
+
 
         #endregion
 
