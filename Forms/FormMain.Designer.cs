@@ -145,7 +145,7 @@ namespace Optimum_Tech.Forms
             buttonDrawer.FlatAppearance.BorderSize = 0;
             buttonDrawer.FlatStyle = FlatStyle.Flat;
             buttonDrawer.Image = Properties.Resources.drawer;
-            buttonDrawer.Location = new Point(0, 16);
+            buttonDrawer.Location = new Point(0, 6);
             buttonDrawer.Name = "buttonDrawer";
             buttonDrawer.Size = new Size(45, 30);
             buttonDrawer.TabIndex = 0;
@@ -173,7 +173,7 @@ namespace Optimum_Tech.Forms
             buttonAdmin.FlatAppearance.BorderSize = 0;
             buttonAdmin.FlatStyle = FlatStyle.Flat;
             buttonAdmin.Image = Properties.Resources.admin;
-            buttonAdmin.Location = new Point(0, 564);
+            buttonAdmin.Location = new Point(0, 579);
             buttonAdmin.Name = "buttonAdmin";
             buttonAdmin.Size = new Size(45, 30);
             buttonAdmin.TabIndex = 10;
@@ -201,7 +201,7 @@ namespace Optimum_Tech.Forms
             buttonSettings.Font = new Font("Ubuntu", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSettings.ForeColor = Color.White;
             buttonSettings.Image = Properties.Resources.settings;
-            buttonSettings.Location = new Point(0, 636);
+            buttonSettings.Location = new Point(0, 651);
             buttonSettings.Name = "buttonSettings";
             buttonSettings.Size = new Size(45, 30);
             buttonSettings.TabIndex = 0;
@@ -215,7 +215,7 @@ namespace Optimum_Tech.Forms
             buttonContact.FlatAppearance.BorderSize = 0;
             buttonContact.FlatStyle = FlatStyle.Flat;
             buttonContact.Image = Properties.Resources.contact;
-            buttonContact.Location = new Point(0, 600);
+            buttonContact.Location = new Point(0, 615);
             buttonContact.Name = "buttonContact";
             buttonContact.Size = new Size(45, 30);
             buttonContact.TabIndex = 0;
@@ -295,7 +295,7 @@ namespace Optimum_Tech.Forms
             textBoxDrawer.BorderStyle = BorderStyle.None;
             textBoxDrawer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxDrawer.ForeColor = Color.White;
-            textBoxDrawer.Location = new Point(6, 22);
+            textBoxDrawer.Location = new Point(6, 8);
             textBoxDrawer.Name = "textBoxDrawer";
             textBoxDrawer.ReadOnly = true;
             textBoxDrawer.Size = new Size(100, 24);
@@ -387,7 +387,7 @@ namespace Optimum_Tech.Forms
             textBoxContact.BorderStyle = BorderStyle.None;
             textBoxContact.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxContact.ForeColor = Color.White;
-            textBoxContact.Location = new Point(6, 606);
+            textBoxContact.Location = new Point(6, 621);
             textBoxContact.Name = "textBoxContact";
             textBoxContact.ReadOnly = true;
             textBoxContact.Size = new Size(100, 24);
@@ -400,7 +400,7 @@ namespace Optimum_Tech.Forms
             textBoxAdmin.BorderStyle = BorderStyle.None;
             textBoxAdmin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAdmin.ForeColor = Color.White;
-            textBoxAdmin.Location = new Point(6, 570);
+            textBoxAdmin.Location = new Point(6, 585);
             textBoxAdmin.Name = "textBoxAdmin";
             textBoxAdmin.ReadOnly = true;
             textBoxAdmin.Size = new Size(100, 24);
@@ -414,7 +414,7 @@ namespace Optimum_Tech.Forms
             textBoxSettings.BorderStyle = BorderStyle.None;
             textBoxSettings.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSettings.ForeColor = Color.White;
-            textBoxSettings.Location = new Point(6, 642);
+            textBoxSettings.Location = new Point(6, 657);
             textBoxSettings.Name = "textBoxSettings";
             textBoxSettings.ReadOnly = true;
             textBoxSettings.Size = new Size(100, 24);
