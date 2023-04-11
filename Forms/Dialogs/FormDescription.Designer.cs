@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDescription));
             textBoxDescription = new TextBox();
             pictureBoxClose = new PictureBox();
             panelTitle = new Panel();
@@ -66,7 +67,7 @@
             // pictureBoxClose
             // 
             pictureBoxClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBoxClose.Image = Properties.Resources.close;
+            pictureBoxClose.Image = (Image)resources.GetObject("pictureBoxClose.Image");
             pictureBoxClose.Location = new Point(747, 0);
             pictureBoxClose.Name = "pictureBoxClose";
             pictureBoxClose.Size = new Size(25, 27);
@@ -266,7 +267,7 @@
             panel1.Size = new Size(772, 28);
             panel1.TabIndex = 15;
             // 
-            // FormDescription
+            // FormDescriptionProcessor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -286,7 +287,8 @@
             Controls.Add(textBoxName);
             Controls.Add(panelTitle);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FormDescription";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "FormDescriptionProcessor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Descripton";
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).EndInit();
