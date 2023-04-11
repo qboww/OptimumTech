@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Optimum_Tech.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,7 +37,11 @@ namespace Optimum_Tech.Forms.Dialogs
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-
+            if (UserManager.Login(textBoxLogin, textBoxPassword))
+            {
+                UserManager.UpdateStatus(formAccount._textBoxStatus);
+                this.Close();
+            }
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)

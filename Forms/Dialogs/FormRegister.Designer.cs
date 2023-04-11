@@ -35,7 +35,7 @@ namespace Optimum_Tech.Forms.Dialogs
             pictureBoxClose = new PictureBox();
             panelTitle = new Panel();
             textBoxLogin = new TextBox();
-            button1 = new Button();
+            buttonRegister = new Button();
             textBoxPassword = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).BeginInit();
             panelTitle.SuspendLayout();
@@ -91,16 +91,16 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxLogin.Enter += textBoxLogin_Enter;
             textBoxLogin.Leave += textBoxLogin_Leave;
             // 
-            // button1
+            // buttonRegister
             // 
-            button1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(361, 161);
-            button1.Name = "button1";
-            button1.Size = new Size(80, 29);
-            button1.TabIndex = 21;
-            button1.Text = "Register";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += buttonLogin_Click;
+            buttonRegister.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonRegister.Location = new Point(361, 161);
+            buttonRegister.Name = "buttonRegister";
+            buttonRegister.Size = new Size(80, 29);
+            buttonRegister.TabIndex = 21;
+            buttonRegister.Text = "Register";
+            buttonRegister.UseVisualStyleBackColor = true;
+            buttonRegister.Click += buttonRegister_Click;
             // 
             // textBoxPassword
             // 
@@ -121,7 +121,7 @@ namespace Optimum_Tech.Forms.Dialogs
             BackColor = Color.FromArgb(40, 40, 40);
             ClientSize = new Size(453, 202);
             Controls.Add(textBoxPassword);
-            Controls.Add(button1);
+            Controls.Add(buttonRegister);
             Controls.Add(textBoxLogin);
             Controls.Add(panelTitle);
             FormBorderStyle = FormBorderStyle.None;
@@ -142,7 +142,7 @@ namespace Optimum_Tech.Forms.Dialogs
         private PictureBox pictureBoxClose;
         private Panel panelTitle;
         private TextBox textBoxLogin;
-        private Button button1;
+        private Button buttonRegister;
         private TextBox textBoxPassword;
     }
 }

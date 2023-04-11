@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Optimum_Tech.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,14 @@ namespace Optimum_Tech.Forms.Dialogs
 {
     public partial class FormRegister : Form
     {
-        public FormRegister()
+        private FormAccount formAccount;
+        private FormMain formMain;
+        public FormRegister(FormAccount formAccount, FormMain formMain)
         {
             InitializeComponent();
+
+            this.formAccount = formAccount;
+            this.formMain = formMain;
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -22,9 +28,14 @@ namespace Optimum_Tech.Forms.Dialogs
             this.Close();
         }
 
-        private void buttonLogin_Click(object sender, EventArgs e)
+        private void buttonRegister_Click(object sender, EventArgs e)
         {
-
+            if (UserManager.Register(textBoxLogin.Text, textBoxPassword.Text))
+            {
+                UserManager.Login(textBoxLogin, textBoxPassword);
+                UserManager.UpdateStatus(formAccount._textBoxStatus);
+                this.Close();
+            }
         }
 
         public void CreateUser(string login, string password)

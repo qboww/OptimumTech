@@ -10,7 +10,7 @@ namespace Optimum_Tech.Model
     {
         public string Login { get; set; }
         public string Password { get; set; }
-        public Access Level { get; set; }
+        public Status Access { get; set; }
 
         public User(string login, string password)
         {
@@ -19,7 +19,7 @@ namespace Optimum_Tech.Model
         }
     }
 
-    enum Access 
+    enum Status 
     {
         Admin, Guest, User
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Optimum_Tech.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -53,14 +54,11 @@ namespace Optimum_Tech.Forms
             InitializeComponent();
 
             this.IsMdiContainer = true;
-
             panelWidth = (short)panelSlide.Width;
             hidden = true;
             panelSlide.Width = 0;
-
             tempWidth = this.Width - panelSlide.Width;
             tempHeight = (short)(this.Height - panelSlide.Height);
-
             buttonCategory.Click += buttonCategory_Click;
             buttonAccount.Click += buttonAccount_Click;
             buttonHome.Click += buttonHome_Click;
@@ -266,6 +264,8 @@ namespace Optimum_Tech.Forms
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            UserManager.LoginAsGuest();
+
             CloseAllForms();
 
             if (formHome == null || formHome.IsDisposed)

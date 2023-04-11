@@ -26,7 +26,7 @@ namespace Optimum_Tech.Model
         static Processor()
         {
             // Initialize the static list of processors by deserializing the JSON file
-            string json = File.ReadAllText("D:\\Education\\Projects\\OOP-(.Net)\\OptimumTech\\Model\\ModelData\\processors.json");
+            string json = File.ReadAllText("D:\\Downloads\\OptimumTech\\Model\\ProductsData\\processors.json");
             Storage = JsonConvert.DeserializeObject<List<Processor>>(json);
         }
 

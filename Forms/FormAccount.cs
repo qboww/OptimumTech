@@ -1,4 +1,5 @@
 ﻿using Optimum_Tech.Forms.Dialogs;
+using Optimum_Tech.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,13 +14,13 @@ namespace Optimum_Tech.Forms
 {
     public partial class FormAccount : Form
     {
-        public readonly FormMain formMain;
+        private FormMain formMain;
         private FormLogin formLogin;
 
-        public string TextBoxStatus
+        public TextBox _textBoxStatus
         {
-            get { return textBoxStatus.Text; }
-            set { textBoxStatus.Text = value; }
+            get { return textBoxStatus; }
+            set { textBoxStatus = value; }
         }
 
         public FormAccount(FormMain formMain)
@@ -27,6 +28,7 @@ namespace Optimum_Tech.Forms
             InitializeComponent();
 
             this.formMain = formMain;
+            UserManager.UpdateStatus(this.textBoxStatus);
         }
 
         #region events
@@ -42,13 +44,14 @@ namespace Optimum_Tech.Forms
 
         private void pictureBoxRegister_Click(object sender, EventArgs e)
         {
-            FormRegister form = new FormRegister();
+            FormRegister form = new FormRegister(this, formMain);
             form.Show();
         }
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-
+            UserManager.LoginAsGuest();
+            UserManager.UpdateStatus(this.textBoxStatus);
         }
 
         #endregion

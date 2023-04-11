@@ -1,5 +1,4 @@
-﻿using Amazon.Auth.AccessControlPolicy;
-using Optimum_Tech.Resources;
+﻿using Optimum_Tech.Resources;
 using OptimumTech;
 
 namespace Optimum_Tech.Forms
