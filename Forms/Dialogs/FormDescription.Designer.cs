@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDescription));
             textBoxDescription = new TextBox();
             pictureBoxClose = new PictureBox();
             panelTitle = new Panel();
@@ -286,6 +287,7 @@
             Controls.Add(textBoxName);
             Controls.Add(panelTitle);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormDescription";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Descripton";

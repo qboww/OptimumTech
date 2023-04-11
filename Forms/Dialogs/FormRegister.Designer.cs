@@ -30,6 +30,7 @@ namespace Optimum_Tech.Forms.Dialogs
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegister));
             textBoxDescription = new TextBox();
             pictureBoxClose = new PictureBox();
             panelTitle = new Panel();
@@ -60,7 +61,7 @@ namespace Optimum_Tech.Forms.Dialogs
             pictureBoxClose.Image = FormsMedia.close;
             pictureBoxClose.Location = new Point(428, 1);
             pictureBoxClose.Name = "pictureBoxClose";
-            pictureBoxClose.Size = new Size(25, 27);
+            pictureBoxClose.Size = new Size(23, 25);
             pictureBoxClose.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBoxClose.TabIndex = 1;
             pictureBoxClose.TabStop = false;
@@ -124,6 +125,7 @@ namespace Optimum_Tech.Forms.Dialogs
             Controls.Add(textBoxLogin);
             Controls.Add(panelTitle);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormRegister";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormRegister";
