@@ -13,7 +13,7 @@ namespace Optimum_Tech.Forms
 {
     public partial class FormMain : Form
     {
-        #region properties
+        #region fields
 
         private int tempWidth;
         private short tempHeight;
@@ -23,6 +23,28 @@ namespace Optimum_Tech.Forms
         private short mov;
         private short movX;
         private short movY;
+
+        private FormCategory formCategory;
+        private FormAccount formAccount;
+        private FormHome formHome;
+        private FormFavorites formFavorites;
+
+        #endregion
+
+
+        #region props
+
+        public Button AdminButton
+        {
+            get { return buttonAdmin; }
+            set { buttonAdmin = value; }
+        }
+
+        public TextBox AdminTextBox
+        {
+            get { return textBoxAdmin; }
+            set { textBoxAdmin = value; }
+        }
 
         #endregion
 
@@ -40,9 +62,11 @@ namespace Optimum_Tech.Forms
             tempHeight = (short)(this.Height - panelSlide.Height);
 
             buttonCategory.Click += buttonCategory_Click;
+            buttonAccount.Click += buttonAccount_Click;
+            buttonHome.Click += buttonHome_Click;
         }
 
-        #region timers_events
+        #region timer_events
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -101,7 +125,7 @@ namespace Optimum_Tech.Forms
 
         #endregion
 
-        #region buttons_events
+        #region button_events
 
         private void buttonDrawer_Click(object sender, EventArgs e)
         {
@@ -142,36 +166,60 @@ namespace Optimum_Tech.Forms
         }
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            if (textBoxSearch.ReadOnly == true)
+            if (textBoxSearch.Tag == null)
             {
+                textBoxSearch.Tag = 1;
+
                 textBoxSearch.Clear();
                 textBoxSearch.ReadOnly = false;
+                textBoxSearch.BackColor = Color.White;
                 textBoxSearch.BringToFront();
                 textBoxSearchText.SendToBack();
             }
             else
             {
                 textBoxSearch.Clear();
-                textBoxSearchText.BringToFront();
                 textBoxSearch.SendToBack();
-            }
-
-            if (textBoxSearch.Tag == null)
-            {
-                textBoxSearch.Tag = 1;
-            }
-            else
-            {
-                textBoxSearch.Clear();
                 textBoxSearchText.BringToFront();
-                textBoxSearchText.SendToBack();
+
                 textBoxSearch.Tag = null;
             }
         }
+
         private void buttonCategory_Click(object sender, EventArgs e)
         {
-            var form = new FormCategory(this);
-            this.OpenChildForm(form);
+            CloseAllForms();
+
+            if (formCategory == null || formCategory.IsDisposed)
+            {
+                formCategory = new FormCategory(this);
+            }
+
+            OpenChildForm(formCategory);
+        }
+
+        private void buttonAccount_Click(object sender, EventArgs e)
+        {
+            CloseAllForms();
+
+            if (formAccount == null || formAccount.IsDisposed)
+            {
+                formAccount = new FormAccount(this);
+            }
+
+            OpenChildForm(formAccount);
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            CloseAllForms();
+
+            if (formHome == null || formHome.IsDisposed)
+            {
+                formHome = new FormHome(this);
+            }
+
+            OpenChildForm(formHome);
         }
 
         public void OpenChildForm(Form childForm)
@@ -185,6 +233,25 @@ namespace Optimum_Tech.Forms
             childForm.Show();
         }
 
+        private void CloseAllForms()
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                form.Close();
+            }
+        }
+
+        private void buttonFavourites_Click(object sender, EventArgs e)
+        {
+            CloseAllForms();
+
+            if (formFavorites == null || formFavorites.IsDisposed)
+            {
+                formFavorites = new FormFavorites(this);
+            }
+
+            OpenChildForm(formFavorites);
+        }
 
         #endregion
 
@@ -196,5 +263,17 @@ namespace Optimum_Tech.Forms
         }
 
         #endregion
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            CloseAllForms();
+
+            if (formHome == null || formHome.IsDisposed)
+            {
+                formHome = new FormHome(this);
+            }
+
+            OpenChildForm(formHome);
+        }
     }
 }

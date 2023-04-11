@@ -1,4 +1,6 @@
-﻿namespace Optimum_Tech.Forms.Dialogs
+﻿using Optimum_Tech.Resources;
+
+namespace Optimum_Tech.Forms.Dialogs
 {
     partial class FormLogin
     {
@@ -58,7 +60,7 @@
             // pictureBoxClose
             // 
             pictureBoxClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBoxClose.Image = Properties.Resources.close;
+            pictureBoxClose.Image = FormsMedia.close;
             pictureBoxClose.Location = new Point(272, 2);
             pictureBoxClose.Name = "pictureBoxClose";
             pictureBoxClose.Size = new Size(25, 27);
@@ -126,7 +128,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = Properties.Resources.account_48;
+            pictureBox1.Image = FormsMedia.account_48;
             pictureBox1.Location = new Point(0, 39);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(197, 90);

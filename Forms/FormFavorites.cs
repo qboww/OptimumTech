@@ -1,4 +1,5 @@
-﻿using OptimumTech;
+﻿using Optimum_Tech.Model;
+using OptimumTech.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,25 +9,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.DataFormats;
 
 namespace Optimum_Tech.Forms
 {
-    public partial class FormCategory : Form
+    public partial class FormFavorites : Form
     {
         private readonly FormMain formMain;
 
-        public FormCategory(FormMain formMain)
+        public FormFavorites(FormMain formMain)
         {
             InitializeComponent();
+
             this.formMain = formMain;
         }
 
-        private void pictureBoxProcessors_Click(object sender, EventArgs e)
+        private void FormFavorites_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            var form = new FormProcessor();
-            formMain.OpenChildForm(form);
+
         }
     }
 }

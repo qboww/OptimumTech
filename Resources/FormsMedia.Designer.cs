@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Optimum_Tech.Properties {
+namespace Optimum_Tech.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Optimum_Tech.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class FormsMedia {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal FormsMedia() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Optimum_Tech.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Optimum_Tech.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Optimum_Tech.Resources.FormsMedia", typeof(FormsMedia).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -85,7 +85,7 @@ namespace Optimum_Tech.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap account_48 {
             get {
-                object obj = ResourceManager.GetObject("account-48", resourceCulture);
+                object obj = ResourceManager.GetObject("account_48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,29 @@ namespace Optimum_Tech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AMD_Ryzen_5_7600X {
+            get {
+                object obj = ResourceManager.GetObject("AMD_Ryzen_5_7600X", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AMD_Ryzen_9_7950X3D {
             get {
                 object obj = ResourceManager.GetObject("AMD_Ryzen_9_7950X3D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap basket_blocked {
+            get {
+                object obj = ResourceManager.GetObject("basket_blocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +203,16 @@ namespace Optimum_Tech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap description {
+            get {
+                object obj = ResourceManager.GetObject("description", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap drawer {
             get {
                 object obj = ResourceManager.GetObject("drawer", resourceCulture);
@@ -206,6 +236,16 @@ namespace Optimum_Tech.Properties {
         internal static System.Drawing.Bitmap favorite {
             get {
                 object obj = ResourceManager.GetObject("favorite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap favorite_blocked {
+            get {
+                object obj = ResourceManager.GetObject("favorite_blocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +323,26 @@ namespace Optimum_Tech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login_light {
+            get {
+                object obj = ResourceManager.GetObject("login_light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logout_light {
+            get {
+                object obj = ResourceManager.GetObject("logout_light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize {
             get {
                 object obj = ResourceManager.GetObject("maximize", resourceCulture);
@@ -313,6 +373,16 @@ namespace Optimum_Tech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap motherboard {
+            get {
+                object obj = ResourceManager.GetObject("motherboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap no_stars {
             get {
                 object obj = ResourceManager.GetObject("no_stars", resourceCulture);
@@ -333,6 +403,16 @@ namespace Optimum_Tech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap optimum_tech_100 {
+            get {
+                object obj = ResourceManager.GetObject("optimum_tech_100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap power_supply {
             get {
                 object obj = ResourceManager.GetObject("power-supply", resourceCulture);
@@ -346,6 +426,16 @@ namespace Optimum_Tech.Properties {
         internal static System.Drawing.Bitmap processor {
             get {
                 object obj = ResourceManager.GetObject("processor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap register {
+            get {
+                object obj = ResourceManager.GetObject("register", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

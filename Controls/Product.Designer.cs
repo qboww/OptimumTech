@@ -1,4 +1,6 @@
-﻿namespace OptimumTech.Controls
+﻿using Optimum_Tech.Resources;
+
+namespace OptimumTech.Controls
 {
     partial class Product
     {
@@ -34,6 +36,7 @@
             textBoxProductName = new TextBox();
             pictureBoxFavorite = new PictureBox();
             panelProduct = new Panel();
+            pictureBoxDescription = new PictureBox();
             textBoxResponses = new TextBox();
             textBoxAvailable = new TextBox();
             textBoxPrice = new TextBox();
@@ -42,6 +45,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxRating).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFavorite).BeginInit();
             panelProduct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDescription).BeginInit();
             SuspendLayout();
             // 
             // pictureBoxProduct
@@ -57,7 +61,7 @@
             // pictureBoxCart
             // 
             pictureBoxCart.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            pictureBoxCart.Image = Optimum_Tech.Properties.Resources.basket_empty;
+            pictureBoxCart.Image = FormsMedia.basket_empty;
             pictureBoxCart.Location = new Point(200, 298);
             pictureBoxCart.Name = "pictureBoxCart";
             pictureBoxCart.Size = new Size(38, 38);
@@ -68,7 +72,7 @@
             // pictureBoxRating
             // 
             pictureBoxRating.ErrorImage = null;
-            pictureBoxRating.Image = Optimum_Tech.Properties.Resources.five_stars;
+            pictureBoxRating.Image = FormsMedia.five_stars;
             pictureBoxRating.Location = new Point(7, 247);
             pictureBoxRating.Name = "pictureBoxRating";
             pictureBoxRating.Size = new Size(85, 17);
@@ -91,7 +95,7 @@
             // pictureBoxFavorite
             // 
             pictureBoxFavorite.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBoxFavorite.Image = Optimum_Tech.Properties.Resources.favorite_empty;
+            pictureBoxFavorite.Image = FormsMedia.favorite_empty;
             pictureBoxFavorite.Location = new Point(200, 10);
             pictureBoxFavorite.Name = "pictureBoxFavorite";
             pictureBoxFavorite.Size = new Size(35, 35);
@@ -101,6 +105,7 @@
             // 
             // panelProduct
             // 
+            panelProduct.Controls.Add(pictureBoxDescription);
             panelProduct.Controls.Add(textBoxResponses);
             panelProduct.Controls.Add(textBoxAvailable);
             panelProduct.Controls.Add(textBoxPrice);
@@ -115,6 +120,16 @@
             panelProduct.Padding = new Padding(7);
             panelProduct.Size = new Size(245, 350);
             panelProduct.TabIndex = 7;
+            // 
+            // pictureBoxDescription
+            // 
+            pictureBoxDescription.Image = FormsMedia.description;
+            pictureBoxDescription.Location = new Point(10, 10);
+            pictureBoxDescription.Name = "pictureBoxDescription";
+            pictureBoxDescription.Size = new Size(38, 38);
+            pictureBoxDescription.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBoxDescription.TabIndex = 11;
+            pictureBoxDescription.TabStop = false;
             // 
             // textBoxResponses
             // 
@@ -167,6 +182,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxFavorite).EndInit();
             panelProduct.ResumeLayout(false);
             panelProduct.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDescription).EndInit();
             ResumeLayout(false);
         }
 
@@ -181,5 +197,6 @@
         private TextBox textBoxPrice;
         private TextBox textBoxResponses;
         private TextBox textBoxAvailable;
+        private PictureBox pictureBoxDescription;
     }
 }

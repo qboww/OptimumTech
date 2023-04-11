@@ -32,6 +32,25 @@
     "Threads": 32,
     "ClockSpeedDefault": 4200,
     "ClockSpeedBoost": 5700,
+    "ImageResourceName": "AMD_Ryzen_9_7950X3D.png",
     "IsAvailable": false
+  },
+  {
+    "Id": "17045305-e188-4848-a66a-2aec1ff68fb0",
+    "Name": "AMD Ryzen 5 7600X",
+    "Price": 272.25,
+    "Responses": 62,
+    "Rating": 5,
+    "Manufacturer": "AMD",
+    "Series": "Zen 4",
+    "Socket": "AM5",
+    "IsFavorite": false,
+    "IsSelected": false,
+    "Cores": 6,
+    "Threads": 12,
+    "ClockSpeedDefault": 4700,
+    "ClockSpeedBoost": 5300,
+    "ImageResourceName": "AMD_Ryzen_5_7600X.png",
+    "IsAvailable": true
   }
 ]
