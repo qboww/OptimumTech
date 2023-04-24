@@ -13,11 +13,14 @@ namespace Optimum_Tech.Forms
         {
             InitializeComponent();
             this.formMain = formMain;
-
-
         }
 
         private void FormFavorites_Load(object sender, EventArgs e)
+        {
+            RefreshFavorites();
+        }
+
+        private void RefreshFavorites()
         {
             this.flowLayoutPanel1.Controls.Clear();
 
@@ -25,8 +28,22 @@ namespace Optimum_Tech.Forms
             {
                 foreach (ProductControl control in UserManager.currentUser.Favorites)
                 {
-                    this.flowLayoutPanel1.Controls.Add(control);
+                    if (control.IsFavorite)
+                    {
+                        control.IsFavoriteChanged += ProductControl_IsFavoriteChanged;
+                        this.flowLayoutPanel1.Controls.Add(control);
+                    }
                 }
+            }
+        }
+
+        private void ProductControl_IsFavoriteChanged(object sender, EventArgs e)
+        {
+            var control = sender as ProductControl;
+            if (!control.IsFavorite)
+            {
+                control.IsFavoriteChanged -= ProductControl_IsFavoriteChanged;
+                this.flowLayoutPanel1.Controls.Remove(control);
             }
         }
     }

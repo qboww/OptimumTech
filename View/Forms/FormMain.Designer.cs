@@ -257,7 +257,7 @@ namespace Optimum_Tech.Forms
             buttonFavourites.Size = new Size(45, 30);
             buttonFavourites.TabIndex = 0;
             buttonFavourites.UseVisualStyleBackColor = true;
-            buttonFavourites.Click += buttonFavourites_Click;
+            buttonFavourites.Click += buttonFavorites_Click;
             // 
             // buttonCart
             // 

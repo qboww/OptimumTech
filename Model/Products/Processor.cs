@@ -1,6 +1,6 @@
 ﻿namespace Optimum_Tech.Model.Products
 {
-    public class Processor
+    public class Processor : Product
     {
         public string Manufacturer { get; set; } = string.Empty;
         public string Socket { get; set; } = string.Empty;

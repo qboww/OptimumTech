@@ -39,12 +39,12 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxPrice = new TextBox();
             textBoxResponses = new TextBox();
             textBoxRating = new TextBox();
-            textBoxManufacturer = new TextBox();
-            textBoxSocket = new TextBox();
-            textBoxCores = new TextBox();
-            textBoxThreads = new TextBox();
-            textBoxDefaultSpeed = new TextBox();
-            textBoxBoostSpeed = new TextBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
             panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).BeginInit();
             panelTitle.SuspendLayout();
@@ -158,89 +158,89 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxRating.TabStop = false;
             textBoxRating.Text = "Rating: ";
             // 
-            // textBoxManufacturer
+            // textBox1
             // 
-            textBoxManufacturer.BackColor = Color.FromArgb(40, 40, 40);
-            textBoxManufacturer.BorderStyle = BorderStyle.None;
-            textBoxManufacturer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxManufacturer.ForeColor = Color.White;
-            textBoxManufacturer.Location = new Point(388, 88);
-            textBoxManufacturer.Name = "textBoxManufacturer";
-            textBoxManufacturer.ReadOnly = true;
-            textBoxManufacturer.Size = new Size(372, 24);
-            textBoxManufacturer.TabIndex = 8;
-            textBoxManufacturer.TabStop = false;
-            textBoxManufacturer.Text = "Manufacturer: ";
+            textBox1.BackColor = Color.FromArgb(40, 40, 40);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.White;
+            textBox1.Location = new Point(388, 88);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(372, 24);
+            textBox1.TabIndex = 8;
+            textBox1.TabStop = false;
+            textBox1.Text = "Property 1:";
             // 
-            // textBoxSocket
+            // textBox2
             // 
-            textBoxSocket.BackColor = Color.FromArgb(40, 40, 40);
-            textBoxSocket.BorderStyle = BorderStyle.None;
-            textBoxSocket.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSocket.ForeColor = Color.White;
-            textBoxSocket.Location = new Point(388, 118);
-            textBoxSocket.Name = "textBoxSocket";
-            textBoxSocket.ReadOnly = true;
-            textBoxSocket.Size = new Size(372, 24);
-            textBoxSocket.TabIndex = 10;
-            textBoxSocket.TabStop = false;
-            textBoxSocket.Text = "Socket:";
+            textBox2.BackColor = Color.FromArgb(40, 40, 40);
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = Color.White;
+            textBox2.Location = new Point(388, 118);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(372, 24);
+            textBox2.TabIndex = 10;
+            textBox2.TabStop = false;
+            textBox2.Text = "Property 2:";
             // 
-            // textBoxCores
+            // textBox3
             // 
-            textBoxCores.BackColor = Color.FromArgb(40, 40, 40);
-            textBoxCores.BorderStyle = BorderStyle.None;
-            textBoxCores.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxCores.ForeColor = Color.White;
-            textBoxCores.Location = new Point(388, 148);
-            textBoxCores.Name = "textBoxCores";
-            textBoxCores.ReadOnly = true;
-            textBoxCores.Size = new Size(372, 24);
-            textBoxCores.TabIndex = 11;
-            textBoxCores.TabStop = false;
-            textBoxCores.Text = "Cores: ";
+            textBox3.BackColor = Color.FromArgb(40, 40, 40);
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.ForeColor = Color.White;
+            textBox3.Location = new Point(388, 148);
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(372, 24);
+            textBox3.TabIndex = 11;
+            textBox3.TabStop = false;
+            textBox3.Text = "Property 3:";
             // 
-            // textBoxThreads
+            // textBox4
             // 
-            textBoxThreads.BackColor = Color.FromArgb(40, 40, 40);
-            textBoxThreads.BorderStyle = BorderStyle.None;
-            textBoxThreads.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxThreads.ForeColor = Color.White;
-            textBoxThreads.Location = new Point(388, 178);
-            textBoxThreads.Name = "textBoxThreads";
-            textBoxThreads.ReadOnly = true;
-            textBoxThreads.Size = new Size(372, 24);
-            textBoxThreads.TabIndex = 12;
-            textBoxThreads.TabStop = false;
-            textBoxThreads.Text = "Threads:";
+            textBox4.BackColor = Color.FromArgb(40, 40, 40);
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.ForeColor = Color.White;
+            textBox4.Location = new Point(388, 178);
+            textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
+            textBox4.Size = new Size(372, 24);
+            textBox4.TabIndex = 12;
+            textBox4.TabStop = false;
+            textBox4.Text = "Property 4:";
             // 
-            // textBoxDefaultSpeed
+            // textBox5
             // 
-            textBoxDefaultSpeed.BackColor = Color.FromArgb(40, 40, 40);
-            textBoxDefaultSpeed.BorderStyle = BorderStyle.None;
-            textBoxDefaultSpeed.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxDefaultSpeed.ForeColor = Color.White;
-            textBoxDefaultSpeed.Location = new Point(388, 208);
-            textBoxDefaultSpeed.Name = "textBoxDefaultSpeed";
-            textBoxDefaultSpeed.ReadOnly = true;
-            textBoxDefaultSpeed.Size = new Size(372, 24);
-            textBoxDefaultSpeed.TabIndex = 13;
-            textBoxDefaultSpeed.TabStop = false;
-            textBoxDefaultSpeed.Text = "Default Speed: ";
+            textBox5.BackColor = Color.FromArgb(40, 40, 40);
+            textBox5.BorderStyle = BorderStyle.None;
+            textBox5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox5.ForeColor = Color.White;
+            textBox5.Location = new Point(388, 208);
+            textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
+            textBox5.Size = new Size(372, 24);
+            textBox5.TabIndex = 13;
+            textBox5.TabStop = false;
+            textBox5.Text = "Property 5:";
             // 
-            // textBoxBoostSpeed
+            // textBox6
             // 
-            textBoxBoostSpeed.BackColor = Color.FromArgb(40, 40, 40);
-            textBoxBoostSpeed.BorderStyle = BorderStyle.None;
-            textBoxBoostSpeed.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxBoostSpeed.ForeColor = Color.White;
-            textBoxBoostSpeed.Location = new Point(388, 238);
-            textBoxBoostSpeed.Name = "textBoxBoostSpeed";
-            textBoxBoostSpeed.ReadOnly = true;
-            textBoxBoostSpeed.Size = new Size(372, 24);
-            textBoxBoostSpeed.TabIndex = 14;
-            textBoxBoostSpeed.TabStop = false;
-            textBoxBoostSpeed.Text = "Boost Speed: ";
+            textBox6.BackColor = Color.FromArgb(40, 40, 40);
+            textBox6.BorderStyle = BorderStyle.None;
+            textBox6.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox6.ForeColor = Color.White;
+            textBox6.Location = new Point(388, 238);
+            textBox6.Name = "textBox6";
+            textBox6.ReadOnly = true;
+            textBox6.Size = new Size(372, 24);
+            textBox6.TabIndex = 14;
+            textBox6.TabStop = false;
+            textBox6.Text = "Property 6:";
             // 
             // panel1
             // 
@@ -261,12 +261,12 @@ namespace Optimum_Tech.Forms.Dialogs
             BackColor = Color.FromArgb(40, 40, 40);
             ClientSize = new Size(772, 450);
             Controls.Add(panel1);
-            Controls.Add(textBoxBoostSpeed);
-            Controls.Add(textBoxDefaultSpeed);
-            Controls.Add(textBoxThreads);
-            Controls.Add(textBoxCores);
-            Controls.Add(textBoxSocket);
-            Controls.Add(textBoxManufacturer);
+            Controls.Add(textBox6);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(textBoxRating);
             Controls.Add(textBoxResponses);
             Controls.Add(textBoxPrice);
@@ -297,12 +297,12 @@ namespace Optimum_Tech.Forms.Dialogs
         private TextBox textBoxPrice;
         private TextBox textBoxResponses;
         private TextBox textBoxRating;
-        private TextBox textBoxManufacturer;
-        private TextBox textBoxSocket;
-        private TextBox textBoxCores;
-        private TextBox textBoxThreads;
-        private TextBox textBoxDefaultSpeed;
-        private TextBox textBoxBoostSpeed;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private TextBox textBox6;
         private Panel panel1;
     }
 }

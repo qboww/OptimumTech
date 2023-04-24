@@ -1,14 +1,4 @@
-﻿using OptimumTech;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.DataFormats;
+﻿using Optimum_Tech.View.Displays;
 
 namespace Optimum_Tech.Forms
 {
@@ -25,7 +15,14 @@ namespace Optimum_Tech.Forms
         private void pictureBoxProcessors_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var form = new FormDisplay();
+            var form = new FormDisplayProcessors();
+            formMain.OpenChildForm(form);
+        }
+
+        private void pictureBoxGraphicsCards_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new FormDisplayGraphicsCards();
             formMain.OpenChildForm(form);
         }
     }

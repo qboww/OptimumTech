@@ -30,12 +30,25 @@ namespace Optimum_Tech.Forms.Dialogs
 
             if (product is Processor)
             {
-                this.textBoxManufacturer.Text = $"Manufacturer: {product.Manufacturer}";
-                this.textBoxSocket.Text = $"Socket: {product.Socket}";
-                this.textBoxCores.Text = $"Cores: {product.Cores}";
-                this.textBoxThreads.Text = $"Threads: {product.Threads}";
-                this.textBoxDefaultSpeed.Text = $"Default speed: {product.ClockSpeedDefault} GHz";
-                this.textBoxBoostSpeed.Text = $"Boost speed: {product.ClockSpeedBoost} GHz";
+                Processor processor = (Processor)product;
+
+                this.textBox1.Text = $"Manufacturer: {processor.Manufacturer}";
+                this.textBox2.Text = $"Socket: {processor.Socket}";
+                this.textBox3.Text = $"Cores: {processor.Cores}";
+                this.textBox4.Text = $"Threads: {processor.Threads}";
+                this.textBox5.Text = $"Default speed: {processor.ClockSpeedDefault} GHz";
+                this.textBox6.Text = $"Boost speed: {processor.ClockSpeedBoost} GHz";
+            }
+            else if (product is GraphicsCard)
+            {
+                GraphicsCard graphicsCard = (GraphicsCard)product;
+
+                this.textBox1.Text = $"Manufacturer: {graphicsCard.Manufacturer}";
+                this.textBox2.Text = $"Memory size: {graphicsCard.VRAM} Gb";
+                this.textBox3.Text = $"Memory interface: {graphicsCard.MemoryInterface} bit";
+                this.textBox4.Text = $"Memory type: {graphicsCard.MemoryType}";
+                this.textBox5.Text = $"Default speed: {graphicsCard.ClockSpeedDefault} GHz";
+                this.textBox6.Text = $"Minimum wattage: {graphicsCard.MinimumWattage}W";
             }
         }
     }

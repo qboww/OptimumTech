@@ -1,5 +1,4 @@
-﻿using Optimum_Tech.Forms;
-using Optimum_Tech.Forms.Dialogs;
+﻿using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
 using Optimum_Tech.View.Resources;
 
@@ -9,7 +8,21 @@ namespace OptimumTech.Controls
     {
         private FormDescription formDescription;
 
-        public bool IsFavorite { get; set; } = false;
+        public event EventHandler IsFavoriteChanged;
+
+        private bool isFavorite;
+        public bool IsFavorite
+        {
+            get { return isFavorite; }
+            set
+            {
+                if (isFavorite != value)
+                {
+                    isFavorite = value;
+                    IsFavoriteChanged?.Invoke(this, EventArgs.Empty);
+                }
+            }
+        }
         public bool IsSelected { get; set; } = false;
 
         public ProductControl(Product product)
@@ -51,7 +64,10 @@ namespace OptimumTech.Controls
             {
                 {"Intel Core i9 13900KF", FormsMedia.Intel_Core_i9_13900K},
                 {"AMD Ryzen 9 7950X3D", FormsMedia.AMD_Ryzen_9_7950X3D},
-                {"AMD Ryzen 5 7600X", FormsMedia.AMD_Ryzen_5_7600X}
+                {"AMD Ryzen 5 7600X", FormsMedia.AMD_Ryzen_5_7600X},
+                {"MSI Gaming RTX 4070", FormsMedia.MSI_RTX_4070},
+                {"PowerColor RX 6700 XT", FormsMedia.PowerColor_RX_6900XT},
+                {"ZOTAC Gaming RTX 3060 Ti", FormsMedia.Zotac_RTX_3060Ti}
             };
 
             if (imageDictionary.TryGetValue(product.Name, out Image image))
@@ -122,16 +138,12 @@ namespace OptimumTech.Controls
                     {
                         this.IsFavorite = true;
                         this.pictureBoxFavorite.Image = FormsMedia.favorite_filled;
-                        
                         UserManager.AddToFavorites(this);
                     }
                     else if (IsFavorite == true)
                     {
                         this.IsFavorite = false;
                         this.pictureBoxFavorite.Image = FormsMedia.favorite_empty;
-
-                        FormFavorites formFavorites = (FormFavorites)this.FindForm();
-                        formFavorites.flowLayoutPanel1.Controls.Remove(this);
                         UserManager.RemoveFromFavorites(this);
                     }
                 }

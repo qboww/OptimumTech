@@ -1,13 +1,18 @@
-﻿namespace Optimum_Tech.Model.Interfaces
+﻿using Optimum_Tech.Model.Products;
+
+namespace Optimum_Tech.Model.Interfaces
 {
     public interface IProduct
     {
-        public Guid Id { get; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public int Responses { get; set; }
-        public int Rating { get; set; }
-        public bool IsAvailable { get; set; }
-        public string ImageResourceName { get; set; }
+        public interface IProduct
+        {
+            Guid Id { get; }
+            string Name { get; set; }
+            decimal Price { get; set; }
+            int Responses { get; set; }
+            int Rating { get; set; }
+            bool IsAvailable { get; set; }
+            string ImageResourceName { get; set; }
+        }
     }
 }

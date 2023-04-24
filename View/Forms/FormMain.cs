@@ -1,4 +1,5 @@
 ﻿using Optimum_Tech.Model;
+using Optimum_Tech.View.Screens;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,7 @@ namespace Optimum_Tech.Forms
         private FormCategory formCategory;
         private FormAccount formAccount;
         private FormHome formHome;
+        private FormFavoritesEmpty formFavoritesEmpty;
 
         #endregion
 
@@ -216,18 +218,29 @@ namespace Optimum_Tech.Forms
 
             OpenChildForm(formHome);
         }
-        private void buttonFavourites_Click(object sender, EventArgs e)
+        private void buttonFavorites_Click(object sender, EventArgs e)
         {
             CloseAllForms();
 
             FormFavorites formFavorites = new FormFavorites(this);
 
-            if (formFavorites == null || formFavorites.IsDisposed)
-            {
-                formFavorites = new FormFavorites(this);
-            }
 
-            OpenChildForm(formFavorites);
+            if (UserManager.currentUser.Favorites.Count > 0)
+            {
+                if (formFavorites == null || formFavorites.IsDisposed)
+                {
+                    formFavorites = new FormFavorites(this);
+                }
+                OpenChildForm(formFavorites);
+            }
+            else
+            {
+                if (formFavoritesEmpty == null || formFavoritesEmpty.IsDisposed)
+                {
+                    formFavoritesEmpty = new FormFavoritesEmpty();
+                }
+                OpenChildForm(formFavoritesEmpty);
+            }
         }
 
         #endregion
@@ -254,7 +267,7 @@ namespace Optimum_Tech.Forms
 
             UserManager.LoginAsGuest();
         }
-        public void OpenChildForm(Form childForm)
+        internal void OpenChildForm(Form childForm)
         {
             panelMain.Controls.Clear();
             childForm.TopLevel = false;
@@ -264,7 +277,7 @@ namespace Optimum_Tech.Forms
             panelMain.Tag = childForm;
             childForm.Show();
         }
-        private void CloseAllForms()
+        internal void CloseAllForms()
         {
             foreach (Form form in this.MdiChildren)
             {

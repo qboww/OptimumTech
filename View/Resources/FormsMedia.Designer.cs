@@ -393,6 +393,16 @@ namespace Optimum_Tech.View.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MSI_RTX_4070 {
+            get {
+                object obj = ResourceManager.GetObject("MSI_RTX_4070", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap no_stars {
             get {
                 object obj = ResourceManager.GetObject("no_stars", resourceCulture);
@@ -426,6 +436,16 @@ namespace Optimum_Tech.View.Resources {
         internal static System.Drawing.Bitmap power_supply {
             get {
                 object obj = ResourceManager.GetObject("power-supply", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PowerColor_RX_6900XT {
+            get {
+                object obj = ResourceManager.GetObject("PowerColor_RX_6900XT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -486,6 +506,16 @@ namespace Optimum_Tech.View.Resources {
         internal static System.Drawing.Bitmap two_stars {
             get {
                 object obj = ResourceManager.GetObject("two_stars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zotac_RTX_3060Ti {
+            get {
+                object obj = ResourceManager.GetObject("Zotac_RTX_3060Ti", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -50,8 +50,11 @@ namespace Optimum_Tech.Forms
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            UserManager.LoginAsGuest();
-            UserManager.UpdateStatus(this.textBoxStatus);
+            if (!(UserManager.currentUser.Access is Status.Guest))
+            {
+                UserManager.LoginAsGuest();
+                UserManager.UpdateStatus(this.textBoxStatus);
+            }
         }
 
         #endregion

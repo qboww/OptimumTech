@@ -1,6 +1,6 @@
 ﻿namespace Optimum_Tech.Forms
 {
-    partial class FormFavorites
+    partial class FormDisplayProcessors
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,7 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.BackColor = SystemColors.ControlLight;
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Margin = new Padding(5);
@@ -42,21 +43,21 @@
             flowLayoutPanel1.Size = new Size(1064, 735);
             flowLayoutPanel1.TabIndex = 0;
             // 
-            // FormFavorites
+            // FormProcessors
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(1064, 735);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FormFavorites";
-            Text = "FormFavorites";
-            Load += FormFavorites_Load;
+            Name = "FormProcessors";
+            Text = "FormProcessors";
+            Load += FormDisplay_Load;
             ResumeLayout(false);
         }
 
         #endregion
-
-        internal FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

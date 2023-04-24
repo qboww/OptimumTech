@@ -1,0 +1,47 @@
+﻿[
+  {
+    "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+    "Name": "MSI Gaming RTX 4070",
+    "Price": 579.99,
+    "Responses": 17,
+    "Rating": 81,
+    "IsAvailable": true,
+    "ImageResourceName": "MSI_RTX_4070.png",
+    "Manufacturer": "MSI",
+    "VRAM": 12,
+    "MemoryInterface": 192,
+    "MemoryType": "GDDR6X",
+    "ClockSpeedDefault": 2.745,
+    "MinimumWattage": 700
+  },
+  {
+    "Id": "709954db-2211-4ff9-a5d8-cbfb7b0ad0ce",
+    "Name": "PowerColor RX 6700 XT",
+    "Price": 449.99,
+    "Responses": 39,
+    "Rating": 3,
+    "IsAvailable": true,
+    "ImageResourceName": "PowerColor_RX_6900XT.png",
+    "Manufacturer": "PowerColor",
+    "VRAM": 12,
+    "MemoryInterface": 192,
+    "MemoryType": "GDDR6",
+    "ClockSpeedDefault": 2.580,
+    "MinimumWattage": 650
+  },
+  {
+    "Id": "8831835c-aa14-4156-988e-73fa087cfd20",
+    "Name": "ZOTAC Gaming RTX 3060 Ti",
+    "Price": 489.25,
+    "Responses": 94,
+    "Rating": 4,
+    "IsAvailable": false,
+    "ImageResourceName": "Zotac_RTX_4060Ti.png",
+    "Manufacturer": "Zotac",
+    "VRAM": 8,
+    "MemoryInterface": 256,
+    "MemoryType": "GDDR6",
+    "ClockSpeedDefault": 1.695,
+    "MinimumWattage": 450
+  }
+]

@@ -150,6 +150,7 @@
             pictureBoxGraphicsCards.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBoxGraphicsCards.TabIndex = 2;
             pictureBoxGraphicsCards.TabStop = false;
+            pictureBoxGraphicsCards.Click += pictureBoxGraphicsCards_Click;
             // 
             // labelGraphicsCards
             // 
