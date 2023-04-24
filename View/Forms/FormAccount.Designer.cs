@@ -1,4 +1,4 @@
-﻿using Optimum_Tech.Resources;
+﻿using Optimum_Tech.View.Resources;
 
 namespace Optimum_Tech.Forms
 {

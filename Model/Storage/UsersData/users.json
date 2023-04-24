@@ -1,0 +1,26 @@
+[
+  {
+    "Login": "admin",
+    "Password": "admin",
+    "Access": 0,
+    "Favorites": {
+      "FavoritesList": []
+    }
+  },
+  {
+    "Login": "guest",
+    "Password": "guest",
+    "Access": 1,
+    "Favorites": {
+      "FavoritesList": []
+    }
+  },
+  {
+    "Login": "bob",
+    "Password": "bob",
+    "Access": 2,
+    "Favorites": {
+      "FavoritesList": []
+    }
+  }
+]

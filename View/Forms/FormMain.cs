@@ -28,7 +28,6 @@ namespace Optimum_Tech.Forms
         private FormCategory formCategory;
         private FormAccount formAccount;
         private FormHome formHome;
-        private FormFavorites formFavorites;
 
         #endregion
 
@@ -195,7 +194,6 @@ namespace Optimum_Tech.Forms
 
             OpenChildForm(formCategory);
         }
-
         private void buttonAccount_Click(object sender, EventArgs e)
         {
             CloseAllForms();
@@ -207,7 +205,6 @@ namespace Optimum_Tech.Forms
 
             OpenChildForm(formAccount);
         }
-
         private void buttonHome_Click(object sender, EventArgs e)
         {
             CloseAllForms();
@@ -219,29 +216,11 @@ namespace Optimum_Tech.Forms
 
             OpenChildForm(formHome);
         }
-
-        public void OpenChildForm(Form childForm)
-        {
-            panelMain.Controls.Clear();
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelMain.Controls.Add(childForm);
-            panelMain.Tag = childForm;
-            childForm.Show();
-        }
-
-        private void CloseAllForms()
-        {
-            foreach (Form form in this.MdiChildren)
-            {
-                form.Close();
-            }
-        }
-
         private void buttonFavourites_Click(object sender, EventArgs e)
         {
             CloseAllForms();
+
+            FormFavorites formFavorites = new FormFavorites(this);
 
             if (formFavorites == null || formFavorites.IsDisposed)
             {
@@ -264,8 +243,6 @@ namespace Optimum_Tech.Forms
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            UserManager.LoginAsGuest();
-
             CloseAllForms();
 
             if (formHome == null || formHome.IsDisposed)
@@ -274,6 +251,25 @@ namespace Optimum_Tech.Forms
             }
 
             OpenChildForm(formHome);
+
+            UserManager.LoginAsGuest();
+        }
+        public void OpenChildForm(Form childForm)
+        {
+            panelMain.Controls.Clear();
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.Show();
+        }
+        private void CloseAllForms()
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                form.Close();
+            }
         }
     }
 }

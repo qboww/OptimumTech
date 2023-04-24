@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resources\FormsMedia.Designer.cs">
+    <Compile Update="View\Resources\FormsMedia.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>FormsMedia.resx</DependentUpon>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\FormsMedia.resx">
+    <EmbeddedResource Update="View\Resources\FormsMedia.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>FormsMedia.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -31,7 +31,6 @@
 
   <ItemGroup>
     <Folder Include="Properties\" />
-    <Folder Include="Resources\Images\" />
   </ItemGroup>
 
 </Project>

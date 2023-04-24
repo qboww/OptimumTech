@@ -1,8 +1,6 @@
-﻿using Optimum_Tech.Resources;
-
-namespace Optimum_Tech.Forms
+﻿namespace Optimum_Tech.Forms
 {
-    partial class FormHome
+    partial class FormFavorites
     {
         /// <summary>
         /// Required designer variable.
@@ -30,22 +28,25 @@ namespace Optimum_Tech.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             textBoxUnderLogo = new TextBox();
             pictureBoxLogo = new PictureBox();
-            panel1.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // flowLayoutPanel1
             // 
-            panel1.Controls.Add(textBoxUnderLogo);
-            panel1.Controls.Add(pictureBoxLogo);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1077, 635);
-            panel1.TabIndex = 4;
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.Controls.Add(textBoxUnderLogo);
+            flowLayoutPanel1.Controls.Add(pictureBoxLogo);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Margin = new Padding(5);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Padding = new Padding(5);
+            flowLayoutPanel1.Size = new Size(1064, 735);
+            flowLayoutPanel1.TabIndex = 0;
             // 
             // textBoxUnderLogo
             // 
@@ -53,43 +54,44 @@ namespace Optimum_Tech.Forms
             textBoxUnderLogo.BackColor = SystemColors.ButtonFace;
             textBoxUnderLogo.BorderStyle = BorderStyle.None;
             textBoxUnderLogo.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxUnderLogo.Location = new Point(-1, 348);
+            textBoxUnderLogo.ForeColor = SystemColors.WindowFrame;
+            textBoxUnderLogo.Location = new Point(-7, 394);
             textBoxUnderLogo.Name = "textBoxUnderLogo";
             textBoxUnderLogo.Size = new Size(1078, 32);
-            textBoxUnderLogo.TabIndex = 5;
-            textBoxUnderLogo.Text = "Build PC with less effort!";
+            textBoxUnderLogo.TabIndex = 7;
+            textBoxUnderLogo.Text = "Favorites list is empty...";
             textBoxUnderLogo.TextAlign = HorizontalAlignment.Center;
             // 
             // pictureBoxLogo
             // 
             pictureBoxLogo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBoxLogo.Image = FormsMedia.optimum_tech_100;
-            pictureBoxLogo.Location = new Point(0, 246);
+            pictureBoxLogo.Image = View.Resources.FormsMedia.favorites_screen_empty;
+            pictureBoxLogo.Location = new Point(-6, 292);
             pictureBoxLogo.Name = "pictureBoxLogo";
             pictureBoxLogo.Size = new Size(1078, 96);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBoxLogo.TabIndex = 4;
+            pictureBoxLogo.TabIndex = 6;
             pictureBoxLogo.TabStop = false;
             // 
-            // FormHome
+            // FormFavorites
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(1077, 635);
-            Controls.Add(panel1);
+            ClientSize = new Size(1064, 735);
+            Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FormHome";
-            Text = "FormHome";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            Name = "FormFavorites";
+            Text = "FormFavorites";
+            Load += FormFavorites_Load;
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        internal FlowLayoutPanel flowLayoutPanel1;
         private TextBox textBoxUnderLogo;
         private PictureBox pictureBoxLogo;
     }

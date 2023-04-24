@@ -1,4 +1,6 @@
-﻿namespace Optimum_Tech.Forms.Dialogs
+﻿using Optimum_Tech.View.Resources;
+
+namespace Optimum_Tech.Forms.Dialogs
 {
     partial class FormDescription
     {
@@ -38,7 +40,6 @@
             textBoxResponses = new TextBox();
             textBoxRating = new TextBox();
             textBoxManufacturer = new TextBox();
-            textBoxSeries = new TextBox();
             textBoxSocket = new TextBox();
             textBoxCores = new TextBox();
             textBoxThreads = new TextBox();
@@ -67,7 +68,7 @@
             // pictureBoxClose
             // 
             pictureBoxClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBoxClose.Image = Resources.FormsMedia.close;
+            pictureBoxClose.Image = FormsMedia.close;
             pictureBoxClose.Location = new Point(747, 0);
             pictureBoxClose.Name = "pictureBoxClose";
             pictureBoxClose.Size = new Size(23, 25);
@@ -107,7 +108,7 @@
             textBoxName.BorderStyle = BorderStyle.None;
             textBoxName.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxName.ForeColor = Color.White;
-            textBoxName.Location = new Point(390, 96);
+            textBoxName.Location = new Point(12, 88);
             textBoxName.Name = "textBoxName";
             textBoxName.ReadOnly = true;
             textBoxName.Size = new Size(370, 24);
@@ -121,7 +122,7 @@
             textBoxPrice.BorderStyle = BorderStyle.None;
             textBoxPrice.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxPrice.ForeColor = Color.White;
-            textBoxPrice.Location = new Point(390, 126);
+            textBoxPrice.Location = new Point(12, 118);
             textBoxPrice.Name = "textBoxPrice";
             textBoxPrice.ReadOnly = true;
             textBoxPrice.Size = new Size(370, 24);
@@ -135,7 +136,7 @@
             textBoxResponses.BorderStyle = BorderStyle.None;
             textBoxResponses.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxResponses.ForeColor = Color.White;
-            textBoxResponses.Location = new Point(390, 156);
+            textBoxResponses.Location = new Point(12, 148);
             textBoxResponses.Name = "textBoxResponses";
             textBoxResponses.ReadOnly = true;
             textBoxResponses.Size = new Size(370, 24);
@@ -149,7 +150,7 @@
             textBoxRating.BorderStyle = BorderStyle.None;
             textBoxRating.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxRating.ForeColor = Color.White;
-            textBoxRating.Location = new Point(390, 186);
+            textBoxRating.Location = new Point(12, 178);
             textBoxRating.Name = "textBoxRating";
             textBoxRating.ReadOnly = true;
             textBoxRating.Size = new Size(370, 24);
@@ -163,7 +164,7 @@
             textBoxManufacturer.BorderStyle = BorderStyle.None;
             textBoxManufacturer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxManufacturer.ForeColor = Color.White;
-            textBoxManufacturer.Location = new Point(12, 96);
+            textBoxManufacturer.Location = new Point(388, 88);
             textBoxManufacturer.Name = "textBoxManufacturer";
             textBoxManufacturer.ReadOnly = true;
             textBoxManufacturer.Size = new Size(372, 24);
@@ -171,27 +172,13 @@
             textBoxManufacturer.TabStop = false;
             textBoxManufacturer.Text = "Manufacturer: ";
             // 
-            // textBoxSeries
-            // 
-            textBoxSeries.BackColor = Color.FromArgb(40, 40, 40);
-            textBoxSeries.BorderStyle = BorderStyle.None;
-            textBoxSeries.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSeries.ForeColor = Color.White;
-            textBoxSeries.Location = new Point(12, 126);
-            textBoxSeries.Name = "textBoxSeries";
-            textBoxSeries.ReadOnly = true;
-            textBoxSeries.Size = new Size(372, 24);
-            textBoxSeries.TabIndex = 9;
-            textBoxSeries.TabStop = false;
-            textBoxSeries.Text = "Series: ";
-            // 
             // textBoxSocket
             // 
             textBoxSocket.BackColor = Color.FromArgb(40, 40, 40);
             textBoxSocket.BorderStyle = BorderStyle.None;
             textBoxSocket.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSocket.ForeColor = Color.White;
-            textBoxSocket.Location = new Point(12, 156);
+            textBoxSocket.Location = new Point(388, 118);
             textBoxSocket.Name = "textBoxSocket";
             textBoxSocket.ReadOnly = true;
             textBoxSocket.Size = new Size(372, 24);
@@ -205,7 +192,7 @@
             textBoxCores.BorderStyle = BorderStyle.None;
             textBoxCores.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCores.ForeColor = Color.White;
-            textBoxCores.Location = new Point(12, 186);
+            textBoxCores.Location = new Point(388, 148);
             textBoxCores.Name = "textBoxCores";
             textBoxCores.ReadOnly = true;
             textBoxCores.Size = new Size(372, 24);
@@ -219,7 +206,7 @@
             textBoxThreads.BorderStyle = BorderStyle.None;
             textBoxThreads.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxThreads.ForeColor = Color.White;
-            textBoxThreads.Location = new Point(12, 216);
+            textBoxThreads.Location = new Point(388, 178);
             textBoxThreads.Name = "textBoxThreads";
             textBoxThreads.ReadOnly = true;
             textBoxThreads.Size = new Size(372, 24);
@@ -233,7 +220,7 @@
             textBoxDefaultSpeed.BorderStyle = BorderStyle.None;
             textBoxDefaultSpeed.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxDefaultSpeed.ForeColor = Color.White;
-            textBoxDefaultSpeed.Location = new Point(12, 246);
+            textBoxDefaultSpeed.Location = new Point(388, 208);
             textBoxDefaultSpeed.Name = "textBoxDefaultSpeed";
             textBoxDefaultSpeed.ReadOnly = true;
             textBoxDefaultSpeed.Size = new Size(372, 24);
@@ -247,7 +234,7 @@
             textBoxBoostSpeed.BorderStyle = BorderStyle.None;
             textBoxBoostSpeed.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxBoostSpeed.ForeColor = Color.White;
-            textBoxBoostSpeed.Location = new Point(12, 276);
+            textBoxBoostSpeed.Location = new Point(388, 238);
             textBoxBoostSpeed.Name = "textBoxBoostSpeed";
             textBoxBoostSpeed.ReadOnly = true;
             textBoxBoostSpeed.Size = new Size(372, 24);
@@ -279,7 +266,6 @@
             Controls.Add(textBoxThreads);
             Controls.Add(textBoxCores);
             Controls.Add(textBoxSocket);
-            Controls.Add(textBoxSeries);
             Controls.Add(textBoxManufacturer);
             Controls.Add(textBoxRating);
             Controls.Add(textBoxResponses);
@@ -291,6 +277,7 @@
             Name = "FormDescription";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Descripton";
+            Load += FormDescription_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).EndInit();
             panelTitle.ResumeLayout(false);
             panelTitle.PerformLayout();
@@ -311,7 +298,6 @@
         private TextBox textBoxResponses;
         private TextBox textBoxRating;
         private TextBox textBoxManufacturer;
-        private TextBox textBoxSeries;
         private TextBox textBoxSocket;
         private TextBox textBoxCores;
         private TextBox textBoxThreads;

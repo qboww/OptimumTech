@@ -1,8 +1,8 @@
-﻿using Optimum_Tech.Resources;
+﻿using Optimum_Tech.View.Resources;
 
 namespace OptimumTech.Controls
 {
-    partial class Product
+    partial class ProductControl
     {
         /// <summary> 
         /// Required designer variable.

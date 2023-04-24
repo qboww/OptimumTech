@@ -1,32 +1,51 @@
-﻿using Optimum_Tech.Forms.Dialogs;
+﻿using Optimum_Tech.Forms;
+using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
-using Optimum_Tech.Resources;
-using System.Runtime.Versioning;
+using Optimum_Tech.View.Resources;
 
 namespace OptimumTech.Controls
 {
-    public partial class Product : UserControl
+    public partial class ProductControl : UserControl
     {
         private FormDescription formDescription;
 
-        public Product(Category product)
+        public bool IsFavorite { get; set; } = false;
+        public bool IsSelected { get; set; } = false;
+
+        public ProductControl(Product product)
         {
             InitializeComponent();
 
             textBoxProductName.Text = product.Name;
-            textBoxPrice.Text = $"{product.Price}$";
+            textBoxPrice.Text = $"${product.Price}";
             textBoxResponses.Text = $"{product.Responses} Reviews";
-            GetStatus(product);
 
             pictureBoxRating.Image = GetRating(product);
             pictureBoxProduct.Image = GetImage(product);
+            GetStatus(product);
 
             pictureBoxFavorite.Click += (sender, e) => pictureBoxFavorite_Click(sender, e, product);
             pictureBoxCart.Click += (sender, e) => pictureBoxCart_Click(sender, e, product);
             pictureBoxDescription.Click += (sender, e) => pictureBoxDescription_Click(sender, e, product);
         }
 
-        public Image GetImage(Category product)
+        public void GetStatus(Product product)
+        {
+            if (product.IsAvailable == true)
+            {
+                this.textBoxAvailable.ForeColor = Color.FromArgb(0, 160, 70);
+                this.textBoxAvailable.Text = "Available";
+            }
+            else if (product.IsAvailable == false)
+            {
+                this.pictureBoxCart.Image = FormsMedia.basket_blocked;
+                this.pictureBoxFavorite.Image = FormsMedia.favorite_blocked;
+                this.textBoxAvailable.ForeColor = Color.Red;
+                this.textBoxAvailable.Text = "Out of stock";
+            }
+        }
+
+        public Image GetImage(Product product)
         {
             Dictionary<string, Image> imageDictionary = new Dictionary<string, Image>()
             {
@@ -43,23 +62,7 @@ namespace OptimumTech.Controls
             return null;
         }
 
-        public void GetStatus(Category product)
-        {
-            if (product.IsAvailable == true)
-            {
-                this.textBoxAvailable.ForeColor = Color.FromArgb(0, 160, 70);
-                this.textBoxAvailable.Text = "Available";
-            }
-            else if (product.IsAvailable == false)
-            {
-                this.pictureBoxCart.Image = FormsMedia.basket_blocked;
-                this.pictureBoxFavorite.Image = FormsMedia.favorite_blocked;
-                this.textBoxAvailable.ForeColor = Color.Red;
-                this.textBoxAvailable.Text = "Out of stock";
-            }
-        }
-
-        public Image GetRating(Category product)
+        public Image GetRating(Product product)
         {
             switch (product.Rating)
             {
@@ -76,10 +79,12 @@ namespace OptimumTech.Controls
                 case 5:
                     return FormsMedia.five_stars;
             }
-            return FormsMedia.no_stars;
+            return null;
         }
 
-        private void pictureBoxCart_Click(object? sender, EventArgs e, Category product)
+        #region events
+
+        private void pictureBoxCart_Click(object? sender, EventArgs e, Product product)
         {
             if (product != null)
             {
@@ -89,21 +94,21 @@ namespace OptimumTech.Controls
                 }
                 else
                 {
-                    if (product.IsSelected == false)
+                    if (IsSelected == false)
                     {
-                        product.IsSelected = true;
+                        IsSelected = true;
                         this.pictureBoxCart.Image = FormsMedia.basket_filled;
                     }
                     else
                     {
-                        product.IsSelected = false;
+                        IsSelected = false;
                         this.pictureBoxCart.Image = FormsMedia.basket_empty;
                     }
                 }
             }
         }
 
-        private void pictureBoxFavorite_Click(object? sender, EventArgs e, Category product)
+        private void pictureBoxFavorite_Click(object? sender, EventArgs e, Product product)
         {
             if (product != null)
             {
@@ -113,25 +118,31 @@ namespace OptimumTech.Controls
                 }
                 else
                 {
-                    if (product.IsFavorite == false)
+                    if (IsFavorite == false)
                     {
-                        product.IsFavorite = true;
+                        this.IsFavorite = true;
                         this.pictureBoxFavorite.Image = FormsMedia.favorite_filled;
+                        
+                        UserManager.AddToFavorites(this);
                     }
-                    else
+                    else if (IsFavorite == true)
                     {
-                        product.IsFavorite = false;
+                        this.IsFavorite = false;
                         this.pictureBoxFavorite.Image = FormsMedia.favorite_empty;
+
+                        FormFavorites formFavorites = (FormFavorites)this.FindForm();
+                        formFavorites.flowLayoutPanel1.Controls.Remove(this);
+                        UserManager.RemoveFromFavorites(this);
                     }
                 }
             }
         }
 
-        private void pictureBoxDescription_Click(object sender, EventArgs e, Category product)
+        private void pictureBoxDescription_Click(object sender, EventArgs e, Product product)
         {
             if (formDescription == null || formDescription.IsDisposed)
             {
-                formDescription = new FormDescription((Processor)product);
+                formDescription = new FormDescription(product);
                 formDescription.FormClosed += (s, ev) => formDescription = null;
                 formDescription.Show();
             }
@@ -140,5 +151,7 @@ namespace OptimumTech.Controls
                 formDescription.BringToFront();
             }
         }
+
+        #endregion
     }
 }

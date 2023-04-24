@@ -1,0 +1,47 @@
+﻿[
+  {
+    "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+    "Name": "Intel Core i9 13900KF",
+    "Price": 579.99,
+    "Responses": 32,
+    "Rating": 3,
+    "IsAvailable": true,
+    "ImageResourceName": "Intel_Core_i9_13900K.png",
+    "Manufacturer": "Intel",
+    "Socket": "LGA 1700",
+    "Cores": 16,
+    "Threads": 32,
+    "ClockSpeedDefault": 3.5,
+    "ClockSpeedBoost": 5.0
+  },
+  {
+    "Id": "9b49e7c8-b6e8-4dbf-b6fc-d0b0b2c8a7cb",
+    "Name": "AMD Ryzen 9 7950X3D",
+    "Price": 997.99,
+    "Responses": 54,
+    "Rating": 4,
+    "IsAvailable": true,
+    "ImageResourceName": "AMD_Ryzen_9_7950X3D.png",
+    "Manufacturer": "AMD",
+    "Socket": "AM5",
+    "Cores": 24,
+    "Threads": 48,
+    "ClockSpeedDefault": 3.4,
+    "ClockSpeedBoost": 4.9
+  },
+  {
+    "Id": "b74a98ce-7cd8-4b4c-86a7-cb5d9343d9a8",
+    "Name": "AMD Ryzen 5 7600X",
+    "Price": 272.25,
+    "Responses": 62,
+    "Rating": 5,
+    "IsAvailable": false,
+    "ImageResourceName": "AMD_Ryzen_5_7600X.png",
+    "Manufacturer": "AMD",
+    "Socket": "AM5",
+    "Cores": 6,
+    "Threads": 12,
+    "ClockSpeedDefault": 3.8,
+    "ClockSpeedBoost": 4.6
+  }
+]

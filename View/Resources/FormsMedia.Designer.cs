@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Optimum_Tech.Resources {
+namespace Optimum_Tech.View.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Optimum_Tech.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Optimum_Tech.Resources.FormsMedia", typeof(FormsMedia).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Optimum_Tech.View.Resources.FormsMedia", typeof(FormsMedia).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -266,6 +266,16 @@ namespace Optimum_Tech.Resources {
         internal static System.Drawing.Bitmap favorite_filled {
             get {
                 object obj = ResourceManager.GetObject("favorite_filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap favorites_screen_empty {
+            get {
+                object obj = ResourceManager.GetObject("favorites_screen_empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
