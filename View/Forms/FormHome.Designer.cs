@@ -39,6 +39,7 @@ namespace Optimum_Tech.Forms
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.Control;
             panel1.Controls.Add(textBoxUnderLogo);
             panel1.Controls.Add(pictureBoxLogo);
             panel1.Dock = DockStyle.Fill;
@@ -50,7 +51,7 @@ namespace Optimum_Tech.Forms
             // textBoxUnderLogo
             // 
             textBoxUnderLogo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxUnderLogo.BackColor = SystemColors.ButtonFace;
+            textBoxUnderLogo.BackColor = SystemColors.Control;
             textBoxUnderLogo.BorderStyle = BorderStyle.None;
             textBoxUnderLogo.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxUnderLogo.Location = new Point(-1, 348);
@@ -75,7 +76,7 @@ namespace Optimum_Tech.Forms
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(1077, 635);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;

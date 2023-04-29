@@ -4,7 +4,7 @@ namespace Optimum_Tech.Model
 {
     public abstract class Product : IProduct
     {
-        public Guid Id { get; } = Guid.NewGuid();
+        public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public int Responses { get; set; }

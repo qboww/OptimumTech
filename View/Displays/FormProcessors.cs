@@ -6,11 +6,11 @@ using System.DirectoryServices.ActiveDirectory;
 
 namespace Optimum_Tech.Forms
 {
-    public partial class FormDisplayProcessors : Form
+    public partial class FormProcessors : Form
     {
         private readonly string processorsPath = "D:\\Downloads\\OptimumTech\\Repository\\Products\\processors.json";
 
-        public FormDisplayProcessors()
+        public FormProcessors()
         {
             InitializeComponent();
         }
@@ -30,7 +30,7 @@ namespace Optimum_Tech.Forms
             return controls;
         }
 
-        private void FormDisplay_Load(object sender, EventArgs e)
+        private void FormProcessors_Load(object sender, EventArgs e)
         {
             foreach (var control in this.GetProcessors(processorsPath))
             {

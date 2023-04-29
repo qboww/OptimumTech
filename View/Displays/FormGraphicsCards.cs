@@ -5,11 +5,11 @@ using OptimumTech.Controls;
 
 namespace Optimum_Tech.View.Displays
 {
-    public partial class FormDisplayGraphicsCards : Form
+    public partial class FormGraphicsCards : Form
     {
         private readonly string graphicsCardsPath = "D:\\Downloads\\OptimumTech\\Repository\\Products\\graphicscards.json";
 
-        public FormDisplayGraphicsCards()
+        public FormGraphicsCards()
         {
             InitializeComponent();
         }

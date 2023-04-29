@@ -1,6 +1,6 @@
-﻿namespace Optimum_Tech.View.Displays
+﻿namespace Optimum_Tech.Forms
 {
-    partial class FormDisplayGraphicsCards
+    partial class FormProcessors
     {
         /// <summary>
         /// Required designer variable.
@@ -43,7 +43,7 @@
             flowLayoutPanel1.Size = new Size(1064, 735);
             flowLayoutPanel1.TabIndex = 0;
             // 
-            // FormDisplayGraphicsCards
+            // FormProcessors
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -51,9 +51,9 @@
             ClientSize = new Size(1064, 735);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FormDisplayGraphicsCards";
+            Name = "FormProcessors";
             Text = "FormProcessors";
-            Load += FormDisplayGraphicsCards_Load;
+            Load += FormProcessors_Load;
             ResumeLayout(false);
         }
 

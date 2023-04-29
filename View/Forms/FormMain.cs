@@ -1,16 +1,9 @@
 ﻿using Optimum_Tech.Model;
+using Optimum_Tech.View.Displays;
 using Optimum_Tech.View.Forms;
 using Optimum_Tech.View.Screens;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.DataFormats;
+using Button = System.Windows.Forms.Button;
+using TextBox = System.Windows.Forms.TextBox;
 
 namespace Optimum_Tech.Forms
 {
@@ -38,12 +31,16 @@ namespace Optimum_Tech.Forms
 
         #region props
 
+        public TextBox SearchTextBox
+        {
+            get { return textBoxSearchText; }
+            set { textBoxSearchText = value; }
+        }
         public Button AdminButton
         {
             get { return buttonAdmin; }
             set { buttonAdmin = value; }
         }
-
         public TextBox AdminTextBox
         {
             get { return textBoxAdmin; }
@@ -167,24 +164,16 @@ namespace Optimum_Tech.Forms
         }
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            if (textBoxSearch.Tag == null)
-            {
-                textBoxSearch.Tag = 1;
+            CloseAllForms();
 
-                textBoxSearch.Clear();
-                textBoxSearch.ReadOnly = false;
-                textBoxSearch.BackColor = Color.White;
-                textBoxSearch.BringToFront();
-                textBoxSearchText.SendToBack();
-            }
-            else
-            {
-                textBoxSearch.Clear();
-                textBoxSearch.SendToBack();
-                textBoxSearchText.BringToFront();
+            FormSearch formSearch = new FormSearch(this);
 
-                textBoxSearch.Tag = null;
+            if (formSearch == null || formSearch.IsDisposed)
+            {
+                formSearch = new FormSearch(this);
             }
+
+            OpenChildForm(formSearch);
         }
 
         private void buttonCategory_Click(object sender, EventArgs e)
@@ -225,7 +214,6 @@ namespace Optimum_Tech.Forms
             CloseAllForms();
 
             FormFavorites formFavorites = new FormFavorites(this);
-
 
             if (UserManager.currentUser.Favorites.Count > 0)
             {
@@ -273,9 +261,9 @@ namespace Optimum_Tech.Forms
 
         #region textbox_events
 
-        private void textBoxSearch_Click(object sender, EventArgs e)
+        private void textBoxSearchText_Enter(object sender, EventArgs e)
         {
-            textBoxSearch.Clear();
+            textBoxSearchText.Text = string.Empty;
         }
 
         #endregion

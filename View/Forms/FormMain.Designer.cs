@@ -77,7 +77,7 @@ namespace Optimum_Tech.Forms
             panelTitleBar.Dock = DockStyle.Top;
             panelTitleBar.Location = new Point(0, 0);
             panelTitleBar.Name = "panelTitleBar";
-            panelTitleBar.Size = new Size(1316, 27);
+            panelTitleBar.Size = new Size(1333, 27);
             panelTitleBar.TabIndex = 0;
             panelTitleBar.MouseDown += panelTitleBar_MouseDown;
             panelTitleBar.MouseMove += panelTitleBar_MouseMove;
@@ -89,7 +89,7 @@ namespace Optimum_Tech.Forms
             buttonMinimize.FlatAppearance.BorderSize = 0;
             buttonMinimize.FlatStyle = FlatStyle.Flat;
             buttonMinimize.Image = FormsMedia.minimize;
-            buttonMinimize.Location = new Point(1229, 0);
+            buttonMinimize.Location = new Point(1246, 0);
             buttonMinimize.Name = "buttonMinimize";
             buttonMinimize.Size = new Size(25, 27);
             buttonMinimize.TabIndex = 0;
@@ -102,7 +102,7 @@ namespace Optimum_Tech.Forms
             buttonClose.FlatAppearance.BorderSize = 0;
             buttonClose.FlatStyle = FlatStyle.Flat;
             buttonClose.Image = FormsMedia.close;
-            buttonClose.Location = new Point(1291, 0);
+            buttonClose.Location = new Point(1308, 0);
             buttonClose.Name = "buttonClose";
             buttonClose.Size = new Size(25, 27);
             buttonClose.TabIndex = 0;
@@ -115,7 +115,7 @@ namespace Optimum_Tech.Forms
             buttonMaximize.FlatStyle = FlatStyle.Flat;
             buttonMaximize.ForeColor = Color.White;
             buttonMaximize.Image = FormsMedia.maximize;
-            buttonMaximize.Location = new Point(1260, 0);
+            buttonMaximize.Location = new Point(1277, 0);
             buttonMaximize.Name = "buttonMaximize";
             buttonMaximize.Size = new Size(25, 27);
             buttonMaximize.TabIndex = 0;
@@ -308,16 +308,16 @@ namespace Optimum_Tech.Forms
             // textBoxSearchText
             // 
             textBoxSearchText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxSearchText.BackColor = Color.FromArgb(40, 40, 40);
+            textBoxSearchText.BackColor = SystemColors.Control;
             textBoxSearchText.BorderStyle = BorderStyle.None;
             textBoxSearchText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSearchText.ForeColor = Color.White;
+            textBoxSearchText.ForeColor = Color.FromArgb(20, 20, 20);
             textBoxSearchText.Location = new Point(6, 94);
             textBoxSearchText.Name = "textBoxSearchText";
-            textBoxSearchText.ReadOnly = true;
             textBoxSearchText.Size = new Size(151, 24);
             textBoxSearchText.TabIndex = 20;
             textBoxSearchText.Text = "Search";
+            textBoxSearchText.Enter += textBoxSearchText_Enter;
             // 
             // textBoxCategories
             // 
@@ -439,15 +439,14 @@ namespace Optimum_Tech.Forms
             textBoxSearch.ReadOnly = true;
             textBoxSearch.Size = new Size(151, 24);
             textBoxSearch.TabIndex = 0;
-            textBoxSearch.Click += textBoxSearch_Click;
             // 
             // panelMain
             // 
-            panelMain.BackColor = SystemColors.ButtonFace;
+            panelMain.BackColor = SystemColors.Control;
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(208, 27);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(1108, 739);
+            panelMain.Size = new Size(1125, 739);
             panelMain.TabIndex = 3;
             // 
             // timer1
@@ -464,7 +463,7 @@ namespace Optimum_Tech.Forms
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Desktop;
-            ClientSize = new Size(1316, 766);
+            ClientSize = new Size(1333, 766);
             Controls.Add(panelMain);
             Controls.Add(panelSlide);
             Controls.Add(panelCollapsed);

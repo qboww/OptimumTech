@@ -15,14 +15,14 @@ namespace Optimum_Tech.Forms
         private void pictureBoxProcessors_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var form = new FormDisplayProcessors();
+            var form = new FormProcessors();
             formMain.OpenChildForm(form);
         }
 
         private void pictureBoxGraphicsCards_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var form = new FormDisplayGraphicsCards();
+            var form = new FormGraphicsCards();
             formMain.OpenChildForm(form);
         }
     }

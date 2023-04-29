@@ -6,7 +6,7 @@ namespace Optimum_Tech.Model.Interfaces
     {
         public interface IProduct
         {
-            Guid Id { get; }
+            Guid Id { get; set; }
             string Name { get; set; }
             decimal Price { get; set; }
             int Responses { get; set; }
