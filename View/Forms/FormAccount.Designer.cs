@@ -108,7 +108,7 @@ namespace Optimum_Tech.Forms
             panel5.Controls.Add(textBoxAccountPrefferences);
             panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(800, 28);
+            panel5.Size = new Size(800, 34);
             panel5.TabIndex = 7;
             // 
             // textBoxStatus
@@ -116,11 +116,11 @@ namespace Optimum_Tech.Forms
             textBoxStatus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             textBoxStatus.BackColor = Color.FromArgb(30, 30, 30);
             textBoxStatus.BorderStyle = BorderStyle.None;
-            textBoxStatus.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxStatus.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxStatus.ForeColor = Color.White;
-            textBoxStatus.Location = new Point(644, 4);
+            textBoxStatus.Location = new Point(578, 3);
             textBoxStatus.Name = "textBoxStatus";
-            textBoxStatus.Size = new Size(144, 24);
+            textBoxStatus.Size = new Size(210, 28);
             textBoxStatus.TabIndex = 6;
             textBoxStatus.Text = "Status: Unlogged";
             textBoxStatus.TextAlign = HorizontalAlignment.Right;
@@ -129,11 +129,11 @@ namespace Optimum_Tech.Forms
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
-            textBoxAccountPrefferences.Location = new Point(12, 4);
+            textBoxAccountPrefferences.Location = new Point(12, 3);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
-            textBoxAccountPrefferences.Size = new Size(185, 24);
+            textBoxAccountPrefferences.Size = new Size(245, 28);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Account Prefferences";
             // 

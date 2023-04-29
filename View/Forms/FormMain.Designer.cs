@@ -270,6 +270,7 @@ namespace Optimum_Tech.Forms
             buttonCart.Size = new Size(45, 30);
             buttonCart.TabIndex = 0;
             buttonCart.UseVisualStyleBackColor = true;
+            buttonCart.Click += buttonCart_Click;
             // 
             // panelSlide
             // 

@@ -8,9 +8,13 @@ namespace OptimumTech.Controls
     {
         private FormDescription formDescription;
 
+        public event EventHandler IsSelectionChanged;
         public event EventHandler IsFavoriteChanged;
 
         private bool isFavorite;
+        public bool isSelected;
+        public decimal ProductPrice;
+
         public bool IsFavorite
         {
             get { return isFavorite; }
@@ -23,11 +27,24 @@ namespace OptimumTech.Controls
                 }
             }
         }
-        public bool IsSelected { get; set; } = false;
+        public bool IsSelected
+        {
+            get { return isSelected; }
+            set
+            {
+                if (isSelected != value)
+                {
+                    isSelected = value;
+                    IsSelectionChanged?.Invoke(this, EventArgs.Empty);
+                }
+            }
+        }
 
         public ProductControl(Product product)
         {
             InitializeComponent();
+
+            this.ProductPrice = product.Price;
 
             textBoxProductName.Text = product.Name;
             textBoxPrice.Text = $"${product.Price}";
@@ -41,7 +58,6 @@ namespace OptimumTech.Controls
             pictureBoxCart.Click += (sender, e) => pictureBoxCart_Click(sender, e, product);
             pictureBoxDescription.Click += (sender, e) => pictureBoxDescription_Click(sender, e, product);
         }
-
         public void GetStatus(Product product)
         {
             if (product.IsAvailable == true)
@@ -57,7 +73,6 @@ namespace OptimumTech.Controls
                 this.textBoxAvailable.Text = "Out of stock";
             }
         }
-
         public Image GetImage(Product product)
         {
             Dictionary<string, Image> imageDictionary = new Dictionary<string, Image>()
@@ -77,7 +92,6 @@ namespace OptimumTech.Controls
 
             return null;
         }
-
         public Image GetRating(Product product)
         {
             switch (product.Rating)
@@ -112,18 +126,19 @@ namespace OptimumTech.Controls
                 {
                     if (IsSelected == false)
                     {
-                        IsSelected = true;
+                        this.IsSelected = true;
                         this.pictureBoxCart.Image = FormsMedia.basket_filled;
+                        UserManager.AddToSelections(this);
                     }
-                    else
+                    else if (IsSelected == true)
                     {
-                        IsSelected = false;
+                        this.IsSelected = false;
                         this.pictureBoxCart.Image = FormsMedia.basket_empty;
+                        UserManager.RemoveFromSelections(this);
                     }
                 }
             }
         }
-
         private void pictureBoxFavorite_Click(object? sender, EventArgs e, Product product)
         {
             if (product != null)
@@ -149,7 +164,6 @@ namespace OptimumTech.Controls
                 }
             }
         }
-
         private void pictureBoxDescription_Click(object sender, EventArgs e, Product product)
         {
             if (formDescription == null || formDescription.IsDisposed)

@@ -14,6 +14,7 @@ namespace Optimum_Tech.Model
         public string Password { get; set; }
         public Status Access { get; set; }
         public List<ProductControl> Favorites = new List<ProductControl>();
+        public List<ProductControl> Selections = new List<ProductControl>();
 
         public User(string login, string password)
         {

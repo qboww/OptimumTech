@@ -6,11 +6,9 @@ namespace Optimum_Tech.Model
     internal static class UserManager
     {
         private static string usersFilePath = "D:\\Downloads\\OptimumTech\\Repository\\users.json";
-
         public static User? currentUser;
 
         public static void UpdateStatus(TextBox textBoxStatus) => textBoxStatus.Text = $"Logged as: {currentUser.Login}";
-
         public static void LoginAsGuest()
         {
             string json = File.ReadAllText(usersFilePath);
@@ -18,7 +16,6 @@ namespace Optimum_Tech.Model
             User? guestUser = users.FirstOrDefault(u => u.Access == Status.Guest);
             currentUser = guestUser;
         }
-
         public static void LoginAsAdmin()
         {
             string json = File.ReadAllText(usersFilePath);
@@ -26,7 +23,6 @@ namespace Optimum_Tech.Model
             User? adminUser = users.FirstOrDefault(u => u.Access == Status.Admin);
             currentUser = adminUser;
         }
-
         public static bool Login(TextBox textBoxLogin, TextBox textBoxPassword)
         {
             string login = textBoxLogin.Text;
@@ -47,7 +43,6 @@ namespace Optimum_Tech.Model
                 return false;
             }
         }
-
         public static bool Register(string login, string password)
         {
             string json = File.ReadAllText(usersFilePath);
@@ -67,7 +62,6 @@ namespace Optimum_Tech.Model
 
             return true;
         }
-
         public static List<User> LoadUsers()
         {
             if (!File.Exists(usersFilePath))
@@ -97,8 +91,6 @@ namespace Optimum_Tech.Model
                 users[index] = UserManager.currentUser;
             }
         }
-
-
         public static void RemoveFromFavorites(ProductControl control)
         {
             if (UserManager.currentUser.Favorites == null)
@@ -106,6 +98,35 @@ namespace Optimum_Tech.Model
                 return;
             }
             UserManager.currentUser.Favorites.Remove(control);
+
+            List<User> users = LoadUsers();
+            int index = users.FindIndex(u => u.Login == UserManager.currentUser.Login);
+            users[index] = UserManager.currentUser;
+        }
+
+        public static void AddToSelections(ProductControl control)
+        {
+            if (UserManager.currentUser.Selections == null)
+            {
+                UserManager.currentUser.Selections = new List<ProductControl>();
+            }
+
+            if (!UserManager.currentUser.Selections.Contains(control))
+            {
+                UserManager.currentUser.Selections.Add(control);
+
+                List<User> users = LoadUsers();
+                int index = users.FindIndex(u => u.Login == UserManager.currentUser.Login);
+                users[index] = UserManager.currentUser;
+            }
+        }
+        public static void RemoveFromSelections(ProductControl control)
+        {
+            if (UserManager.currentUser.Selections == null)
+            {
+                return;
+            }
+            UserManager.currentUser.Selections.Remove(control);
 
             List<User> users = LoadUsers();
             int index = users.FindIndex(u => u.Login == UserManager.currentUser.Login);

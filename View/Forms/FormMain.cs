@@ -1,4 +1,5 @@
 ﻿using Optimum_Tech.Model;
+using Optimum_Tech.View.Forms;
 using Optimum_Tech.View.Screens;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,7 @@ namespace Optimum_Tech.Forms
         private FormAccount formAccount;
         private FormHome formHome;
         private FormFavoritesEmpty formFavoritesEmpty;
+        private FormSelectionsEmpty formSelectionsEmpty;
 
         #endregion
 
@@ -240,6 +242,30 @@ namespace Optimum_Tech.Forms
                     formFavoritesEmpty = new FormFavoritesEmpty();
                 }
                 OpenChildForm(formFavoritesEmpty);
+            }
+        }
+        private void buttonCart_Click(object sender, EventArgs e)
+        {
+            CloseAllForms();
+
+            FormSelections formSelections = new FormSelections(this);
+
+
+            if (UserManager.currentUser.Selections.Count > 0)
+            {
+                if (formSelections == null || formSelections.IsDisposed)
+                {
+                    formSelections = new FormSelections(this);
+                }
+                OpenChildForm(formSelections);
+            }
+            else
+            {
+                if (formSelectionsEmpty == null || formSelectionsEmpty.IsDisposed)
+                {
+                    formSelectionsEmpty = new FormSelectionsEmpty();
+                }
+                OpenChildForm(formSelectionsEmpty);
             }
         }
 

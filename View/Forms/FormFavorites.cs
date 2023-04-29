@@ -1,7 +1,5 @@
 ﻿using Optimum_Tech.Model;
-using Optimum_Tech.View;
 using OptimumTech.Controls;
-using System.Windows.Forms.VisualStyles;
 
 namespace Optimum_Tech.Forms
 {
@@ -30,7 +28,7 @@ namespace Optimum_Tech.Forms
                 {
                     if (control.IsFavorite)
                     {
-                        control.IsFavoriteChanged += ProductControl_IsFavoriteChanged;
+                        control.IsSelectionChanged += ProductControl_IsFavoriteChanged;
                         this.flowLayoutPanel1.Controls.Add(control);
                     }
                 }
