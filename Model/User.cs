@@ -12,7 +12,7 @@ namespace Optimum_Tech.Model
     {
         public string Login { get; set; }
         public string Password { get; set; }
-        public Status Access { get; set; }
+        public Access Access { get; set; }
         public List<ProductControl> Favorites = new List<ProductControl>();
         public List<ProductControl> Selections = new List<ProductControl>();
 
@@ -23,7 +23,7 @@ namespace Optimum_Tech.Model
         }
     }
 
-    enum Status 
+    enum Access 
     {
         Admin, Guest, User
     }

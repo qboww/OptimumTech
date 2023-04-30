@@ -1,14 +1,4 @@
-﻿using Newtonsoft.Json;
-using Optimum_Tech.Model;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Optimum_Tech.Model;
 
 namespace Optimum_Tech.Forms.Dialogs
 {
@@ -39,7 +29,18 @@ namespace Optimum_Tech.Forms.Dialogs
         {
             if (UserManager.Login(textBoxLogin, textBoxPassword))
             {
-                UserManager.UpdateStatus(formAccount._textBoxStatus);
+                if (UserManager.currentUser.Access == Access.Admin)
+                {
+                    formMain.buttonAdmin.Visible = true;
+                    formMain.textBoxAdmin.Visible = true;
+                }
+                else
+                {
+                    formMain.buttonAdmin.Visible = false;
+                    formMain.textBoxAdmin.Visible = false;
+                }
+
+                UserManager.UpdateStatus(formAccount.textBoxStatus);
                 this.Close();
             }
         }
@@ -74,7 +75,6 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxPassword.UseSystemPasswordChar = true;
             textBoxPassword.Text = "";
         }
-
 
         #endregion
     }

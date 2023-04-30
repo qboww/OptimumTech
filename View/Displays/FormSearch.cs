@@ -11,24 +11,21 @@ namespace Optimum_Tech.View.Displays
         string graphicsCardsPath = "D:\\Downloads\\OptimumTech\\Repository\\Products\\graphicscards.json";
         string processorsPath = "D:\\Downloads\\OptimumTech\\Repository\\Products\\processors.json";
 
-        List<ProductControl> controls = new List<ProductControl>();
+        public List<ProductControl> searchControls = new List<ProductControl>();
         FormMain formMain;
 
         public FormSearch(FormMain formMain)
         {
             InitializeComponent();
             this.formMain = formMain;
-        }
 
-        private void FormSearch_Load(object sender, EventArgs e)
-        {
             flowLayoutPanel1.Controls.Clear();
 
             GetGraphicsCards(graphicsCardsPath);
             GetProcessors(processorsPath);
 
-            foreach (ProductControl control in controls) 
-            { 
+            foreach (ProductControl control in searchControls)
+            {
                 flowLayoutPanel1.Controls.Add(control);
             }
         }
@@ -42,13 +39,12 @@ namespace Optimum_Tech.View.Displays
             {
                 ProductControl control = new ProductControl(graphicsCard);
 
-                if (graphicsCard.Name.Contains(formMain.SearchTextBox.Text))
+                if (graphicsCard.Name.Contains(formMain.textBoxSearchText.Text))
                 {
-                    controls.Add(control);
+                    searchControls.Add(control);
                 }
             }
         }
-
         public void GetProcessors(string path)
         {
             string json = File.ReadAllText(path);
@@ -58,9 +54,9 @@ namespace Optimum_Tech.View.Displays
             {
                 ProductControl control = new ProductControl(processor);
 
-                if (processor.Name.Contains(formMain.SearchTextBox.Text))
+                if (processor.Name.Contains(formMain.textBoxSearchText.Text))
                 {
-                    controls.Add(control);
+                    searchControls.Add(control);
                 }
             }
         }

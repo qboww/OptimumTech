@@ -1,14 +1,5 @@
 ﻿using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Optimum_Tech.Forms
 {
@@ -16,12 +7,6 @@ namespace Optimum_Tech.Forms
     {
         private FormMain formMain;
         private FormLogin formLogin;
-
-        public TextBox _textBoxStatus
-        {
-            get { return textBoxStatus; }
-            set { textBoxStatus = value; }
-        }
 
         public FormAccount(FormMain formMain)
         {
@@ -50,7 +35,7 @@ namespace Optimum_Tech.Forms
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            if (!(UserManager.currentUser.Access is Status.Guest))
+            if (!(UserManager.currentUser.Access is Access.Guest))
             {
                 UserManager.LoginAsGuest();
                 UserManager.UpdateStatus(this.textBoxStatus);

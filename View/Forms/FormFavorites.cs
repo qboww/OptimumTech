@@ -28,7 +28,7 @@ namespace Optimum_Tech.Forms
                 {
                     if (control.IsFavorite)
                     {
-                        control.IsSelectionChanged += ProductControl_IsFavoriteChanged;
+                        control.IsFavoriteChanged += ProductControl_IsFavoriteChanged;
                         this.flowLayoutPanel1.Controls.Add(control);
                     }
                 }

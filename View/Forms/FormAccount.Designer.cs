@@ -118,9 +118,9 @@ namespace Optimum_Tech.Forms
             textBoxStatus.BorderStyle = BorderStyle.None;
             textBoxStatus.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxStatus.ForeColor = Color.White;
-            textBoxStatus.Location = new Point(578, 3);
+            textBoxStatus.Location = new Point(509, 3);
             textBoxStatus.Name = "textBoxStatus";
-            textBoxStatus.Size = new Size(210, 28);
+            textBoxStatus.Size = new Size(279, 28);
             textBoxStatus.TabIndex = 6;
             textBoxStatus.Text = "Status: Unlogged";
             textBoxStatus.TextAlign = HorizontalAlignment.Right;
@@ -238,7 +238,6 @@ namespace Optimum_Tech.Forms
         private Panel panel2;
         private TextBox textBoxLogout;
         private PictureBox pictureBoxLogout;
-        private TextBox textBoxStatus;
         private Panel panel4;
         private TextBox textBoxLogin;
         private PictureBox pictureBoxLogin;
@@ -247,5 +246,7 @@ namespace Optimum_Tech.Forms
         private Panel panel3;
         private TextBox textBox1;
         private PictureBox pictureBox1;
+
+        public TextBox textBoxStatus;
     }
 }

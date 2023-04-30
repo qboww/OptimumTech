@@ -2,8 +2,6 @@
 using Optimum_Tech.View.Displays;
 using Optimum_Tech.View.Forms;
 using Optimum_Tech.View.Screens;
-using Button = System.Windows.Forms.Button;
-using TextBox = System.Windows.Forms.TextBox;
 
 namespace Optimum_Tech.Forms
 {
@@ -25,27 +23,7 @@ namespace Optimum_Tech.Forms
         private FormHome formHome;
         private FormFavoritesEmpty formFavoritesEmpty;
         private FormSelectionsEmpty formSelectionsEmpty;
-
-        #endregion
-
-
-        #region props
-
-        public TextBox SearchTextBox
-        {
-            get { return textBoxSearchText; }
-            set { textBoxSearchText = value; }
-        }
-        public Button AdminButton
-        {
-            get { return buttonAdmin; }
-            set { buttonAdmin = value; }
-        }
-        public TextBox AdminTextBox
-        {
-            get { return textBoxAdmin; }
-            set { textBoxAdmin = value; }
-        }
+        private FormSearchEmpty formSearchEmpty;
 
         #endregion
 
@@ -59,6 +37,7 @@ namespace Optimum_Tech.Forms
             panelSlide.Width = 0;
             tempWidth = this.Width - panelSlide.Width;
             tempHeight = (short)(this.Height - panelSlide.Height);
+
             buttonCategory.Click += buttonCategory_Click;
             buttonAccount.Click += buttonAccount_Click;
             buttonHome.Click += buttonHome_Click;
@@ -168,12 +147,22 @@ namespace Optimum_Tech.Forms
 
             FormSearch formSearch = new FormSearch(this);
 
-            if (formSearch == null || formSearch.IsDisposed)
+            if (formSearch.searchControls.Count > 0)
             {
-                formSearch = new FormSearch(this);
+                if (formSearch == null || formSearch.IsDisposed)
+                {
+                    formSearch = new FormSearch(this);
+                }
+                OpenChildForm(formSearch);
             }
-
-            OpenChildForm(formSearch);
+            else
+            {
+                if (formSearchEmpty == null || formSearchEmpty.IsDisposed)
+                {
+                    formSearchEmpty = new FormSearchEmpty();
+                }
+                OpenChildForm(formSearchEmpty);
+            }
         }
 
         private void buttonCategory_Click(object sender, EventArgs e)

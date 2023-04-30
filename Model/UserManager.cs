@@ -8,20 +8,17 @@ namespace Optimum_Tech.Model
         private static string usersFilePath = "D:\\Downloads\\OptimumTech\\Repository\\users.json";
         public static User? currentUser;
 
-        public static void UpdateStatus(TextBox textBoxStatus) => textBoxStatus.Text = $"Logged as: {currentUser.Login}";
+        public static void UpdateStatus(TextBox textBoxStatus)
+        {
+            textBoxStatus.ForeColor = Color.FromArgb(2, 158, 71);
+            textBoxStatus.Text = $"Logged as: {currentUser.Login}";
+        }
         public static void LoginAsGuest()
         {
             string json = File.ReadAllText(usersFilePath);
             List<User>? users = JsonConvert.DeserializeObject<List<User>>(json);
-            User? guestUser = users.FirstOrDefault(u => u.Access == Status.Guest);
+            User? guestUser = users.FirstOrDefault(u => u.Access == Access.Guest);
             currentUser = guestUser;
-        }
-        public static void LoginAsAdmin()
-        {
-            string json = File.ReadAllText(usersFilePath);
-            List<User>? users = JsonConvert.DeserializeObject<List<User>>(json);
-            User? adminUser = users.FirstOrDefault(u => u.Access == Status.Admin);
-            currentUser = adminUser;
         }
         public static bool Login(TextBox textBoxLogin, TextBox textBoxPassword)
         {
@@ -54,7 +51,7 @@ namespace Optimum_Tech.Model
             }
 
             User newUser = new User(login, password);
-            newUser.Access = Status.User;
+            newUser.Access = Access.User;
             users.Add(newUser);
 
             string newJson = JsonConvert.SerializeObject(users, Formatting.Indented);

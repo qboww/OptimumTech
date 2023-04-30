@@ -496,7 +496,6 @@ namespace Optimum_Tech.Forms
         private Button buttonCart;
         private System.Windows.Forms.Timer timer2;
         private Button buttonSettings;
-        private Button buttonAccount;
         private Button buttonFavourites;
         private Button buttonMaximize;
         private Button buttonSearch;
@@ -510,7 +509,6 @@ namespace Optimum_Tech.Forms
         private Label labelHome;
         private Button buttonCategory;
         private Label labelCategory;
-        private Button buttonAdmin;
         private Label labelAdmin;
         private Button buttonContact;
         private Label labelContact;
@@ -521,9 +519,12 @@ namespace Optimum_Tech.Forms
         private TextBox textBoxCart;
         private TextBox textBoxFavorites;
         private TextBox textBoxContact;
-        private TextBox textBoxAdmin;
-        private TextBox textBoxSearchText;
         private TextBox textBoxDrawer;
+        private Button buttonAccount;
+
+        public Button buttonAdmin;
+        public TextBox textBoxAdmin;
+        public TextBox textBoxSearchText;
     }
 }
 

@@ -53,7 +53,6 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormSearch";
             Text = "FormProcessors";
-            Load += FormSearch_Load;
             ResumeLayout(false);
         }
 

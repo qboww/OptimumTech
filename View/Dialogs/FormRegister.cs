@@ -33,7 +33,7 @@ namespace Optimum_Tech.Forms.Dialogs
             if (UserManager.Register(textBoxLogin.Text, textBoxPassword.Text))
             {
                 UserManager.Login(textBoxLogin, textBoxPassword);
-                UserManager.UpdateStatus(formAccount._textBoxStatus);
+                UserManager.UpdateStatus(formAccount.textBoxStatus);
                 this.Close();
             }
         }
