@@ -16,8 +16,7 @@ namespace Optimum_Tech.Forms.Dialogs
             this.formAccount = formAccount;
             this.formMain = formMain;
 
-            textBoxLogin.Enter += textBoxLogin_Enter;
-            textBoxLogin.Leave += textBoxLogin_Leave;
+            textBoxLogin.Click += textBoxLogin_Click;
             buttonLogin.Click += buttonLogin_Click;
         }
 
@@ -32,12 +31,22 @@ namespace Optimum_Tech.Forms.Dialogs
                 if (UserManager.currentUser.Access == Access.Admin)
                 {
                     formMain.buttonAdmin.Visible = true;
+                    formMain.buttonCart.Visible = false;
+                    formMain.buttonFavorites.Visible = false;
+
                     formMain.textBoxAdmin.Visible = true;
+                    formMain.textBoxCart.Visible = false;
+                    formMain.textBoxFavorites.Visible = false;
                 }
                 else
                 {
                     formMain.buttonAdmin.Visible = false;
+                    formMain.buttonCart.Visible = true;
+                    formMain.buttonFavorites.Visible = true;
+
                     formMain.textBoxAdmin.Visible = false;
+                    formMain.textBoxCart.Visible = true;
+                    formMain.textBoxFavorites.Visible = true;
                 }
 
                 UserManager.UpdateStatus(formAccount.textBoxStatus);
@@ -54,22 +63,6 @@ namespace Optimum_Tech.Forms.Dialogs
 
         #region textboxes
 
-        private void textBoxLogin_Enter(object sender, EventArgs e)
-        {
-            if (textBoxLogin.Text == "Login")
-            {
-                textBoxLogin.Text = "";
-            }
-        }
-
-        private void textBoxLogin_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBoxLogin.Text))
-            {
-                textBoxLogin.Text = "Login";
-            }
-        }
-
         private void textBoxPassword_Click(object sender, EventArgs e)
         {
             textBoxPassword.UseSystemPasswordChar = true;
@@ -77,5 +70,10 @@ namespace Optimum_Tech.Forms.Dialogs
         }
 
         #endregion
+
+        private void textBoxLogin_Click(object sender, EventArgs e)
+        {
+            textBoxLogin.Text = "";
+        }
     }
 }

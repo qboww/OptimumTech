@@ -21,6 +21,7 @@ namespace Optimum_Tech.Forms
         private FormCategory formCategory;
         private FormAccount formAccount;
         private FormHome formHome;
+        private FormAdmin formAdmin;
         private FormFavoritesEmpty formFavoritesEmpty;
         private FormSelectionsEmpty formSelectionsEmpty;
         private FormSearchEmpty formSearchEmpty;
@@ -245,6 +246,17 @@ namespace Optimum_Tech.Forms
                 OpenChildForm(formSelectionsEmpty);
             }
         }
+        private void buttonAdmin_Click(object sender, EventArgs e)
+        {
+            CloseAllForms();
+
+            if (formAdmin == null || formAdmin.IsDisposed)
+            {
+                formAdmin = new FormAdmin(this);
+            }
+
+            OpenChildForm(formAdmin);
+        }
 
         #endregion
 
@@ -269,6 +281,8 @@ namespace Optimum_Tech.Forms
             OpenChildForm(formHome);
 
             UserManager.LoginAsGuest();
+
+            ProductManager.LoadProducts();
         }
         internal void OpenChildForm(Form childForm)
         {

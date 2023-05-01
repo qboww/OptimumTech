@@ -121,7 +121,7 @@ namespace Optimum_Tech.Forms.Dialogs
             buttonLogin.Location = new Point(52, 301);
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(95, 38);
-            buttonLogin.TabIndex = 3;
+            buttonLogin.TabIndex = 2;
             buttonLogin.TabStop = false;
             buttonLogin.Text = "Login";
             buttonLogin.UseVisualStyleBackColor = true;
@@ -147,7 +147,6 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(182, 24);
             textBoxPassword.TabIndex = 1;
-            textBoxPassword.TabStop = false;
             textBoxPassword.Text = "Password";
             textBoxPassword.Click += textBoxPassword_Click;
             // 
@@ -161,7 +160,6 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxLogin.Name = "textBoxLogin";
             textBoxLogin.Size = new Size(182, 24);
             textBoxLogin.TabIndex = 0;
-            textBoxLogin.TabStop = false;
             textBoxLogin.Text = "Login";
             // 
             // FormLogin

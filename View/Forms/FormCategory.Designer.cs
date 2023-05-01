@@ -54,6 +54,8 @@
             panelCoolingSystems = new Panel();
             pictureBoxCoolingSystems = new PictureBox();
             labelCoolingSystems = new Label();
+            panel5 = new Panel();
+            textBoxAccountPrefferences = new TextBox();
             flowLayoutPanelCategory.SuspendLayout();
             panelProcessors.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxProcessors).BeginInit();
@@ -71,10 +73,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxDrives).BeginInit();
             panelCoolingSystems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCoolingSystems).BeginInit();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanelCategory
             // 
+            flowLayoutPanelCategory.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flowLayoutPanelCategory.BackColor = Color.White;
             flowLayoutPanelCategory.Controls.Add(panelProcessors);
             flowLayoutPanelCategory.Controls.Add(panelGraphicsCards);
@@ -84,11 +88,11 @@
             flowLayoutPanelCategory.Controls.Add(panelCases);
             flowLayoutPanelCategory.Controls.Add(panelDrives);
             flowLayoutPanelCategory.Controls.Add(panelCoolingSystems);
-            flowLayoutPanelCategory.Dock = DockStyle.Fill;
-            flowLayoutPanelCategory.Location = new Point(5, 5);
+            flowLayoutPanelCategory.Location = new Point(0, 5);
             flowLayoutPanelCategory.Margin = new Padding(5);
             flowLayoutPanelCategory.Name = "flowLayoutPanelCategory";
-            flowLayoutPanelCategory.Size = new Size(1227, 724);
+            flowLayoutPanelCategory.Padding = new Padding(7, 35, 0, 0);
+            flowLayoutPanelCategory.Size = new Size(1237, 724);
             flowLayoutPanelCategory.TabIndex = 0;
             // 
             // panelProcessors
@@ -96,7 +100,7 @@
             panelProcessors.BackColor = Color.FromArgb(31, 31, 31);
             panelProcessors.Controls.Add(labelProccessors);
             panelProcessors.Controls.Add(pictureBoxProcessors);
-            panelProcessors.Location = new Point(5, 5);
+            panelProcessors.Location = new Point(12, 40);
             panelProcessors.Margin = new Padding(5);
             panelProcessors.Name = "panelProcessors";
             panelProcessors.Size = new Size(200, 200);
@@ -133,7 +137,7 @@
             panelGraphicsCards.BackColor = Color.FromArgb(31, 31, 31);
             panelGraphicsCards.Controls.Add(pictureBoxGraphicsCards);
             panelGraphicsCards.Controls.Add(labelGraphicsCards);
-            panelGraphicsCards.Location = new Point(215, 5);
+            panelGraphicsCards.Location = new Point(222, 40);
             panelGraphicsCards.Margin = new Padding(5);
             panelGraphicsCards.Name = "panelGraphicsCards";
             panelGraphicsCards.Size = new Size(200, 200);
@@ -170,7 +174,7 @@
             panelMemory.BackColor = Color.FromArgb(31, 31, 31);
             panelMemory.Controls.Add(pictureBoxMemory);
             panelMemory.Controls.Add(labelMemory);
-            panelMemory.Location = new Point(425, 5);
+            panelMemory.Location = new Point(432, 40);
             panelMemory.Margin = new Padding(5);
             panelMemory.Name = "panelMemory";
             panelMemory.Size = new Size(200, 200);
@@ -206,7 +210,7 @@
             panelMotherboards.BackColor = Color.FromArgb(31, 31, 31);
             panelMotherboards.Controls.Add(pictureBoxMotherboards);
             panelMotherboards.Controls.Add(labelMotherboards);
-            panelMotherboards.Location = new Point(635, 5);
+            panelMotherboards.Location = new Point(642, 40);
             panelMotherboards.Margin = new Padding(5);
             panelMotherboards.Name = "panelMotherboards";
             panelMotherboards.Size = new Size(200, 200);
@@ -242,7 +246,7 @@
             panelPowerSupply.BackColor = Color.FromArgb(31, 31, 31);
             panelPowerSupply.Controls.Add(pictureBoxPowerSupply);
             panelPowerSupply.Controls.Add(labelPowerSupply);
-            panelPowerSupply.Location = new Point(845, 5);
+            panelPowerSupply.Location = new Point(852, 40);
             panelPowerSupply.Margin = new Padding(5);
             panelPowerSupply.Name = "panelPowerSupply";
             panelPowerSupply.Size = new Size(200, 200);
@@ -278,7 +282,7 @@
             panelCases.BackColor = Color.FromArgb(31, 31, 31);
             panelCases.Controls.Add(pictureBoxCases);
             panelCases.Controls.Add(labelCases);
-            panelCases.Location = new Point(5, 215);
+            panelCases.Location = new Point(12, 250);
             panelCases.Margin = new Padding(5);
             panelCases.Name = "panelCases";
             panelCases.Size = new Size(200, 200);
@@ -314,7 +318,7 @@
             panelDrives.BackColor = Color.FromArgb(31, 31, 31);
             panelDrives.Controls.Add(pictureBoxDrives);
             panelDrives.Controls.Add(labelDrives);
-            panelDrives.Location = new Point(215, 215);
+            panelDrives.Location = new Point(222, 250);
             panelDrives.Margin = new Padding(5);
             panelDrives.Name = "panelDrives";
             panelDrives.Size = new Size(200, 200);
@@ -350,7 +354,7 @@
             panelCoolingSystems.BackColor = Color.FromArgb(31, 31, 31);
             panelCoolingSystems.Controls.Add(pictureBoxCoolingSystems);
             panelCoolingSystems.Controls.Add(labelCoolingSystems);
-            panelCoolingSystems.Location = new Point(425, 215);
+            panelCoolingSystems.Location = new Point(432, 250);
             panelCoolingSystems.Margin = new Padding(5);
             panelCoolingSystems.Name = "panelCoolingSystems";
             panelCoolingSystems.Size = new Size(200, 200);
@@ -381,16 +385,38 @@
             labelCoolingSystems.Text = "Cooling Systems";
             labelCoolingSystems.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(30, 30, 30);
+            panel5.Controls.Add(textBoxAccountPrefferences);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(0, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1237, 34);
+            panel5.TabIndex = 9;
+            // 
+            // textBoxAccountPrefferences
+            // 
+            textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
+            textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
+            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.ForeColor = Color.White;
+            textBoxAccountPrefferences.Location = new Point(12, 3);
+            textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
+            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.TabIndex = 4;
+            textBoxAccountPrefferences.Text = "Categories";
+            // 
             // FormCategory
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1237, 734);
+            Controls.Add(panel5);
             Controls.Add(flowLayoutPanelCategory);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormCategory";
-            Padding = new Padding(5);
             Text = "FormCategory";
             flowLayoutPanelCategory.ResumeLayout(false);
             panelProcessors.ResumeLayout(false);
@@ -409,6 +435,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxDrives).EndInit();
             panelCoolingSystems.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBoxCoolingSystems).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -439,5 +467,7 @@
         private Panel panelCoolingSystems;
         private PictureBox pictureBoxCoolingSystems;
         private Label labelCoolingSystems;
+        private Panel panel5;
+        private TextBox textBoxAccountPrefferences;
     }
 }

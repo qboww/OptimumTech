@@ -34,8 +34,11 @@
             buttonPurchase = new Button();
             textBoxAmount = new TextBox();
             textBoxPrice = new TextBox();
+            panel5 = new Panel();
+            textBoxAccountPrefferences = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -45,7 +48,7 @@
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Margin = new Padding(5);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(5);
+            flowLayoutPanel1.Padding = new Padding(5, 40, 5, 5);
             flowLayoutPanel1.Size = new Size(1064, 735);
             flowLayoutPanel1.TabIndex = 0;
             // 
@@ -76,11 +79,11 @@
             buttonPurchase.BackColor = Color.FromArgb(2, 158, 71);
             buttonPurchase.FlatAppearance.BorderSize = 0;
             buttonPurchase.FlatStyle = FlatStyle.Popup;
-            buttonPurchase.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonPurchase.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             buttonPurchase.ForeColor = Color.White;
-            buttonPurchase.Location = new Point(936, 20);
+            buttonPurchase.Location = new Point(928, 20);
             buttonPurchase.Name = "buttonPurchase";
-            buttonPurchase.Size = new Size(116, 36);
+            buttonPurchase.Size = new Size(124, 36);
             buttonPurchase.TabIndex = 3;
             buttonPurchase.Text = "Purchase";
             buttonPurchase.UseVisualStyleBackColor = false;
@@ -109,11 +112,34 @@
             textBoxPrice.TabIndex = 0;
             textBoxPrice.Text = "Price: ";
             // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(30, 30, 30);
+            panel5.Controls.Add(textBoxAccountPrefferences);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(0, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1064, 34);
+            panel5.TabIndex = 11;
+            // 
+            // textBoxAccountPrefferences
+            // 
+            textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
+            textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
+            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.ForeColor = Color.White;
+            textBoxAccountPrefferences.Location = new Point(12, 3);
+            textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
+            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.TabIndex = 4;
+            textBoxAccountPrefferences.Text = "Cart";
+            // 
             // FormSelections
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1064, 735);
+            Controls.Add(panel5);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -123,6 +149,8 @@
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -134,5 +162,7 @@
         private TextBox textBoxPrice;
         private Panel panel1;
         private Button buttonPurchase;
+        private Panel panel5;
+        private TextBox textBoxAccountPrefferences;
     }
 }

@@ -7,33 +7,17 @@ namespace Optimum_Tech.View.Displays
 {
     public partial class FormGraphicsCards : Form
     {
-        private readonly string graphicsCardsPath = "D:\\Downloads\\OptimumTech\\Repository\\Products\\graphicscards.json";
-
         public FormGraphicsCards()
         {
             InitializeComponent();
         }
 
-        public List<ProductControl> GetGraphicsCards(string jsonFilePath)
-        {
-            string json = File.ReadAllText(jsonFilePath);
-            List<GraphicsCard>? graphicsCards = JsonConvert.DeserializeObject<List<GraphicsCard>>(json);
-            List<ProductControl> controls = new List<ProductControl>();
-
-            foreach (GraphicsCard graphicsCard in graphicsCards)
-            {
-                ProductControl control = new ProductControl(graphicsCard);
-                controls.Add(control);
-            }
-
-            return controls;
-        }
-
-
         private void FormDisplayGraphicsCards_Load(object sender, EventArgs e)
         {
-            foreach (var control in this.GetGraphicsCards(graphicsCardsPath))
+            // Add the controls to the flowLayoutPanel
+            foreach (GraphicsCard product in ProductManager.graphicsCards)
             {
+                ProductControl control = new ProductControl(product);
                 flowLayoutPanel1.Controls.Add(control);
             }
         }

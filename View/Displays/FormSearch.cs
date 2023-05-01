@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Optimum_Tech.Forms;
+using Optimum_Tech.Model;
 using Optimum_Tech.Model.Products;
 using OptimumTech.Controls;
 using System.Windows.Forms;
@@ -13,11 +14,13 @@ namespace Optimum_Tech.View.Displays
 
         public List<ProductControl> searchControls = new List<ProductControl>();
         FormMain formMain;
+        Product product;
 
         public FormSearch(FormMain formMain)
         {
             InitializeComponent();
             this.formMain = formMain;
+            this.product = product;
 
             flowLayoutPanel1.Controls.Clear();
 
@@ -60,6 +63,5 @@ namespace Optimum_Tech.View.Displays
                 }
             }
         }
-
     }
 }

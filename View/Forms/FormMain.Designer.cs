@@ -46,7 +46,7 @@ namespace Optimum_Tech.Forms
             buttonContact = new Button();
             buttonHome = new Button();
             buttonAccount = new Button();
-            buttonFavourites = new Button();
+            buttonFavorites = new Button();
             buttonCart = new Button();
             panelSlide = new Panel();
             textBoxDrawer = new TextBox();
@@ -77,7 +77,7 @@ namespace Optimum_Tech.Forms
             panelTitleBar.Dock = DockStyle.Top;
             panelTitleBar.Location = new Point(0, 0);
             panelTitleBar.Name = "panelTitleBar";
-            panelTitleBar.Size = new Size(1333, 27);
+            panelTitleBar.Size = new Size(1320, 27);
             panelTitleBar.TabIndex = 0;
             panelTitleBar.MouseDown += panelTitleBar_MouseDown;
             panelTitleBar.MouseMove += panelTitleBar_MouseMove;
@@ -89,7 +89,7 @@ namespace Optimum_Tech.Forms
             buttonMinimize.FlatAppearance.BorderSize = 0;
             buttonMinimize.FlatStyle = FlatStyle.Flat;
             buttonMinimize.Image = FormsMedia.minimize;
-            buttonMinimize.Location = new Point(1246, 0);
+            buttonMinimize.Location = new Point(1233, 0);
             buttonMinimize.Name = "buttonMinimize";
             buttonMinimize.Size = new Size(25, 27);
             buttonMinimize.TabIndex = 0;
@@ -102,7 +102,7 @@ namespace Optimum_Tech.Forms
             buttonClose.FlatAppearance.BorderSize = 0;
             buttonClose.FlatStyle = FlatStyle.Flat;
             buttonClose.Image = FormsMedia.close;
-            buttonClose.Location = new Point(1308, 0);
+            buttonClose.Location = new Point(1295, 0);
             buttonClose.Name = "buttonClose";
             buttonClose.Size = new Size(25, 27);
             buttonClose.TabIndex = 0;
@@ -115,7 +115,7 @@ namespace Optimum_Tech.Forms
             buttonMaximize.FlatStyle = FlatStyle.Flat;
             buttonMaximize.ForeColor = Color.White;
             buttonMaximize.Image = FormsMedia.maximize;
-            buttonMaximize.Location = new Point(1277, 0);
+            buttonMaximize.Location = new Point(1264, 0);
             buttonMaximize.Name = "buttonMaximize";
             buttonMaximize.Size = new Size(25, 27);
             buttonMaximize.TabIndex = 0;
@@ -133,7 +133,7 @@ namespace Optimum_Tech.Forms
             panelCollapsed.Controls.Add(buttonContact);
             panelCollapsed.Controls.Add(buttonHome);
             panelCollapsed.Controls.Add(buttonAccount);
-            panelCollapsed.Controls.Add(buttonFavourites);
+            panelCollapsed.Controls.Add(buttonFavorites);
             panelCollapsed.Controls.Add(buttonCart);
             panelCollapsed.Dock = DockStyle.Left;
             panelCollapsed.Location = new Point(0, 27);
@@ -180,6 +180,7 @@ namespace Optimum_Tech.Forms
             buttonAdmin.TabIndex = 10;
             buttonAdmin.UseVisualStyleBackColor = true;
             buttonAdmin.Visible = false;
+            buttonAdmin.Click += buttonAdmin_Click;
             // 
             // buttonCategory
             // 
@@ -246,18 +247,18 @@ namespace Optimum_Tech.Forms
             buttonAccount.TabIndex = 0;
             buttonAccount.UseVisualStyleBackColor = true;
             // 
-            // buttonFavourites
+            // buttonFavorites
             // 
-            buttonFavourites.AutoSize = true;
-            buttonFavourites.FlatAppearance.BorderSize = 0;
-            buttonFavourites.FlatStyle = FlatStyle.Flat;
-            buttonFavourites.Image = FormsMedia.favorite;
-            buttonFavourites.Location = new Point(0, 312);
-            buttonFavourites.Name = "buttonFavourites";
-            buttonFavourites.Size = new Size(45, 30);
-            buttonFavourites.TabIndex = 0;
-            buttonFavourites.UseVisualStyleBackColor = true;
-            buttonFavourites.Click += buttonFavorites_Click;
+            buttonFavorites.AutoSize = true;
+            buttonFavorites.FlatAppearance.BorderSize = 0;
+            buttonFavorites.FlatStyle = FlatStyle.Flat;
+            buttonFavorites.Image = FormsMedia.favorite;
+            buttonFavorites.Location = new Point(0, 312);
+            buttonFavorites.Name = "buttonFavorites";
+            buttonFavorites.Size = new Size(45, 30);
+            buttonFavorites.TabIndex = 0;
+            buttonFavorites.UseVisualStyleBackColor = true;
+            buttonFavorites.Click += buttonFavorites_Click;
             // 
             // buttonCart
             // 
@@ -446,7 +447,7 @@ namespace Optimum_Tech.Forms
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(208, 27);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(1125, 739);
+            panelMain.Size = new Size(1112, 739);
             panelMain.TabIndex = 3;
             // 
             // timer1
@@ -463,7 +464,7 @@ namespace Optimum_Tech.Forms
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Desktop;
-            ClientSize = new Size(1333, 766);
+            ClientSize = new Size(1320, 766);
             Controls.Add(panelMain);
             Controls.Add(panelSlide);
             Controls.Add(panelCollapsed);
@@ -493,10 +494,8 @@ namespace Optimum_Tech.Forms
         private System.Windows.Forms.Timer timer1;
         private Button buttonClose;
         private Button buttonMinimize;
-        private Button buttonCart;
         private System.Windows.Forms.Timer timer2;
         private Button buttonSettings;
-        private Button buttonFavourites;
         private Button buttonMaximize;
         private Button buttonSearch;
         private TextBox textBoxSearch;
@@ -516,14 +515,19 @@ namespace Optimum_Tech.Forms
         private TextBox textBoxCategories;
         private TextBox textBoxHome;
         private TextBox textBoxAccount;
-        private TextBox textBoxCart;
-        private TextBox textBoxFavorites;
         private TextBox textBoxContact;
         private TextBox textBoxDrawer;
         private Button buttonAccount;
 
+        public Button buttonFavorites;
+        public TextBox textBoxFavorites;
+
+        public TextBox textBoxCart;
+        public Button buttonCart;
+
         public Button buttonAdmin;
         public TextBox textBoxAdmin;
+
         public TextBox textBoxSearchText;
     }
 }

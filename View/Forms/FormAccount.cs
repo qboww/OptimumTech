@@ -40,8 +40,29 @@ namespace Optimum_Tech.Forms
                 UserManager.LoginAsGuest();
                 UserManager.UpdateStatus(this.textBoxStatus);
             }
-        }
 
-        #endregion
+            if (UserManager.currentUser.Access == Access.Admin)
+            {
+                formMain.buttonAdmin.Visible = true;
+                formMain.buttonCart.Visible = false;
+                formMain.buttonFavorites.Visible = false;
+
+                formMain.textBoxAdmin.Visible = true;
+                formMain.textBoxCart.Visible = false;
+                formMain.textBoxFavorites.Visible = false;
+            }
+            else
+            {
+                formMain.buttonAdmin.Visible = false;
+                formMain.buttonCart.Visible = true;
+                formMain.buttonFavorites.Visible = true;
+
+                formMain.textBoxAdmin.Visible = false;
+                formMain.textBoxCart.Visible = true;
+                formMain.textBoxFavorites.Visible = true;
+            }
+
+            #endregion
+        }
     }
 }
