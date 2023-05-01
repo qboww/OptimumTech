@@ -22,6 +22,8 @@ namespace Optimum_Tech.Forms
         private FormAccount formAccount;
         private FormHome formHome;
         private FormAdmin formAdmin;
+        private FormContact formContact;
+        private FormSettings formSettings;
         private FormFavoritesEmpty formFavoritesEmpty;
         private FormSelectionsEmpty formSelectionsEmpty;
         private FormSearchEmpty formSearchEmpty;
@@ -256,6 +258,28 @@ namespace Optimum_Tech.Forms
             }
 
             OpenChildForm(formAdmin);
+        }
+        private void buttonContact_Click(object sender, EventArgs e)
+        {
+            CloseAllForms();
+
+            if (formContact == null || formContact.IsDisposed)
+            {
+                formContact = new FormContact();
+            }
+
+            OpenChildForm(formContact);
+        }
+        private void buttonSettings_Click(object sender, EventArgs e)
+        {
+            CloseAllForms();
+
+            if (formSettings == null || formSettings.IsDisposed)
+            {
+                formSettings = new FormSettings();
+            }
+
+            OpenChildForm(formSettings);
         }
 
         #endregion

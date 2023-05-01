@@ -209,6 +209,7 @@ namespace Optimum_Tech.Forms
             buttonSettings.TabIndex = 0;
             buttonSettings.TextAlign = ContentAlignment.MiddleRight;
             buttonSettings.UseVisualStyleBackColor = true;
+            buttonSettings.Click += buttonSettings_Click;
             // 
             // buttonContact
             // 
@@ -222,6 +223,7 @@ namespace Optimum_Tech.Forms
             buttonContact.Size = new Size(45, 30);
             buttonContact.TabIndex = 0;
             buttonContact.UseVisualStyleBackColor = true;
+            buttonContact.Click += buttonContact_Click;
             // 
             // buttonHome
             // 
