@@ -1,20 +1,30 @@
 [
   {
     "Favorites": [],
+    "Selections": [],
     "Login": "admin",
     "Password": "admin",
     "Access": 0
   },
   {
     "Favorites": [],
+    "Selections": [],
     "Login": "guest",
     "Password": "guest",
     "Access": 1
   },
   {
     "Favorites": [],
+    "Selections": [],
     "Login": "bob",
     "Password": "bob",
+    "Access": 2
+  },
+  {
+    "Favorites": [],
+    "Selections": [],
+    "Login": "Login",
+    "Password": "Password",
     "Access": 2
   }
 ]

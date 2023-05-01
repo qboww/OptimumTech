@@ -120,6 +120,7 @@ namespace Optimum_Tech.Forms
             textBoxStatus.ForeColor = Color.White;
             textBoxStatus.Location = new Point(509, 3);
             textBoxStatus.Name = "textBoxStatus";
+            textBoxStatus.ReadOnly = true;
             textBoxStatus.Size = new Size(279, 28);
             textBoxStatus.TabIndex = 6;
             textBoxStatus.Text = "Status: Unlogged";
@@ -133,6 +134,7 @@ namespace Optimum_Tech.Forms
             textBoxAccountPrefferences.ForeColor = Color.White;
             textBoxAccountPrefferences.Location = new Point(12, 3);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
+            textBoxAccountPrefferences.ReadOnly = true;
             textBoxAccountPrefferences.Size = new Size(245, 28);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Account Prefferences";

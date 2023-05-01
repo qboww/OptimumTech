@@ -37,6 +37,7 @@ namespace Optimum_Tech.Forms.Dialogs
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
+            linkLabel1 = new LinkLabel();
             buttonLogin = new Button();
             pictureBox1 = new PictureBox();
             textBoxPassword = new TextBox();
@@ -102,6 +103,7 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             // panel3
             // 
+            panel3.Controls.Add(linkLabel1);
             panel3.Controls.Add(buttonLogin);
             panel3.Controls.Add(pictureBox1);
             panel3.Controls.Add(textBoxPassword);
@@ -112,15 +114,30 @@ namespace Optimum_Tech.Forms.Dialogs
             panel3.Size = new Size(197, 362);
             panel3.TabIndex = 3;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.Black;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabel1.LinkColor = Color.White;
+            linkLabel1.Location = new Point(0, 234);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Padding = new Padding(3, 0, 0, 0);
+            linkLabel1.Size = new Size(71, 25);
+            linkLabel1.TabIndex = 3;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Register";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
             // buttonLogin
             // 
             buttonLogin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            buttonLogin.AutoSize = true;
             buttonLogin.BackColor = Color.White;
+            buttonLogin.FlatStyle = FlatStyle.Flat;
             buttonLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonLogin.Location = new Point(52, 301);
+            buttonLogin.Location = new Point(45, 305);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(95, 38);
+            buttonLogin.Size = new Size(95, 33);
             buttonLogin.TabIndex = 2;
             buttonLogin.TabStop = false;
             buttonLogin.Text = "Login";
@@ -198,5 +215,6 @@ namespace Optimum_Tech.Forms.Dialogs
         private PictureBox pictureBox1;
         private TextBox textBoxPassword;
         private TextBox textBoxLogin;
+        private LinkLabel linkLabel1;
     }
 }

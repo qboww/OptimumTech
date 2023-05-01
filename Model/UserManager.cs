@@ -10,7 +10,7 @@ namespace Optimum_Tech.Model
 
         public static void UpdateStatus(TextBox textBoxStatus)
         {
-            textBoxStatus.ForeColor = Color.FromArgb(2, 158, 71);
+            textBoxStatus.ForeColor = Color.White;
             textBoxStatus.Text = $"Logged as: {currentUser.Login}";
         }
         public static void LoginAsGuest()

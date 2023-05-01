@@ -280,9 +280,9 @@ namespace Optimum_Tech.Forms
 
             OpenChildForm(formHome);
 
-            UserManager.LoginAsGuest();
-
             ProductManager.LoadProducts();
+
+            UserManager.LoginAsGuest();
         }
         internal void OpenChildForm(Form childForm)
         {

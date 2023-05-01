@@ -37,6 +37,8 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxLogin = new TextBox();
             buttonRegister = new Button();
             textBoxPassword = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).BeginInit();
             panelTitle.SuspendLayout();
             SuspendLayout();
@@ -82,9 +84,9 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             textBoxLogin.BorderStyle = BorderStyle.None;
             textBoxLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxLogin.Location = new Point(12, 65);
+            textBoxLogin.Location = new Point(75, 78);
             textBoxLogin.Name = "textBoxLogin";
-            textBoxLogin.Size = new Size(189, 24);
+            textBoxLogin.Size = new Size(223, 24);
             textBoxLogin.TabIndex = 18;
             textBoxLogin.TabStop = false;
             textBoxLogin.Text = "Login";
@@ -93,20 +95,23 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             // buttonRegister
             // 
+            buttonRegister.BackColor = Color.White;
+            buttonRegister.FlatAppearance.BorderSize = 0;
+            buttonRegister.FlatStyle = FlatStyle.Flat;
             buttonRegister.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
             buttonRegister.Location = new Point(361, 161);
             buttonRegister.Name = "buttonRegister";
             buttonRegister.Size = new Size(80, 29);
             buttonRegister.TabIndex = 21;
             buttonRegister.Text = "Register";
-            buttonRegister.UseVisualStyleBackColor = true;
+            buttonRegister.UseVisualStyleBackColor = false;
             buttonRegister.Click += buttonRegister_Click;
             // 
             // textBoxPassword
             // 
             textBoxPassword.BorderStyle = BorderStyle.None;
             textBoxPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPassword.Location = new Point(12, 103);
+            textBoxPassword.Location = new Point(109, 108);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(189, 24);
             textBoxPassword.TabIndex = 22;
@@ -114,12 +119,36 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxPassword.Text = "Password";
             textBoxPassword.Click += textBoxPassword_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(12, 78);
+            label1.Name = "label1";
+            label1.Size = new Size(57, 28);
+            label1.TabIndex = 23;
+            label1.Text = "Login:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(12, 108);
+            label2.Name = "label2";
+            label2.Size = new Size(91, 28);
+            label2.TabIndex = 24;
+            label2.Text = "Password:";
+            // 
             // FormRegister
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 40, 40);
             ClientSize = new Size(453, 202);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(textBoxPassword);
             Controls.Add(buttonRegister);
             Controls.Add(textBoxLogin);
@@ -144,5 +173,7 @@ namespace Optimum_Tech.Forms.Dialogs
         private TextBox textBoxLogin;
         private Button buttonRegister;
         private TextBox textBoxPassword;
+        private Label label1;
+        private Label label2;
     }
 }

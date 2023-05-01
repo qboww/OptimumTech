@@ -22,6 +22,7 @@ namespace Optimum_Tech.Controls
             this.textBoxManufacturer.Text = $"{gpu.Manufacturer}";
             this.textBoxVRAM.Text = $"{gpu.VRAM}";
             this.textBoxMemoryInterface.Text = $"{gpu.MemoryInterface}";
+            this.textBoxMemoryType.Text = $"{gpu.MemoryType}";
             this.textBoxClockSpeedDefault.Text = $"{gpu.ClockSpeedDefault}";
             this.textBoxMinimumWattage.Text = $"{gpu.MinimumWattage}";
         }

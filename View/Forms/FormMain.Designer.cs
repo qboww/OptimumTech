@@ -188,7 +188,7 @@ namespace Optimum_Tech.Forms
             buttonCategory.FlatAppearance.BorderSize = 0;
             buttonCategory.FlatStyle = FlatStyle.Flat;
             buttonCategory.Image = FormsMedia.category;
-            buttonCategory.Location = new Point(0, 168);
+            buttonCategory.Location = new Point(0, 169);
             buttonCategory.Name = "buttonCategory";
             buttonCategory.Size = new Size(45, 30);
             buttonCategory.TabIndex = 0;
@@ -312,8 +312,7 @@ namespace Optimum_Tech.Forms
             textBoxSearchText.BackColor = SystemColors.Control;
             textBoxSearchText.BorderStyle = BorderStyle.None;
             textBoxSearchText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSearchText.ForeColor = Color.FromArgb(20, 20, 20);
-            textBoxSearchText.Location = new Point(6, 94);
+            textBoxSearchText.Location = new Point(6, 92);
             textBoxSearchText.Name = "textBoxSearchText";
             textBoxSearchText.Size = new Size(151, 24);
             textBoxSearchText.TabIndex = 20;

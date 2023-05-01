@@ -21,6 +21,7 @@ namespace Optimum_Tech.Controls
 
             this.textBoxManufacturer.Text = $"{cpu.Manufacturer}";
             this.textBoxSocket.Text = $"{cpu.Socket}";
+            this.textBoxCores.Text = $"{cpu.Cores}";
             this.textBoxThreads.Text = $"{cpu.Threads}";
             this.textBoxClockSpeedDefault.Text = $"{cpu.ClockSpeedDefault}";
             this.textBoxClockSpeedBoost.Text = $"{cpu.ClockSpeedBoost}";

@@ -57,7 +57,14 @@ namespace OptimumTech.Controls
             pictureBoxFavorite.Click += (sender, e) => pictureBoxFavorite_Click(sender, e, product);
             pictureBoxCart.Click += (sender, e) => pictureBoxCart_Click(sender, e, product);
             pictureBoxDescription.Click += (sender, e) => pictureBoxDescription_Click(sender, e, product);
+
+            if (UserManager.currentUser.Access is Access.Admin)
+            {
+                this.pictureBoxFavorite.Image = FormsMedia.favorite_blocked;
+                this.pictureBoxCart.Image = FormsMedia.basket_blocked;
+            }
         }
+
         public void GetStatus(Product product)
         {
             if (product.IsAvailable == true)

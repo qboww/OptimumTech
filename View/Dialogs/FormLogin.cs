@@ -4,6 +4,7 @@ namespace Optimum_Tech.Forms.Dialogs
 {
     public partial class FormLogin : Form
     {
+        private FormRegister formRegister;
         private FormAccount formAccount;
         private FormMain formMain;
 
@@ -65,8 +66,8 @@ namespace Optimum_Tech.Forms.Dialogs
 
         private void textBoxPassword_Click(object sender, EventArgs e)
         {
+            textBoxPassword.Clear();
             textBoxPassword.UseSystemPasswordChar = true;
-            textBoxPassword.Text = "";
         }
 
         #endregion
@@ -74,6 +75,20 @@ namespace Optimum_Tech.Forms.Dialogs
         private void textBoxLogin_Click(object sender, EventArgs e)
         {
             textBoxLogin.Text = "";
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (formRegister == null || formRegister.IsDisposed)
+            {
+                formRegister = new FormRegister(formAccount, formMain);
+                formRegister.FormClosed += (s, ev) => formRegister = null;
+                formRegister.Show();
+            }
+            else
+            {
+                formRegister.BringToFront();
+            }
         }
     }
 }

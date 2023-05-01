@@ -46,7 +46,7 @@ namespace Optimum_Tech.View.Forms
                 if (currentControl != null)
                 {
                     panelProduct.Controls.Add(currentControl);
-                    currentControl.Dock = DockStyle.Bottom;
+                    currentControl.Dock = DockStyle.Left;
                 }
             }
         }

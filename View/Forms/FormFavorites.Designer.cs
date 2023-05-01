@@ -63,6 +63,7 @@
             textBoxAccountPrefferences.ForeColor = Color.White;
             textBoxAccountPrefferences.Location = new Point(12, 3);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
+            textBoxAccountPrefferences.ReadOnly = true;
             textBoxAccountPrefferences.Size = new Size(245, 28);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Favorites";
