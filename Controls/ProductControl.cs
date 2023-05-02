@@ -125,7 +125,7 @@ namespace OptimumTech.Controls
         {
             if (product != null)
             {
-                if (product.IsAvailable == false)
+                if (product.IsAvailable == false || UserManager.currentUser.Access is Access.Admin)
                 {
                     this.pictureBoxCart.Image = FormsMedia.basket_blocked;
                 }
@@ -150,7 +150,7 @@ namespace OptimumTech.Controls
         {
             if (product != null)
             {
-                if (product.IsAvailable == false)
+                if (product.IsAvailable == false || UserManager.currentUser.Access is Access.Admin)
                 {
                     this.pictureBoxFavorite.Image = FormsMedia.favorite_blocked;
                 }
