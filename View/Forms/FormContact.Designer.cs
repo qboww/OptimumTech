@@ -32,17 +32,24 @@
             textBoxStatus = new TextBox();
             textBoxAccountPrefferences = new TextBox();
             panel1 = new Panel();
-            panel12 = new Panel();
             panel9 = new Panel();
-            label3 = new Label();
-            label4 = new Label();
             linkLabelDonate = new LinkLabel();
-            label5 = new Label();
+            textBoxName = new TextBox();
+            textBoxNameText = new TextBox();
+            textBoxOwner = new TextBox();
+            textBoxOwnerText = new TextBox();
+            textBoxCurrent = new TextBox();
+            textBoxGoal = new TextBox();
+            textBoxCurrentText = new TextBox();
+            textBoxGoalText = new TextBox();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
             panel8 = new Panel();
-            label8 = new Label();
-            label7 = new Label();
-            label9 = new Label();
-            label10 = new Label();
+            textBox6 = new TextBox();
+            textBox5 = new TextBox();
+            textBoxVodafone = new TextBox();
+            textBoxKyivstar = new TextBox();
             panel7 = new Panel();
             pictureBox1 = new PictureBox();
             panel6 = new Panel();
@@ -55,10 +62,10 @@
             panel10 = new Panel();
             label1 = new Label();
             panel11 = new Panel();
+            textBox4 = new TextBox();
             pictureBoxTelegram = new PictureBox();
             pictureBoxFacebook = new PictureBox();
             pictureBoxInstagram = new PictureBox();
-            label2 = new Label();
             panel5.SuspendLayout();
             panel1.SuspendLayout();
             panel9.SuspendLayout();
@@ -84,7 +91,7 @@
             panel5.Location = new Point(0, 0);
             panel5.Margin = new Padding(5);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1064, 34);
+            panel5.Size = new Size(1112, 34);
             panel5.TabIndex = 14;
             // 
             // textBoxStatus
@@ -94,7 +101,7 @@
             textBoxStatus.BorderStyle = BorderStyle.None;
             textBoxStatus.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxStatus.ForeColor = Color.White;
-            textBoxStatus.Location = new Point(2250, 3);
+            textBoxStatus.Location = new Point(2298, 3);
             textBoxStatus.Name = "textBoxStatus";
             textBoxStatus.Size = new Size(279, 28);
             textBoxStatus.TabIndex = 6;
@@ -116,7 +123,6 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(panel12);
             panel1.Controls.Add(panel9);
             panel1.Controls.Add(panel8);
             panel1.Controls.Add(panel7);
@@ -128,162 +134,264 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 34);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1064, 701);
+            panel1.Size = new Size(1112, 705);
             panel1.TabIndex = 15;
-            // 
-            // panel12
-            // 
-            panel12.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel12.BackColor = Color.FromArgb(25, 25, 25);
-            panel12.Location = new Point(12, 393);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(757, 112);
-            panel12.TabIndex = 19;
             // 
             // panel9
             // 
             panel9.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel9.BackColor = Color.FromArgb(25, 25, 25);
-            panel9.Controls.Add(label3);
-            panel9.Controls.Add(label4);
             panel9.Controls.Add(linkLabelDonate);
-            panel9.Controls.Add(label5);
-            panel9.Location = new Point(12, 164);
+            panel9.Controls.Add(textBoxName);
+            panel9.Controls.Add(textBoxNameText);
+            panel9.Controls.Add(textBoxOwner);
+            panel9.Controls.Add(textBoxOwnerText);
+            panel9.Controls.Add(textBoxCurrent);
+            panel9.Controls.Add(textBoxGoal);
+            panel9.Controls.Add(textBoxCurrentText);
+            panel9.Controls.Add(textBoxGoalText);
+            panel9.Controls.Add(textBox3);
+            panel9.Controls.Add(textBox2);
+            panel9.Controls.Add(textBox1);
+            panel9.Location = new Point(12, 155);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(3);
-            panel9.Size = new Size(757, 86);
+            panel9.Size = new Size(726, 346);
             panel9.TabIndex = 22;
-            // 
-            // label3
-            // 
-            label3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(3, 6);
-            label3.Margin = new Padding(3);
-            label3.Name = "label3";
-            label3.Padding = new Padding(3);
-            label3.Size = new Size(147, 34);
-            label3.TabIndex = 7;
-            label3.Text = "Monobank card:";
-            // 
-            // label4
-            // 
-            label4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(3, 46);
-            label4.Margin = new Padding(3);
-            label4.Name = "label4";
-            label4.Padding = new Padding(3);
-            label4.Size = new Size(130, 34);
-            label4.TabIndex = 8;
-            label4.Text = "Monobank jar:";
             // 
             // linkLabelDonate
             // 
-            linkLabelDonate.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabelDonate.LinkColor = Color.FromArgb(2, 158, 71);
-            linkLabelDonate.Location = new Point(139, 46);
-            linkLabelDonate.Margin = new Padding(3);
+            linkLabelDonate.Font = new Font("Poppins", 12F, FontStyle.Underline, GraphicsUnit.Point);
+            linkLabelDonate.LinkColor = Color.FromArgb(192, 192, 255);
+            linkLabelDonate.Location = new Point(199, 36);
+            linkLabelDonate.Margin = new Padding(0);
             linkLabelDonate.Name = "linkLabelDonate";
-            linkLabelDonate.Padding = new Padding(3);
-            linkLabelDonate.Size = new Size(106, 34);
-            linkLabelDonate.TabIndex = 9;
+            linkLabelDonate.Size = new Size(105, 24);
+            linkLabelDonate.TabIndex = 31;
             linkLabelDonate.TabStop = true;
             linkLabelDonate.Text = "donate link";
             linkLabelDonate.LinkClicked += linkLabelDonate_LinkClicked;
             // 
-            // label5
+            // textBoxName
             // 
-            label5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(152, 6);
-            label5.Margin = new Padding(3);
-            label5.Name = "label5";
-            label5.Padding = new Padding(3);
-            label5.Size = new Size(202, 34);
-            label5.TabIndex = 18;
-            label5.Text = "4441 1144 2829 1270";
+            textBoxName.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxName.BorderStyle = BorderStyle.None;
+            textBoxName.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxName.ForeColor = Color.White;
+            textBoxName.Location = new Point(204, 156);
+            textBoxName.Name = "textBoxName";
+            textBoxName.Size = new Size(131, 24);
+            textBoxName.TabIndex = 30;
+            textBoxName.Text = "name";
+            // 
+            // textBoxNameText
+            // 
+            textBoxNameText.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxNameText.BorderStyle = BorderStyle.None;
+            textBoxNameText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxNameText.ForeColor = Color.White;
+            textBoxNameText.Location = new Point(6, 156);
+            textBoxNameText.Name = "textBoxNameText";
+            textBoxNameText.ReadOnly = true;
+            textBoxNameText.Size = new Size(83, 24);
+            textBoxNameText.TabIndex = 29;
+            textBoxNameText.Text = "Jar name:";
+            // 
+            // textBoxOwner
+            // 
+            textBoxOwner.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxOwner.BorderStyle = BorderStyle.None;
+            textBoxOwner.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxOwner.ForeColor = Color.White;
+            textBoxOwner.Location = new Point(204, 126);
+            textBoxOwner.Name = "textBoxOwner";
+            textBoxOwner.Size = new Size(125, 24);
+            textBoxOwner.TabIndex = 28;
+            textBoxOwner.Text = "name";
+            // 
+            // textBoxOwnerText
+            // 
+            textBoxOwnerText.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxOwnerText.BorderStyle = BorderStyle.None;
+            textBoxOwnerText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxOwnerText.ForeColor = Color.White;
+            textBoxOwnerText.Location = new Point(6, 126);
+            textBoxOwnerText.Name = "textBoxOwnerText";
+            textBoxOwnerText.ReadOnly = true;
+            textBoxOwnerText.Size = new Size(83, 24);
+            textBoxOwnerText.TabIndex = 27;
+            textBoxOwnerText.Text = "Jar owner:";
+            // 
+            // textBoxCurrent
+            // 
+            textBoxCurrent.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxCurrent.BorderStyle = BorderStyle.None;
+            textBoxCurrent.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCurrent.ForeColor = Color.White;
+            textBoxCurrent.Location = new Point(204, 96);
+            textBoxCurrent.Name = "textBoxCurrent";
+            textBoxCurrent.Size = new Size(131, 24);
+            textBoxCurrent.TabIndex = 26;
+            textBoxCurrent.Text = "num";
+            // 
+            // textBoxGoal
+            // 
+            textBoxGoal.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxGoal.BorderStyle = BorderStyle.None;
+            textBoxGoal.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxGoal.ForeColor = Color.White;
+            textBoxGoal.Location = new Point(204, 66);
+            textBoxGoal.Name = "textBoxGoal";
+            textBoxGoal.Size = new Size(125, 24);
+            textBoxGoal.TabIndex = 25;
+            textBoxGoal.Text = "num";
+            // 
+            // textBoxCurrentText
+            // 
+            textBoxCurrentText.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxCurrentText.BorderStyle = BorderStyle.None;
+            textBoxCurrentText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCurrentText.ForeColor = Color.White;
+            textBoxCurrentText.Location = new Point(6, 96);
+            textBoxCurrentText.Name = "textBoxCurrentText";
+            textBoxCurrentText.ReadOnly = true;
+            textBoxCurrentText.Size = new Size(154, 24);
+            textBoxCurrentText.TabIndex = 24;
+            textBoxCurrentText.Text = "Current donations:";
+            // 
+            // textBoxGoalText
+            // 
+            textBoxGoalText.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxGoalText.BorderStyle = BorderStyle.None;
+            textBoxGoalText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxGoalText.ForeColor = Color.White;
+            textBoxGoalText.Location = new Point(6, 66);
+            textBoxGoalText.Name = "textBoxGoalText";
+            textBoxGoalText.ReadOnly = true;
+            textBoxGoalText.Size = new Size(131, 24);
+            textBoxGoalText.TabIndex = 23;
+            textBoxGoalText.Text = "Donate goal:";
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.FromArgb(25, 25, 25);
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.ForeColor = Color.White;
+            textBox3.Location = new Point(6, 36);
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(131, 24);
+            textBox3.TabIndex = 21;
+            textBox3.Text = "Monobank jar:";
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.FromArgb(25, 25, 25);
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = Color.White;
+            textBox2.Location = new Point(6, 6);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(135, 24);
+            textBox2.TabIndex = 20;
+            textBox2.Text = "Monobank card:";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(25, 25, 25);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.White;
+            textBox1.Location = new Point(204, 6);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(200, 24);
+            textBox1.TabIndex = 19;
+            textBox1.Text = "4441 1144 2829 1270";
             // 
             // panel8
             // 
             panel8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel8.BackColor = Color.FromArgb(25, 25, 25);
-            panel8.Controls.Add(label8);
-            panel8.Controls.Add(label7);
-            panel8.Controls.Add(label9);
-            panel8.Controls.Add(label10);
-            panel8.Location = new Point(12, 298);
+            panel8.Controls.Add(textBox6);
+            panel8.Controls.Add(textBox5);
+            panel8.Controls.Add(textBoxVodafone);
+            panel8.Controls.Add(textBoxKyivstar);
+            panel8.Location = new Point(12, 549);
             panel8.Margin = new Padding(5);
             panel8.Name = "panel8";
             panel8.Padding = new Padding(3);
-            panel8.Size = new Size(757, 87);
+            panel8.Size = new Size(724, 68);
             panel8.TabIndex = 21;
             // 
-            // label8
+            // textBox6
             // 
-            label8.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(3, 6);
-            label8.Margin = new Padding(3);
-            label8.Name = "label8";
-            label8.Padding = new Padding(3);
-            label8.Size = new Size(99, 34);
-            label8.TabIndex = 13;
-            label8.Text = "Vodafone:";
+            textBox6.BackColor = Color.FromArgb(25, 25, 25);
+            textBox6.BorderStyle = BorderStyle.None;
+            textBox6.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox6.ForeColor = Color.White;
+            textBox6.Location = new Point(202, 31);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(143, 24);
+            textBox6.TabIndex = 34;
+            textBox6.Text = "+380680980403";
             // 
-            // label7
+            // textBox5
             // 
-            label7.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(93, 46);
-            label7.Margin = new Padding(3);
-            label7.Name = "label7";
-            label7.Padding = new Padding(3);
-            label7.Size = new Size(183, 34);
-            label7.TabIndex = 12;
-            label7.Text = "+38-068-098-04-03";
+            textBox5.BackColor = Color.FromArgb(25, 25, 25);
+            textBox5.BorderStyle = BorderStyle.None;
+            textBox5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox5.ForeColor = Color.White;
+            textBox5.Location = new Point(202, 6);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(141, 24);
+            textBox5.TabIndex = 33;
+            textBox5.Text = "+380663816228";
             // 
-            // label9
+            // textBoxVodafone
             // 
-            label9.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(3, 46);
-            label9.Margin = new Padding(3);
-            label9.Name = "label9";
-            label9.Padding = new Padding(3);
-            label9.Size = new Size(84, 34);
-            label9.TabIndex = 14;
-            label9.Text = "Kyivstar:";
+            textBoxVodafone.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxVodafone.BorderStyle = BorderStyle.None;
+            textBoxVodafone.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxVodafone.ForeColor = Color.White;
+            textBoxVodafone.Location = new Point(6, 6);
+            textBoxVodafone.Name = "textBoxVodafone";
+            textBoxVodafone.ReadOnly = true;
+            textBoxVodafone.Size = new Size(83, 24);
+            textBoxVodafone.TabIndex = 31;
+            textBoxVodafone.Text = "Vodafone:";
             // 
-            // label10
+            // textBoxKyivstar
             // 
-            label10.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(108, 6);
-            label10.Margin = new Padding(3);
-            label10.Name = "label10";
-            label10.Padding = new Padding(3);
-            label10.Size = new Size(176, 34);
-            label10.TabIndex = 15;
-            label10.Text = "+38-066-381-62-28";
+            textBoxKyivstar.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxKyivstar.BorderStyle = BorderStyle.None;
+            textBoxKyivstar.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxKyivstar.ForeColor = Color.White;
+            textBoxKyivstar.Location = new Point(6, 31);
+            textBoxKyivstar.Name = "textBoxKyivstar";
+            textBoxKyivstar.ReadOnly = true;
+            textBoxKyivstar.Size = new Size(83, 24);
+            textBoxKyivstar.TabIndex = 32;
+            textBoxKyivstar.Text = "Kyivstar:";
             // 
             // panel7
             // 
             panel7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel7.BackColor = Color.FromArgb(25, 25, 25);
             panel7.Controls.Add(pictureBox1);
-            panel7.Location = new Point(775, 66);
+            panel7.Location = new Point(744, 57);
             panel7.Name = "panel7";
-            panel7.Size = new Size(277, 439);
+            panel7.Size = new Size(356, 564);
             panel7.TabIndex = 20;
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox1.Image = Resources.FormsMedia.monojar;
-            pictureBox1.Location = new Point(10, 12);
+            pictureBox1.Image = Resources.FormsMedia.mono_jar;
+            pictureBox1.Location = new Point(11, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(256, 414);
+            pictureBox1.Size = new Size(334, 538);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -291,22 +399,22 @@
             // panel6
             // 
             panel6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            panel6.BackColor = Color.FromArgb(30, 30, 30);
+            panel6.BackColor = Color.FromArgb(25, 25, 25);
             panel6.Controls.Add(label6);
-            panel6.Location = new Point(775, 26);
+            panel6.Location = new Point(744, 17);
             panel6.Name = "panel6";
-            panel6.Size = new Size(277, 34);
+            panel6.Size = new Size(356, 34);
             panel6.TabIndex = 17;
             // 
             // label6
             // 
             label6.BackColor = Color.FromArgb(25, 25, 25);
-            label6.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
             label6.ImageAlign = ContentAlignment.MiddleRight;
             label6.Location = new Point(0, 0);
             label6.Name = "label6";
-            label6.Size = new Size(277, 34);
+            label6.Size = new Size(356, 34);
             label6.TabIndex = 0;
             label6.Text = "Jar QR Code";
             label6.TextAlign = ContentAlignment.MiddleCenter;
@@ -316,15 +424,15 @@
             panel4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel4.BackColor = Color.FromArgb(25, 25, 25);
             panel4.Controls.Add(label12);
-            panel4.Location = new Point(12, 256);
+            panel4.Location = new Point(12, 507);
             panel4.Name = "panel4";
-            panel4.Size = new Size(757, 34);
+            panel4.Size = new Size(726, 34);
             panel4.TabIndex = 18;
             // 
             // label12
             // 
-            label12.BackColor = Color.FromArgb(30, 30, 30);
-            label12.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.BackColor = Color.FromArgb(25, 25, 25);
+            label12.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
             label12.Location = new Point(0, 0);
             label12.Name = "label12";
@@ -338,15 +446,15 @@
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel3.BackColor = Color.FromArgb(25, 25, 25);
             panel3.Controls.Add(label11);
-            panel3.Location = new Point(12, 124);
+            panel3.Location = new Point(12, 115);
             panel3.Name = "panel3";
-            panel3.Size = new Size(757, 34);
+            panel3.Size = new Size(726, 34);
             panel3.TabIndex = 17;
             // 
             // label11
             // 
             label11.BackColor = Color.FromArgb(25, 25, 25);
-            label11.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
             label11.Location = new Point(0, 0);
             label11.Name = "label11";
@@ -361,9 +469,9 @@
             panel2.BackColor = Color.FromArgb(25, 25, 25);
             panel2.Controls.Add(panel10);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(12, 26);
+            panel2.Location = new Point(12, 17);
             panel2.Name = "panel2";
-            panel2.Size = new Size(757, 34);
+            panel2.Size = new Size(726, 34);
             panel2.TabIndex = 16;
             // 
             // panel10
@@ -375,8 +483,8 @@
             // 
             // label1
             // 
-            label1.BackColor = Color.FromArgb(30, 30, 30);
-            label1.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.BackColor = Color.FromArgb(25, 25, 25);
+            label1.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(0, 3);
             label1.Name = "label1";
@@ -389,14 +497,27 @@
             // 
             panel11.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel11.BackColor = Color.FromArgb(25, 25, 25);
+            panel11.Controls.Add(textBox4);
             panel11.Controls.Add(pictureBoxTelegram);
             panel11.Controls.Add(pictureBoxFacebook);
             panel11.Controls.Add(pictureBoxInstagram);
-            panel11.Controls.Add(label2);
-            panel11.Location = new Point(12, 66);
+            panel11.Location = new Point(12, 57);
             panel11.Name = "panel11";
-            panel11.Size = new Size(757, 52);
+            panel11.Size = new Size(726, 52);
             panel11.TabIndex = 23;
+            // 
+            // textBox4
+            // 
+            textBox4.BackColor = Color.FromArgb(25, 25, 25);
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.ForeColor = Color.White;
+            textBox4.Location = new Point(11, 14);
+            textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
+            textBox4.Size = new Size(56, 24);
+            textBox4.TabIndex = 23;
+            textBox4.Text = "Links:";
             // 
             // pictureBoxTelegram
             // 
@@ -431,33 +552,25 @@
             pictureBoxInstagram.TabStop = false;
             pictureBoxInstagram.Click += pictureBoxInstagram_Click;
             // 
-            // label2
-            // 
-            label2.BackColor = Color.FromArgb(25, 25, 25);
-            label2.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(3, 12);
-            label2.Name = "label2";
-            label2.Size = new Size(64, 26);
-            label2.TabIndex = 19;
-            label2.Text = "Links:";
-            // 
             // FormContact
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1064, 735);
+            ClientSize = new Size(1112, 739);
             Controls.Add(panel1);
             Controls.Add(panel5);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormContact";
             Text = "FormContact";
+            Load += FormContact_Load;
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             panel1.ResumeLayout(false);
             panel9.ResumeLayout(false);
+            panel9.PerformLayout();
             panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -484,27 +597,34 @@
         private PictureBox pictureBoxInstagram;
         private PictureBox pictureBoxFacebook;
         private PictureBox pictureBox1;
-        private LinkLabel linkLabelDonate;
-        private Label label4;
-        private Label label3;
         private Panel panel4;
         private Label label12;
-        private Label label5;
         private Panel panel3;
         private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
         private Panel panel2;
         private Panel panel6;
-        private Label label2;
         private Label label6;
         private Panel panel9;
         private Panel panel8;
         private Panel panel7;
         private Panel panel10;
         private Panel panel11;
-        private Panel panel12;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private TextBox textBoxCurrent;
+        private TextBox textBoxGoal;
+        private TextBox textBoxCurrentText;
+        private TextBox textBoxGoalText;
+        private TextBox textBox4;
+        private TextBox textBoxOwner;
+        private TextBox textBoxOwnerText;
+        private TextBox textBoxName;
+        private TextBox textBoxNameText;
+        private TextBox textBox5;
+        private TextBox textBoxKyivstar;
+        private TextBox textBoxVodafone;
+        private TextBox textBox6;
+        private LinkLabel linkLabelDonate;
     }
 }

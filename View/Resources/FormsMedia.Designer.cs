@@ -413,9 +413,9 @@ namespace Optimum_Tech.View.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap monojar {
+        internal static System.Drawing.Bitmap mono_jar {
             get {
-                object obj = ResourceManager.GetObject("monojar", resourceCulture);
+                object obj = ResourceManager.GetObject("mono_jar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
