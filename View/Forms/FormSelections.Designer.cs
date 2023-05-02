@@ -87,6 +87,7 @@
             buttonPurchase.TabIndex = 3;
             buttonPurchase.Text = "Purchase";
             buttonPurchase.UseVisualStyleBackColor = false;
+            buttonPurchase.Click += buttonPurchase_Click;
             // 
             // textBoxAmount
             // 

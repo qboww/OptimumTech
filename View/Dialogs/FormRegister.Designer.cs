@@ -84,7 +84,7 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             textBoxLogin.BorderStyle = BorderStyle.None;
             textBoxLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxLogin.Location = new Point(75, 78);
+            textBoxLogin.Location = new Point(71, 52);
             textBoxLogin.Name = "textBoxLogin";
             textBoxLogin.Size = new Size(223, 24);
             textBoxLogin.TabIndex = 18;
@@ -111,7 +111,7 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             textBoxPassword.BorderStyle = BorderStyle.None;
             textBoxPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPassword.Location = new Point(109, 108);
+            textBoxPassword.Location = new Point(105, 82);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(189, 24);
             textBoxPassword.TabIndex = 22;
@@ -124,7 +124,7 @@ namespace Optimum_Tech.Forms.Dialogs
             label1.AutoSize = true;
             label1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 78);
+            label1.Location = new Point(8, 52);
             label1.Name = "label1";
             label1.Size = new Size(57, 28);
             label1.TabIndex = 23;
@@ -135,7 +135,7 @@ namespace Optimum_Tech.Forms.Dialogs
             label2.AutoSize = true;
             label2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(12, 108);
+            label2.Location = new Point(8, 82);
             label2.Name = "label2";
             label2.Size = new Size(91, 28);
             label2.TabIndex = 24;

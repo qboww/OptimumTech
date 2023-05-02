@@ -1,4 +1,5 @@
 ﻿using Optimum_Tech.Forms;
+using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
 using OptimumTech.Controls;
 
@@ -7,6 +8,8 @@ namespace Optimum_Tech.View.Forms
     public partial class FormSelections : Form
     {
         private readonly FormMain formMain;
+        private FormLogin formLogin;
+        private readonly FormAccount formAccount;
 
         public FormSelections(FormMain formMain)
         {
@@ -66,6 +69,18 @@ namespace Optimum_Tech.View.Forms
 
             this.textBoxPrice.Text = $"Price: ${totalPrice}";
             this.textBoxAmount.Text = $"Amount: {itemCount} pcs";
+        }
+
+        private void buttonPurchase_Click(object sender, EventArgs e)
+        {
+            if (UserManager.currentUser.Access is Access.Guest)
+            {
+                if (formLogin == null || formLogin.IsDisposed)
+                {
+                    formLogin = new FormLogin(formAccount, formMain);
+                    formLogin.Show();
+                }
+            }
         }
     }
 }

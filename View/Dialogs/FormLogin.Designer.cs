@@ -83,7 +83,7 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxTitleAccount.Size = new Size(100, 26);
             textBoxTitleAccount.TabIndex = 1;
             textBoxTitleAccount.TabStop = false;
-            textBoxTitleAccount.Text = "Account";
+            textBoxTitleAccount.Text = "Login";
             // 
             // panel1
             // 
@@ -135,7 +135,7 @@ namespace Optimum_Tech.Forms.Dialogs
             buttonLogin.BackColor = Color.White;
             buttonLogin.FlatStyle = FlatStyle.Flat;
             buttonLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonLogin.Location = new Point(45, 305);
+            buttonLogin.Location = new Point(49, 308);
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(95, 33);
             buttonLogin.TabIndex = 2;
