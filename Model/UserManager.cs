@@ -42,13 +42,14 @@ namespace Optimum_Tech.Model
         }
         public static bool Register(string login, string password)
         {
+            if (!IsLoginUnique(login))
+            {
+                MessageBox.Show("Login already exists");
+                return false;
+            }
+
             string json = File.ReadAllText(usersFilePath);
             List<User> users = JsonConvert.DeserializeObject<List<User>>(json);
-
-            if (users.Any(u => u.Login == login))
-            {
-                throw new Exception("Login already exists");
-            }
 
             User newUser = new User(login, password);
             newUser.Access = Access.User;
@@ -59,6 +60,7 @@ namespace Optimum_Tech.Model
 
             return true;
         }
+
         public static List<User> LoadUsers()
         {
             if (!File.Exists(usersFilePath))
@@ -71,6 +73,14 @@ namespace Optimum_Tech.Model
 
             return users;
         }
+        public static bool IsLoginUnique(string login)
+        {
+            string json = File.ReadAllText(usersFilePath);
+            List<User> users = JsonConvert.DeserializeObject<List<User>>(json);
+
+            return !users.Any(u => u.Login == login);
+        }
+
 
         public static void AddToFavorites(ProductControl control)
         {

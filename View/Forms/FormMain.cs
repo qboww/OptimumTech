@@ -276,7 +276,7 @@ namespace Optimum_Tech.Forms
 
             if (formSettings == null || formSettings.IsDisposed)
             {
-                formSettings = new FormSettings();
+                formSettings = new FormSettings(formHome);
             }
 
             OpenChildForm(formSettings);

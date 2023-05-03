@@ -86,6 +86,8 @@ namespace Optimum_Tech.View.Forms
                             product.Threads = int.Parse(editProcessor.textBoxThreads.Text);
                             product.ClockSpeedDefault = double.Parse(editProcessor.textBoxClockSpeedDefault.Text);
                             product.ClockSpeedBoost = double.Parse(editProcessor.textBoxClockSpeedBoost.Text);
+
+                            ProductManager.SaveChanges();
                         }
                     }
 
@@ -109,6 +111,8 @@ namespace Optimum_Tech.View.Forms
                             product.MemoryInterface = int.Parse(editGraphicsCard.textBoxMemoryInterface.Text);
                             product.MemoryType = editGraphicsCard.textBoxMemoryType.Text;
                             product.MinimumWattage = int.Parse(editGraphicsCard.textBoxMinimumWattage.Text);
+
+                            ProductManager.SaveChanges();
                         }
                     }
 

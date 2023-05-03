@@ -28,11 +28,11 @@ namespace Optimum_Tech.Forms.Dialogs
                 UserManager.UpdateStatus(formAccount.textBoxStatus);
                 this.Close();
             }
-        }
-
-        public void CreateUser(string login, string password)
-        {
-
+            else
+            {
+                textBoxLogin.Clear();
+                textBoxPassword.Clear();
+            }
         }
 
         private void textBoxPassword_Click(object sender, EventArgs e)

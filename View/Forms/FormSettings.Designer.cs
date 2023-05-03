@@ -32,7 +32,14 @@
             textBoxStatus = new TextBox();
             textBoxAccountPrefferences = new TextBox();
             panel1 = new Panel();
+            panel2 = new Panel();
+            textBox1 = new TextBox();
+            buttonBanner = new Button();
+            textBox2 = new TextBox();
+            textBoxState = new TextBox();
             panel5.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel5
@@ -41,6 +48,7 @@
             panel5.Controls.Add(textBoxStatus);
             panel5.Controls.Add(textBoxAccountPrefferences);
             panel5.Dock = DockStyle.Top;
+            panel5.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             panel5.Location = new Point(0, 0);
             panel5.Margin = new Padding(5);
             panel5.Name = "panel5";
@@ -76,11 +84,76 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 34);
             panel1.Name = "panel1";
             panel1.Size = new Size(1064, 701);
             panel1.TabIndex = 15;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(25, 25, 25);
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(buttonBanner);
+            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(textBoxState);
+            panel2.Location = new Point(0, 61);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(485, 70);
+            panel2.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(25, 25, 25);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.White;
+            textBox1.Location = new Point(9, 9);
+            textBox1.Margin = new Padding(9);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(226, 24);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "Disable home page banner:";
+            // 
+            // buttonBanner
+            // 
+            buttonBanner.BackColor = Color.White;
+            buttonBanner.FlatAppearance.BorderSize = 0;
+            buttonBanner.FlatStyle = FlatStyle.Flat;
+            buttonBanner.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonBanner.Location = new Point(392, 12);
+            buttonBanner.Margin = new Padding(9);
+            buttonBanner.Name = "buttonBanner";
+            buttonBanner.Size = new Size(84, 29);
+            buttonBanner.TabIndex = 1;
+            buttonBanner.Text = "Change";
+            buttonBanner.UseVisualStyleBackColor = false;
+            buttonBanner.Click += buttonBanner_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.FromArgb(25, 25, 25);
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = Color.White;
+            textBox2.Location = new Point(9, 36);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(64, 24);
+            textBox2.TabIndex = 2;
+            textBox2.Text = "Banner:";
+            // 
+            // textBoxState
+            // 
+            textBoxState.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxState.BorderStyle = BorderStyle.None;
+            textBoxState.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxState.ForeColor = Color.LimeGreen;
+            textBoxState.Location = new Point(79, 36);
+            textBoxState.Name = "textBoxState";
+            textBoxState.Size = new Size(78, 24);
+            textBoxState.TabIndex = 3;
+            textBoxState.Text = "Enabled";
             // 
             // FormSettings
             // 
@@ -95,6 +168,9 @@
             Text = "FormContact";
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -104,5 +180,10 @@
         public TextBox textBoxStatus;
         private TextBox textBoxAccountPrefferences;
         private Panel panel1;
+        private TextBox textBoxState;
+        private TextBox textBox2;
+        private Button buttonBanner;
+        private TextBox textBox1;
+        private Panel panel2;
     }
 }
