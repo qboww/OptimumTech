@@ -26,5 +26,12 @@
     "Login": "Login",
     "Password": "Password",
     "Access": 2
+  },
+  {
+    "Favorites": [],
+    "Selections": [],
+    "Login": "petro",
+    "Password": "123",
+    "Access": 2
   }
 ]

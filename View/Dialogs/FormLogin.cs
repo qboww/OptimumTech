@@ -50,9 +50,10 @@ namespace Optimum_Tech.Forms.Dialogs
                     formMain.textBoxFavorites.Visible = true;
                 }
 
-                UserManager.UpdateStatus(formAccount.textBoxStatus);
                 this.Close();
             }
+
+            UserManager.UpdateStatus(formAccount.textBoxStatus);
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)

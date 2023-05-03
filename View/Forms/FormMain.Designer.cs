@@ -318,7 +318,7 @@ namespace Optimum_Tech.Forms
             textBoxSearchText.Name = "textBoxSearchText";
             textBoxSearchText.Size = new Size(151, 24);
             textBoxSearchText.TabIndex = 20;
-            textBoxSearchText.Text = "Search";
+            textBoxSearchText.Text = " Search";
             textBoxSearchText.Enter += textBoxSearchText_Enter;
             // 
             // textBoxCategories

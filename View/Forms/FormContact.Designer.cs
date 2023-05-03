@@ -114,7 +114,7 @@
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
             textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
-            textBoxAccountPrefferences.Location = new Point(3, 3);
+            textBoxAccountPrefferences.Location = new Point(12, 3);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
             textBoxAccountPrefferences.ReadOnly = true;
             textBoxAccountPrefferences.Size = new Size(245, 28);
@@ -190,7 +190,7 @@
             textBoxNameText.BorderStyle = BorderStyle.None;
             textBoxNameText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxNameText.ForeColor = Color.White;
-            textBoxNameText.Location = new Point(6, 156);
+            textBoxNameText.Location = new Point(11, 156);
             textBoxNameText.Name = "textBoxNameText";
             textBoxNameText.ReadOnly = true;
             textBoxNameText.Size = new Size(83, 24);
@@ -215,7 +215,7 @@
             textBoxOwnerText.BorderStyle = BorderStyle.None;
             textBoxOwnerText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxOwnerText.ForeColor = Color.White;
-            textBoxOwnerText.Location = new Point(6, 126);
+            textBoxOwnerText.Location = new Point(11, 126);
             textBoxOwnerText.Name = "textBoxOwnerText";
             textBoxOwnerText.ReadOnly = true;
             textBoxOwnerText.Size = new Size(83, 24);
@@ -252,7 +252,7 @@
             textBoxCurrentText.BorderStyle = BorderStyle.None;
             textBoxCurrentText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCurrentText.ForeColor = Color.White;
-            textBoxCurrentText.Location = new Point(6, 96);
+            textBoxCurrentText.Location = new Point(11, 96);
             textBoxCurrentText.Name = "textBoxCurrentText";
             textBoxCurrentText.ReadOnly = true;
             textBoxCurrentText.Size = new Size(154, 24);
@@ -265,7 +265,7 @@
             textBoxGoalText.BorderStyle = BorderStyle.None;
             textBoxGoalText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxGoalText.ForeColor = Color.White;
-            textBoxGoalText.Location = new Point(6, 66);
+            textBoxGoalText.Location = new Point(11, 66);
             textBoxGoalText.Name = "textBoxGoalText";
             textBoxGoalText.ReadOnly = true;
             textBoxGoalText.Size = new Size(131, 24);
@@ -278,7 +278,7 @@
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.White;
-            textBox3.Location = new Point(6, 36);
+            textBox3.Location = new Point(11, 36);
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
             textBox3.Size = new Size(131, 24);
@@ -291,7 +291,7 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(6, 6);
+            textBox2.Location = new Point(11, 6);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
             textBox2.Size = new Size(135, 24);
@@ -322,7 +322,7 @@
             panel8.Margin = new Padding(5);
             panel8.Name = "panel8";
             panel8.Padding = new Padding(3);
-            panel8.Size = new Size(724, 68);
+            panel8.Size = new Size(726, 72);
             panel8.TabIndex = 21;
             // 
             // textBox6
@@ -331,7 +331,7 @@
             textBox6.BorderStyle = BorderStyle.None;
             textBox6.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox6.ForeColor = Color.White;
-            textBox6.Location = new Point(202, 31);
+            textBox6.Location = new Point(199, 34);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(143, 24);
             textBox6.TabIndex = 34;
@@ -343,7 +343,7 @@
             textBox5.BorderStyle = BorderStyle.None;
             textBox5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.ForeColor = Color.White;
-            textBox5.Location = new Point(202, 6);
+            textBox5.Location = new Point(199, 6);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(141, 24);
             textBox5.TabIndex = 33;
@@ -355,7 +355,7 @@
             textBoxVodafone.BorderStyle = BorderStyle.None;
             textBoxVodafone.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxVodafone.ForeColor = Color.White;
-            textBoxVodafone.Location = new Point(6, 6);
+            textBoxVodafone.Location = new Point(11, 6);
             textBoxVodafone.Name = "textBoxVodafone";
             textBoxVodafone.ReadOnly = true;
             textBoxVodafone.Size = new Size(83, 24);
@@ -368,7 +368,7 @@
             textBoxKyivstar.BorderStyle = BorderStyle.None;
             textBoxKyivstar.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxKyivstar.ForeColor = Color.White;
-            textBoxKyivstar.Location = new Point(6, 31);
+            textBoxKyivstar.Location = new Point(11, 36);
             textBoxKyivstar.Name = "textBoxKyivstar";
             textBoxKyivstar.ReadOnly = true;
             textBoxKyivstar.Size = new Size(83, 24);
@@ -434,7 +434,7 @@
             label12.BackColor = Color.FromArgb(25, 25, 25);
             label12.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(0, 0);
+            label12.Location = new Point(0, 3);
             label12.Name = "label12";
             label12.Size = new Size(171, 34);
             label12.TabIndex = 0;

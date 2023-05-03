@@ -1,8 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using System.Net;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace Optimum_Tech.View.Forms
 {
@@ -15,14 +13,12 @@ namespace Optimum_Tech.View.Forms
 
         private void FormContact_Load(object sender, EventArgs e)
         {
-            // Retrieve the JSON data from the API endpoint
             using (var client = new WebClient())
             {
                 string apiUrl = "https://api.monobank.ua/bank/jar/tLvwiuWMjvJQzaRFERTVS1EqjiCep8";
                 client.Headers.Add("X-Token", "uoWF_3gNOCSuM6KpLta-sOcZWAdnyflK4X73zdwenL8c");
                 string jsonData = client.DownloadString(apiUrl);
 
-                // Parse the JSON data and retrieve the "amount" field
                 JObject data = JObject.Parse(jsonData);
                 int amount = (int)data["amount"];
                 int goal = (int)data["goal"];
@@ -31,9 +27,8 @@ namespace Optimum_Tech.View.Forms
 
                 double value = ((double)amount / goal) * 100;
 
-                // Display the "amount" field in the label
-                textBoxCurrent.Text = $"{amount / 100} ₴";
-                textBoxGoal.Text = $"{goal / 100} ₴ ({value}%)";
+                textBoxCurrent.Text = $"{amount / 100}₴ ({value}%)";
+                textBoxGoal.Text = $"{goal / 100}₴";
                 textBoxOwner.Text = $"{owner}";
                 textBoxName.Text = $"{name}";
             }
@@ -44,13 +39,11 @@ namespace Optimum_Tech.View.Forms
             string url = "https://t.me/yevhenko";
             Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
         }
-
         private void pictureBoxInstagram_Click(object sender, EventArgs e)
         {
             string url = "https://instagram.com/evhenii.sara?igshid=NjNlMDhmYTc=";
             Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
         }
-
         private void pictureBoxFacebook_Click(object sender, EventArgs e)
         {
             string url = "https://www.facebook.com/profile.php?id=100013268732329";
