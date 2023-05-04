@@ -1,9 +1,11 @@
 ﻿using Optimum_Tech.Model.Interfaces;
+using Optimum_Tech.Model.Managers;
 using OptimumTech.Controls;
+using System.Text.Json.Serialization;
 
 namespace Optimum_Tech.Model
 {
-    internal class User: IAccess, IDisposable
+    internal class User : IAccess, IDisposable
     {
         public string Login { get; set; }
         public string Password { get; set; }
@@ -31,7 +33,7 @@ namespace Optimum_Tech.Model
             UserManager.currentUser.GrantAccessAdmin();
         }
 
-
+        [JsonIgnore]
         private bool _disposed = false;
         public void Dispose()
         {

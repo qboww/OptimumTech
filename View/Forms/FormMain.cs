@@ -1,4 +1,4 @@
-﻿using Optimum_Tech.Model;
+﻿using Optimum_Tech.Model.Managers;
 using Optimum_Tech.View.Displays;
 using Optimum_Tech.View.Forms;
 using Optimum_Tech.View.Screens;
@@ -304,10 +304,8 @@ namespace Optimum_Tech.Forms
 
             OpenChildForm(formHome);
 
-            ProductManager.LoadProducts();
-
             UserManager.LoadUsers();
-
+            ProductManager.LoadProducts();
             UserManager.LoginAsGuest();
         }
         internal void OpenChildForm(Form childForm)

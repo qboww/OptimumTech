@@ -1,5 +1,7 @@
 ﻿using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
+using Optimum_Tech.Model.Managers;
+using Optimum_Tech.Model.Products;
 using Optimum_Tech.View.Resources;
 
 namespace OptimumTech.Controls

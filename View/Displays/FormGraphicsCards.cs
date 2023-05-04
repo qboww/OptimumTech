@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Optimum_Tech.Model.Products;
-using Optimum_Tech.Model;
 using OptimumTech.Controls;
+using Optimum_Tech.Model.Managers;
 
 namespace Optimum_Tech.View.Displays
 {

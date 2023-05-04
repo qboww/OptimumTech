@@ -1,6 +1,7 @@
 ﻿using Optimum_Tech.Forms;
 using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
+using Optimum_Tech.Model.Managers;
 using OptimumTech.Controls;
 
 namespace Optimum_Tech.View.Forms

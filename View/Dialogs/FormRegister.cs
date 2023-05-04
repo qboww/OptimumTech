@@ -1,4 +1,5 @@
 ﻿using Optimum_Tech.Model;
+using Optimum_Tech.Model.Managers;
 
 namespace Optimum_Tech.Forms.Dialogs
 {

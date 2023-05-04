@@ -1,5 +1,4 @@
-﻿using Optimum_Tech.Model;
-using Optimum_Tech.Model.Products;
+﻿using Optimum_Tech.Model.Products;
 
 namespace Optimum_Tech.Forms.Dialogs
 {

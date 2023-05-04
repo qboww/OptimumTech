@@ -2,7 +2,7 @@
 using Optimum_Tech.Model.Products;
 using OptimumTech.Controls;
 
-namespace Optimum_Tech.Model
+namespace Optimum_Tech.Model.Managers
 {
     public static class ProductManager
     {
@@ -84,7 +84,7 @@ namespace Optimum_Tech.Model
 
             foreach (Processor processor in products)
             {
-                ProductControl control = new ProductControl((Product)processor);
+                ProductControl control = new ProductControl(processor);
                 controls.Add(control);
             }
 
