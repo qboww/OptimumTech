@@ -409,7 +409,7 @@
             // 
             progressBar1.Location = new Point(204, 122);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(182, 23);
+            progressBar1.Size = new Size(150, 23);
             progressBar1.TabIndex = 24;
             // 
             // textBoxState
@@ -572,7 +572,7 @@
             textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(204, 6);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(177, 24);
+            textBox1.Size = new Size(150, 24);
             textBox1.TabIndex = 19;
             textBox1.Text = "4441 1144 2829 1270";
             // 

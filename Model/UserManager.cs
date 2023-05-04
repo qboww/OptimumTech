@@ -5,7 +5,7 @@ namespace Optimum_Tech.Model
 {
     internal static class UserManager
     {
-        private static string usersFilePath = "D:\\Downloads\\OptimumTech\\Repository\\users.json";
+        private static string usersFilePath = @"..\..\Repository\users.json";
         public static User? currentUser;
 
         public static void UpdateStatus(TextBox textBoxStatus)
