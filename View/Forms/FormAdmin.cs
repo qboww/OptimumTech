@@ -3,6 +3,7 @@ using Optimum_Tech.Controls;
 using Optimum_Tech.Forms;
 using Optimum_Tech.Model;
 using Optimum_Tech.Model.Products;
+using Timer = System.Windows.Forms.Timer;
 
 namespace Optimum_Tech.View.Forms
 {
@@ -120,6 +121,77 @@ namespace Optimum_Tech.View.Forms
                     File.WriteAllText("graphicsCards.json", graphicsCardsJson);
                 }
             }
+        }
+
+        private void buttonSearchUser_Click(object sender, EventArgs e)
+        {
+            string userLogin = textBoxSearchUserText.Text.Trim();
+
+            if (!string.IsNullOrEmpty(userLogin))
+            {
+                List<User> users = UserManager.LoadUsers();
+                bool userExists = users.Any(user => user.Login == userLogin);
+
+                if (userExists)
+                {
+                    textBoxState.Text = "exists";
+                    textBoxState.ForeColor = Color.Aquamarine;
+                }
+                else
+                {
+                    Timer timer = new Timer();
+                    timer.Interval = 1000;
+                    timer.Tick += (s, ev) =>
+                    {
+                        textBoxState.Text = "isn't selected";
+                        textBoxState.ForeColor = Color.White;
+
+                        timer.Stop();
+                        timer.Dispose();
+                    };
+
+                    textBoxState.Text = "does not exist";
+                    textBoxState.ForeColor = Color.Red;
+
+                    timer.Start();
+                }
+            }
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            string userLogin = textBoxSearchUserText.Text.Trim();
+
+            if (!string.IsNullOrEmpty(userLogin))
+            {
+                List<User> users = UserManager.LoadUsers();
+                User userToRemove = users.FirstOrDefault(u => u.Login == userLogin);
+
+                if (userToRemove != null)
+                {
+                    userToRemove.Dispose();
+                    users.Remove(userToRemove);
+
+                    textBoxState.Text = "is deleted";
+                    textBoxState.ForeColor = Color.LimeGreen;
+                }
+            }
+        }
+
+        private void buttonDelSave_Click(object sender, EventArgs e)
+        {
+            UserManager.SaveUsers();
+            MessageBox.Show($"Changes are saved");
+        }
+
+        private void textBoxSearch_Click(object sender, EventArgs e)
+        {
+            textBoxSearch.Clear();
+        }
+
+        private void textBoxSearchUserText_Click(object sender, EventArgs e)
+        {
+            textBoxSearchUserText.Clear();
         }
     }
 }

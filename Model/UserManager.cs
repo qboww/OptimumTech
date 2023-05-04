@@ -1,31 +1,27 @@
 ﻿using Newtonsoft.Json;
+using Optimum_Tech.Model.Products;
 using OptimumTech.Controls;
 
 namespace Optimum_Tech.Model
 {
     internal static class UserManager
     {
-        private static string usersFilePath = @"..\..\Repository\users.json";
-        public static User? currentUser = null;
+        private static readonly string usersFilePath = @"..\..\Repository\users.json";
+        public static List<User> users = new List<User>();
+        public static User? currentUser;
 
         public static void UpdateStatus(TextBox textBoxStatus)
         {
-            if (currentUser != null)
-            {
-                textBoxStatus.ForeColor = Color.White;
-                textBoxStatus.Text = $"Logged as: {currentUser.Login}";
-            }
+            textBoxStatus.ForeColor = Color.White;
+            textBoxStatus.Text = $"Logged as: {currentUser.Login}";
         }
 
         public static void LoginAsGuest()
         {
-            if (File.Exists(usersFilePath))
-            {
-                string json = File.ReadAllText(usersFilePath);
-                List<User>? users = JsonConvert.DeserializeObject<List<User>>(json);
-                User? guestUser = users?.FirstOrDefault(u => u.Access == Access.Guest);
-                currentUser = guestUser;
-            }
+            string json = File.ReadAllText(usersFilePath);
+            List<User>? users = JsonConvert.DeserializeObject<List<User>>(json);
+            User? guestUser = users.FirstOrDefault(u => u.Access == Access.Guest);
+            currentUser = guestUser;
         }
 
         public static bool Login(TextBox textBoxLogin, TextBox textBoxPassword)
@@ -33,26 +29,18 @@ namespace Optimum_Tech.Model
             string login = textBoxLogin.Text;
             string password = textBoxPassword.Text;
 
-            if (File.Exists(usersFilePath))
+            using (StreamReader r = new StreamReader(usersFilePath))
             {
-                using (StreamReader r = new StreamReader(usersFilePath))
-                {
-                    User[] users = JsonConvert.DeserializeObject<User[]>(r.ReadToEnd());
+                User[] users = JsonConvert.DeserializeObject<User[]>(r.ReadToEnd());
 
-                    foreach (User user in users)
+                foreach (User user in users)
+                {
+                    if (user.Login == login && user.Password == password)
                     {
-                        if (user.Login == login && user.Password == password)
-                        {
-                            currentUser = user;
-                            return true;
-                        }
+                        currentUser = user;
+                        return true;
                     }
-                    return false;
                 }
-            }
-            else
-            {
-                MessageBox.Show("User file not found");
                 return false;
             }
         }
@@ -65,38 +53,17 @@ namespace Optimum_Tech.Model
                 return false;
             }
 
-            if (File.Exists(usersFilePath))
-            {
-                string json = File.ReadAllText(usersFilePath);
-                List<User> users = JsonConvert.DeserializeObject<List<User>>(json) ?? new List<User>();
-
-                User newUser = new User(login, password);
-                newUser.Access = Access.User;
-                users.Add(newUser);
-
-                string newJson = JsonConvert.SerializeObject(users, Formatting.Indented);
-                File.WriteAllText(usersFilePath, newJson);
-
-                return true;
-            }
-            else
-            {
-                MessageBox.Show("User file not found");
-                return false;
-            }
-        }
-
-        public static List<User> LoadUsers()
-        {
-            if (!File.Exists(usersFilePath))
-            {
-                return new List<User>();
-            }
-
             string json = File.ReadAllText(usersFilePath);
             List<User> users = JsonConvert.DeserializeObject<List<User>>(json);
 
-            return users;
+            User newUser = new User(login, password);
+            newUser.Access = Access.User;
+            users.Add(newUser);
+
+            string newJson = JsonConvert.SerializeObject(users, Formatting.Indented);
+            File.WriteAllText(usersFilePath, newJson);
+
+            return true;
         }
 
         public static bool IsLoginUnique(string login)
@@ -107,66 +74,77 @@ namespace Optimum_Tech.Model
             return !users.Any(u => u.Login == login);
         }
 
-        public static void AddToFavorites(ProductControl control)
+        public static List<User> LoadUsers()
         {
-            if (currentUser == null) return;
+            string json = File.ReadAllText(usersFilePath);
+            users = JsonConvert.DeserializeObject<List<User>>(json);
 
-            currentUser.Favorites ??= new List<ProductControl>();
-
-            if (!currentUser.Favorites.Contains(control))
-            {
-                currentUser.Favorites.Add(control);
-            }
-
-            List<User> users = LoadUsers();
-            int index = users.FindIndex(u => u.Login == currentUser.Login);
-            users[index] = currentUser;
+            return users;
         }
 
-        public static void RemoveFromFavorites(ProductControl control)
+        internal static void SaveUsers()
         {
-            currentUser?.Favorites?.Remove(control);
+            List<User> usersToSave = users.ToList();
+            string json = JsonConvert.SerializeObject(usersToSave, Formatting.Indented);
+            File.WriteAllText(usersFilePath, json);
+        }
 
-            List<User> users = LoadUsers();
-            int index = users.FindIndex(u => u.Login == currentUser?.Login);
-            if (index != -1)
+        public static void AddToFavorites(ProductControl control)
+        {
+            if (UserManager.currentUser.Favorites == null)
             {
-                users[index].Favorites = currentUser?.Favorites;
+                UserManager.currentUser.Favorites = new List<ProductControl>();
             }
 
-            string newJson = JsonConvert.SerializeObject(users, Formatting.Indented);
-            File.WriteAllText(usersFilePath, newJson);
+            if (!UserManager.currentUser.Favorites.Contains(control))
+            {
+                UserManager.currentUser.Favorites.Add(control);
+
+                List<User> users = LoadUsers();
+                int index = users.FindIndex(u => u.Login == UserManager.currentUser.Login);
+                users[index] = UserManager.currentUser;
+            }
+        }
+        public static void RemoveFromFavorites(ProductControl control)
+        {
+            if (UserManager.currentUser.Favorites == null)
+            {
+                return;
+            }
+            UserManager.currentUser.Favorites.Remove(control);
+
+            List<User> users = LoadUsers();
+            int index = users.FindIndex(u => u.Login == UserManager.currentUser.Login);
+            users[index] = UserManager.currentUser;
         }
 
         public static void AddToSelections(ProductControl control)
         {
-            if (currentUser == null) return;
-
-            currentUser.Selections ??= new List<ProductControl>();
-
-            if (!currentUser.Selections.Contains(control))
+            if (UserManager.currentUser.Selections == null)
             {
-                currentUser.Selections.Add(control);
+                UserManager.currentUser.Selections = new List<ProductControl>();
             }
 
-            List<User> users = LoadUsers();
-            int index = users.FindIndex(u => u.Login == currentUser.Login);
-            users[index] = currentUser;
-        }
+            if (!UserManager.currentUser.Selections.Contains(control))
+            {
+                UserManager.currentUser.Selections.Add(control);
 
+                //List<User> users = LoadUsers();
+                int index = users.FindIndex(u => u.Login == UserManager.currentUser.Login);
+                users[index] = UserManager.currentUser;
+            }
+        }
         public static void RemoveFromSelections(ProductControl control)
         {
-            currentUser?.Selections?.Remove(control);
+            if (UserManager.currentUser.Selections == null)
+            {
+                return;
+            }
+            UserManager.currentUser.Selections.Remove(control);
 
             List<User> users = LoadUsers();
-            int index = users.FindIndex(u => u.Login == currentUser?.Login);
-            if (index != -1)
-            {
-                users[index].Selections = currentUser?.Selections;
-            }
-
-            string newJson = JsonConvert.SerializeObject(users, Formatting.Indented);
-            File.WriteAllText(usersFilePath, newJson);
+            int index = users.FindIndex(u => u.Login == UserManager.currentUser.Login);
+            users[index] = UserManager.currentUser;
         }
     }
 }

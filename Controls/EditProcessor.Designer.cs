@@ -62,7 +62,7 @@
             labelClockSpeedBoost.BackColor = SystemColors.Control;
             labelClockSpeedBoost.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelClockSpeedBoost.ForeColor = SystemColors.ControlText;
-            labelClockSpeedBoost.Location = new Point(6, 406);
+            labelClockSpeedBoost.Location = new Point(6, 404);
             labelClockSpeedBoost.Name = "labelClockSpeedBoost";
             labelClockSpeedBoost.Size = new Size(113, 28);
             labelClockSpeedBoost.TabIndex = 23;
@@ -72,9 +72,9 @@
             // 
             textBoxClockSpeedBoost.BorderStyle = BorderStyle.None;
             textBoxClockSpeedBoost.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxClockSpeedBoost.Location = new Point(126, 406);
+            textBoxClockSpeedBoost.Location = new Point(126, 404);
             textBoxClockSpeedBoost.Name = "textBoxClockSpeedBoost";
-            textBoxClockSpeedBoost.Size = new Size(290, 24);
+            textBoxClockSpeedBoost.Size = new Size(542, 24);
             textBoxClockSpeedBoost.TabIndex = 22;
             textBoxClockSpeedBoost.Text = "some-data";
             // 
@@ -84,7 +84,7 @@
             labelClockSpeedDefault.BackColor = SystemColors.Control;
             labelClockSpeedDefault.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelClockSpeedDefault.ForeColor = SystemColors.ControlText;
-            labelClockSpeedDefault.Location = new Point(6, 376);
+            labelClockSpeedDefault.Location = new Point(6, 374);
             labelClockSpeedDefault.Name = "labelClockSpeedDefault";
             labelClockSpeedDefault.Size = new Size(126, 28);
             labelClockSpeedDefault.TabIndex = 21;
@@ -94,9 +94,9 @@
             // 
             textBoxClockSpeedDefault.BorderStyle = BorderStyle.None;
             textBoxClockSpeedDefault.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxClockSpeedDefault.Location = new Point(139, 376);
+            textBoxClockSpeedDefault.Location = new Point(139, 374);
             textBoxClockSpeedDefault.Name = "textBoxClockSpeedDefault";
-            textBoxClockSpeedDefault.Size = new Size(277, 24);
+            textBoxClockSpeedDefault.Size = new Size(529, 24);
             textBoxClockSpeedDefault.TabIndex = 20;
             textBoxClockSpeedDefault.Text = "some-data";
             // 
@@ -106,7 +106,7 @@
             labelThreads.BackColor = SystemColors.Control;
             labelThreads.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelThreads.ForeColor = SystemColors.ControlText;
-            labelThreads.Location = new Point(6, 346);
+            labelThreads.Location = new Point(6, 344);
             labelThreads.Name = "labelThreads";
             labelThreads.Size = new Size(80, 28);
             labelThreads.TabIndex = 19;
@@ -116,9 +116,9 @@
             // 
             textBoxThreads.BorderStyle = BorderStyle.None;
             textBoxThreads.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxThreads.Location = new Point(93, 346);
+            textBoxThreads.Location = new Point(93, 344);
             textBoxThreads.Name = "textBoxThreads";
-            textBoxThreads.Size = new Size(323, 24);
+            textBoxThreads.Size = new Size(575, 24);
             textBoxThreads.TabIndex = 18;
             textBoxThreads.Text = "some-data";
             // 
@@ -128,7 +128,7 @@
             labelCores.BackColor = SystemColors.Control;
             labelCores.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelCores.ForeColor = SystemColors.ControlText;
-            labelCores.Location = new Point(6, 316);
+            labelCores.Location = new Point(6, 314);
             labelCores.Name = "labelCores";
             labelCores.Size = new Size(61, 28);
             labelCores.TabIndex = 17;
@@ -138,9 +138,9 @@
             // 
             textBoxCores.BorderStyle = BorderStyle.None;
             textBoxCores.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxCores.Location = new Point(74, 316);
+            textBoxCores.Location = new Point(74, 314);
             textBoxCores.Name = "textBoxCores";
-            textBoxCores.Size = new Size(342, 24);
+            textBoxCores.Size = new Size(594, 24);
             textBoxCores.TabIndex = 16;
             textBoxCores.Text = "some-data";
             // 
@@ -150,7 +150,7 @@
             labelSocket.BackColor = SystemColors.Control;
             labelSocket.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelSocket.ForeColor = SystemColors.ControlText;
-            labelSocket.Location = new Point(6, 286);
+            labelSocket.Location = new Point(6, 284);
             labelSocket.Name = "labelSocket";
             labelSocket.Size = new Size(68, 28);
             labelSocket.TabIndex = 15;
@@ -160,9 +160,9 @@
             // 
             textBoxSocket.BorderStyle = BorderStyle.None;
             textBoxSocket.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSocket.Location = new Point(81, 286);
+            textBoxSocket.Location = new Point(81, 284);
             textBoxSocket.Name = "textBoxSocket";
-            textBoxSocket.Size = new Size(335, 24);
+            textBoxSocket.Size = new Size(587, 24);
             textBoxSocket.TabIndex = 14;
             textBoxSocket.Text = "some-data";
             // 
@@ -172,7 +172,7 @@
             labelManufacturer.BackColor = SystemColors.Control;
             labelManufacturer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelManufacturer.ForeColor = SystemColors.ControlText;
-            labelManufacturer.Location = new Point(6, 256);
+            labelManufacturer.Location = new Point(6, 254);
             labelManufacturer.Name = "labelManufacturer";
             labelManufacturer.Size = new Size(124, 28);
             labelManufacturer.TabIndex = 13;
@@ -182,9 +182,9 @@
             // 
             textBoxManufacturer.BorderStyle = BorderStyle.None;
             textBoxManufacturer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxManufacturer.Location = new Point(137, 256);
+            textBoxManufacturer.Location = new Point(137, 254);
             textBoxManufacturer.Name = "textBoxManufacturer";
-            textBoxManufacturer.Size = new Size(279, 24);
+            textBoxManufacturer.Size = new Size(531, 24);
             textBoxManufacturer.TabIndex = 12;
             textBoxManufacturer.Text = "some-data";
             // 
@@ -192,9 +192,9 @@
             // 
             textBoxId.BorderStyle = BorderStyle.None;
             textBoxId.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxId.Location = new Point(42, 39);
+            textBoxId.Location = new Point(42, 37);
             textBoxId.Name = "textBoxId";
-            textBoxId.Size = new Size(374, 24);
+            textBoxId.Size = new Size(626, 24);
             textBoxId.TabIndex = 25;
             textBoxId.Text = "some-data";
             // 
@@ -204,7 +204,7 @@
             labelId.BackColor = SystemColors.Control;
             labelId.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelId.ForeColor = SystemColors.ControlText;
-            labelId.Location = new Point(8, 39);
+            labelId.Location = new Point(8, 37);
             labelId.Name = "labelId";
             labelId.Size = new Size(30, 28);
             labelId.TabIndex = 26;
@@ -216,7 +216,7 @@
             labelName.BackColor = SystemColors.Control;
             labelName.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelName.ForeColor = SystemColors.ControlText;
-            labelName.Location = new Point(8, 68);
+            labelName.Location = new Point(8, 66);
             labelName.Name = "labelName";
             labelName.Size = new Size(63, 28);
             labelName.TabIndex = 28;
@@ -226,9 +226,9 @@
             // 
             textBoxName.BorderStyle = BorderStyle.None;
             textBoxName.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxName.Location = new Point(75, 68);
+            textBoxName.Location = new Point(75, 66);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(341, 24);
+            textBoxName.Size = new Size(593, 24);
             textBoxName.TabIndex = 27;
             textBoxName.Text = "some-data";
             // 
@@ -236,9 +236,9 @@
             // 
             textBoxPrice.BorderStyle = BorderStyle.None;
             textBoxPrice.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPrice.Location = new Point(75, 98);
+            textBoxPrice.Location = new Point(75, 96);
             textBoxPrice.Name = "textBoxPrice";
-            textBoxPrice.Size = new Size(341, 24);
+            textBoxPrice.Size = new Size(593, 24);
             textBoxPrice.TabIndex = 29;
             textBoxPrice.Text = "some-data";
             // 
@@ -248,7 +248,7 @@
             labelPrice.BackColor = SystemColors.Control;
             labelPrice.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelPrice.ForeColor = SystemColors.ControlText;
-            labelPrice.Location = new Point(8, 98);
+            labelPrice.Location = new Point(8, 96);
             labelPrice.Name = "labelPrice";
             labelPrice.Size = new Size(54, 28);
             labelPrice.TabIndex = 30;
@@ -260,7 +260,7 @@
             labelResponses.BackColor = SystemColors.Control;
             labelResponses.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelResponses.ForeColor = SystemColors.ControlText;
-            labelResponses.Location = new Point(8, 128);
+            labelResponses.Location = new Point(8, 126);
             labelResponses.Name = "labelResponses";
             labelResponses.Size = new Size(100, 28);
             labelResponses.TabIndex = 32;
@@ -270,9 +270,9 @@
             // 
             textBoxResponses.BorderStyle = BorderStyle.None;
             textBoxResponses.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxResponses.Location = new Point(112, 128);
+            textBoxResponses.Location = new Point(112, 126);
             textBoxResponses.Name = "textBoxResponses";
-            textBoxResponses.Size = new Size(304, 24);
+            textBoxResponses.Size = new Size(556, 24);
             textBoxResponses.TabIndex = 31;
             textBoxResponses.Text = "some-data";
             // 
@@ -282,7 +282,7 @@
             labelRating.BackColor = SystemColors.Control;
             labelRating.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelRating.ForeColor = SystemColors.ControlText;
-            labelRating.Location = new Point(8, 158);
+            labelRating.Location = new Point(8, 156);
             labelRating.Name = "labelRating";
             labelRating.Size = new Size(67, 28);
             labelRating.TabIndex = 34;
@@ -292,9 +292,9 @@
             // 
             textBoxRating.BorderStyle = BorderStyle.None;
             textBoxRating.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxRating.Location = new Point(79, 159);
+            textBoxRating.Location = new Point(79, 157);
             textBoxRating.Name = "textBoxRating";
-            textBoxRating.Size = new Size(337, 24);
+            textBoxRating.Size = new Size(589, 24);
             textBoxRating.TabIndex = 33;
             textBoxRating.Text = "some-data";
             // 
@@ -304,7 +304,7 @@
             labelAvailable.BackColor = SystemColors.Control;
             labelAvailable.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelAvailable.ForeColor = SystemColors.ControlText;
-            labelAvailable.Location = new Point(8, 189);
+            labelAvailable.Location = new Point(8, 187);
             labelAvailable.Name = "labelAvailable";
             labelAvailable.Size = new Size(90, 28);
             labelAvailable.TabIndex = 36;
@@ -314,9 +314,9 @@
             // 
             textBoxAvailable.BorderStyle = BorderStyle.None;
             textBoxAvailable.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxAvailable.Location = new Point(102, 189);
+            textBoxAvailable.Location = new Point(102, 187);
             textBoxAvailable.Name = "textBoxAvailable";
-            textBoxAvailable.Size = new Size(314, 24);
+            textBoxAvailable.Size = new Size(566, 24);
             textBoxAvailable.TabIndex = 35;
             textBoxAvailable.Text = "some-data";
             // 
@@ -326,11 +326,11 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(9, 10);
-            textBox1.Margin = new Padding(5);
+            textBox1.Location = new Point(9, 8);
+            textBox1.Margin = new Padding(5, 3, 5, 5);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(407, 24);
+            textBox1.Size = new Size(659, 24);
             textBox1.TabIndex = 37;
             textBox1.Text = " Product data:";
             // 
@@ -340,11 +340,11 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(9, 221);
+            textBox2.Location = new Point(9, 219);
             textBox2.Margin = new Padding(5);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(407, 24);
+            textBox2.Size = new Size(659, 24);
             textBox2.TabIndex = 38;
             textBox2.Text = " Device data:";
             // 
@@ -382,7 +382,7 @@
             Margin = new Padding(5);
             Name = "EditProcessor";
             Padding = new Padding(4, 5, 5, 5);
-            Size = new Size(426, 450);
+            Size = new Size(686, 450);
             ResumeLayout(false);
             PerformLayout();
         }

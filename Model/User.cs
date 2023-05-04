@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Optimum_Tech.Model.Interfaces;
+﻿using Optimum_Tech.Model.Interfaces;
 using OptimumTech.Controls;
 
 namespace Optimum_Tech.Model
 {
-    internal class User: IAccessable
+    internal class User: IAccess, IDisposable
     {
         public string Login { get; set; }
         public string Password { get; set; }
@@ -27,16 +22,37 @@ namespace Optimum_Tech.Model
         {
             UserManager.currentUser.GrantAccessUser();
         }
-
         public void GrantAccessGuest()
         {
             UserManager.currentUser.GrantAccessGuest();
         }
-
         public void GrantAccessAdmin()
         {
             UserManager.currentUser.GrantAccessAdmin();
-        }  
+        }
+
+
+        private bool _disposed = false;
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        ~User()
+        {
+            Dispose(false);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+
+                }
+                _disposed = true;
+            }
+        }
     }
 
     enum Access

@@ -25,6 +25,21 @@ namespace Optimum_Tech.Forms.Dialogs
 
         #region events
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (formRegister == null || formRegister.IsDisposed)
+            {
+                formRegister = new FormRegister(formAccount, formMain);
+                formRegister.FormClosed += (s, ev) => formRegister = null;
+                this.Close();
+                formRegister.Show();
+            }
+            else
+            {
+                formRegister.BringToFront();
+            }
+        }
+
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             if (UserManager.Login(textBoxLogin, textBoxPassword))
@@ -65,30 +80,49 @@ namespace Optimum_Tech.Forms.Dialogs
 
         #region textboxes
 
-        private void textBoxPassword_Click(object sender, EventArgs e)
+        private void textBoxPassword_Enter(object sender, EventArgs e)
         {
             textBoxPassword.Clear();
             textBoxPassword.UseSystemPasswordChar = true;
         }
+        private void textBoxLogin_Click(object sender, EventArgs e)
+        {
+            textBoxLogin.Clear();
+        }
 
         #endregion
 
-        private void textBoxLogin_Click(object sender, EventArgs e)
+        private void textBoxPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-            textBoxLogin.Text = "";
-        }
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (UserManager.Login(textBoxLogin, textBoxPassword))
+                {
+                    if (UserManager.currentUser.Access == Access.Admin)
+                    {
+                        formMain.buttonAdmin.Visible = true;
+                        formMain.buttonCart.Visible = false;
+                        formMain.buttonFavorites.Visible = false;
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            if (formRegister == null || formRegister.IsDisposed)
-            {
-                formRegister = new FormRegister(formAccount, formMain);
-                formRegister.FormClosed += (s, ev) => formRegister = null;
-                formRegister.Show();
-            }
-            else
-            {
-                formRegister.BringToFront();
+                        formMain.textBoxAdmin.Visible = true;
+                        formMain.textBoxCart.Visible = false;
+                        formMain.textBoxFavorites.Visible = false;
+                    }
+                    else
+                    {
+                        formMain.buttonAdmin.Visible = false;
+                        formMain.buttonCart.Visible = true;
+                        formMain.buttonFavorites.Visible = true;
+
+                        formMain.textBoxAdmin.Visible = false;
+                        formMain.textBoxCart.Visible = true;
+                        formMain.textBoxFavorites.Visible = true;
+                    }
+
+                    this.Close();
+                }
+
+                UserManager.UpdateStatus(formAccount.textBoxStatus);
             }
         }
     }

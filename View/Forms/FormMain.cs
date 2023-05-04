@@ -306,6 +306,8 @@ namespace Optimum_Tech.Forms
 
             ProductManager.LoadProducts();
 
+            UserManager.LoadUsers();
+
             UserManager.LoginAsGuest();
         }
         internal void OpenChildForm(Form childForm)

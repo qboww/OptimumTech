@@ -120,7 +120,7 @@ namespace Optimum_Tech.Forms.Dialogs
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabel1.LinkColor = Color.White;
-            linkLabel1.Location = new Point(0, 234);
+            linkLabel1.Location = new Point(3, 261);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Padding = new Padding(3, 0, 0, 0);
             linkLabel1.Size = new Size(71, 25);
@@ -133,9 +133,10 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             buttonLogin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             buttonLogin.BackColor = Color.White;
+            buttonLogin.FlatAppearance.BorderSize = 0;
             buttonLogin.FlatStyle = FlatStyle.Flat;
             buttonLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonLogin.Location = new Point(49, 308);
+            buttonLogin.Location = new Point(49, 317);
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(95, 33);
             buttonLogin.TabIndex = 2;
@@ -147,7 +148,7 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = FormsMedia.account_48;
-            pictureBox1.Location = new Point(0, 39);
+            pictureBox1.Location = new Point(0, 51);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(197, 90);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -160,12 +161,13 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxPassword.BackColor = Color.White;
             textBoxPassword.BorderStyle = BorderStyle.None;
             textBoxPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPassword.Location = new Point(6, 207);
+            textBoxPassword.Location = new Point(9, 234);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(182, 24);
             textBoxPassword.TabIndex = 1;
             textBoxPassword.Text = "Password";
-            textBoxPassword.Click += textBoxPassword_Click;
+            textBoxPassword.Enter += textBoxPassword_Enter;
+            textBoxPassword.KeyPress += textBoxPassword_KeyPress;
             // 
             // textBoxLogin
             // 
@@ -173,7 +175,7 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxLogin.BackColor = Color.White;
             textBoxLogin.BorderStyle = BorderStyle.None;
             textBoxLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxLogin.Location = new Point(6, 167);
+            textBoxLogin.Location = new Point(9, 194);
             textBoxLogin.Name = "textBoxLogin";
             textBoxLogin.Size = new Size(182, 24);
             textBoxLogin.TabIndex = 0;
