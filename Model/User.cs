@@ -1,14 +1,41 @@
 ﻿using Optimum_Tech.Model.Interfaces;
 using Optimum_Tech.Model.Managers;
 using OptimumTech.Controls;
+using System;
 using System.Text.Json.Serialization;
 
 namespace Optimum_Tech.Model
 {
-    internal class User : IAccess, IDisposable
+    internal class User : IAccess, IDisposable, IComparable<User>
     {
-        public string Login { get; set; }
-        public string Password { get; set; }
+        private const int MaxLoginLength = 30;
+        private const int MaxPasswordLength = 15;
+
+        private string login;
+        private string password;
+
+        public string Login
+        {
+            get => login;
+            set
+            {
+                if (value.Length > MaxLoginLength)
+                    throw new ArgumentOutOfRangeException($"Login can't be longer than {MaxLoginLength} symbols!");
+
+                login = value;
+            }
+        }
+        public string Password
+        {
+            get => password;
+            set
+            {
+                if (value.Length > MaxPasswordLength)
+                    throw new ArgumentOutOfRangeException($"Password can't be longer than {MaxPasswordLength} symbols!");
+
+                password = value;
+            }
+        }
         public Access Access { get; set; }
 
         public List<ProductControl> Favorites = new List<ProductControl>();
@@ -16,8 +43,15 @@ namespace Optimum_Tech.Model
 
         public User(string login, string password)
         {
-            Login = login;
-            Password = password;
+            try
+            {
+                Login = login;
+                Password = password;
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         public void GrantAccessUser()
@@ -53,6 +87,18 @@ namespace Optimum_Tech.Model
 
                 }
                 _disposed = true;
+            }
+        }
+
+        public int CompareTo(User? other)
+        {
+            if (other == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return Login.CompareTo(other.Login);
             }
         }
     }

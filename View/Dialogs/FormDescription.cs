@@ -46,7 +46,7 @@ namespace Optimum_Tech.Forms.Dialogs
                 this.textBox2.Text = $"Memory size: {graphicsCard.VRAM} Gb";
                 this.textBox3.Text = $"Memory interface: {graphicsCard.MemoryInterface} bit";
                 this.textBox4.Text = $"Memory type: {graphicsCard.MemoryType}";
-                this.textBox5.Text = $"Default speed: {graphicsCard.ClockSpeedDefault} GHz";
+                this.textBox5.Text = $"Default speed: {graphicsCard.ClockSpeed} GHz";
                 this.textBox6.Text = $"Minimum wattage: {graphicsCard.MinimumWattage}W";
             }
         }

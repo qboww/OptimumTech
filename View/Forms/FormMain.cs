@@ -1,4 +1,5 @@
-﻿using Optimum_Tech.Model.Managers;
+﻿using Optimum_Tech.Model;
+using Optimum_Tech.Model.Managers;
 using Optimum_Tech.View.Displays;
 using Optimum_Tech.View.Forms;
 using Optimum_Tech.View.Screens;

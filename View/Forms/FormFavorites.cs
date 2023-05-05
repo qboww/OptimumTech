@@ -1,4 +1,5 @@
-﻿using Optimum_Tech.Model.Managers;
+﻿using Optimum_Tech.Model;
+using Optimum_Tech.Model.Managers;
 using OptimumTech.Controls;
 
 namespace Optimum_Tech.Forms
