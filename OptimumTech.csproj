@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="View\Resources\FormsMedia.Designer.cs">
+    <Compile Update="Views\Resources\FormsMedia.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>FormsMedia.resx</DependentUpon>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="View\Resources\FormsMedia.resx">
+    <EmbeddedResource Update="Views\Resources\FormsMedia.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>FormsMedia.Designer.cs</LastGenOutput>
     </EmbeddedResource>
