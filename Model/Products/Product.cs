@@ -4,13 +4,23 @@ namespace Optimum_Tech.Model.Products
 {
     public abstract class Product : IProduct
     {
+        private Guid id;
         private int rating;
         private int responses;
         private decimal price;
         private string name;
         private bool isAvailable;
 
-        public Guid Id { get; set; }
+        public Guid Id
+        {
+            get => id;
+            set
+            {
+                if (value == Guid.Empty)
+                    throw new ArgumentException($"{nameof(Id)} cannot be an empty Guid!");
+                id = value;
+            }
+        }
         public string Name
         {
             get => name;
@@ -23,7 +33,6 @@ namespace Optimum_Tech.Model.Products
                 name = value;
             }
         }
-
         public decimal Price
         {
             get => price;

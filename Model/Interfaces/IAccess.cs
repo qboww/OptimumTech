@@ -1,6 +1,6 @@
 ﻿namespace Optimum_Tech.Model.Interfaces
 {
-    internal interface IAccess
+    public interface IAccess
     {
         public void GrantAccessUser();
         public void GrantAccessGuest();

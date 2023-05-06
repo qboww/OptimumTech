@@ -2,15 +2,20 @@
 using Optimum_Tech.Model.Managers;
 using OptimumTech.Controls;
 using System;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace Optimum_Tech.Model
 {
-    internal class User : IAccess, IDisposable, IComparable<User>
+    public class User : IAccess, IDisposable, IComparable<User>
     {
+        public List<ProductControl> Favorites = new List<ProductControl>();
+        public List<ProductControl> Selections = new List<ProductControl>();
+
+        [JsonIgnore]
+        private bool _disposed = false;
         private const int MaxLoginLength = 30;
         private const int MaxPasswordLength = 15;
-
         private string login;
         private string password;
 
@@ -19,6 +24,8 @@ namespace Optimum_Tech.Model
             get => login;
             set
             {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentNullException("Login can't be null or empty value!");
                 if (value.Length > MaxLoginLength)
                     throw new ArgumentOutOfRangeException($"Login can't be longer than {MaxLoginLength} symbols!");
 
@@ -30,6 +37,8 @@ namespace Optimum_Tech.Model
             get => password;
             set
             {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentNullException("Login can't be null or empty value!");
                 if (value.Length > MaxPasswordLength)
                     throw new ArgumentOutOfRangeException($"Password can't be longer than {MaxPasswordLength} symbols!");
 
@@ -38,9 +47,10 @@ namespace Optimum_Tech.Model
         }
         public Access Access { get; set; }
 
-        public List<ProductControl> Favorites = new List<ProductControl>();
-        public List<ProductControl> Selections = new List<ProductControl>();
-
+        ~User()
+        {
+            Dispose(false);
+        }
         public User(string login, string password)
         {
             try
@@ -66,17 +76,10 @@ namespace Optimum_Tech.Model
         {
             UserManager.currentUser.GrantAccessAdmin();
         }
-
-        [JsonIgnore]
-        private bool _disposed = false;
         public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
-        ~User()
-        {
-            Dispose(false);
         }
         protected virtual void Dispose(bool disposing)
         {
@@ -89,7 +92,6 @@ namespace Optimum_Tech.Model
                 _disposed = true;
             }
         }
-
         public int CompareTo(User? other)
         {
             if (other == null)
@@ -103,7 +105,7 @@ namespace Optimum_Tech.Model
         }
     }
 
-    enum Access
+    public enum Access
     {
         Admin, Guest, User
     }
