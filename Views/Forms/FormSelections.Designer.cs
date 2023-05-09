@@ -78,7 +78,7 @@
             buttonPurchase.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonPurchase.BackColor = Color.FromArgb(2, 158, 71);
             buttonPurchase.FlatAppearance.BorderSize = 0;
-            buttonPurchase.FlatStyle = FlatStyle.Popup;
+            buttonPurchase.FlatStyle = FlatStyle.Flat;
             buttonPurchase.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             buttonPurchase.ForeColor = Color.White;
             buttonPurchase.Location = new Point(928, 20);

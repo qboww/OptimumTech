@@ -84,9 +84,9 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             textBoxLogin.BorderStyle = BorderStyle.None;
             textBoxLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxLogin.Location = new Point(71, 52);
+            textBoxLogin.Location = new Point(105, 52);
             textBoxLogin.Name = "textBoxLogin";
-            textBoxLogin.Size = new Size(223, 24);
+            textBoxLogin.Size = new Size(189, 24);
             textBoxLogin.TabIndex = 18;
             textBoxLogin.TabStop = false;
             textBoxLogin.Text = "Login";

@@ -2,6 +2,7 @@
 using Optimum_Tech.Forms;
 using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
+using Optimum_Tech.Views.Dialogs;
 using OptimumTech.Controls;
 
 namespace Optimum_Tech.View.Forms
@@ -11,6 +12,7 @@ namespace Optimum_Tech.View.Forms
         private readonly FormMain formMain;
         private FormLogin formLogin;
         private readonly FormAccount formAccount;
+        private FormOrder formOrder;
 
         public FormSelections(FormMain formMain)
         {
@@ -76,10 +78,14 @@ namespace Optimum_Tech.View.Forms
         {
             if (UserManager.currentUser.Access is Access.Guest)
             {
-                if (formLogin == null || formLogin.IsDisposed)
+                MessageBox.Show("You should log in first!");
+            }
+            else
+            {
+                if (formOrder == null || formOrder.IsDisposed)
                 {
-                    formLogin = new FormLogin(formAccount, formMain);
-                    formLogin.Show();
+                    formOrder = new FormOrder(formMain);
+                    formOrder.Show();
                 }
             }
         }

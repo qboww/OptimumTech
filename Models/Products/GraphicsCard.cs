@@ -1,4 +1,6 @@
-﻿namespace Optimum_Tech.Model.Products
+﻿using Newtonsoft.Json;
+
+namespace Optimum_Tech.Model.Products
 {
     public class GraphicsCard : Product
     {
@@ -8,6 +10,20 @@
         private string memoryType;
         private double clockSpeed;
         private int minimumWattage;
+        private bool isAvailable;
+
+        public GraphicsCard(Guid id, string name, decimal price, int responses, int rating,
+            string manufacturer, int vram, int memoryInterface, string memoryType,
+            double clockSpeed, int minimumWattage)
+            : base(id, name, price, responses, rating)
+        {
+            Manufacturer = manufacturer;
+            VRAM = vram;
+            MemoryInterface = memoryInterface;
+            MemoryType = memoryType;
+            ClockSpeed = clockSpeed;
+            MinimumWattage = minimumWattage;
+        }
 
         public string Manufacturer
         {
@@ -73,6 +89,18 @@
                     throw new ArgumentOutOfRangeException("MinimumWattage can only be in range [100-2000]");
 
                 minimumWattage = value;
+            }
+        }
+        public override bool IsAvailable
+        {
+            get => isAvailable;
+            set
+            {
+                // Perform custom checks for IsAvailable property
+                if (value && Price <= 0)
+                    throw new InvalidOperationException("Cannot set IsAvailable to true for a product with zero or negative price.");
+
+                isAvailable = value;
             }
         }
     }

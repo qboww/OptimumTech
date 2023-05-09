@@ -117,7 +117,7 @@ namespace Optimum_Tech.Forms
             textBoxStatus.BackColor = Color.FromArgb(30, 30, 30);
             textBoxStatus.BorderStyle = BorderStyle.None;
             textBoxStatus.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxStatus.ForeColor = Color.White;
+            textBoxStatus.ForeColor = Color.FromArgb(2, 158, 71);
             textBoxStatus.Location = new Point(509, 3);
             textBoxStatus.Name = "textBoxStatus";
             textBoxStatus.ReadOnly = true;

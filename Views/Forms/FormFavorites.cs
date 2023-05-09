@@ -44,5 +44,6 @@ namespace Optimum_Tech.Forms
                 this.flowLayoutPanel1.Controls.Remove(control);
             }
         }
+
     }
 }

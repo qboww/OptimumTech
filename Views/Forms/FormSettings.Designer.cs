@@ -32,6 +32,11 @@
             textBoxStatus = new TextBox();
             textBoxAccountPrefferences = new TextBox();
             panel1 = new Panel();
+            panel3 = new Panel();
+            textBox3 = new TextBox();
+            buttonUpdate = new Button();
+            textBox4 = new TextBox();
+            textBoxStatusAPI = new TextBox();
             panel2 = new Panel();
             textBox1 = new TextBox();
             buttonBanner = new Button();
@@ -39,6 +44,7 @@
             textBoxState = new TextBox();
             panel5.SuspendLayout();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -84,12 +90,77 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 34);
             panel1.Name = "panel1";
             panel1.Size = new Size(1064, 701);
             panel1.TabIndex = 15;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(25, 25, 25);
+            panel3.Controls.Add(textBox3);
+            panel3.Controls.Add(buttonUpdate);
+            panel3.Controls.Add(textBox4);
+            panel3.Controls.Add(textBoxStatusAPI);
+            panel3.Location = new Point(0, 137);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(485, 70);
+            panel3.TabIndex = 5;
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.FromArgb(25, 25, 25);
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.ForeColor = Color.White;
+            textBox3.Location = new Point(9, 9);
+            textBox3.Margin = new Padding(9);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(226, 24);
+            textBox3.TabIndex = 0;
+            textBox3.Text = "Update NovaPost API:";
+            // 
+            // buttonUpdate
+            // 
+            buttonUpdate.BackColor = Color.White;
+            buttonUpdate.FlatAppearance.BorderSize = 0;
+            buttonUpdate.FlatStyle = FlatStyle.Flat;
+            buttonUpdate.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonUpdate.Location = new Point(392, 12);
+            buttonUpdate.Margin = new Padding(9);
+            buttonUpdate.Name = "buttonUpdate";
+            buttonUpdate.Size = new Size(84, 29);
+            buttonUpdate.TabIndex = 1;
+            buttonUpdate.Text = "Update";
+            buttonUpdate.UseVisualStyleBackColor = false;
+            buttonUpdate.Click += buttonUpdate_Click;
+            // 
+            // textBox4
+            // 
+            textBox4.BackColor = Color.FromArgb(25, 25, 25);
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.ForeColor = Color.White;
+            textBox4.Location = new Point(9, 36);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(53, 24);
+            textBox4.TabIndex = 2;
+            textBox4.Text = "State:";
+            // 
+            // textBoxStatusAPI
+            // 
+            textBoxStatusAPI.BackColor = Color.FromArgb(25, 25, 25);
+            textBoxStatusAPI.BorderStyle = BorderStyle.None;
+            textBoxStatusAPI.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxStatusAPI.ForeColor = Color.Red;
+            textBoxStatusAPI.Location = new Point(68, 36);
+            textBoxStatusAPI.Name = "textBoxStatusAPI";
+            textBoxStatusAPI.Size = new Size(156, 24);
+            textBoxStatusAPI.TabIndex = 3;
+            textBoxStatusAPI.Text = "Not checked";
             // 
             // panel2
             // 
@@ -139,9 +210,9 @@
             textBox2.ForeColor = Color.White;
             textBox2.Location = new Point(9, 36);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(64, 24);
+            textBox2.Size = new Size(53, 24);
             textBox2.TabIndex = 2;
-            textBox2.Text = "Banner:";
+            textBox2.Text = "State:";
             // 
             // textBoxState
             // 
@@ -149,7 +220,7 @@
             textBoxState.BorderStyle = BorderStyle.None;
             textBoxState.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxState.ForeColor = Color.LimeGreen;
-            textBoxState.Location = new Point(79, 36);
+            textBoxState.Location = new Point(68, 36);
             textBoxState.Name = "textBoxState";
             textBoxState.Size = new Size(78, 24);
             textBoxState.TabIndex = 3;
@@ -169,6 +240,8 @@
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             panel1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -185,5 +258,10 @@
         private Button buttonBanner;
         private TextBox textBox1;
         private Panel panel2;
+        private Panel panel3;
+        private TextBox textBox3;
+        private Button buttonUpdate;
+        private TextBox textBox4;
+        private TextBox textBoxStatusAPI;
     }
 }

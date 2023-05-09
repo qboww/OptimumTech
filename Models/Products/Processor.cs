@@ -1,4 +1,6 @@
-﻿namespace Optimum_Tech.Model.Products
+﻿using Newtonsoft.Json;
+
+namespace Optimum_Tech.Model.Products
 {
     public class Processor : Product
     {
@@ -8,6 +10,20 @@
         private int threads;
         private double clockSpeedDefault;
         private double clockSpeedBoost;
+        private bool isAvailable;
+
+        public Processor(Guid id, string name, decimal price, int responses, int rating,
+            string manufacturer, string socket, int cores, int threads,
+            double clockSpeedDefault, double clockSpeedBoost)
+            : base(id, name, price, responses, rating)
+        {
+            Manufacturer = manufacturer;
+            Socket = socket;
+            Cores = cores;
+            Threads = threads;
+            ClockSpeedDefault = clockSpeedDefault;
+            ClockSpeedBoost = clockSpeedBoost;
+        }
 
         public string Manufacturer
         {
@@ -63,7 +79,7 @@
                 else
                     throw new Exception("ClockSpeedDefault can only be in range [0.1-6]");
             }
-        }
+        }       
         public double ClockSpeedBoost
         {
             get => clockSpeedBoost;
@@ -73,6 +89,17 @@
                     clockSpeedBoost = value;
                 else
                     throw new Exception("ClockSpeedBoost can only be in range [0.1-6]");
+            }
+        }
+        public override bool IsAvailable
+        {
+            get => isAvailable;
+            set
+            {
+                if (value && Price <= 0)
+                    throw new InvalidOperationException("Cannot set IsAvailable to true for a product with zero or negative price.");
+
+                isAvailable = value;
             }
         }
     }

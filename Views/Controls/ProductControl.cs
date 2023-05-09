@@ -10,12 +10,16 @@ namespace OptimumTech.Controls
     {
         private FormDescription formDescription;
 
-        public event EventHandler IsSelectionChanged;
-        public event EventHandler IsFavoriteChanged;
+        public delegate void SelectionChangedEventHandler(object sender, EventArgs e);
+        public event SelectionChangedEventHandler IsSelectionChanged;
+
+        public delegate void FavoriteChangedEventHandler(object sender, EventArgs e);
+        public event FavoriteChangedEventHandler IsFavoriteChanged;
 
         private bool isFavorite;
         public bool isSelected;
         public decimal ProductPrice;
+        public string ProductName;
 
         public bool IsFavorite
         {
@@ -47,6 +51,7 @@ namespace OptimumTech.Controls
             InitializeComponent();
 
             this.ProductPrice = product.Price;
+            this.ProductName = product.Name;
 
             textBoxProductName.Text = product.Name;
             textBoxPrice.Text = $"${product.Price}";

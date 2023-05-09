@@ -11,6 +11,20 @@ namespace Optimum_Tech.Model.Products
         private string name;
         private bool isAvailable;
 
+        protected Product(Guid id, string name, decimal price, int responses, int rating)
+        {
+            Id = id;
+            Name = name;
+            Price = price;
+            Responses = responses;
+            Rating = rating;
+        }
+
+        protected Product()
+        {
+
+        }
+
         public Guid Id
         {
             get => id;
@@ -63,7 +77,7 @@ namespace Optimum_Tech.Model.Products
                 rating = value;
             }
         }
-        public bool IsAvailable
+        public virtual bool IsAvailable
         {
             get => isAvailable;
             set => isAvailable = value;

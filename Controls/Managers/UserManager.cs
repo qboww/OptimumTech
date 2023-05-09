@@ -36,12 +36,15 @@ namespace Optimum_Tech.Controls.Managers
 
                     foreach (User user in users)
                     {
-                        if (user.Login == login && user.Password == password)
+                        if (user.CompareTo(new User(login, password)) == 0 && user.Password == password)
                         {
                             currentUser = user;
                             return true;
                         }
                     }
+                    MessageBox.Show("There is no account with that login data");
+                    textBoxLogin.Text = "Login";
+                    textBoxPassword.Text = "Password";
                     return false;
                 }
             }
@@ -51,7 +54,33 @@ namespace Optimum_Tech.Controls.Managers
                 return false;
             }
         }
+        public static bool Login(string login, string password)
+        {
+            try
+            {
+                using (StreamReader r = new StreamReader(usersFilePath))
+                {
+                    string json = r.ReadToEnd();
+                    User[] users = JsonConvert.DeserializeObject<User[]>(json);
 
+                    foreach (User user in users)
+                    {
+                        if (user.CompareTo(new User(login, password)) == 0 && user.Password == password)
+                        {
+                            currentUser = user;
+                            return true;
+                        }
+                    }
+                    MessageBox.Show("There is no account with that login data");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred during login: " + ex.Message);
+                return false;
+            }
+        }
         public static bool Register(string login, string password)
         {
             try
@@ -86,23 +115,6 @@ namespace Optimum_Tech.Controls.Managers
                 return false;
             }
         }
-
-        public static bool IsLoginUnique(string login)
-        {
-            string json = File.ReadAllText(usersFilePath);
-            List<User> users = JsonConvert.DeserializeObject<List<User>>(json);
-
-            foreach (User user in users)
-            {
-                if (user.Login == login)
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
 
         public static List<User> LoadUsers()
         {
@@ -146,7 +158,6 @@ namespace Optimum_Tech.Controls.Managers
             int index = users.FindIndex(u => u.Login == currentUser.Login);
             users[index] = currentUser;
         }
-
         public static void AddToSelections(ProductControl control)
         {
             if (currentUser.Selections == null)
@@ -174,6 +185,22 @@ namespace Optimum_Tech.Controls.Managers
             List<User> users = LoadUsers();
             int index = users.FindIndex(u => u.Login == currentUser.Login);
             users[index] = currentUser;
+        }
+
+        public static bool IsLoginUnique(string login)
+        {
+            string json = File.ReadAllText(usersFilePath);
+            List<User> users = JsonConvert.DeserializeObject<List<User>>(json);
+
+            foreach (User user in users)
+            {
+                if (user.Login == login)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }
