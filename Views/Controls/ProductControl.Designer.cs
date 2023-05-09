@@ -189,10 +189,10 @@ namespace OptimumTech.Controls
         #endregion
 
         private PictureBox pictureBoxProduct;
-        private PictureBox pictureBoxCart;
+        public PictureBox pictureBoxCart;
         private PictureBox pictureBoxRating;
         private TextBox textBoxProductName;
-        private PictureBox pictureBoxFavorite;
+        public PictureBox pictureBoxFavorite;
         private Panel panelProduct;
         private TextBox textBoxPrice;
         private TextBox textBoxResponses;

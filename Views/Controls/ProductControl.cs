@@ -140,9 +140,17 @@ namespace OptimumTech.Controls
                 {
                     if (IsSelected == false)
                     {
-                        this.IsSelected = true;
-                        this.pictureBoxCart.Image = FormsMedia.basket_filled;
-                        UserManager.AddToSelections(this);
+                        // Check if the product is already in selections
+                        if (UserManager.currentUser.Selections.Contains(this))
+                        {
+                            MessageBox.Show("Product is already in selections");
+                        }
+                        else
+                        {
+                            this.IsSelected = true;
+                            this.pictureBoxCart.Image = FormsMedia.basket_filled;
+                            UserManager.AddToSelections(this);
+                        }
                     }
                     else if (IsSelected == true)
                     {
@@ -165,9 +173,17 @@ namespace OptimumTech.Controls
                 {
                     if (IsFavorite == false)
                     {
-                        this.IsFavorite = true;
-                        this.pictureBoxFavorite.Image = FormsMedia.favorite_filled;
-                        UserManager.AddToFavorites(this);
+                        // Check if the product is already in favorites
+                        if (UserManager.currentUser.Favorites.Contains(this))
+                        {
+                            MessageBox.Show("Product is already in favorites");
+                        }
+                        else
+                        {
+                            this.IsFavorite = true;
+                            this.pictureBoxFavorite.Image = FormsMedia.favorite_filled;
+                            UserManager.AddToFavorites(this);
+                        }
                     }
                     else if (IsFavorite == true)
                     {

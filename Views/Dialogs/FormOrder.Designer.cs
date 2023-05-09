@@ -54,6 +54,10 @@ namespace Optimum_Tech.Views.Dialogs
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             panel2 = new Panel();
+            textBox11 = new TextBox();
+            textBox10 = new TextBox();
+            buttonRemove = new Button();
+            buttonAdd = new Button();
             textBox6 = new TextBox();
             textBox5 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).BeginInit();
@@ -324,6 +328,10 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             // panel2
             // 
+            panel2.Controls.Add(textBox11);
+            panel2.Controls.Add(textBox10);
+            panel2.Controls.Add(buttonRemove);
+            panel2.Controls.Add(buttonAdd);
             panel2.Controls.Add(textBox6);
             panel2.Controls.Add(textBox5);
             panel2.Controls.Add(buttonConfirm);
@@ -334,6 +342,58 @@ namespace Optimum_Tech.Views.Dialogs
             panel2.Name = "panel2";
             panel2.Size = new Size(772, 248);
             panel2.TabIndex = 31;
+            // 
+            // textBox11
+            // 
+            textBox11.BackColor = Color.FromArgb(40, 40, 40);
+            textBox11.BorderStyle = BorderStyle.None;
+            textBox11.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox11.ForeColor = Color.Gray;
+            textBox11.Location = new Point(473, 144);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(168, 18);
+            textBox11.TabIndex = 37;
+            textBox11.Text = "First select product";
+            // 
+            // textBox10
+            // 
+            textBox10.BackColor = Color.FromArgb(40, 40, 40);
+            textBox10.BorderStyle = BorderStyle.None;
+            textBox10.Font = new Font("Poppins SemiBold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox10.ForeColor = Color.White;
+            textBox10.Location = new Point(473, 71);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(182, 28);
+            textBox10.TabIndex = 37;
+            textBox10.Text = "Manage products";
+            // 
+            // buttonRemove
+            // 
+            buttonRemove.BackColor = Color.White;
+            buttonRemove.FlatAppearance.BorderSize = 0;
+            buttonRemove.FlatStyle = FlatStyle.Flat;
+            buttonRemove.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonRemove.Location = new Point(528, 105);
+            buttonRemove.Name = "buttonRemove";
+            buttonRemove.Size = new Size(84, 33);
+            buttonRemove.TabIndex = 36;
+            buttonRemove.Text = "Remove";
+            buttonRemove.UseVisualStyleBackColor = false;
+            buttonRemove.Click += buttonRemove_Click;
+            // 
+            // buttonAdd
+            // 
+            buttonAdd.BackColor = Color.White;
+            buttonAdd.FlatAppearance.BorderSize = 0;
+            buttonAdd.FlatStyle = FlatStyle.Flat;
+            buttonAdd.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAdd.Location = new Point(473, 105);
+            buttonAdd.Name = "buttonAdd";
+            buttonAdd.Size = new Size(49, 33);
+            buttonAdd.TabIndex = 35;
+            buttonAdd.Text = "Add";
+            buttonAdd.UseVisualStyleBackColor = false;
+            buttonAdd.Click += buttonAdd_Click;
             // 
             // textBox6
             // 
@@ -412,5 +472,9 @@ namespace Optimum_Tech.Views.Dialogs
         private TextBox textBox8;
         private Panel panel3;
         private TextBox textBoxId;
+        private TextBox textBox11;
+        private TextBox textBox10;
+        private Button buttonRemove;
+        private Button buttonAdd;
     }
 }

@@ -30,7 +30,9 @@
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel5 = new Panel();
-            textBoxAccountPrefferences = new TextBox();
+            textBoxGraphicsCards = new TextBox();
+            textBox1 = new TextBox();
+            textBoxCategory = new TextBox();
             panel5.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,25 +51,53 @@
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(30, 30, 30);
-            panel5.Controls.Add(textBoxAccountPrefferences);
+            panel5.Controls.Add(textBoxGraphicsCards);
+            panel5.Controls.Add(textBox1);
+            panel5.Controls.Add(textBoxCategory);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(1064, 34);
             panel5.TabIndex = 12;
             // 
-            // textBoxAccountPrefferences
+            // textBoxGraphicsCards
             // 
-            textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
-            textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxAccountPrefferences.ForeColor = Color.White;
-            textBoxAccountPrefferences.Location = new Point(12, 3);
-            textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
-            textBoxAccountPrefferences.ReadOnly = true;
-            textBoxAccountPrefferences.Size = new Size(245, 28);
-            textBoxAccountPrefferences.TabIndex = 4;
-            textBoxAccountPrefferences.Text = "Graphics cards";
+            textBoxGraphicsCards.BackColor = Color.FromArgb(30, 30, 30);
+            textBoxGraphicsCards.BorderStyle = BorderStyle.None;
+            textBoxGraphicsCards.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxGraphicsCards.ForeColor = Color.White;
+            textBoxGraphicsCards.Location = new Point(139, 3);
+            textBoxGraphicsCards.Name = "textBoxGraphicsCards";
+            textBoxGraphicsCards.ReadOnly = true;
+            textBoxGraphicsCards.Size = new Size(154, 28);
+            textBoxGraphicsCards.TabIndex = 9;
+            textBoxGraphicsCards.Text = "Graphics Cards";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(30, 30, 30);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.White;
+            textBox1.Location = new Point(112, 3);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(21, 28);
+            textBox1.TabIndex = 8;
+            textBox1.Text = ">>";
+            // 
+            // textBoxCategory
+            // 
+            textBoxCategory.BackColor = Color.FromArgb(30, 30, 30);
+            textBoxCategory.BorderStyle = BorderStyle.None;
+            textBoxCategory.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCategory.ForeColor = Color.White;
+            textBoxCategory.Location = new Point(12, 3);
+            textBoxCategory.Name = "textBoxCategory";
+            textBoxCategory.ReadOnly = true;
+            textBoxCategory.Size = new Size(94, 28);
+            textBoxCategory.TabIndex = 7;
+            textBoxCategory.Text = "Category";
             // 
             // FormGraphicsCards
             // 
@@ -89,6 +119,8 @@
         #endregion
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel5;
-        private TextBox textBoxAccountPrefferences;
+        private TextBox textBoxGraphicsCards;
+        private TextBox textBox1;
+        private TextBox textBoxCategory;
     }
 }

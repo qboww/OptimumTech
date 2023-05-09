@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Optimum_Tech.Model;
+using Optimum_Tech.Views.Resources;
 using OptimumTech.Controls;
 
 namespace Optimum_Tech.Controls.Managers
@@ -137,15 +138,21 @@ namespace Optimum_Tech.Controls.Managers
                 currentUser.Favorites = new List<ProductControl>();
             }
 
-            if (!currentUser.Favorites.Contains(control))
+            if (currentUser.Favorites.Any(p => p.ProductName == control.ProductName))
             {
-                currentUser.Favorites.Add(control);
-
-                List<User> users = LoadUsers();
-                int index = users.FindIndex(u => u.Login == currentUser.Login);
-                users[index] = currentUser;
+                // Product already exists in favorites list, remove it first
+                currentUser.Favorites.RemoveAll(p => p.ProductName == control.ProductName);
+                MessageBox.Show("Its already in favorites list");
+                control.pictureBoxFavorite.Image = FormsMedia.favorite_empty;
             }
+
+            currentUser.Favorites.Add(control);
+
+            List<User> users = LoadUsers();
+            int index = users.FindIndex(u => u.Login == currentUser.Login);
+            users[index] = currentUser;
         }
+
         public static void RemoveFromFavorites(ProductControl control)
         {
             if (currentUser.Favorites == null)
@@ -165,15 +172,21 @@ namespace Optimum_Tech.Controls.Managers
                 currentUser.Selections = new List<ProductControl>();
             }
 
-            if (!currentUser.Selections.Contains(control))
+            if (currentUser.Selections.Any(p => p.ProductName == control.ProductName))
             {
-                currentUser.Selections.Add(control);
-
-                List<User> users = LoadUsers();
-                int index = users.FindIndex(u => u.Login == currentUser.Login);
-                users[index] = currentUser;
+                // Product already exists in selections list, remove it first
+                currentUser.Selections.RemoveAll(p => p.ProductName == control.ProductName);
+                MessageBox.Show("Its already in selections list");
+                control.pictureBoxCart.Image = FormsMedia.basket_empty;
             }
+
+            currentUser.Selections.Add(control);
+
+            List<User> users = LoadUsers();
+            int index = users.FindIndex(u => u.Login == currentUser.Login);
+            users[index] = currentUser;
         }
+
         public static void RemoveFromSelections(ProductControl control)
         {
             if (currentUser.Selections == null)

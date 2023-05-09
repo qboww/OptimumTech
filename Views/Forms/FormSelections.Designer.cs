@@ -36,6 +36,7 @@
             textBoxPrice = new TextBox();
             panel5 = new Panel();
             textBoxAccountPrefferences = new TextBox();
+            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel5.SuspendLayout();
@@ -56,21 +57,22 @@
             // 
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 633);
+            panel1.Location = new Point(0, 611);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1064, 102);
+            panel1.Size = new Size(1064, 124);
             panel1.TabIndex = 1;
             // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BackColor = Color.FromArgb(30, 30, 30);
+            panel2.Controls.Add(textBox1);
             panel2.Controls.Add(buttonPurchase);
             panel2.Controls.Add(textBoxAmount);
             panel2.Controls.Add(textBoxPrice);
             panel2.Location = new Point(0, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1064, 74);
+            panel2.Size = new Size(1064, 96);
             panel2.TabIndex = 0;
             // 
             // buttonPurchase
@@ -81,7 +83,7 @@
             buttonPurchase.FlatStyle = FlatStyle.Flat;
             buttonPurchase.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             buttonPurchase.ForeColor = Color.White;
-            buttonPurchase.Location = new Point(928, 20);
+            buttonPurchase.Location = new Point(928, 30);
             buttonPurchase.Name = "buttonPurchase";
             buttonPurchase.Size = new Size(124, 36);
             buttonPurchase.TabIndex = 3;
@@ -107,7 +109,7 @@
             textBoxPrice.BorderStyle = BorderStyle.None;
             textBoxPrice.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxPrice.ForeColor = Color.White;
-            textBoxPrice.Location = new Point(12, 3);
+            textBoxPrice.Location = new Point(12, 0);
             textBoxPrice.Name = "textBoxPrice";
             textBoxPrice.Size = new Size(206, 32);
             textBoxPrice.TabIndex = 0;
@@ -134,6 +136,18 @@
             textBoxAccountPrefferences.Size = new Size(245, 28);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Cart";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(30, 30, 30);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.Gray;
+            textBox1.Location = new Point(12, 72);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(424, 20);
+            textBox1.TabIndex = 4;
+            textBox1.Text = "Hint: you are able to increment prduct amount in order pane*";
             // 
             // FormSelections
             // 
@@ -165,5 +179,6 @@
         private Button buttonPurchase;
         private Panel panel5;
         private TextBox textBoxAccountPrefferences;
+        private TextBox textBox1;
     }
 }
