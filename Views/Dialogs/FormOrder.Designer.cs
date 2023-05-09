@@ -231,10 +231,10 @@ namespace Optimum_Tech.Views.Dialogs
             textBoxId.BorderStyle = BorderStyle.None;
             textBoxId.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxId.ForeColor = Color.Black;
-            textBoxId.Location = new Point(12, 3);
+            textBoxId.Location = new Point(3, 2);
             textBoxId.Name = "textBoxId";
             textBoxId.ReadOnly = true;
-            textBoxId.Size = new Size(748, 24);
+            textBoxId.Size = new Size(742, 24);
             textBoxId.TabIndex = 0;
             textBoxId.Text = "Order id:";
             // 
