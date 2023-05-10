@@ -45,7 +45,7 @@ namespace Optimum_Tech.Views.Dialogs
             textBoxAmount = new TextBox();
             panel1 = new Panel();
             panel3 = new Panel();
-            textBoxId = new TextBox();
+            textBox55 = new TextBox();
             textBox9 = new TextBox();
             textBox8 = new TextBox();
             textBox7 = new TextBox();
@@ -60,6 +60,7 @@ namespace Optimum_Tech.Views.Dialogs
             buttonAdd = new Button();
             textBox6 = new TextBox();
             textBox5 = new TextBox();
+            textBoxId = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).BeginInit();
             panelTitle.SuspendLayout();
             panel1.SuspendLayout();
@@ -224,23 +225,24 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             panel3.BackColor = Color.White;
             panel3.Controls.Add(textBoxId);
+            panel3.Controls.Add(textBox55);
             panel3.Location = new Point(12, 37);
             panel3.Name = "panel3";
             panel3.Size = new Size(748, 29);
             panel3.TabIndex = 36;
             // 
-            // textBoxId
+            // textBox55
             // 
-            textBoxId.BackColor = Color.White;
-            textBoxId.BorderStyle = BorderStyle.None;
-            textBoxId.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxId.ForeColor = Color.Black;
-            textBoxId.Location = new Point(3, 2);
-            textBoxId.Name = "textBoxId";
-            textBoxId.ReadOnly = true;
-            textBoxId.Size = new Size(742, 24);
-            textBoxId.TabIndex = 0;
-            textBoxId.Text = "Order id:";
+            textBox55.BackColor = Color.White;
+            textBox55.BorderStyle = BorderStyle.None;
+            textBox55.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox55.ForeColor = Color.Black;
+            textBox55.Location = new Point(3, 2);
+            textBox55.Name = "textBox55";
+            textBox55.ReadOnly = true;
+            textBox55.Size = new Size(71, 24);
+            textBox55.TabIndex = 0;
+            textBox55.Text = "Order id:";
             // 
             // textBox9
             // 
@@ -419,6 +421,18 @@ namespace Optimum_Tech.Views.Dialogs
             textBox5.TabIndex = 33;
             textBox5.Text = "Amount:";
             // 
+            // textBoxId
+            // 
+            textBoxId.BackColor = Color.White;
+            textBoxId.BorderStyle = BorderStyle.None;
+            textBoxId.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxId.ForeColor = Color.Black;
+            textBoxId.Location = new Point(80, 2);
+            textBoxId.Name = "textBoxId";
+            textBoxId.ReadOnly = true;
+            textBoxId.Size = new Size(665, 24);
+            textBoxId.TabIndex = 1;
+            // 
             // FormOrder
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -471,10 +485,11 @@ namespace Optimum_Tech.Views.Dialogs
         private TextBox textBox9;
         private TextBox textBox8;
         private Panel panel3;
-        private TextBox textBoxId;
+        private TextBox textBox55;
         private TextBox textBox11;
         private TextBox textBox10;
         private Button buttonRemove;
         private Button buttonAdd;
+        private TextBox textBoxId;
     }
 }

@@ -9,12 +9,22 @@ namespace Optimum_Tech.Models
         private string phoneNumber;
         private decimal totalPrice;
         private int totalAmount;
+        private DeliverType deliveryType;
 
         public List<string> products { get; set; }
 
-        public Order()
+        public Order(string email, string address, string phoneNumber,
+            decimal totalPrice, int totalAmount, DeliverType deliveryType)
         {
+            Id = Guid.NewGuid();
+            Email = email;
+            Address = address;
+            PhoneNumber = phoneNumber;
+            TotalPrice = totalPrice;
+            TotalAmount = totalAmount;
+            DeliveryType = deliveryType;
 
+            products = new List<string>();
         }
         
         public Guid Id { get; set; }
@@ -24,19 +34,12 @@ namespace Optimum_Tech.Models
             get => email;
             set
             {
-                try
-                {
-                    if (string.IsNullOrEmpty(value)) throw new ArgumentNullException("Email can't be null or empty!");
-                    Regex regex = new Regex(@"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$");
-                    if (!regex.IsMatch(value))
-                        throw new ArgumentException("Invalid email format!");
+                if (string.IsNullOrEmpty(value)) throw new ArgumentNullException("Email can't be null or empty!");
+                Regex regex = new Regex(@"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$");
+                if (!regex.IsMatch(value))
+                    throw new ArgumentException("Invalid email format!");
 
-                    email = value;
-                }
-                catch (Exception ex)
-                {
-                    throw new ArgumentException("Invalid email: " + ex.Message);
-                }
+                email = value;
             }
         }
         public string Address

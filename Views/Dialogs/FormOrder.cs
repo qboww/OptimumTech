@@ -12,7 +12,6 @@ namespace Optimum_Tech.Views.Dialogs
     {
         private FormMain formMain;
         private UserControl currentControl;
-        public Order order;
 
         public FormOrder(FormMain formMain)
         {
@@ -22,10 +21,7 @@ namespace Optimum_Tech.Views.Dialogs
             this.BringToFront();
             radioButtonAtAddress.Checked = true;
 
-            order = new Order();
-            order.Id = Guid.NewGuid();
-            this.textBoxId.Text = $"Order ID: {Guid.NewGuid()}";
-            order.products = new List<string>();
+            this.textBoxId.Text = Guid.NewGuid().ToString();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -74,11 +70,6 @@ namespace Optimum_Tech.Views.Dialogs
         {
             try
             {
-                order.Email = this.textBoxEmail.Text;
-                order.PhoneNumber = this.textBoxPhone.Text;
-                order.TotalAmount = int.Parse(Regex.Match(this.textBoxAmount.Text, @"\d+").Value);
-                order.TotalPrice = decimal.Parse(this.textBoxPrice.Text.Replace("$", ""));
-
                 string deliveryAddress = "";
                 DeliverType deliveryType;
 
@@ -95,8 +86,13 @@ namespace Optimum_Tech.Views.Dialogs
                     deliveryType = DeliverType.LocalPostOffice;
                 }
 
-                order.Address = deliveryAddress;
-                order.DeliveryType = deliveryType;
+                Order order = new Order(
+                    this.textBoxEmail.Text, 
+                    deliveryAddress, 
+                    this.textBoxPhone.Text, 
+                    decimal.Parse(this.textBoxPrice.Text.Replace("$", "")),
+                    int.Parse(Regex.Match(this.textBoxAmount.Text, @"\d+").Value),
+                    deliveryType);
 
                 foreach (string line in listBoxProducts.Items)
                 {
@@ -130,7 +126,6 @@ namespace Optimum_Tech.Views.Dialogs
                 UpdateTotalAmountAndPrice();
             }
         }
-
         private void buttonRemove_Click(object sender, EventArgs e)
         {
             int selectedIndex = listBoxProducts.SelectedIndex;

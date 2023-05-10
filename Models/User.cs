@@ -32,7 +32,6 @@ namespace Optimum_Tech.Model
 
         public List<ProductControl> Favorites { get; internal set; } = new List<ProductControl>();
         public List<ProductControl> Selections { get; internal set; } = new List<ProductControl>();
-        public List<Order> Orders { get; set; } = new List<Order>();
 
         public string Login
         {

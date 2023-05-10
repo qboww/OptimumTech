@@ -161,7 +161,6 @@ namespace Optimum_Tech.View.Forms
                 }
             }
         }
-
         private void buttonSearchUser_Click(object sender, EventArgs e)
         {
             string userLogin = textBoxSearchUserText.Text.Trim();
@@ -196,7 +195,6 @@ namespace Optimum_Tech.View.Forms
                 }
             }
         }
-
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             string userLogin = textBoxSearchUserText.Text.Trim();
@@ -216,23 +214,19 @@ namespace Optimum_Tech.View.Forms
                 }
             }
         }
-
         private void buttonDelSave_Click(object sender, EventArgs e)
         {
             UserManager.SaveUsers();
             MessageBox.Show($"Changes are saved");
         }
-
         private void textBoxSearch_Click(object sender, EventArgs e)
         {
             textBoxSearch.Clear();
         }
-
         private void textBoxSearchUserText_Click(object sender, EventArgs e)
         {
             textBoxSearchUserText.Clear();
         }
-
         private void buttonRepository_Click(object sender, EventArgs e)
         {
             string folderPath = @"..\..\Repository";

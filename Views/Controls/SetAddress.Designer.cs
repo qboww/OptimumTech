@@ -37,10 +37,10 @@
             // 
             textBoxAddress.BackColor = Color.White;
             textBoxAddress.BorderStyle = BorderStyle.None;
-            textBoxAddress.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAddress.Location = new Point(93, 38);
             textBoxAddress.Name = "textBoxAddress";
-            textBoxAddress.Size = new Size(284, 24);
+            textBoxAddress.Size = new Size(284, 22);
             textBoxAddress.TabIndex = 16;
             // 
             // textBox2
