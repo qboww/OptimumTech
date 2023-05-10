@@ -232,5 +232,11 @@ namespace Optimum_Tech.View.Forms
         {
             textBoxSearchUserText.Clear();
         }
+
+        private void buttonRepository_Click(object sender, EventArgs e)
+        {
+            string folderPath = @"..\..\Repository";
+            System.Diagnostics.Process.Start("explorer.exe", folderPath);
+        }
     }
 }

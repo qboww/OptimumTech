@@ -31,8 +31,6 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel5 = new Panel();
             textBoxProcessors = new TextBox();
-            textBox1 = new TextBox();
-            textBoxCategory = new TextBox();
             panel5.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,8 +50,6 @@
             // 
             panel5.BackColor = Color.FromArgb(30, 30, 30);
             panel5.Controls.Add(textBoxProcessors);
-            panel5.Controls.Add(textBox1);
-            panel5.Controls.Add(textBoxCategory);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
@@ -66,38 +62,12 @@
             textBoxProcessors.BorderStyle = BorderStyle.None;
             textBoxProcessors.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxProcessors.ForeColor = Color.White;
-            textBoxProcessors.Location = new Point(139, 3);
+            textBoxProcessors.Location = new Point(12, 3);
             textBoxProcessors.Name = "textBoxProcessors";
             textBoxProcessors.ReadOnly = true;
             textBoxProcessors.Size = new Size(106, 28);
             textBoxProcessors.TabIndex = 6;
             textBoxProcessors.Text = "Processors";
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(30, 30, 30);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(112, 3);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(21, 28);
-            textBox1.TabIndex = 5;
-            textBox1.Text = ">>";
-            // 
-            // textBoxCategory
-            // 
-            textBoxCategory.BackColor = Color.FromArgb(30, 30, 30);
-            textBoxCategory.BorderStyle = BorderStyle.None;
-            textBoxCategory.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxCategory.ForeColor = Color.White;
-            textBoxCategory.Location = new Point(12, 3);
-            textBoxCategory.Name = "textBoxCategory";
-            textBoxCategory.ReadOnly = true;
-            textBoxCategory.Size = new Size(94, 28);
-            textBoxCategory.TabIndex = 4;
-            textBoxCategory.Text = "Category";
             // 
             // FormProcessors
             // 
@@ -119,8 +89,6 @@
         #endregion
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel5;
-        private TextBox textBoxCategory;
         private TextBox textBoxProcessors;
-        private TextBox textBox1;
     }
 }

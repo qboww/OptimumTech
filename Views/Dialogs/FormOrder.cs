@@ -3,13 +3,13 @@ using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Forms;
 using Optimum_Tech.Models;
 using Optimum_Tech.Views.Controls;
+using System.Globalization;
 using System.Text.RegularExpressions;
 
 namespace Optimum_Tech.Views.Dialogs
 {
     public partial class FormOrder : Form
     {
-        private static readonly string ordersFilePath = @"..\..\Repository\orders.json";
         private FormMain formMain;
         private UserControl currentControl;
         public Order order;
@@ -32,7 +32,6 @@ namespace Optimum_Tech.Views.Dialogs
         {
             this.Close();
         }
-
         private void FormOrder_Load(object sender, EventArgs e)
         {
             decimal total = 0;
@@ -47,7 +46,6 @@ namespace Optimum_Tech.Views.Dialogs
             this.textBoxAmount.Text = $" {listBoxProducts.Items.Count} pcs";
             this.textBoxPrice.Text = $" ${total}";
         }
-
         private void radioButtonAtPost_CheckedChanged(object sender, EventArgs e)
         {
             if (currentControl != null)
@@ -60,7 +58,6 @@ namespace Optimum_Tech.Views.Dialogs
             control.Dock = DockStyle.Left;
             currentControl = control;
         }
-
         private void radioButtonAtAddress_CheckedChanged(object sender, EventArgs e)
         {
             if (currentControl != null)
@@ -73,7 +70,6 @@ namespace Optimum_Tech.Views.Dialogs
             control.Dock = DockStyle.Left;
             currentControl = control;
         }
-
         private void buttonConfirm_Click(object sender, EventArgs e)
         {
             try
@@ -81,7 +77,7 @@ namespace Optimum_Tech.Views.Dialogs
                 order.Email = this.textBoxEmail.Text;
                 order.PhoneNumber = this.textBoxPhone.Text;
                 order.TotalAmount = int.Parse(Regex.Match(this.textBoxAmount.Text, @"\d+").Value);
-                order.TotalPrice = decimal.Parse(Regex.Match(this.textBoxPrice.Text, @"[\d,\.]+").Value.Replace(",", ""));
+                order.TotalPrice = decimal.Parse(this.textBoxPrice.Text.Replace("$", ""));
 
                 string deliveryAddress = "";
                 DeliverType deliveryType;
@@ -107,8 +103,8 @@ namespace Optimum_Tech.Views.Dialogs
                     order.products.Add(line);
                 }
 
-                string json = JsonConvert.SerializeObject(order);
-                File.WriteAllText(ordersFilePath, json);
+                UserManager.orders.Add(order);
+                UserManager.SaveOrders();
 
                 MessageBox.Show("Operator will call you in 5 minutes");
             }
@@ -119,8 +115,6 @@ namespace Optimum_Tech.Views.Dialogs
 
             this.Close();
         }
-
-
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             int selectedIndex = listBoxProducts.SelectedIndex;
@@ -131,12 +125,11 @@ namespace Optimum_Tech.Views.Dialogs
                 var clonedProduct = selectedProduct;
                 UserManager.currentUser.Selections.Insert(selectedIndex, clonedProduct);
 
-                listBoxProducts.Items.Insert(selectedIndex + 1, $"{clonedProduct.ProductName} [${clonedProduct.ProductPrice}]");
+                listBoxProducts.Items.Insert(selectedIndex, $"{clonedProduct.ProductName} [${clonedProduct.ProductPrice}]");
 
                 UpdateTotalAmountAndPrice();
             }
         }
-
 
         private void buttonRemove_Click(object sender, EventArgs e)
         {
@@ -149,6 +142,13 @@ namespace Optimum_Tech.Views.Dialogs
 
                 UpdateTotalAmountAndPrice();
             }
+
+            if (listBoxProducts.Items.Count == 0)
+            {
+                MessageBox.Show("Add some products to cart first!");
+                UserManager.currentUser.Selections.Clear();
+                this.Close();
+            }
         }
 
         private void UpdateTotalAmountAndPrice()
@@ -160,6 +160,11 @@ namespace Optimum_Tech.Views.Dialogs
             }
             this.textBoxAmount.Text = $" {listBoxProducts.Items.Count} pcs";
             this.textBoxPrice.Text = $" ${total}";
+
+            if (listBoxProducts.Items.Count == 0)
+            {
+                this.Close();
+            }
         }
     }
 }

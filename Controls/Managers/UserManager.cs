@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Optimum_Tech.Model;
+using Optimum_Tech.Models;
 using Optimum_Tech.Views.Resources;
 using OptimumTech.Controls;
 
@@ -8,7 +9,9 @@ namespace Optimum_Tech.Controls.Managers
     internal static class UserManager
     {
         private static readonly string usersFilePath = @"..\..\Repository\users.json";
+        private static readonly string ordersFilePath = @"..\..\Repository\orders.json";
         public static List<User> users = new List<User>();
+        public static List<Order> orders = new List<Order>();
         public static User? currentUser;
 
         public static void UpdateStatus(TextBox textBoxStatus)
@@ -128,6 +131,12 @@ namespace Optimum_Tech.Controls.Managers
             List<User> usersToSave = users.ToList();
             string json = JsonConvert.SerializeObject(usersToSave, Formatting.Indented);
             File.WriteAllText(usersFilePath, json);
+        }
+        internal static void SaveOrders()
+        {
+            List<Order> ordersToSave = orders.ToList();
+            string json = JsonConvert.SerializeObject(ordersToSave, Formatting.Indented);
+            File.WriteAllText(ordersFilePath, json);
         }
 
         public static void AddToFavorites(ProductControl control)

@@ -50,6 +50,7 @@
             textBoxSearch = new TextBox();
             buttonSearch = new Button();
             buttonSave = new Button();
+            buttonRepository = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel6.SuspendLayout();
@@ -279,6 +280,7 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(30, 30, 30);
+            panel3.Controls.Add(buttonRepository);
             panel3.Controls.Add(textBoxSearchText);
             panel3.Controls.Add(textBoxSearch);
             panel3.Controls.Add(buttonSearch);
@@ -342,6 +344,20 @@
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += buttonSave_Click;
             // 
+            // buttonRepository
+            // 
+            buttonRepository.BackColor = SystemColors.Window;
+            buttonRepository.FlatAppearance.BorderSize = 0;
+            buttonRepository.FlatStyle = FlatStyle.Flat;
+            buttonRepository.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonRepository.Location = new Point(184, 102);
+            buttonRepository.Name = "buttonRepository";
+            buttonRepository.Size = new Size(133, 29);
+            buttonRepository.TabIndex = 7;
+            buttonRepository.Text = "Open repository";
+            buttonRepository.UseVisualStyleBackColor = false;
+            buttonRepository.Click += buttonRepository_Click;
+            // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -389,5 +405,6 @@
         private TextBox textBoxSearch;
         private Button buttonSearch;
         private Button buttonSave;
+        private Button buttonRepository;
     }
 }

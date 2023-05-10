@@ -79,7 +79,7 @@
             // flowLayoutPanelCategory
             // 
             flowLayoutPanelCategory.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            flowLayoutPanelCategory.BackColor = Color.White;
+            flowLayoutPanelCategory.BackColor = SystemColors.Control;
             flowLayoutPanelCategory.Controls.Add(panelProcessors);
             flowLayoutPanelCategory.Controls.Add(panelGraphicsCards);
             flowLayoutPanelCategory.Controls.Add(panelMemory);
