@@ -83,7 +83,7 @@
 
         #endregion
 
-        private TextBox textBoxAddress;
+        public TextBox textBoxAddress;
         private TextBox textBox2;
         private TextBox textBox1;
     }

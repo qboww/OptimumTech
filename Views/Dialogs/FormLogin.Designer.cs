@@ -90,7 +90,7 @@ namespace Optimum_Tech.Forms.Dialogs
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 28);
             panel1.Name = "panel1";
-            panel1.Size = new Size(50, 362);
+            panel1.Size = new Size(50, 376);
             panel1.TabIndex = 1;
             // 
             // panel2
@@ -98,7 +98,7 @@ namespace Optimum_Tech.Forms.Dialogs
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(247, 28);
             panel2.Name = "panel2";
-            panel2.Size = new Size(50, 362);
+            panel2.Size = new Size(50, 376);
             panel2.TabIndex = 2;
             // 
             // panel3
@@ -111,7 +111,7 @@ namespace Optimum_Tech.Forms.Dialogs
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(50, 28);
             panel3.Name = "panel3";
-            panel3.Size = new Size(197, 362);
+            panel3.Size = new Size(197, 376);
             panel3.TabIndex = 3;
             // 
             // linkLabel1
@@ -120,7 +120,7 @@ namespace Optimum_Tech.Forms.Dialogs
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabel1.LinkColor = Color.White;
-            linkLabel1.Location = new Point(3, 261);
+            linkLabel1.Location = new Point(0, 268);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Padding = new Padding(3, 0, 0, 0);
             linkLabel1.Size = new Size(71, 25);
@@ -136,7 +136,7 @@ namespace Optimum_Tech.Forms.Dialogs
             buttonLogin.FlatAppearance.BorderSize = 0;
             buttonLogin.FlatStyle = FlatStyle.Flat;
             buttonLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonLogin.Location = new Point(49, 317);
+            buttonLogin.Location = new Point(50, 322);
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(95, 33);
             buttonLogin.TabIndex = 2;
@@ -161,7 +161,7 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxPassword.BackColor = Color.White;
             textBoxPassword.BorderStyle = BorderStyle.None;
             textBoxPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPassword.Location = new Point(9, 234);
+            textBoxPassword.Location = new Point(9, 241);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(182, 24);
             textBoxPassword.TabIndex = 1;
@@ -175,7 +175,7 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxLogin.BackColor = Color.White;
             textBoxLogin.BorderStyle = BorderStyle.None;
             textBoxLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxLogin.Location = new Point(9, 194);
+            textBoxLogin.Location = new Point(9, 201);
             textBoxLogin.Name = "textBoxLogin";
             textBoxLogin.Size = new Size(182, 24);
             textBoxLogin.TabIndex = 0;
@@ -186,7 +186,7 @@ namespace Optimum_Tech.Forms.Dialogs
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 40, 40);
-            ClientSize = new Size(297, 390);
+            ClientSize = new Size(297, 404);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);

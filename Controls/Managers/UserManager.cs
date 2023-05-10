@@ -102,7 +102,6 @@ namespace Optimum_Tech.Controls.Managers
                 List<User> users = JsonConvert.DeserializeObject<List<User>>(json);
 
                 User newUser = new User(login, password);
-                newUser.Access = Access.User;
                 users.Add(newUser);
 
                 string newJson = JsonConvert.SerializeObject(users, Formatting.Indented);
@@ -152,7 +151,6 @@ namespace Optimum_Tech.Controls.Managers
             int index = users.FindIndex(u => u.Login == currentUser.Login);
             users[index] = currentUser;
         }
-
         public static void RemoveFromFavorites(ProductControl control)
         {
             if (currentUser.Favorites == null)
@@ -186,7 +184,6 @@ namespace Optimum_Tech.Controls.Managers
             int index = users.FindIndex(u => u.Login == currentUser.Login);
             users[index] = currentUser;
         }
-
         public static void RemoveFromSelections(ProductControl control)
         {
             if (currentUser.Selections == null)

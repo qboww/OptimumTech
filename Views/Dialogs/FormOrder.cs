@@ -1,13 +1,18 @@
-﻿using Optimum_Tech.Controls.Managers;
+﻿using Newtonsoft.Json;
+using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Forms;
+using Optimum_Tech.Models;
 using Optimum_Tech.Views.Controls;
+using System.Text.RegularExpressions;
 
 namespace Optimum_Tech.Views.Dialogs
 {
     public partial class FormOrder : Form
     {
+        private static readonly string ordersFilePath = @"..\..\Repository\orders.json";
         private FormMain formMain;
         private UserControl currentControl;
+        public Order order;
 
         public FormOrder(FormMain formMain)
         {
@@ -16,7 +21,11 @@ namespace Optimum_Tech.Views.Dialogs
             this.formMain = formMain;
             this.BringToFront();
             radioButtonAtAddress.Checked = true;
-            this.textBoxId.Text = $"Order ID: {Guid.NewGuid().ToString()}";
+
+            order = new Order();
+            order.Id = Guid.NewGuid();
+            this.textBoxId.Text = $"Order ID: {Guid.NewGuid()}";
+            order.products = new List<string>();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -69,8 +78,37 @@ namespace Optimum_Tech.Views.Dialogs
         {
             try
             {
-                UserManager.currentUser.Email = this.textBoxEmail.Text;
-                UserManager.currentUser.PhoneNumber = this.textBoxPhone.Text;
+                order.Email = this.textBoxEmail.Text;
+                order.PhoneNumber = this.textBoxPhone.Text;
+                order.TotalAmount = int.Parse(Regex.Match(this.textBoxAmount.Text, @"\d+").Value);
+                order.TotalPrice = decimal.Parse(Regex.Match(this.textBoxPrice.Text, @"[\d,\.]+").Value.Replace(",", ""));
+
+                string deliveryAddress = "";
+                DeliverType deliveryType;
+
+                if (radioButtonAtAddress.Checked)
+                {
+                    SetAddress control = (SetAddress)currentControl;
+                    deliveryAddress = control.textBoxAddress.Text;
+                    deliveryType = DeliverType.AtTheAddress;
+                }
+                else
+                {
+                    SetPostOffice control = (SetPostOffice)currentControl;
+                    deliveryAddress = control.listBoxAddresses.SelectedItem.ToString();
+                    deliveryType = DeliverType.LocalPostOffice;
+                }
+
+                order.Address = deliveryAddress;
+                order.DeliveryType = deliveryType;
+
+                foreach (string line in listBoxProducts.Items)
+                {
+                    order.products.Add(line);
+                }
+
+                string json = JsonConvert.SerializeObject(order);
+                File.WriteAllText(ordersFilePath, json);
 
                 MessageBox.Show("Operator will call you in 5 minutes");
             }
@@ -81,6 +119,7 @@ namespace Optimum_Tech.Views.Dialogs
 
             this.Close();
         }
+
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {

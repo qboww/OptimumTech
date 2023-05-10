@@ -68,8 +68,6 @@ namespace Optimum_Tech.Forms.Dialogs
 
                 this.Close();
             }
-
-            //UserManager.UpdateStatus(formAccount.textBoxStatus);
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)

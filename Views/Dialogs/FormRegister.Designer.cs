@@ -39,6 +39,8 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxPassword = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).BeginInit();
             panelTitle.SuspendLayout();
             SuspendLayout();
@@ -111,7 +113,7 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             textBoxPassword.BorderStyle = BorderStyle.None;
             textBoxPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPassword.Location = new Point(105, 82);
+            textBoxPassword.Location = new Point(105, 104);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(189, 24);
             textBoxPassword.TabIndex = 22;
@@ -135,11 +137,35 @@ namespace Optimum_Tech.Forms.Dialogs
             label2.AutoSize = true;
             label2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(8, 82);
+            label2.Location = new Point(8, 100);
             label2.Name = "label2";
             label2.Size = new Size(91, 28);
             label2.TabIndex = 24;
             label2.Text = "Password:";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(40, 40, 40);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.Gray;
+            textBox1.Location = new Point(12, 78);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(282, 20);
+            textBox1.TabIndex = 25;
+            textBox1.Text = "Login should contain at least 3 letters";
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.FromArgb(40, 40, 40);
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = Color.Gray;
+            textBox2.Location = new Point(12, 131);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(282, 20);
+            textBox2.TabIndex = 26;
+            textBox2.Text = "Password length range 5-15 symbols";
             // 
             // FormRegister
             // 
@@ -147,6 +173,8 @@ namespace Optimum_Tech.Forms.Dialogs
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 40, 40);
             ClientSize = new Size(453, 202);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBoxPassword);
@@ -175,5 +203,7 @@ namespace Optimum_Tech.Forms.Dialogs
         private TextBox textBoxPassword;
         private Label label1;
         private Label label2;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

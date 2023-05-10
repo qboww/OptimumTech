@@ -4,6 +4,7 @@ using Optimum_Tech.View.Displays;
 using Optimum_Tech.View.Forms;
 using Optimum_Tech.Views.Resources;
 using OptimumTech.Controls;
+using System.Windows.Forms;
 
 namespace Optimum_Tech.Forms
 {
