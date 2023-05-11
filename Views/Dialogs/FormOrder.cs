@@ -112,9 +112,9 @@ namespace Optimum_Tech.Views.Dialogs
 
                 order.Username = UserManager.CurrentUser.Login;
 
-                UserManager.Orders.Add(order);
+                UserManager.CurrentUser.Orders.Add(order);
 
-                string json = JsonConvert.SerializeObject(UserManager.Orders, Formatting.Indented);
+                string json = JsonConvert.SerializeObject(UserManager.CurrentUser.Orders, Formatting.Indented);
 
                 using (StreamWriter writer = File.AppendText(ordersFilePath))
                 {
