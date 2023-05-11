@@ -99,6 +99,8 @@ namespace Optimum_Tech.Views.Dialogs
                     order.products.Add(line);
                 }
 
+                order.Username = UserManager.currentUser.Login;
+
                 UserManager.orders.Add(order);
                 UserManager.SaveOrders();
 

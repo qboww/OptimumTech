@@ -9,6 +9,7 @@ namespace Optimum_Tech.Models
         private string phoneNumber;
         private decimal totalPrice;
         private int totalAmount;
+        private string username;
         private DeliverType deliveryType;
 
         public List<string> products { get; set; }
@@ -94,11 +95,14 @@ namespace Optimum_Tech.Models
                 totalAmount = value;
             }
         }
-
-    }
-    public enum DeliverType
-    {
-        LocalPostOffice,
-        AtTheAddress
+        public string Username
+        {
+            get => username;
+            set
+            {
+                if (string.IsNullOrEmpty(value)) throw new ArgumentNullException("Login can't be null or empty!");
+                username = value;
+            }
+        }
     }
 }

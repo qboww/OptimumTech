@@ -13,9 +13,8 @@ namespace Optimum_Tech.Model.Products
         private bool isAvailable;
 
         public Processor(Guid id, string name, decimal price, int responses, int rating,
-            string manufacturer, string socket, int cores, int threads,
-            double clockSpeedDefault, double clockSpeedBoost)
-            : base(id, name, price, responses, rating)
+            string manufacturer, string socket, int cores, int threads, double clockSpeedDefault, 
+            double clockSpeedBoost) : base(id, name, price, responses, rating)
         {
             Manufacturer = manufacturer;
             Socket = socket;

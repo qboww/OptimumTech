@@ -93,11 +93,4 @@ namespace Optimum_Tech.Model
             return string.Compare(Login, other.Login, StringComparison.Ordinal);
         }
     }
-
-    public enum Access
-    {
-        Admin,
-        Guest,
-        User
-    }
 }

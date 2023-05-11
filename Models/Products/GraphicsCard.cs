@@ -13,9 +13,8 @@ namespace Optimum_Tech.Model.Products
         private bool isAvailable;
 
         public GraphicsCard(Guid id, string name, decimal price, int responses, int rating,
-            string manufacturer, int vram, int memoryInterface, string memoryType,
-            double clockSpeed, int minimumWattage)
-            : base(id, name, price, responses, rating)
+            string manufacturer, int vram, int memoryInterface, string memoryType, double clockSpeed, 
+            int minimumWattage) : base(id, name, price, responses, rating)
         {
             Manufacturer = manufacturer;
             VRAM = vram;
