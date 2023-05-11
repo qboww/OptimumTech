@@ -1,6 +1,5 @@
 # Optimum Tech
 ## Coursework - OOP.Net - Term 4
-### Made by Yevhenii Sarancha (Group-623P)
 
 >Program represents functionality of store based on Rozetka model, but without using any bds and patterns like MVP.
 >
