@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualBasic.Logging;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Optimum_Tech.Model;
 using Optimum_Tech.Models;
 using Optimum_Tech.Views.Resources;
@@ -132,12 +131,6 @@ namespace Optimum_Tech.Controls.Managers
             List<User> usersToSave = users.ToList();
             string json = JsonConvert.SerializeObject(usersToSave, Formatting.Indented);
             File.WriteAllText(usersFilePath, json);
-        }
-        internal static void SaveOrders()
-        {
-            List<Order> ordersToSave = orders.ToList();
-            string json = JsonConvert.SerializeObject(ordersToSave, Formatting.Indented);
-            File.WriteAllText(ordersFilePath, json);
         }
 
         public static void AddToFavorites(ProductControl control)

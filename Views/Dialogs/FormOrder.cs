@@ -13,6 +13,8 @@ namespace Optimum_Tech.Views.Dialogs
         private FormMain formMain;
         private UserControl currentControl;
 
+        private static readonly string ordersFilePath = @"..\..\Repository\orders.json";
+
         public FormOrder(FormMain formMain)
         {
             InitializeComponent();
@@ -87,9 +89,9 @@ namespace Optimum_Tech.Views.Dialogs
                 }
 
                 Order order = new Order(
-                    this.textBoxEmail.Text, 
-                    deliveryAddress, 
-                    this.textBoxPhone.Text, 
+                    this.textBoxEmail.Text,
+                    deliveryAddress,
+                    this.textBoxPhone.Text,
                     decimal.Parse(this.textBoxPrice.Text.Replace("$", "")),
                     int.Parse(Regex.Match(this.textBoxAmount.Text, @"\d+").Value),
                     deliveryType);
@@ -102,7 +104,13 @@ namespace Optimum_Tech.Views.Dialogs
                 order.Username = UserManager.currentUser.Login;
 
                 UserManager.orders.Add(order);
-                UserManager.SaveOrders();
+
+                string json = JsonConvert.SerializeObject(UserManager.orders, Formatting.Indented);
+
+                using (StreamWriter writer = File.AppendText(ordersFilePath))
+                {
+                    writer.WriteLine(json);
+                }
 
                 MessageBox.Show("Operator will call you in 5 minutes");
             }
@@ -113,6 +121,7 @@ namespace Optimum_Tech.Views.Dialogs
 
             this.Close();
         }
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             int selectedIndex = listBoxProducts.SelectedIndex;
