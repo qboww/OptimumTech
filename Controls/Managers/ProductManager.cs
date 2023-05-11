@@ -7,9 +7,9 @@ namespace Optimum_Tech.Controls.Managers
     public static class ProductManager
     {
 
-        public static List<Processor> processors = new List<Processor>();
-        public static List<GraphicsCard> graphicsCards = new List<GraphicsCard>();
-        public static List<Product> products = new List<Product>();
+        public static List<Processor> Processors = new List<Processor>();
+        public static List<GraphicsCard> GraphicsCards = new List<GraphicsCard>();
+        public static List<Product> Products = new List<Product>();
 
         public static readonly string processorsPath = @"..\..\Repository\processors.json";
         public static readonly string graphicsCardsPath = @"..\..\Repository\graphicscards.json";
@@ -18,39 +18,39 @@ namespace Optimum_Tech.Controls.Managers
         {
             foreach (Processor product in GetProcessors())
             {
-                products.Add(product);
+                Products.Add(product);
             }
             foreach (GraphicsCard product in GetGraphicsCards())
             {
-                products.Add(product);
+                Products.Add(product);
             }
 
-            return products;
+            return Products;
         }
         private static List<GraphicsCard> GetGraphicsCards()
         {
             string json = File.ReadAllText(graphicsCardsPath);
-            graphicsCards = JsonConvert.DeserializeObject<List<GraphicsCard>>(json);
+            GraphicsCards = JsonConvert.DeserializeObject<List<GraphicsCard>>(json);
 
-            return graphicsCards;
+            return GraphicsCards;
         }
         private static List<Processor> GetProcessors()
         {
             string json = File.ReadAllText(processorsPath);
-            processors = JsonConvert.DeserializeObject<List<Processor>>(json);
+            Processors = JsonConvert.DeserializeObject<List<Processor>>(json);
 
-            return processors;
+            return Processors;
         }
 
         private static void SaveGraphicsCards()
         {
-            List<GraphicsCard> productsToSave = graphicsCards.ToList();
+            List<GraphicsCard> productsToSave = GraphicsCards.ToList();
             string json = JsonConvert.SerializeObject(productsToSave, Formatting.Indented);
             File.WriteAllText(graphicsCardsPath, json);
         }
         private static void SaveProcessors()
         {
-            List<Processor> productsToSave = processors.ToList();
+            List<Processor> productsToSave = Processors.ToList();
             string json = JsonConvert.SerializeObject(productsToSave, Formatting.Indented);
             File.WriteAllText(processorsPath, json);
         }

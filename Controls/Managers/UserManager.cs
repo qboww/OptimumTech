@@ -6,12 +6,11 @@ using OptimumTech.Controls;
 
 namespace Optimum_Tech.Controls.Managers
 {
-    internal static class UserManager
+    public static class UserManager
     {
         private static readonly string usersFilePath = @"..\..\Repository\users.json";
-        private static readonly string ordersFilePath = @"..\..\Repository\orders.json";
-        public static List<User> users = new List<User>();
-        public static List<Order> orders = new List<Order>();
+        public static List<User> Users = new List<User>();
+        public static List<Order> Orders = new List<Order>();
         public static User? currentUser;
 
         public static void UpdateStatus(TextBox textBoxStatus)
@@ -122,13 +121,13 @@ namespace Optimum_Tech.Controls.Managers
         public static List<User> LoadUsers()
         {
             string json = File.ReadAllText(usersFilePath);
-            users = JsonConvert.DeserializeObject<List<User>>(json);
+            Users = JsonConvert.DeserializeObject<List<User>>(json);
 
-            return users;
+            return Users;
         }
         internal static void SaveUsers()
         {
-            List<User> usersToSave = users.ToList();
+            List<User> usersToSave = Users.ToList();
             string json = JsonConvert.SerializeObject(usersToSave, Formatting.Indented);
             File.WriteAllText(usersFilePath, json);
         }

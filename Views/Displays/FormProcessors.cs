@@ -19,7 +19,7 @@ namespace Optimum_Tech.Forms
 
         private void FormProcessors_Load(object sender, EventArgs e)
         {
-            foreach (Processor product in ProductManager.processors)
+            foreach (Processor product in ProductManager.Processors)
             {
                 ProductControl control = new ProductControl(product);
 

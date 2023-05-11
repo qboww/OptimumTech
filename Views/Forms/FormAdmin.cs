@@ -18,8 +18,8 @@ namespace Optimum_Tech.View.Forms
             InitializeComponent();
             this.formMain = formMain;
 
-            listBoxProducts.Items.AddRange(ProductManager.processors.Select(p => p.Name).OrderBy(n => n).ToArray());
-            listBoxProducts.Items.AddRange(ProductManager.graphicsCards.Select(p => p.Name).OrderBy(n => n).ToArray());
+            listBoxProducts.Items.AddRange(ProductManager.Processors.Select(p => p.Name).OrderBy(n => n).ToArray());
+            listBoxProducts.Items.AddRange(ProductManager.GraphicsCards.Select(p => p.Name).OrderBy(n => n).ToArray());
             listBoxProducts.Sorted = true;
         }
 
@@ -34,7 +34,7 @@ namespace Optimum_Tech.View.Forms
 
             if (!string.IsNullOrEmpty(selectedProduct))
             {
-                Product product = ProductManager.products.FirstOrDefault(p => p.Name == selectedProduct);
+                Product product = ProductManager.Products.FirstOrDefault(p => p.Name == selectedProduct);
 
                 if (product is GraphicsCard graphicsCard)
                 {
@@ -73,7 +73,7 @@ namespace Optimum_Tech.View.Forms
             {
                 if (currentControl is EditProcessor editProcessor)
                 {
-                    foreach (Processor product in ProductManager.processors)
+                    foreach (Processor product in ProductManager.Processors)
                     {
                         try
                         {
@@ -112,12 +112,12 @@ namespace Optimum_Tech.View.Forms
                         }
                     }
 
-                    string processorsJson = JsonConvert.SerializeObject(ProductManager.processors);
+                    string processorsJson = JsonConvert.SerializeObject(ProductManager.Processors);
                     File.WriteAllText("processors.json", processorsJson);
                 }
                 else if (currentControl is EditGraphicsCard editGraphicsCard)
                 {
-                    foreach (GraphicsCard product in ProductManager.graphicsCards)
+                    foreach (GraphicsCard product in ProductManager.GraphicsCards)
                     {
                         try
                         {
@@ -156,7 +156,7 @@ namespace Optimum_Tech.View.Forms
                         }
                     }
 
-                    string graphicsCardsJson = JsonConvert.SerializeObject(ProductManager.graphicsCards);
+                    string graphicsCardsJson = JsonConvert.SerializeObject(ProductManager.GraphicsCards);
                     File.WriteAllText("graphicsCards.json", graphicsCardsJson);
                 }
             }

@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json;
 using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Forms;
+using Optimum_Tech.Model;
+using Optimum_Tech.Model.Products;
 using Optimum_Tech.Models;
 using Optimum_Tech.Views.Controls;
 using System.Globalization;
@@ -14,6 +16,7 @@ namespace Optimum_Tech.Views.Dialogs
         private UserControl currentControl;
 
         private static readonly string ordersFilePath = @"..\..\Repository\orders.json";
+        private static readonly string usersFilePath = @"..\..\Repository\users.json";
 
         public FormOrder(FormMain formMain)
         {
@@ -98,19 +101,31 @@ namespace Optimum_Tech.Views.Dialogs
 
                 foreach (string line in listBoxProducts.Items)
                 {
-                    order.products.Add(line);
+                    foreach (Product product in ProductManager.Products)
+                    {
+                        if (line.Contains(product.Name))
+                        {
+                            order.Products.Add(product);
+                        }
+                    }
                 }
 
                 order.Username = UserManager.currentUser.Login;
 
-                UserManager.orders.Add(order);
+                UserManager.Orders.Add(order);
 
-                string json = JsonConvert.SerializeObject(UserManager.orders, Formatting.Indented);
+                string json = JsonConvert.SerializeObject(UserManager.Orders, Formatting.Indented);
 
                 using (StreamWriter writer = File.AppendText(ordersFilePath))
                 {
                     writer.WriteLine(json);
                 }
+
+                UserManager.currentUser.Orders.Add(order);
+
+                List<User> usersToSave = UserManager.LoadUsers().ToList();
+                string json1 = JsonConvert.SerializeObject(usersToSave, Formatting.Indented);
+                File.WriteAllText(usersFilePath, json1);
 
                 MessageBox.Show("Operator will call you in 5 minutes");
             }

@@ -17,7 +17,7 @@ namespace Optimum_Tech.Model
         [JsonIgnore]
         private const int MinPasswordLength = 5;
         [JsonIgnore]
-        private bool disposed = false;
+        public bool disposed = false;
 
         private string login;
         private string password;
@@ -26,12 +26,16 @@ namespace Optimum_Tech.Model
         {
             Login = login;
             Password = password;
-
             Access = Access.User;
+
+            Orders = new List<Order>();
         }
 
+        [JsonIgnore]
         public List<ProductControl> Favorites { get; internal set; } = new List<ProductControl>();
+        [JsonIgnore]
         public List<ProductControl> Selections { get; internal set; } = new List<ProductControl>();
+        public List<Order> Orders { get; set; }
 
         public string Login
         {
@@ -57,15 +61,15 @@ namespace Optimum_Tech.Model
 
         public void GrantAccessUser()
         {
-            UserManager.currentUser.GrantAccessUser();
+           Access = Access.User;
         }
         public void GrantAccessGuest()
         {
-            UserManager.currentUser.GrantAccessGuest();
+            Access = Access.Guest;
         }
         public void GrantAccessAdmin()
         {
-            UserManager.currentUser.GrantAccessAdmin();
+            Access = Access.Admin;
         }
         public void Dispose()
         {

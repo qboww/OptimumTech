@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using Optimum_Tech.Model.Products;
+using System.Text.RegularExpressions;
 
 namespace Optimum_Tech.Models
 {
@@ -10,14 +11,14 @@ namespace Optimum_Tech.Models
         private decimal totalPrice;
         private int totalAmount;
         private string username;
-        private DeliverType deliveryType;
 
-        public List<string> products { get; set; }
+        public List<Product> Products { get; set; }
 
         public Order(string email, string address, string phoneNumber,
             decimal totalPrice, int totalAmount, DeliverType deliveryType)
         {
             Id = Guid.NewGuid();
+            Date = DateTime.Now;
             Email = email;
             Address = address;
             PhoneNumber = phoneNumber;
@@ -25,11 +26,12 @@ namespace Optimum_Tech.Models
             TotalAmount = totalAmount;
             DeliveryType = deliveryType;
 
-            products = new List<string>();
+            Products = new List<Product>();
         }
         
         public Guid Id { get; set; }
         public DeliverType DeliveryType { get; set; }
+        public DateTime Date { get; set; }
         public string Email
         {
             get => email;
