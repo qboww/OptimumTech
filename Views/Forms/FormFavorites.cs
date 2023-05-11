@@ -22,9 +22,9 @@ namespace Optimum_Tech.Forms
         {
             this.flowLayoutPanel1.Controls.Clear();
 
-            if (UserManager.currentUser != null && UserManager.currentUser.Favorites != null)
+            if (UserManager.CurrentUser != null && UserManager.CurrentUser.Favorites != null)
             {
-                foreach (ProductControl control in UserManager.currentUser.Favorites)
+                foreach (ProductControl control in UserManager.CurrentUser.Favorites)
                 {
                     if (control.IsFavorite)
                     {

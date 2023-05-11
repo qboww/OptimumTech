@@ -10,20 +10,19 @@ namespace Optimum_Tech.Controls.Managers
     {
         private static readonly string usersFilePath = @"..\..\Repository\users.json";
         public static List<User> Users = new List<User>();
-        public static List<Order> Orders = new List<Order>();
-        public static User? currentUser;
+        public static User? CurrentUser;
 
         public static void UpdateStatus(TextBox textBoxStatus)
         {
             textBoxStatus.ForeColor = Color.White;
-            textBoxStatus.Text = $"Logged as: {currentUser.Login}";
+            textBoxStatus.Text = $"Logged as: {CurrentUser.Login}";
         }
         public static void LoginAsGuest()
         {
             string json = File.ReadAllText(usersFilePath);
             List<User>? users = JsonConvert.DeserializeObject<List<User>>(json);
             User? guestUser = users.FirstOrDefault(u => u.Access == Access.Guest);
-            currentUser = guestUser;
+            CurrentUser = guestUser;
         }
         public static bool Login(TextBox textBoxLogin, TextBox textBoxPassword)
         {
@@ -41,7 +40,7 @@ namespace Optimum_Tech.Controls.Managers
                     {
                         if (user.CompareTo(new User(login, password)) == 0 && user.Password == password)
                         {
-                            currentUser = user;
+                            CurrentUser = user;
                             return true;
                         }
                     }
@@ -70,7 +69,7 @@ namespace Optimum_Tech.Controls.Managers
                     {
                         if (user.CompareTo(new User(login, password)) == 0 && user.Password == password)
                         {
-                            currentUser = user;
+                            CurrentUser = user;
                             return true;
                         }
                     }
@@ -134,69 +133,69 @@ namespace Optimum_Tech.Controls.Managers
 
         public static void AddToFavorites(ProductControl control)
         {
-            if (currentUser.Favorites == null)
+            if (CurrentUser.Favorites == null)
             {
-                currentUser.Favorites = new List<ProductControl>();
+                CurrentUser.Favorites = new List<ProductControl>();
             }
 
-            if (currentUser.Favorites.Any(p => p.ProductName == control.ProductName))
+            if (CurrentUser.Favorites.Any(p => p.ProductName == control.ProductName))
             {
                 // Product already exists in favorites list, remove it first
-                currentUser.Favorites.RemoveAll(p => p.ProductName == control.ProductName);
+                CurrentUser.Favorites.RemoveAll(p => p.ProductName == control.ProductName);
                 MessageBox.Show("Its already in favorites list");
                 control.pictureBoxFavorite.Image = FormsMedia.favorite_empty;
             }
 
-            currentUser.Favorites.Add(control);
+            CurrentUser.Favorites.Add(control);
 
             List<User> users = LoadUsers();
-            int index = users.FindIndex(u => u.Login == currentUser.Login);
-            users[index] = currentUser;
+            int index = users.FindIndex(u => u.Login == CurrentUser.Login);
+            users[index] = CurrentUser;
         }
         public static void RemoveFromFavorites(ProductControl control)
         {
-            if (currentUser.Favorites == null)
+            if (CurrentUser.Favorites == null)
             {
                 return;
             }
-            currentUser.Favorites.Remove(control);
+            CurrentUser.Favorites.Remove(control);
 
             List<User> users = LoadUsers();
-            int index = users.FindIndex(u => u.Login == currentUser.Login);
-            users[index] = currentUser;
+            int index = users.FindIndex(u => u.Login == CurrentUser.Login);
+            users[index] = CurrentUser;
         }
         public static void AddToSelections(ProductControl control)
         {
-            if (currentUser.Selections == null)
+            if (CurrentUser.Selections == null)
             {
-                currentUser.Selections = new List<ProductControl>();
+                CurrentUser.Selections = new List<ProductControl>();
             }
 
-            if (currentUser.Selections.Any(p => p.ProductName == control.ProductName))
+            if (CurrentUser.Selections.Any(p => p.ProductName == control.ProductName))
             {
                 // Product already exists in selections list, remove it first
-                currentUser.Selections.RemoveAll(p => p.ProductName == control.ProductName);
+                CurrentUser.Selections.RemoveAll(p => p.ProductName == control.ProductName);
                 MessageBox.Show("Its already in selections list");
                 control.pictureBoxCart.Image = FormsMedia.basket_empty;
             }
 
-            currentUser.Selections.Add(control);
+            CurrentUser.Selections.Add(control);
 
             List<User> users = LoadUsers();
-            int index = users.FindIndex(u => u.Login == currentUser.Login);
-            users[index] = currentUser;
+            int index = users.FindIndex(u => u.Login == CurrentUser.Login);
+            users[index] = CurrentUser;
         }
         public static void RemoveFromSelections(ProductControl control)
         {
-            if (currentUser.Selections == null)
+            if (CurrentUser.Selections == null)
             {
                 return;
             }
-            currentUser.Selections.Remove(control);
+            CurrentUser.Selections.Remove(control);
 
             List<User> users = LoadUsers();
-            int index = users.FindIndex(u => u.Login == currentUser.Login);
-            users[index] = currentUser;
+            int index = users.FindIndex(u => u.Login == CurrentUser.Login);
+            users[index] = CurrentUser;
         }
 
         public static bool IsLoginUnique(string login)

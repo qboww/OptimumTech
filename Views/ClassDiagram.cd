@@ -1,4 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Optimum_Tech.Model.User">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAACAAAEQAAQgAACABAAAAEAACAAiQAggAGAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Optimum_Tech.Models.Order">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAACAQAAAgEQAAQAFAAEIAQAADAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum_Tech.Model.Products.Processor">
+    <Position X="11" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAgIAAAIAgAAAQAAAAEAAAAAARAAgAGQAIAAAAA=</HashCode>
+      <FileName>Models\Products\Processor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum_Tech.Model.Products.Product">
+    <Position X="11.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAEAAAQBAAAAAAAAAAAQAAQAEAAEAgAAAAIAAAgA=</HashCode>
+      <FileName>Models\Products\Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Optimum_Tech.Model.Products.GraphicsCard">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAAA4AgAAEAAAAIAgAAQAAAAEAAAAgCAAAIAAAAA=</HashCode>
+      <FileName>Models\Products\GraphicsCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

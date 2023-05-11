@@ -45,7 +45,7 @@ namespace Optimum_Tech.Forms.Dialogs
         {
             if (UserManager.Login(textBoxLogin, textBoxPassword))
             {
-                if (UserManager.currentUser.Access == Access.Admin)
+                if (UserManager.CurrentUser.Access == Access.Admin)
                 {
                     formMain.buttonAdmin.Visible = true;
                     formMain.buttonCart.Visible = false;
@@ -97,7 +97,7 @@ namespace Optimum_Tech.Forms.Dialogs
             {
                 if (UserManager.Login(textBoxLogin, textBoxPassword))
                 {
-                    if (UserManager.currentUser.Access == Access.Admin)
+                    if (UserManager.CurrentUser.Access == Access.Admin)
                     {
                         formMain.buttonAdmin.Visible = true;
                         formMain.buttonCart.Visible = false;

@@ -29,9 +29,9 @@ namespace Optimum_Tech.View.Forms
         {
             this.flowLayoutPanel1.Controls.Clear();
 
-            if (UserManager.currentUser != null && UserManager.currentUser.Selections != null)
+            if (UserManager.CurrentUser != null && UserManager.CurrentUser.Selections != null)
             {
-                foreach (ProductControl control in UserManager.currentUser.Selections)
+                foreach (ProductControl control in UserManager.CurrentUser.Selections)
                 {
                     if (control.IsSelected)
                     {
@@ -76,7 +76,7 @@ namespace Optimum_Tech.View.Forms
 
         private void buttonPurchase_Click(object sender, EventArgs e)
         {
-            if (UserManager.currentUser.Access is Access.Guest)
+            if (UserManager.CurrentUser.Access is Access.Guest)
             {
                 MessageBox.Show("You should log in first!");
             }

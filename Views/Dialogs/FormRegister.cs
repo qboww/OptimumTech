@@ -25,7 +25,7 @@ namespace Optimum_Tech.Forms.Dialogs
             if (UserManager.Register(textBoxLogin.Text, textBoxPassword.Text))
             {
                 UserManager.Login(textBoxLogin, textBoxPassword);
-                UserManager.currentUser.Access = Access.User;
+                UserManager.CurrentUser.Access = Access.User;
                 UserManager.UpdateStatus(formAccount.textBoxStatus);
                 this.Close();
             }

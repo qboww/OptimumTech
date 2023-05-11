@@ -36,13 +36,13 @@ namespace Optimum_Tech.Forms
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            if (!(UserManager.currentUser.Access is Access.Guest))
+            if (!(UserManager.CurrentUser.Access is Access.Guest))
             {
                 UserManager.LoginAsGuest();
                 UserManager.UpdateStatus(this.textBoxStatus);
             }
 
-            if (UserManager.currentUser.Access == Access.Admin)
+            if (UserManager.CurrentUser.Access == Access.Admin)
             {
                 formMain.buttonAdmin.Visible = true;
                 formMain.buttonCart.Visible = false;

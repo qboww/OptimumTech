@@ -207,7 +207,7 @@ namespace Optimum_Tech.Forms
 
             FormFavorites formFavorites = new FormFavorites(this);
 
-            if (UserManager.currentUser.Favorites.Count > 0)
+            if (UserManager.CurrentUser.Favorites.Count > 0)
             {
                 if (formFavorites == null || formFavorites.IsDisposed)
                 {
@@ -231,7 +231,7 @@ namespace Optimum_Tech.Forms
             FormSelections formSelections = new FormSelections(this);
 
 
-            if (UserManager.currentUser.Selections.Count > 0)
+            if (UserManager.CurrentUser.Selections.Count > 0)
             {
                 if (formSelections == null || formSelections.IsDisposed)
                 {

@@ -37,7 +37,7 @@ namespace Optimum_Tech.Views.Dialogs
         {
             decimal total = 0;
 
-            foreach (var product in UserManager.currentUser.Selections)
+            foreach (var product in UserManager.CurrentUser.Selections)
             {
                 string productData = $"{product.ProductName} [${product.ProductPrice}]";
                 listBoxProducts.Items.Add(productData);
@@ -110,7 +110,7 @@ namespace Optimum_Tech.Views.Dialogs
                     }
                 }
 
-                order.Username = UserManager.currentUser.Login;
+                order.Username = UserManager.CurrentUser.Login;
 
                 UserManager.Orders.Add(order);
 
@@ -121,7 +121,7 @@ namespace Optimum_Tech.Views.Dialogs
                     writer.WriteLine(json);
                 }
 
-                UserManager.currentUser.Orders.Add(order);
+                UserManager.CurrentUser.Orders.Add(order);
 
                 List<User> usersToSave = UserManager.LoadUsers().ToList();
                 string json1 = JsonConvert.SerializeObject(usersToSave, Formatting.Indented);
@@ -143,9 +143,9 @@ namespace Optimum_Tech.Views.Dialogs
 
             if (selectedIndex >= 0 && selectedIndex < listBoxProducts.Items.Count)
             {
-                var selectedProduct = UserManager.currentUser.Selections[selectedIndex];
+                var selectedProduct = UserManager.CurrentUser.Selections[selectedIndex];
                 var clonedProduct = selectedProduct;
-                UserManager.currentUser.Selections.Insert(selectedIndex, clonedProduct);
+                UserManager.CurrentUser.Selections.Insert(selectedIndex, clonedProduct);
 
                 listBoxProducts.Items.Insert(selectedIndex, $"{clonedProduct.ProductName} [${clonedProduct.ProductPrice}]");
 
@@ -159,7 +159,7 @@ namespace Optimum_Tech.Views.Dialogs
             if (selectedIndex >= 0 && selectedIndex < listBoxProducts.Items.Count)
             {
                 listBoxProducts.Items.RemoveAt(selectedIndex);
-                UserManager.currentUser.Selections.RemoveAt(selectedIndex);
+                UserManager.CurrentUser.Selections.RemoveAt(selectedIndex);
 
                 UpdateTotalAmountAndPrice();
             }
@@ -167,7 +167,7 @@ namespace Optimum_Tech.Views.Dialogs
             if (listBoxProducts.Items.Count == 0)
             {
                 MessageBox.Show("Add some products to cart first!");
-                UserManager.currentUser.Selections.Clear();
+                UserManager.CurrentUser.Selections.Clear();
                 this.Close();
             }
         }
@@ -175,7 +175,7 @@ namespace Optimum_Tech.Views.Dialogs
         private void UpdateTotalAmountAndPrice()
         {
             decimal total = 0;
-            foreach (var p in UserManager.currentUser.Selections)
+            foreach (var p in UserManager.CurrentUser.Selections)
             {
                 total += p.ProductPrice;
             }

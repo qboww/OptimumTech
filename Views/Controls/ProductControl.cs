@@ -65,7 +65,7 @@ namespace OptimumTech.Controls
             pictureBoxCart.Click += (sender, e) => pictureBoxCart_Click(sender, e, product);
             pictureBoxDescription.Click += (sender, e) => pictureBoxDescription_Click(sender, e, product);
 
-            if (UserManager.currentUser.Access is Access.Admin)
+            if (UserManager.CurrentUser.Access is Access.Admin)
             {
                 this.pictureBoxFavorite.Image = FormsMedia.favorite_blocked;
                 this.pictureBoxCart.Image = FormsMedia.basket_blocked;
@@ -132,7 +132,7 @@ namespace OptimumTech.Controls
         {
             if (product != null)
             {
-                if (product.IsAvailable == false || UserManager.currentUser.Access is Access.Admin)
+                if (product.IsAvailable == false || UserManager.CurrentUser.Access is Access.Admin)
                 {
                     this.pictureBoxCart.Image = FormsMedia.basket_blocked;
                 }
@@ -141,7 +141,7 @@ namespace OptimumTech.Controls
                     if (IsSelected == false)
                     {
                         // Check if the product is already in selections
-                        if (UserManager.currentUser.Selections.Contains(this))
+                        if (UserManager.CurrentUser.Selections.Contains(this))
                         {
                             MessageBox.Show("Product is already in selections");
                         }
@@ -165,7 +165,7 @@ namespace OptimumTech.Controls
         {
             if (product != null)
             {
-                if (product.IsAvailable == false || UserManager.currentUser.Access is Access.Admin)
+                if (product.IsAvailable == false || UserManager.CurrentUser.Access is Access.Admin)
                 {
                     this.pictureBoxFavorite.Image = FormsMedia.favorite_blocked;
                 }
@@ -174,7 +174,7 @@ namespace OptimumTech.Controls
                     if (IsFavorite == false)
                     {
                         // Check if the product is already in favorites
-                        if (UserManager.currentUser.Favorites.Contains(this))
+                        if (UserManager.CurrentUser.Favorites.Contains(this))
                         {
                             MessageBox.Show("Product is already in favorites");
                         }
