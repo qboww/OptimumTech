@@ -65,7 +65,7 @@ namespace Optimum_Tech.Forms.Dialogs
                     formMain.textBoxCart.Visible = true;
                     formMain.textBoxFavorites.Visible = true;
                 }
-
+                UserManager.UpdateStatus(formAccount.textBoxStatus);
                 this.Close();
             }
         }

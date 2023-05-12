@@ -140,7 +140,6 @@ namespace Optimum_Tech.Controls.Managers
 
             if (CurrentUser.Favorites.Any(p => p.ProductName == control.ProductName))
             {
-                // Product already exists in favorites list, remove it first
                 CurrentUser.Favorites.RemoveAll(p => p.ProductName == control.ProductName);
                 MessageBox.Show("Its already in favorites list");
                 control.pictureBoxFavorite.Image = FormsMedia.favorite_empty;
@@ -173,7 +172,6 @@ namespace Optimum_Tech.Controls.Managers
 
             if (CurrentUser.Selections.Any(p => p.ProductName == control.ProductName))
             {
-                // Product already exists in selections list, remove it first
                 CurrentUser.Selections.RemoveAll(p => p.ProductName == control.ProductName);
                 MessageBox.Show("Its already in selections list");
                 control.pictureBoxCart.Image = FormsMedia.basket_empty;

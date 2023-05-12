@@ -26,6 +26,7 @@ namespace Optimum_Tech.Forms.Dialogs
             {
                 UserManager.Login(textBoxLogin, textBoxPassword);
                 UserManager.CurrentUser.Access = Access.User;
+                MessageBox.Show("Account has been created!");
                 UserManager.UpdateStatus(formAccount.textBoxStatus);
                 this.Close();
             }

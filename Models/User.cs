@@ -35,7 +35,6 @@ namespace Optimum_Tech.Model
         public List<ProductControl> Favorites { get; internal set; } = new List<ProductControl>();
         [JsonIgnore]
         public List<ProductControl> Selections { get; internal set; } = new List<ProductControl>();
-        public List<Order> Orders { get; set; }
 
         public string Login
         {
@@ -84,7 +83,7 @@ namespace Optimum_Tech.Model
 
             if (disposing)
             {
-                // Release any managed resources here
+
             }
 
             disposed = true;

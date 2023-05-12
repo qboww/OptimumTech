@@ -140,7 +140,6 @@ namespace OptimumTech.Controls
                 {
                     if (IsSelected == false)
                     {
-                        // Check if the product is already in selections
                         if (UserManager.CurrentUser.Selections.Contains(this))
                         {
                             MessageBox.Show("Product is already in selections");
@@ -173,7 +172,6 @@ namespace OptimumTech.Controls
                 {
                     if (IsFavorite == false)
                     {
-                        // Check if the product is already in favorites
                         if (UserManager.CurrentUser.Favorites.Contains(this))
                         {
                             MessageBox.Show("Product is already in favorites");

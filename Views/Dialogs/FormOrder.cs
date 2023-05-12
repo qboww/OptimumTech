@@ -127,7 +127,7 @@ namespace Optimum_Tech.Views.Dialogs
                 string json1 = JsonConvert.SerializeObject(usersToSave, Formatting.Indented);
                 File.WriteAllText(usersFilePath, json1);
 
-                MessageBox.Show("Operator will call you in 5 minutes");
+                MessageBox.Show("Your order is received. Operator will call you in 5 minutes");
             }
             catch (Exception ex)
             {

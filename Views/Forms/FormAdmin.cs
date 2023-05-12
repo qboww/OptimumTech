@@ -211,13 +211,14 @@ namespace Optimum_Tech.View.Forms
 
                     textBoxState.Text = "is deleted";
                     textBoxState.ForeColor = Color.LimeGreen;
+
+                    MessageBox.Show($"User is deleted successfully");
                 }
             }
         }
         private void buttonDelSave_Click(object sender, EventArgs e)
         {
             UserManager.SaveUsers();
-            MessageBox.Show($"Changes are saved");
         }
         private void textBoxSearch_Click(object sender, EventArgs e)
         {
