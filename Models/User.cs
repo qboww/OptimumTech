@@ -22,6 +22,8 @@ namespace Optimum_Tech.Model
         private string login;
         private string password;
 
+       public List<Order> Orders { get; set; }
+
         public User(string login, string password)
         {
             Login = login;
