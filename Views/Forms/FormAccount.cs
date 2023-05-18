@@ -17,8 +17,6 @@ namespace Optimum_Tech.Forms
             UserManager.UpdateStatus(this.textBoxStatus);
         }
 
-        #region events
-
         private void pictureBoxLogin_Click(object sender, EventArgs e)
         {
             if (formLogin == null || formLogin.IsDisposed)
@@ -62,8 +60,6 @@ namespace Optimum_Tech.Forms
                 formMain.textBoxCart.Visible = true;
                 formMain.textBoxFavorites.Visible = true;
             }
-
-            #endregion
         }
     }
 }

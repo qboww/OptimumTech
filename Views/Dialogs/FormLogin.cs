@@ -9,8 +9,6 @@ namespace Optimum_Tech.Forms.Dialogs
         private FormAccount formAccount;
         private FormMain formMain;
 
-        #region constructors
-
         public FormLogin(FormAccount formAccount, FormMain formMain)
         {
             InitializeComponent();
@@ -21,10 +19,6 @@ namespace Optimum_Tech.Forms.Dialogs
             textBoxLogin.Click += textBoxLogin_Click;
             buttonLogin.Click += buttonLogin_Click;
         }
-
-        #endregion
-
-        #region events
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -75,10 +69,6 @@ namespace Optimum_Tech.Forms.Dialogs
             this.Close();
         }
 
-        #endregion
-
-        #region textboxes
-
         private void textBoxPassword_Enter(object sender, EventArgs e)
         {
             textBoxPassword.Clear();
@@ -88,8 +78,6 @@ namespace Optimum_Tech.Forms.Dialogs
         {
             textBoxLogin.Clear();
         }
-
-        #endregion
 
         private void textBoxPassword_KeyPress(object sender, KeyPressEventArgs e)
         {

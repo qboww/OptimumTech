@@ -17,7 +17,6 @@ namespace Optimum_Tech.View.Displays
 
         private void FormDisplayGraphicsCards_Load(object sender, EventArgs e)
         {
-            // Add the controls to the flowLayoutPanel
             foreach (GraphicsCard product in ProductManager.GraphicsCards)
             {
                 ProductControl control = new ProductControl(product);
