@@ -95,7 +95,6 @@ namespace Optimum_Tech.Model.Products
             get => isAvailable;
             set
             {
-                // Perform custom checks for IsAvailable property
                 if (value && Price <= 0)
                     throw new InvalidOperationException("Cannot set IsAvailable to true for a product with zero or negative price.");
 

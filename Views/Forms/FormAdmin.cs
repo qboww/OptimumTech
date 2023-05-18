@@ -80,34 +80,24 @@ namespace Optimum_Tech.View.Forms
                             if (product.Id == Guid.Parse(editProcessor.textBoxId.Text))
                             {
                                 product.Name = editProcessor.textBoxName.Text;
-                                product.Price = decimal.Parse(editProcessor.textBoxPrice.Text);
-                                product.Responses = int.Parse(editProcessor.textBoxResponses.Text);
-                                product.Rating = int.Parse(editProcessor.textBoxRating.Text);
-                                product.IsAvailable = bool.Parse(editProcessor.textBoxAvailable.Text);
+                                product.Price = Convert.ToDecimal(editProcessor.textBoxPrice.Text);
+                                product.Responses = Convert.ToInt32(editProcessor.textBoxResponses.Text);
+                                product.Rating = Convert.ToInt32(editProcessor.textBoxRating.Text);
+                                product.IsAvailable = Convert.ToBoolean(editProcessor.textBoxAvailable.Text);
 
                                 product.Manufacturer = editProcessor.textBoxManufacturer.Text;
                                 product.Socket = editProcessor.textBoxSocket.Text;
-                                product.Cores = int.Parse(editProcessor.textBoxCores.Text);
-                                product.Threads = int.Parse(editProcessor.textBoxThreads.Text);
-                                product.ClockSpeedDefault = double.Parse(editProcessor.textBoxClockSpeedDefault.Text);
-                                product.ClockSpeedBoost = double.Parse(editProcessor.textBoxClockSpeedBoost.Text);
+                                product.Cores = Convert.ToInt32(editProcessor.textBoxCores.Text);
+                                product.Threads = Convert.ToInt32(editProcessor.textBoxThreads.Text);
+                                product.ClockSpeedDefault = Convert.ToDouble(editProcessor.textBoxClockSpeedDefault.Text);
+                                product.ClockSpeedBoost = Convert.ToDouble(editProcessor.textBoxClockSpeedBoost.Text);
 
                                 ProductManager.SaveChanges();
                             }
                         }
-                        catch (ArgumentOutOfRangeException e1)
+                        catch (Exception ex)
                         {
-                            MessageBox.Show(e1.Message);
-                            break;
-                        }
-                        catch (ArgumentNullException e2)
-                        {
-                            MessageBox.Show(e2.Message);
-                            break;
-                        }
-                        catch (FormatException e3)
-                        {
-                            MessageBox.Show(e3.Message);
+                            MessageBox.Show(ex.Message);
                             break;
                         }
                     }
@@ -124,34 +114,24 @@ namespace Optimum_Tech.View.Forms
                             if (product.Id == Guid.Parse(editGraphicsCard.textBoxId.Text))
                             {
                                 product.Name = editGraphicsCard.textBoxName.Text;
-                                product.Price = decimal.Parse(editGraphicsCard.textBoxPrice.Text);
-                                product.Responses = int.Parse(editGraphicsCard.textBoxResponses.Text);
-                                product.Rating = int.Parse(editGraphicsCard.textBoxRating.Text);
-                                product.IsAvailable = bool.Parse(editGraphicsCard.textBoxAvailable.Text);
+                                product.Price = Convert.ToDecimal(editGraphicsCard.textBoxPrice.Text);
+                                product.Responses = Convert.ToInt32(editGraphicsCard.textBoxResponses.Text);
+                                product.Rating = Convert.ToInt32(editGraphicsCard.textBoxRating.Text);
+                                product.IsAvailable = Convert.ToBoolean(editGraphicsCard.textBoxAvailable.Text);
 
                                 product.Manufacturer = editGraphicsCard.textBoxManufacturer.Text;
-                                product.VRAM = int.Parse(editGraphicsCard.textBoxVRAM.Text);
-                                product.MemoryInterface = int.Parse(editGraphicsCard.textBoxMemoryInterface.Text);
+                                product.VRAM = Convert.ToInt32(editGraphicsCard.textBoxVRAM.Text);
+                                product.MemoryInterface = Convert.ToInt32(editGraphicsCard.textBoxMemoryInterface.Text);
                                 product.MemoryType = editGraphicsCard.textBoxMemoryType.Text;
-                                product.ClockSpeed = double.Parse(editGraphicsCard.textBoxClockSpeedDefault.Text);
-                                product.MinimumWattage = int.Parse(editGraphicsCard.textBoxMinimumWattage.Text);
+                                product.ClockSpeed = Convert.ToDouble(editGraphicsCard.textBoxClockSpeedDefault.Text);
+                                product.MinimumWattage = Convert.ToInt32(editGraphicsCard.textBoxMinimumWattage.Text);
 
                                 ProductManager.SaveChanges();
                             }
                         }
-                        catch (ArgumentOutOfRangeException e1)
+                        catch (Exception ex)
                         {
-                            MessageBox.Show(e1.Message);
-                            break;
-                        }
-                        catch (ArgumentNullException e2)
-                        {
-                            MessageBox.Show(e2.Message);
-                            break;
-                        }
-                        catch (FormatException e3)
-                        {
-                            MessageBox.Show(e3.Message);
+                            MessageBox.Show(ex.Message);
                             break;
                         }
                     }
