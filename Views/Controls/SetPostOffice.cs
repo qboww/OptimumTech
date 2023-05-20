@@ -1,5 +1,6 @@
 ﻿using HtmlAgilityPack;
 using Newtonsoft.Json;
+using System.Drawing.Text;
 using System.Text.RegularExpressions;
 
 namespace Optimum_Tech.Views.Controls
@@ -11,6 +12,9 @@ namespace Optimum_Tech.Views.Controls
         public SetPostOffice()
         {
             InitializeComponent();
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
 
             listBoxAddresses.Enabled = false;
 

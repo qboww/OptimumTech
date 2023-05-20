@@ -14,7 +14,7 @@ namespace Optimum_Tech.Forms.Dialogs
             this.product = product;
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
 

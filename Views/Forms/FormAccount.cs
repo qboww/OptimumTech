@@ -18,7 +18,7 @@ namespace Optimum_Tech.Forms
             UserManager.UpdateStatus(this.textBoxStatus);
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void pictureBoxLogin_Click(object sender, EventArgs e)

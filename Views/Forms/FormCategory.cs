@@ -20,7 +20,7 @@ namespace Optimum_Tech.Forms
             formMain.OpenChildForm(form);
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void pictureBoxGraphicsCards_Click(object sender, EventArgs e)

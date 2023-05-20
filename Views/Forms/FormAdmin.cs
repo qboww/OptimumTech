@@ -24,7 +24,7 @@ namespace Optimum_Tech.View.Forms
             listBoxProducts.Sorted = true;
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void listBoxProducts_SelectedIndexChanged(object sender, EventArgs e)

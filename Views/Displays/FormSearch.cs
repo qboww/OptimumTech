@@ -28,7 +28,7 @@ namespace Optimum_Tech.View.Displays
             GetProcessors(processorsPath);
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
 
             foreach (ProductControl control in searchControls)
             {

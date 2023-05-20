@@ -29,7 +29,7 @@ namespace Optimum_Tech.Views.Dialogs
             this.textBoxId.Text = Guid.NewGuid().ToString();
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)

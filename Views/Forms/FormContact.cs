@@ -13,7 +13,7 @@ namespace Optimum_Tech.View.Forms
             InitializeComponent();
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private async Task LoadDonationDataAsync()

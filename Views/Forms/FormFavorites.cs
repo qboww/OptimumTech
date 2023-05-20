@@ -14,7 +14,7 @@ namespace Optimum_Tech.Forms
             this.formMain = formMain;
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void FormFavorites_Load(object sender, EventArgs e)

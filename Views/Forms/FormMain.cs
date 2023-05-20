@@ -43,7 +43,7 @@ namespace Optimum_Tech.Forms
             tempHeight = (short)(this.Height - panelSlide.Height);
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
 
             buttonCategory.Click += buttonCategory_Click;
             buttonAccount.Click += buttonAccount_Click;

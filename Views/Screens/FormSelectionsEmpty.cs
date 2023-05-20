@@ -18,7 +18,7 @@ namespace Optimum_Tech.View.Screens
             InitializeComponent();
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
     }
 }

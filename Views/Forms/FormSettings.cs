@@ -15,7 +15,7 @@ namespace Optimum_Tech.View.Forms
             this.formHome = formHome;
 
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void buttonBanner_Click(object sender, EventArgs e)
