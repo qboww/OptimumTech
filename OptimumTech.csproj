@@ -16,6 +16,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Views\Resources\Fonts\Poppins-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Resources\Fonts\Poppins-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NUnit" Version="3.13.3" />

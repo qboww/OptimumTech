@@ -2,6 +2,7 @@
 using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Forms;
 using Optimum_Tech.Model.Products;
+using Optimum_Tech.Models;
 using OptimumTech.Controls;
 using System.Drawing.Text;
 using System.Windows.Forms;

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Optimum_Tech.Models;
 
 namespace Optimum_Tech.Model.Products
 {

@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Optimum_Tech.Model;
-using Optimum_Tech.Models;
 using Optimum_Tech.Views.Resources;
 using OptimumTech.Controls;
 

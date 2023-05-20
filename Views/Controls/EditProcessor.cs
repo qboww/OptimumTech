@@ -1,7 +1,4 @@
-﻿using Optimum_Tech.Forms;
-using Optimum_Tech.Model;
-using Optimum_Tech.Model.Products;
-using System.Drawing.Text;
+﻿using Optimum_Tech.Model.Products;
 
 namespace Optimum_Tech.Controls
 {

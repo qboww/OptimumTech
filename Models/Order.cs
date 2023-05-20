@@ -1,5 +1,4 @@
-﻿using Optimum_Tech.Model.Products;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace Optimum_Tech.Models
 {

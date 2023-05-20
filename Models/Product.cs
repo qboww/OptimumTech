@@ -1,6 +1,6 @@
 ﻿using Optimum_Tech.Model.Interfaces;
 
-namespace Optimum_Tech.Model.Products
+namespace Optimum_Tech.Models
 {
     public abstract class Product : IProduct
     {
