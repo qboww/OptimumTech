@@ -1,5 +1,6 @@
 ﻿using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Model;
+using System.Drawing.Text;
 
 namespace Optimum_Tech.Forms.Dialogs
 {
@@ -13,6 +14,9 @@ namespace Optimum_Tech.Forms.Dialogs
 
             this.formAccount = formAccount;
             this.formMain = formMain;
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)

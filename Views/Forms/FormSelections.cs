@@ -4,6 +4,7 @@ using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
 using Optimum_Tech.Views.Dialogs;
 using OptimumTech.Controls;
+using System.Drawing.Text;
 
 namespace Optimum_Tech.View.Forms
 {
@@ -18,6 +19,9 @@ namespace Optimum_Tech.View.Forms
         {
             InitializeComponent();
             this.formMain = formMain;
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void FormSelections_Load(object sender, EventArgs e)

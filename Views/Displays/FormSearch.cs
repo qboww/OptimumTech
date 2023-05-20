@@ -2,6 +2,7 @@
 using Optimum_Tech.Forms;
 using Optimum_Tech.Model.Products;
 using OptimumTech.Controls;
+using System.Drawing.Text;
 using System.Windows.Forms;
 
 namespace Optimum_Tech.View.Displays
@@ -25,6 +26,9 @@ namespace Optimum_Tech.View.Displays
 
             GetGraphicsCards(graphicsCardsPath);
             GetProcessors(processorsPath);
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
 
             foreach (ProductControl control in searchControls)
             {

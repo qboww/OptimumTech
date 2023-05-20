@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,9 @@ namespace Optimum_Tech.Forms
         {
             InitializeComponent();
             this.formMain = formMain;
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -2,6 +2,7 @@
 using Optimum_Tech.Forms;
 using Optimum_Tech.Model.Products;
 using OptimumTech.Controls;
+using System.Drawing.Text;
 
 namespace Optimum_Tech.View.Displays
 {
@@ -13,6 +14,9 @@ namespace Optimum_Tech.View.Displays
         public FormGraphicsCards()
         {
             InitializeComponent();
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void FormDisplayGraphicsCards_Load(object sender, EventArgs e)

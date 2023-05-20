@@ -1,5 +1,6 @@
 ﻿using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Model;
+using System.Drawing.Text;
 
 namespace Optimum_Tech.Forms.Dialogs
 {
@@ -18,6 +19,9 @@ namespace Optimum_Tech.Forms.Dialogs
 
             textBoxLogin.Click += textBoxLogin_Click;
             buttonLogin.Click += buttonLogin_Click;
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -5,7 +5,7 @@ using Optimum_Tech.Model;
 using Optimum_Tech.Model.Products;
 using Optimum_Tech.Models;
 using Optimum_Tech.Views.Controls;
-using System.Globalization;
+using System.Drawing.Text;
 using System.Text.RegularExpressions;
 
 namespace Optimum_Tech.Views.Dialogs
@@ -27,6 +27,9 @@ namespace Optimum_Tech.Views.Dialogs
             radioButtonAtAddress.Checked = true;
 
             this.textBoxId.Text = Guid.NewGuid().ToString();
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)

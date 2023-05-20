@@ -1,4 +1,5 @@
 ﻿using Optimum_Tech.Forms;
+using System.Drawing.Text;
 using System.Net;
 using System.Text;
 
@@ -12,6 +13,9 @@ namespace Optimum_Tech.View.Forms
         {
             InitializeComponent();
             this.formHome = formHome;
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void buttonBanner_Click(object sender, EventArgs e)

@@ -4,6 +4,7 @@ using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Forms;
 using Optimum_Tech.Model;
 using Optimum_Tech.Model.Products;
+using System.Drawing.Text;
 using Timer = System.Windows.Forms.Timer;
 
 namespace Optimum_Tech.View.Forms
@@ -21,6 +22,9 @@ namespace Optimum_Tech.View.Forms
             listBoxProducts.Items.AddRange(ProductManager.Processors.Select(p => p.Name).OrderBy(n => n).ToArray());
             listBoxProducts.Items.AddRange(ProductManager.GraphicsCards.Select(p => p.Name).OrderBy(n => n).ToArray());
             listBoxProducts.Sorted = true;
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void listBoxProducts_SelectedIndexChanged(object sender, EventArgs e)

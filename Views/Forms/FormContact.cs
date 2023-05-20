@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using Optimum_Tech.Views.Resources;
 using System.Diagnostics;
+using System.Drawing.Text;
 using System.Net;
 
 namespace Optimum_Tech.View.Forms
@@ -10,6 +11,9 @@ namespace Optimum_Tech.View.Forms
         public FormContact()
         {
             InitializeComponent();
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private async Task LoadDonationDataAsync()

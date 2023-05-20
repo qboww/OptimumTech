@@ -1,4 +1,5 @@
 ﻿using Optimum_Tech.View.Displays;
+using System.Drawing.Text;
 
 namespace Optimum_Tech.Forms
 {
@@ -17,6 +18,9 @@ namespace Optimum_Tech.Forms
             this.Hide();
             var form = new FormProcessors();
             formMain.OpenChildForm(form);
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void pictureBoxGraphicsCards_Click(object sender, EventArgs e)

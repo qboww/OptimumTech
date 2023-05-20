@@ -2,6 +2,7 @@
 using Optimum_Tech.View.Displays;
 using Optimum_Tech.View.Forms;
 using Optimum_Tech.View.Screens;
+using System.Drawing.Text;
 
 namespace Optimum_Tech.Forms
 {
@@ -40,6 +41,9 @@ namespace Optimum_Tech.Forms
             panelSlide.Width = 0;
             tempWidth = this.Width - panelSlide.Width;
             tempHeight = (short)(this.Height - panelSlide.Height);
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
 
             buttonCategory.Click += buttonCategory_Click;
             buttonAccount.Click += buttonAccount_Click;

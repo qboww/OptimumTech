@@ -1,6 +1,7 @@
 ﻿using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
+using System.Drawing.Text;
 
 namespace Optimum_Tech.Forms
 {
@@ -15,6 +16,9 @@ namespace Optimum_Tech.Forms
 
             this.formMain = formMain;
             UserManager.UpdateStatus(this.textBoxStatus);
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void pictureBoxLogin_Click(object sender, EventArgs e)
