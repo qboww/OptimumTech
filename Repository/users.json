@@ -1,0 +1,38 @@
+[
+  {
+    "disposed": false,
+    "Orders": [],
+    "Favorites": [],
+    "Selections": [],
+    "Login": "admin",
+    "Password": "admin",
+    "Access": 0
+  },
+  {
+    "disposed": false,
+    "Orders": [],
+    "Favorites": [],
+    "Selections": [],
+    "Login": "guest",
+    "Password": "guest",
+    "Access": 1
+  },
+  {
+    "disposed": false,
+    "Orders": [],
+    "Favorites": [],
+    "Selections": [],
+    "Login": "panas",
+    "Password": "12345",
+    "Access": 2
+  },
+  {
+    "disposed": false,
+    "Orders": [],
+    "Favorites": [],
+    "Selections": [],
+    "Login": "tolik123",
+    "Password": "tolik123",
+    "Access": 2
+  }
+]

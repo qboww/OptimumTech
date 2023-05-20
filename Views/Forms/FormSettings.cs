@@ -1,4 +1,5 @@
-﻿using Optimum_Tech.Forms;
+﻿using Optimum_Tech.Controls.Managers;
+using Optimum_Tech.Forms;
 using System.Drawing.Text;
 using System.Net;
 using System.Text;
@@ -8,14 +9,11 @@ namespace Optimum_Tech.View.Forms
     public partial class FormSettings : Form
     {
         FormHome formHome;
-        private static readonly string usersFilePath = @"..\..\Repository\novapost.json";
+        
         public FormSettings(FormHome formHome)
         {
             InitializeComponent();
             this.formHome = formHome;
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void buttonBanner_Click(object sender, EventArgs e)
@@ -82,7 +80,7 @@ namespace Optimum_Tech.View.Forms
         {
             MessageBox.Show("This will take 60 seconds");
 
-            LoadWarehousesAsync(usersFilePath);
+            LoadWarehousesAsync(ProductManager.postFilePath);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Optimum_Tech.Controls.Managers;
 using Optimum_Tech.Forms;
 using Optimum_Tech.Model.Products;
 using OptimumTech.Controls;
@@ -9,9 +10,6 @@ namespace Optimum_Tech.View.Displays
 {
     public partial class FormSearch : Form
     {
-        public static readonly string processorsPath = @"..\..\Repository\processors.json";
-        public static readonly string graphicsCardsPath = @"..\..\Repository\graphicscards.json";
-
         public List<ProductControl> searchControls = new List<ProductControl>();
         FormMain formMain;
         Product product;
@@ -24,11 +22,8 @@ namespace Optimum_Tech.View.Displays
 
             flowLayoutPanel1.Controls.Clear();
 
-            GetGraphicsCards(graphicsCardsPath);
-            GetProcessors(processorsPath);
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
+            GetGraphicsCards(ProductManager.graphicsCardsPath);
+            GetProcessors(ProductManager.processorsPath);
 
             foreach (ProductControl control in searchControls)
             {

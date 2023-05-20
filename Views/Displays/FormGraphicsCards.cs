@@ -14,9 +14,6 @@ namespace Optimum_Tech.View.Displays
         public FormGraphicsCards()
         {
             InitializeComponent();
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void FormDisplayGraphicsCards_Load(object sender, EventArgs e)

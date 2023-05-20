@@ -1,5 +1,7 @@
 ﻿using HtmlAgilityPack;
 using Newtonsoft.Json;
+using Optimum_Tech.Controls.Managers;
+using Optimum_Tech.Forms;
 using System.Drawing.Text;
 using System.Text.RegularExpressions;
 
@@ -7,14 +9,9 @@ namespace Optimum_Tech.Views.Controls
 {
     public partial class SetPostOffice : UserControl
     {
-        private readonly string usersFilePath = Path.Combine("..", "..", "Repository", "novapost.json");
-
         public SetPostOffice()
         {
             InitializeComponent();
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
 
             listBoxAddresses.Enabled = false;
 
@@ -50,7 +47,7 @@ namespace Optimum_Tech.Views.Controls
 
             if (!string.IsNullOrEmpty(selectedCity))
             {
-                string jsonString = File.ReadAllText(usersFilePath);
+                string jsonString = File.ReadAllText(ProductManager.processorsPath);
                 dynamic data = JsonConvert.DeserializeObject(jsonString);
 
                 foreach (dynamic office in data.data)

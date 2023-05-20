@@ -3,7 +3,6 @@ using Optimum_Tech.Forms.Dialogs;
 using Optimum_Tech.Model;
 using Optimum_Tech.Model.Products;
 using Optimum_Tech.Views.Resources;
-using System.Drawing.Text;
 
 namespace OptimumTech.Controls
 {
@@ -50,9 +49,6 @@ namespace OptimumTech.Controls
         public ProductControl(Product product)
         {
             InitializeComponent();
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
 
             this.ProductPrice = product.Price;
             this.ProductName = product.Name;

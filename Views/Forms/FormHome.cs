@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
+﻿using System.Diagnostics;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Optimum_Tech.Forms
 {
@@ -18,10 +9,7 @@ namespace Optimum_Tech.Forms
         public FormHome(FormMain formMain)
         {
             InitializeComponent();
-            this.formMain = formMain;
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
+            this.formMain = formMain;      
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

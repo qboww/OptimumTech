@@ -1,14 +1,5 @@
 ﻿using Optimum_Tech.Forms;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Optimum_Tech.View.Screens
 {
@@ -17,9 +8,6 @@ namespace Optimum_Tech.View.Screens
         public FormFavoritesEmpty()
         {
             InitializeComponent();
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
     }
 }

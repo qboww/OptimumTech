@@ -18,10 +18,7 @@ namespace Optimum_Tech.View.Forms
         public FormSelections(FormMain formMain)
         {
             InitializeComponent();
-            this.formMain = formMain;
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
+            this.formMain = formMain; 
         }
 
         private void FormSelections_Load(object sender, EventArgs e)

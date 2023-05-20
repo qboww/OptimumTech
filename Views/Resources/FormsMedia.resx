@@ -2083,7 +2083,7 @@
   <data name="instagram" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rAAAAKwBhgk01AAAAytJREFUSEutlknIjlEYhn9jZkkpIRQLkSFDlMRCmTZ2lAwZf0pkypgiZSEiiRKy
+        qgAAAKoBBgpwTwAAAytJREFUSEutlknIjlEYhn9jZkkpIRQLkSFDlMRCmTZ2lAwZf0pkypgiZSEiiRKy
         MYYQxYKFlAXFSiiR2cI887mu8z3n7/VFfLjr6jznPGd433OeM9SoUqlUL9L2MBn2wzV4DC+DN/AZvgWf
         ouwV6LfudTgAM6BjsW+N+pGOgENwHz7A38qPeQgnYEz0XTfYMDgDyopnYSMshvkwF2bDzAos02edRbAe
         jkP+0IswNg/SDvwTdQeWQC9omipUKdp1hOngNKrT0EXHBPBX1dKon0S+PjSAhlD+/YIsC591OsBEGA0t
@@ -2232,7 +2232,7 @@
   <data name="telegram" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5gAAAOYBIly6UQAAAttJREFUSEu1lVuIT1EUh2fMGGFmXIYHhBc1NQ/kkpJcUkKhKA+8ukyKkqKYJx4Q
+        5AAAAOQBXaJ52AAAAttJREFUSEu1lVuIT1EUh2fMGGFmXIYHhBc1NQ/kkpJcUkKhKA+8ukyKkqKYJx4Q
         RXjzQJSniTxRivLgEqEUpTQkl0Khyf3y931n9prO/C/jr8mvvs4+6+y91l57r71Pzf9SoVCozZPMA1dy
         OEiSKRPv9QMOlJzXSTJl4n0kLIA9cAYOpk/Vi0GVZt4I02AdHIOb8BlUd+rWv+hYyXkDTID5sBMuwVvI
         y2BdaUip+JhtoiRTJt5dc5emDdbCKXgBIQN9gO/ZW6HwHjrT8OrEgFGwDI7AA/gKIR1fhb1wX0PSK+hI
@@ -2625,8 +2625,8 @@
         yCgFBiSQmFxcwIAbMDIwfLsGIhkYLusykA44U1KLk4H0ByAuKQJaDjQyBcgWSYewK0DsJAi7B8QuCgly
         BrIXANka6UjsJCR2eUlBCZB9AqQ+uaAIxL4DZNvk5pQmI9zNwJOaFxoMpCOAWIahmCGIwZ3BiYHKABGe
         +YsYGCy+MjAwT0CIJc1kYNjeysAgcQshpgL0A38LA8O28wWJRYlgIRZQJKWlMTB8Ws7AwBvJwCB8gYGB
-        KxrTDkRc4PCrAtiv7gz5QJjOkMOQChTxZMhjSGbQA7KMGAwYDBnMAEylQJEcd8GAAAAACXBIWXMAAArt
-        AAAK7QECiEnBAAD+h0lEQVR4Xuz9B7xd6VmejU91xcZx6KYZkkAS4IOELzGJQyAkAQIYbAgmCQkp2J4m
+        KxrTDkRc4PCrAtiv7gz5QJjOkMOQChTxZMhjSGbQA7KMGAwYDBnMAEylQJEcd8GAAAAACXBIWXMAAArr
+        AAAK6wGCiw1aAAD+h0lEQVR4Xuz9B7xd6VmejU91xcZx6KYZkkAS4IOELzGJQyAkAQIYbAgmCQkp2J4m
         6fTee+9FvXdpRpqRRm2KRqNeT++9Ske9d+n57vt999p77XWeXc7R2OT3//3HXKy+9j776Fz7ftb7rnc9
         V7DmioSiaM1VQ+HqK34KVl1WyV956ZnIW3FxzmjH5y6fMeSFIHfZhZBo++UsPR+R7CXTOouxbfEFlVwP
         Oc04VxRkN+G8YdD2zWqcikhmw6RKqH0z6ici4t0vvW58zmTUBkivGYuatOrRiKRWjURNSuVwSLR9kiuG
@@ -6493,7 +6493,7 @@
   <data name="donate_button" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAI4AAAAoCAYAAAAouML7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAACGdJREFUeF7tnAWIVFsYx+3uwsDu7u7ARGyxsFBR7MAAO7C7UFBRbMVCUbEDu7u7
+        wAAADsABataJCQAACGdJREFUeF7tnAWIVFsYx+3uwsDu7u7ARGyxsFBR7MAAO7C7UFBRbMVCUbEDu7u7
         C7v1e+/3ee++u/uew8yd3Zl9eP5w2J1z69x7fuerO0yUvyWmmeaiRZFMmTJJ27ZtI33LkCGDDrpBgwb/
         ud20iG/58+f/B5zGjRvL/0H16tXTQV+6dMnqMQq0BgwYYMAx8l0GHCNXMuAYuZIBx8iVDDhGrmTAMXIl
         A46RK4UbOJ8+fZL79+/L+fPn5ezZs3Lr1i3t+/nzp7x7904/08/2hw8fypcvX6wjfZcBJ/gKF3DevHkj
@@ -7590,5 +7590,9 @@
         e+8dwA3WL7/80r3F9en69DcmDYEmUVeFin3kkUeOrl27tjsvveWPBq5P16e/PZ06dcrcrWc4x5YtWzqs
         WLGi7pw5c9xrr0+5NznO/wODjclIe6kN1wAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

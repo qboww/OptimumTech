@@ -84,7 +84,7 @@ namespace OptimumTech.Controls
             // 
             textBoxProductName.BackColor = Color.White;
             textBoxProductName.BorderStyle = BorderStyle.None;
-            textBoxProductName.Font = new Font("Poppins", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxProductName.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxProductName.Location = new Point(7, 215);
             textBoxProductName.Name = "textBoxProductName";
             textBoxProductName.ReadOnly = true;
@@ -159,7 +159,7 @@ namespace OptimumTech.Controls
             // 
             textBoxPrice.BackColor = Color.White;
             textBoxPrice.BorderStyle = BorderStyle.None;
-            textBoxPrice.Font = new Font("Poppins", 19F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPrice.Font = new Font("Poppins", 18.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxPrice.Location = new Point(7, 298);
             textBoxPrice.Name = "textBoxPrice";
             textBoxPrice.ReadOnly = true;
@@ -167,14 +167,14 @@ namespace OptimumTech.Controls
             textBoxPrice.TabIndex = 8;
             textBoxPrice.Text = "000.00$";
             // 
-            // Product
+            // ProductControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(panelProduct);
             Margin = new Padding(5);
-            Name = "Product";
+            Name = "ProductControl";
             Size = new Size(245, 350);
             ((System.ComponentModel.ISupportInitialize)pictureBoxProduct).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCart).EndInit();

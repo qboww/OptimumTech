@@ -15,9 +15,6 @@ namespace Optimum_Tech.Views.Dialogs
         private FormMain formMain;
         private UserControl currentControl;
 
-        private static readonly string ordersFilePath = @"..\..\Repository\orders.json";
-        private static readonly string usersFilePath = @"..\..\Repository\users.json";
-
         public FormOrder(FormMain formMain)
         {
             InitializeComponent();
@@ -27,9 +24,6 @@ namespace Optimum_Tech.Views.Dialogs
             radioButtonAtAddress.Checked = true;
 
             this.textBoxId.Text = Guid.NewGuid().ToString();
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -119,7 +113,7 @@ namespace Optimum_Tech.Views.Dialogs
 
                 string json = JsonConvert.SerializeObject(UserManager.CurrentUser.Orders, Formatting.Indented);
 
-                using (StreamWriter writer = File.AppendText(ordersFilePath))
+                using (StreamWriter writer = File.AppendText(ProductManager.ordersPath))
                 {
                     writer.WriteLine(json);
                 }
@@ -128,7 +122,7 @@ namespace Optimum_Tech.Views.Dialogs
 
                 List<User> usersToSave = UserManager.LoadUsers().ToList();
                 string json1 = JsonConvert.SerializeObject(usersToSave, Formatting.Indented);
-                File.WriteAllText(usersFilePath, json1);
+                File.WriteAllText(UserManager.usersFilePath, json1);
 
                 MessageBox.Show("Your order is received. Operator will call you in 5 minutes");
             }

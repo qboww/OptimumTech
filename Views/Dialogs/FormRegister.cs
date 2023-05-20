@@ -14,9 +14,6 @@ namespace Optimum_Tech.Forms.Dialogs
 
             this.formAccount = formAccount;
             this.formMain = formMain;
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)

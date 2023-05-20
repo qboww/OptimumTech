@@ -1,0 +1,228 @@
+[
+  {
+    "products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 41,
+        "Rating": 4
+      },
+      {
+        "Manufacturer": "PowerColor",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6",
+        "ClockSpeed": 2.58,
+        "MinimumWattage": 650,
+        "IsAvailable": true,
+        "Id": "709954db-2211-4ff9-a5d8-cbfb7b0ad0ce",
+        "Name": "PowerColor RX 6700 XT",
+        "Price": 429.99,
+        "Responses": 41,
+        "Rating": 4
+      }
+    ],
+    "Id": "a67268c0-3e4d-41a6-97f9-fd80ed0f80ed",
+    "DeliveryType": 0,
+    "Date": "2023-05-12T01:24:59.9098994+03:00",
+    "Email": "user123@mail.com",
+    "Address": "Балта, Уварова, 41/1",
+    "PhoneNumber": "+380689998877",
+    "TotalPrice": 969.98,
+    "TotalAmount": 2,
+    "Username": "user123"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "AMD",
+        "Socket": "AM5",
+        "Cores": 24,
+        "Threads": 48,
+        "ClockSpeedDefault": 3.4,
+        "ClockSpeedBoost": 4.9,
+        "IsAvailable": true,
+        "Id": "9b49e7c8-b6e8-4dbf-b6fc-d0b0b2c8a7cb",
+        "Name": "AMD Ryzen 9 7950X3D",
+        "Price": 997.99,
+        "Responses": 54,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "PowerColor",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6",
+        "ClockSpeed": 2.58,
+        "MinimumWattage": 650,
+        "IsAvailable": true,
+        "Id": "709954db-2211-4ff9-a5d8-cbfb7b0ad0ce",
+        "Name": "PowerColor RX 6700 XT",
+        "Price": 429.99,
+        "Responses": 41,
+        "Rating": 4
+      },
+      {
+        "Manufacturer": "PowerColor",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6",
+        "ClockSpeed": 2.58,
+        "MinimumWattage": 650,
+        "IsAvailable": true,
+        "Id": "709954db-2211-4ff9-a5d8-cbfb7b0ad0ce",
+        "Name": "PowerColor RX 6700 XT",
+        "Price": 429.99,
+        "Responses": 41,
+        "Rating": 4
+      }
+    ],
+    "Id": "819e0e7e-583b-4926-b120-4484ce3f4531",
+    "DeliveryType": 0,
+    "Date": "2023-05-12T02:00:36.6660903+03:00",
+    "Email": "user123@mail.com",
+    "Address": "Балта, Ломоносова, 24а",
+    "PhoneNumber": "+380689998877",
+    "TotalPrice": 1857.97,
+    "TotalAmount": 3,
+    "Username": "user123"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 41,
+        "Rating": 4
+      },
+      {
+        "Manufacturer": "PowerColor",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6",
+        "ClockSpeed": 2.58,
+        "MinimumWattage": 650,
+        "IsAvailable": true,
+        "Id": "709954db-2211-4ff9-a5d8-cbfb7b0ad0ce",
+        "Name": "PowerColor RX 6700 XT",
+        "Price": 429.99,
+        "Responses": 41,
+        "Rating": 4
+      }
+    ],
+    "Id": "485e7027-84c4-4ddb-a84a-a3148ed22cff",
+    "DeliveryType": 0,
+    "Date": "2023-05-12T11:10:28.8401301+03:00",
+    "Email": "user123@mail.com",
+    "Address": "Новомосковськ, Велика Ковалівка, 1А",
+    "PhoneNumber": "+380689998877",
+    "TotalPrice": 969.98,
+    "TotalAmount": 2,
+    "Username": "evhen"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 41,
+        "Rating": 4
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "PowerColor",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6",
+        "ClockSpeed": 2.58,
+        "MinimumWattage": 650,
+        "IsAvailable": true,
+        "Id": "709954db-2211-4ff9-a5d8-cbfb7b0ad0ce",
+        "Name": "PowerColor RX 6700 XT",
+        "Price": 429.99,
+        "Responses": 41,
+        "Rating": 4
+      }
+    ],
+    "Id": "c84ceb56-c0a7-4660-aa4c-853aace98a9d",
+    "DeliveryType": 0,
+    "Date": "2023-05-16T11:55:18.7545298+03:00",
+    "Email": "user123@mail.com",
+    "Address": "Харків, Перемоги, 50Б",
+    "PhoneNumber": "+380689998877",
+    "TotalPrice": 2709.95,
+    "TotalAmount": 5,
+    "Username": "evhen"
+  }
+]

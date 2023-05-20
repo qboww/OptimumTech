@@ -17,10 +17,7 @@ namespace Optimum_Tech.Forms
         {
             this.Hide();
             var form = new FormProcessors();
-            formMain.OpenChildForm(form);
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
+            formMain.OpenChildForm(form);;        
         }
 
         private void pictureBoxGraphicsCards_Click(object sender, EventArgs e)

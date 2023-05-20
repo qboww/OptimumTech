@@ -12,9 +12,6 @@ namespace Optimum_Tech.Forms
         public FormProcessors()
         {
             InitializeComponent();
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Repository\Poppins-Regular.ttf");
         }
 
         private void FormProcessors_Load(object sender, EventArgs e)

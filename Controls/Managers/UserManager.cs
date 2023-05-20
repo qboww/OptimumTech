@@ -8,7 +8,7 @@ namespace Optimum_Tech.Controls.Managers
 {
     public static class UserManager
     {
-        private static readonly string usersFilePath = @"..\..\Repository\users.json";
+        public static readonly string usersFilePath = @"D:\Education\Projects\Coursework-(.Net)\OptimumTech\Repository\users.json";
         public static List<User> Users = new List<User>();
         public static User? CurrentUser;
 

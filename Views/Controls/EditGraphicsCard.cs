@@ -1,4 +1,5 @@
-﻿using Optimum_Tech.Model;
+﻿using Optimum_Tech.Forms;
+using Optimum_Tech.Model;
 using Optimum_Tech.Model.Products;
 using System.Drawing.Text;
 
@@ -10,9 +11,6 @@ namespace Optimum_Tech.Controls
         public EditGraphicsCard(GraphicsCard gpu)
         {
             InitializeComponent();
-
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"..\..\Fonts\Poppins-Regular.ttf");
 
             this.gpu = gpu;
 
