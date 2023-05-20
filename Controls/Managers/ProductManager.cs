@@ -8,22 +8,15 @@ namespace Optimum_Tech.Controls.Managers
 {
     public static class ProductManager
     {
-
         public static List<Processor> Processors = new List<Processor>();
         public static List<GraphicsCard> GraphicsCards = new List<GraphicsCard>();
         public static List<Product> Products = new List<Product>();
 
-        //public static string processorsPath = @"D:\Education\Projects\Coursework-(.Net)\OptimumTech\Repository\processors.json";
-        //public static string graphicsCardsPath = @"D:\Education\Projects\Coursework-(.Net)\OptimumTech\Repository\graphicscards.json";
-        //public static string postFilePath = @"D:\Education\Projects\Coursework-(.Net)\OptimumTech\Repository\novapost.json";
-        //public static string ordersPath = @"D:\Education\Projects\Coursework-(.Net)\OptimumTech\Repository\orders.json";
-        //public static string repositoryPath = @"D:\Education\Projects\Coursework-(.Net)\OptimumTech\Repository";
-
-        public static string processorsPath = ConfigurationManager.AppSettings["ProcessorsPath"];
-        public static string graphicsCardsPath = ConfigurationManager.AppSettings["GraphicsCardsPath"];
-        public static string postFilePath = ConfigurationManager.AppSettings["PostFilePath"];
-        public static string ordersPath = ConfigurationManager.AppSettings["OrdersPath"];
-        public static string repositoryPath = ConfigurationManager.AppSettings["RepositoryPath"];
+        public static string? processorsPath = ConfigurationManager.AppSettings["ProcessorsPath"];
+        public static string? graphicsCardsPath = ConfigurationManager.AppSettings["GraphicsCardsPath"];
+        public static string? postFilePath = ConfigurationManager.AppSettings["PostFilePath"];
+        public static string? ordersPath = ConfigurationManager.AppSettings["OrdersPath"];
+        public static string? repositoryPath = ConfigurationManager.AppSettings["RepositoryPath"];
 
         public static List<Product> LoadProducts()
         {

@@ -2,12 +2,13 @@
 using Optimum_Tech.Model;
 using Optimum_Tech.Views.Resources;
 using OptimumTech.Controls;
+using System.Configuration;
 
 namespace Optimum_Tech.Controls.Managers
 {
     public static class UserManager
     {
-        public static readonly string usersFilePath = @"D:\Education\Projects\Coursework-(.Net)\OptimumTech\Repository\users.json";
+        public static string? usersFilePath = ConfigurationManager.AppSettings["UsersPath"];
         public static List<User> Users = new List<User>();
         public static User? CurrentUser;
 

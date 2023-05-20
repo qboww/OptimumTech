@@ -1,4 +1,6 @@
-﻿namespace Optimum_Tech.Controls
+﻿using Optimum_Tech.Views.Resources;
+
+namespace Optimum_Tech.Controls
 {
     partial class EditGraphicsCard
     {
