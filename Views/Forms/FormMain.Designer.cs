@@ -199,7 +199,7 @@ namespace Optimum_Tech.Forms
             buttonSettings.AutoSize = true;
             buttonSettings.FlatAppearance.BorderSize = 0;
             buttonSettings.FlatStyle = FlatStyle.Flat;
-            buttonSettings.Font = new Font("Ubuntu", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSettings.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSettings.ForeColor = Color.White;
             buttonSettings.Image = FormsMedia.settings;
             buttonSettings.Location = new Point(0, 682);
@@ -298,7 +298,7 @@ namespace Optimum_Tech.Forms
             // 
             textBoxDrawer.BackColor = Color.FromArgb(40, 40, 40);
             textBoxDrawer.BorderStyle = BorderStyle.None;
-            textBoxDrawer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxDrawer.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxDrawer.ForeColor = Color.White;
             textBoxDrawer.Location = new Point(6, 29);
             textBoxDrawer.Name = "textBoxDrawer";
@@ -312,7 +312,7 @@ namespace Optimum_Tech.Forms
             textBoxSearchText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxSearchText.BackColor = SystemColors.Control;
             textBoxSearchText.BorderStyle = BorderStyle.None;
-            textBoxSearchText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSearchText.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxSearchText.Location = new Point(6, 92);
             textBoxSearchText.Name = "textBoxSearchText";
             textBoxSearchText.Size = new Size(151, 24);
@@ -324,7 +324,7 @@ namespace Optimum_Tech.Forms
             // 
             textBoxCategories.BackColor = Color.FromArgb(40, 40, 40);
             textBoxCategories.BorderStyle = BorderStyle.None;
-            textBoxCategories.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCategories.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxCategories.ForeColor = Color.White;
             textBoxCategories.Location = new Point(6, 174);
             textBoxCategories.Name = "textBoxCategories";
@@ -337,7 +337,7 @@ namespace Optimum_Tech.Forms
             // 
             textBoxHome.BackColor = Color.FromArgb(40, 40, 40);
             textBoxHome.BorderStyle = BorderStyle.None;
-            textBoxHome.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxHome.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxHome.ForeColor = Color.White;
             textBoxHome.Location = new Point(6, 210);
             textBoxHome.Name = "textBoxHome";
@@ -350,7 +350,7 @@ namespace Optimum_Tech.Forms
             // 
             textBoxAccount.BackColor = Color.FromArgb(40, 40, 40);
             textBoxAccount.BorderStyle = BorderStyle.None;
-            textBoxAccount.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccount.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxAccount.ForeColor = Color.White;
             textBoxAccount.Location = new Point(6, 246);
             textBoxAccount.Name = "textBoxAccount";
@@ -363,7 +363,7 @@ namespace Optimum_Tech.Forms
             // 
             textBoxCart.BackColor = Color.FromArgb(40, 40, 40);
             textBoxCart.BorderStyle = BorderStyle.None;
-            textBoxCart.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCart.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxCart.ForeColor = Color.White;
             textBoxCart.Location = new Point(6, 282);
             textBoxCart.Name = "textBoxCart";
@@ -376,7 +376,7 @@ namespace Optimum_Tech.Forms
             // 
             textBoxFavorites.BackColor = Color.FromArgb(40, 40, 40);
             textBoxFavorites.BorderStyle = BorderStyle.None;
-            textBoxFavorites.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxFavorites.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxFavorites.ForeColor = Color.White;
             textBoxFavorites.Location = new Point(6, 318);
             textBoxFavorites.Name = "textBoxFavorites";
@@ -390,7 +390,7 @@ namespace Optimum_Tech.Forms
             textBoxContact.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBoxContact.BackColor = Color.FromArgb(40, 40, 40);
             textBoxContact.BorderStyle = BorderStyle.None;
-            textBoxContact.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxContact.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxContact.ForeColor = Color.White;
             textBoxContact.Location = new Point(6, 652);
             textBoxContact.Name = "textBoxContact";
@@ -404,7 +404,7 @@ namespace Optimum_Tech.Forms
             textBoxAdmin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBoxAdmin.BackColor = Color.FromArgb(40, 40, 40);
             textBoxAdmin.BorderStyle = BorderStyle.None;
-            textBoxAdmin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAdmin.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxAdmin.ForeColor = Color.White;
             textBoxAdmin.Location = new Point(6, 616);
             textBoxAdmin.Name = "textBoxAdmin";
@@ -419,7 +419,7 @@ namespace Optimum_Tech.Forms
             textBoxSettings.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBoxSettings.BackColor = Color.FromArgb(40, 40, 40);
             textBoxSettings.BorderStyle = BorderStyle.None;
-            textBoxSettings.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSettings.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxSettings.ForeColor = Color.White;
             textBoxSettings.Location = new Point(6, 688);
             textBoxSettings.Name = "textBoxSettings";
@@ -433,7 +433,7 @@ namespace Optimum_Tech.Forms
             textBoxSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxSearch.BackColor = Color.FromArgb(40, 40, 40);
             textBoxSearch.BorderStyle = BorderStyle.None;
-            textBoxSearch.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSearch.Font = FontHelper.GetEmbeddedFont(12F);
             textBoxSearch.ForeColor = Color.FromArgb(27, 27, 27);
             textBoxSearch.Location = new Point(6, 94);
             textBoxSearch.Name = "textBoxSearch";
