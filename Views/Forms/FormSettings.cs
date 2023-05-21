@@ -9,7 +9,7 @@ namespace Optimum_Tech.View.Forms
     public partial class FormSettings : Form
     {
         FormHome formHome;
-        
+
         public FormSettings(FormHome formHome)
         {
             InitializeComponent();

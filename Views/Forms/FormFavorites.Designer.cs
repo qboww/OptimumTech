@@ -59,12 +59,12 @@
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
-            textBoxAccountPrefferences.Location = new Point(12, 3);
+            textBoxAccountPrefferences.Location = new Point(12, 5);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
             textBoxAccountPrefferences.ReadOnly = true;
-            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.Size = new Size(245, 26);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Favorites";
             // 

@@ -30,23 +30,23 @@
         {
             listBoxAddresses = new ListBox();
             panel1 = new Panel();
+            textBox9 = new TextBox();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             comboBoxCities = new ComboBox();
-            textBox9 = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // listBoxAddresses
             // 
             listBoxAddresses.BackColor = Color.White;
-            listBoxAddresses.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            listBoxAddresses.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
             listBoxAddresses.FormattingEnabled = true;
-            listBoxAddresses.ItemHeight = 15;
+            listBoxAddresses.ItemHeight = 16;
             listBoxAddresses.Location = new Point(13, 92);
             listBoxAddresses.Margin = new Padding(3, 3, 23, 3);
             listBoxAddresses.Name = "listBoxAddresses";
-            listBoxAddresses.Size = new Size(452, 139);
+            listBoxAddresses.Size = new Size(452, 196);
             listBoxAddresses.TabIndex = 31;
             // 
             // panel1
@@ -59,18 +59,30 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(473, 240);
+            panel1.Size = new Size(473, 294);
             panel1.TabIndex = 37;
+            // 
+            // textBox9
+            // 
+            textBox9.BackColor = Color.FromArgb(40, 40, 40);
+            textBox9.BorderStyle = BorderStyle.None;
+            textBox9.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox9.ForeColor = Color.Gray;
+            textBox9.Location = new Point(13, 68);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(269, 16);
+            textBox9.TabIndex = 44;
+            textBox9.Text = "Wait for 5 sec before API loads offices";
             // 
             // textBox3
             // 
             textBox3.BackColor = Color.FromArgb(40, 40, 40);
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Poppins SemiBold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox3.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox3.ForeColor = Color.White;
             textBox3.Location = new Point(13, 3);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(199, 28);
+            textBox3.Size = new Size(199, 26);
             textBox3.TabIndex = 43;
             textBox3.Text = "Set post address:";
             // 
@@ -78,36 +90,24 @@
             // 
             textBox2.BackColor = Color.FromArgb(40, 40, 40);
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.White;
             textBox2.Location = new Point(13, 39);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(41, 24);
+            textBox2.Size = new Size(41, 22);
             textBox2.TabIndex = 42;
             textBox2.Text = "City:";
             // 
             // comboBoxCities
             // 
             comboBoxCities.BackColor = Color.White;
-            comboBoxCities.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxCities.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
             comboBoxCities.FormattingEnabled = true;
             comboBoxCities.Location = new Point(60, 39);
             comboBoxCities.Name = "comboBoxCities";
-            comboBoxCities.Size = new Size(405, 23);
+            comboBoxCities.Size = new Size(405, 24);
             comboBoxCities.TabIndex = 40;
             comboBoxCities.SelectedIndexChanged += comboBoxCities_SelectedIndexChanged;
-            // 
-            // textBox9
-            // 
-            textBox9.BackColor = Color.FromArgb(40, 40, 40);
-            textBox9.BorderStyle = BorderStyle.None;
-            textBox9.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox9.ForeColor = Color.Gray;
-            textBox9.Location = new Point(13, 68);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(269, 18);
-            textBox9.TabIndex = 44;
-            textBox9.Text = "Wait for 5 sec before API loads offices";
             // 
             // SetPostOffice
             // 
@@ -116,7 +116,7 @@
             BackColor = Color.FromArgb(40, 40, 40);
             Controls.Add(panel1);
             Name = "SetPostOffice";
-            Size = new Size(473, 240);
+            Size = new Size(473, 294);
             Load += SetPostOffice_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

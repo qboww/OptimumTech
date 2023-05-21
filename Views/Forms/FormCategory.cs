@@ -17,7 +17,7 @@ namespace Optimum_Tech.Forms
         {
             this.Hide();
             var form = new FormProcessors();
-            formMain.OpenChildForm(form);;        
+            formMain.OpenChildForm(form); ;
         }
 
         private void pictureBoxGraphicsCards_Click(object sender, EventArgs e)

@@ -37,7 +37,7 @@
             // 
             textBoxAddress.BackColor = Color.White;
             textBoxAddress.BorderStyle = BorderStyle.None;
-            textBoxAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAddress.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAddress.Location = new Point(93, 38);
             textBoxAddress.Name = "textBoxAddress";
             textBoxAddress.Size = new Size(284, 22);
@@ -47,11 +47,11 @@
             // 
             textBox2.BackColor = Color.FromArgb(40, 40, 40);
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.White;
             textBox2.Location = new Point(12, 38);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(75, 24);
+            textBox2.Size = new Size(75, 22);
             textBox2.TabIndex = 43;
             textBox2.Text = "Address:";
             // 
@@ -59,11 +59,11 @@
             // 
             textBox1.BackColor = Color.FromArgb(40, 40, 40);
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(12, 3);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(188, 29);
+            textBox1.Size = new Size(188, 26);
             textBox1.TabIndex = 44;
             textBox1.Text = "Set address";
             // 

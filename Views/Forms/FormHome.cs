@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Drawing.Text;
 
 namespace Optimum_Tech.Forms
 {
@@ -9,7 +8,7 @@ namespace Optimum_Tech.Forms
         public FormHome(FormMain formMain)
         {
             InitializeComponent();
-            this.formMain = formMain;      
+            this.formMain = formMain;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

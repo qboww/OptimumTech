@@ -47,7 +47,7 @@ namespace Optimum_Tech.Views.Controls
 
             if (!string.IsNullOrEmpty(selectedCity))
             {
-                string jsonString = File.ReadAllText(ProductManager.processorsPath);
+                string jsonString = File.ReadAllText(ProductManager.postFilePath);
                 dynamic data = JsonConvert.DeserializeObject(jsonString);
 
                 foreach (dynamic office in data.data)

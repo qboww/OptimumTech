@@ -123,6 +123,16 @@ namespace Optimum_Tech.Views.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banner {
+            get {
+                object obj = ResourceManager.GetObject("banner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap basket_blocked {
             get {
                 object obj = ResourceManager.GetObject("basket_blocked", resourceCulture);
@@ -477,16 +487,6 @@ namespace Optimum_Tech.Views.Resources {
             get {
                 object obj = ResourceManager.GetObject("optimum_tech_100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Poppins_Regular {
-            get {
-                object obj = ResourceManager.GetObject("Poppins_Regular", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         

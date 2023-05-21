@@ -298,12 +298,12 @@ namespace Optimum_Tech.Forms
             // 
             textBoxDrawer.BackColor = Color.FromArgb(40, 40, 40);
             textBoxDrawer.BorderStyle = BorderStyle.None;
-            textBoxDrawer.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxDrawer.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxDrawer.ForeColor = Color.White;
             textBoxDrawer.Location = new Point(6, 29);
             textBoxDrawer.Name = "textBoxDrawer";
             textBoxDrawer.ReadOnly = true;
-            textBoxDrawer.Size = new Size(100, 24);
+            textBoxDrawer.Size = new Size(100, 23);
             textBoxDrawer.TabIndex = 21;
             textBoxDrawer.Text = "Drawer";
             // 
@@ -312,24 +312,24 @@ namespace Optimum_Tech.Forms
             textBoxSearchText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxSearchText.BackColor = SystemColors.Control;
             textBoxSearchText.BorderStyle = BorderStyle.None;
-            textBoxSearchText.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxSearchText.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSearchText.Location = new Point(6, 92);
             textBoxSearchText.Name = "textBoxSearchText";
-            textBoxSearchText.Size = new Size(151, 24);
+            textBoxSearchText.Size = new Size(151, 23);
             textBoxSearchText.TabIndex = 20;
-            textBoxSearchText.Text = " Search";
+            textBoxSearchText.Text = "Search";
             textBoxSearchText.Enter += textBoxSearchText_Enter;
             // 
             // textBoxCategories
             // 
             textBoxCategories.BackColor = Color.FromArgb(40, 40, 40);
             textBoxCategories.BorderStyle = BorderStyle.None;
-            textBoxCategories.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxCategories.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCategories.ForeColor = Color.White;
             textBoxCategories.Location = new Point(6, 174);
             textBoxCategories.Name = "textBoxCategories";
             textBoxCategories.ReadOnly = true;
-            textBoxCategories.Size = new Size(100, 24);
+            textBoxCategories.Size = new Size(100, 23);
             textBoxCategories.TabIndex = 19;
             textBoxCategories.Text = "Categories";
             // 
@@ -337,12 +337,12 @@ namespace Optimum_Tech.Forms
             // 
             textBoxHome.BackColor = Color.FromArgb(40, 40, 40);
             textBoxHome.BorderStyle = BorderStyle.None;
-            textBoxHome.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxHome.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxHome.ForeColor = Color.White;
             textBoxHome.Location = new Point(6, 210);
             textBoxHome.Name = "textBoxHome";
             textBoxHome.ReadOnly = true;
-            textBoxHome.Size = new Size(100, 24);
+            textBoxHome.Size = new Size(100, 23);
             textBoxHome.TabIndex = 18;
             textBoxHome.Text = "Home";
             // 
@@ -350,12 +350,12 @@ namespace Optimum_Tech.Forms
             // 
             textBoxAccount.BackColor = Color.FromArgb(40, 40, 40);
             textBoxAccount.BorderStyle = BorderStyle.None;
-            textBoxAccount.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxAccount.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccount.ForeColor = Color.White;
             textBoxAccount.Location = new Point(6, 246);
             textBoxAccount.Name = "textBoxAccount";
             textBoxAccount.ReadOnly = true;
-            textBoxAccount.Size = new Size(100, 24);
+            textBoxAccount.Size = new Size(100, 23);
             textBoxAccount.TabIndex = 17;
             textBoxAccount.Text = "Account";
             // 
@@ -363,12 +363,12 @@ namespace Optimum_Tech.Forms
             // 
             textBoxCart.BackColor = Color.FromArgb(40, 40, 40);
             textBoxCart.BorderStyle = BorderStyle.None;
-            textBoxCart.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxCart.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCart.ForeColor = Color.White;
             textBoxCart.Location = new Point(6, 282);
             textBoxCart.Name = "textBoxCart";
             textBoxCart.ReadOnly = true;
-            textBoxCart.Size = new Size(100, 24);
+            textBoxCart.Size = new Size(100, 23);
             textBoxCart.TabIndex = 16;
             textBoxCart.Text = "Cart";
             // 
@@ -376,12 +376,12 @@ namespace Optimum_Tech.Forms
             // 
             textBoxFavorites.BackColor = Color.FromArgb(40, 40, 40);
             textBoxFavorites.BorderStyle = BorderStyle.None;
-            textBoxFavorites.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxFavorites.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxFavorites.ForeColor = Color.White;
             textBoxFavorites.Location = new Point(6, 318);
             textBoxFavorites.Name = "textBoxFavorites";
             textBoxFavorites.ReadOnly = true;
-            textBoxFavorites.Size = new Size(100, 24);
+            textBoxFavorites.Size = new Size(100, 23);
             textBoxFavorites.TabIndex = 15;
             textBoxFavorites.Text = "Favorites";
             // 
@@ -390,12 +390,12 @@ namespace Optimum_Tech.Forms
             textBoxContact.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBoxContact.BackColor = Color.FromArgb(40, 40, 40);
             textBoxContact.BorderStyle = BorderStyle.None;
-            textBoxContact.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxContact.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxContact.ForeColor = Color.White;
             textBoxContact.Location = new Point(6, 652);
             textBoxContact.Name = "textBoxContact";
             textBoxContact.ReadOnly = true;
-            textBoxContact.Size = new Size(100, 24);
+            textBoxContact.Size = new Size(100, 23);
             textBoxContact.TabIndex = 14;
             textBoxContact.Text = "Contact";
             // 
@@ -404,12 +404,12 @@ namespace Optimum_Tech.Forms
             textBoxAdmin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBoxAdmin.BackColor = Color.FromArgb(40, 40, 40);
             textBoxAdmin.BorderStyle = BorderStyle.None;
-            textBoxAdmin.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxAdmin.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAdmin.ForeColor = Color.White;
             textBoxAdmin.Location = new Point(6, 616);
             textBoxAdmin.Name = "textBoxAdmin";
             textBoxAdmin.ReadOnly = true;
-            textBoxAdmin.Size = new Size(100, 24);
+            textBoxAdmin.Size = new Size(100, 23);
             textBoxAdmin.TabIndex = 13;
             textBoxAdmin.Text = "Admin";
             textBoxAdmin.Visible = false;
@@ -419,12 +419,12 @@ namespace Optimum_Tech.Forms
             textBoxSettings.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBoxSettings.BackColor = Color.FromArgb(40, 40, 40);
             textBoxSettings.BorderStyle = BorderStyle.None;
-            textBoxSettings.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxSettings.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSettings.ForeColor = Color.White;
             textBoxSettings.Location = new Point(6, 688);
             textBoxSettings.Name = "textBoxSettings";
             textBoxSettings.ReadOnly = true;
-            textBoxSettings.Size = new Size(100, 24);
+            textBoxSettings.Size = new Size(100, 23);
             textBoxSettings.TabIndex = 12;
             textBoxSettings.Text = "Settings";
             // 
@@ -433,7 +433,7 @@ namespace Optimum_Tech.Forms
             textBoxSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxSearch.BackColor = Color.FromArgb(40, 40, 40);
             textBoxSearch.BorderStyle = BorderStyle.None;
-            textBoxSearch.Font = FontHelper.GetEmbeddedFont(12F);
+            textBoxSearch.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSearch.ForeColor = Color.FromArgb(27, 27, 27);
             textBoxSearch.Location = new Point(6, 94);
             textBoxSearch.Name = "textBoxSearch";

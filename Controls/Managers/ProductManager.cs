@@ -2,7 +2,6 @@
 using Optimum_Tech.Model.Products;
 using Optimum_Tech.Models;
 using OptimumTech.Controls;
-using System.Configuration;
 
 namespace Optimum_Tech.Controls.Managers
 {
@@ -12,11 +11,11 @@ namespace Optimum_Tech.Controls.Managers
         public static List<GraphicsCard> GraphicsCards = new List<GraphicsCard>();
         public static List<Product> Products = new List<Product>();
 
-        public static string? processorsPath = ConfigurationManager.AppSettings["ProcessorsPath"];
-        public static string? graphicsCardsPath = ConfigurationManager.AppSettings["GraphicsCardsPath"];
-        public static string? postFilePath = ConfigurationManager.AppSettings["PostFilePath"];
-        public static string? ordersPath = ConfigurationManager.AppSettings["OrdersPath"];
-        public static string? repositoryPath = ConfigurationManager.AppSettings["RepositoryPath"];
+        public static string? processorsPath = @"..\..\..\Repository\processors.json";
+        public static string? graphicsCardsPath = @"..\..\..\Repository\graphicscards.json";
+        public static string? postFilePath = @"..\..\..\Repository\novapost.json";
+        public static string? ordersPath = @"..\..\..\Repository\orders.json";
+        public static string? repositoryPath = @"..\..\..\OptimumTech\Repository";
 
         public static List<Product> LoadProducts()
         {

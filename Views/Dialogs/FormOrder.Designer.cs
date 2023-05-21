@@ -45,6 +45,7 @@ namespace Optimum_Tech.Views.Dialogs
             textBoxAmount = new TextBox();
             panel1 = new Panel();
             panel3 = new Panel();
+            textBoxId = new TextBox();
             textBox55 = new TextBox();
             textBox9 = new TextBox();
             textBox8 = new TextBox();
@@ -60,7 +61,6 @@ namespace Optimum_Tech.Views.Dialogs
             buttonAdd = new Button();
             textBox6 = new TextBox();
             textBox5 = new TextBox();
-            textBoxId = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxClose).BeginInit();
             panelTitle.SuspendLayout();
             panel1.SuspendLayout();
@@ -72,12 +72,12 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBoxOrder.BackColor = Color.FromArgb(20, 20, 20);
             textBoxOrder.BorderStyle = BorderStyle.None;
-            textBoxOrder.Font = new Font("Poppins", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxOrder.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxOrder.ForeColor = Color.White;
-            textBoxOrder.Location = new Point(12, 1);
+            textBoxOrder.Location = new Point(12, 3);
             textBoxOrder.Name = "textBoxOrder";
             textBoxOrder.ReadOnly = true;
-            textBoxOrder.Size = new Size(729, 26);
+            textBoxOrder.Size = new Size(729, 23);
             textBoxOrder.TabIndex = 0;
             textBoxOrder.TabStop = false;
             textBoxOrder.Text = "Order";
@@ -108,13 +108,13 @@ namespace Optimum_Tech.Views.Dialogs
             // listBoxProducts
             // 
             listBoxProducts.BackColor = Color.White;
-            listBoxProducts.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            listBoxProducts.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
             listBoxProducts.FormattingEnabled = true;
-            listBoxProducts.ItemHeight = 15;
+            listBoxProducts.ItemHeight = 16;
             listBoxProducts.Location = new Point(473, 108);
             listBoxProducts.Margin = new Padding(3, 3, 23, 3);
             listBoxProducts.Name = "listBoxProducts";
-            listBoxProducts.Size = new Size(287, 199);
+            listBoxProducts.Size = new Size(287, 196);
             listBoxProducts.Sorted = true;
             listBoxProducts.TabIndex = 4;
             // 
@@ -122,30 +122,30 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBoxPhone.BackColor = Color.White;
             textBoxPhone.BorderStyle = BorderStyle.None;
-            textBoxPhone.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPhone.Location = new Point(147, 162);
+            textBoxPhone.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPhone.Location = new Point(130, 162);
             textBoxPhone.Name = "textBoxPhone";
-            textBoxPhone.Size = new Size(237, 24);
+            textBoxPhone.Size = new Size(254, 22);
             textBoxPhone.TabIndex = 7;
             // 
             // textBoxEmail
             // 
             textBoxEmail.BackColor = Color.White;
             textBoxEmail.BorderStyle = BorderStyle.None;
-            textBoxEmail.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxEmail.Location = new Point(71, 108);
+            textBoxEmail.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxEmail.Location = new Point(62, 108);
             textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(313, 24);
+            textBoxEmail.Size = new Size(322, 22);
             textBoxEmail.TabIndex = 8;
             // 
             // radioButtonAtPost
             // 
             radioButtonAtPost.AutoSize = true;
-            radioButtonAtPost.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButtonAtPost.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             radioButtonAtPost.ForeColor = Color.White;
             radioButtonAtPost.Location = new Point(12, 250);
             radioButtonAtPost.Name = "radioButtonAtPost";
-            radioButtonAtPost.Size = new Size(144, 29);
+            radioButtonAtPost.Size = new Size(122, 21);
             radioButtonAtPost.TabIndex = 10;
             radioButtonAtPost.Text = "Local post office";
             radioButtonAtPost.UseVisualStyleBackColor = true;
@@ -154,13 +154,13 @@ namespace Optimum_Tech.Views.Dialogs
             // radioButtonAtAddress
             // 
             radioButtonAtAddress.AutoSize = true;
-            radioButtonAtAddress.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButtonAtAddress.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             radioButtonAtAddress.ForeColor = Color.White;
             radioButtonAtAddress.Location = new Point(12, 284);
             radioButtonAtAddress.Name = "radioButtonAtAddress";
-            radioButtonAtAddress.Size = new Size(130, 29);
+            radioButtonAtAddress.Size = new Size(74, 21);
             radioButtonAtAddress.TabIndex = 11;
-            radioButtonAtAddress.Text = "At the address";
+            radioButtonAtAddress.Text = "Address";
             radioButtonAtAddress.UseVisualStyleBackColor = true;
             radioButtonAtAddress.CheckedChanged += radioButtonAtAddress_CheckedChanged;
             // 
@@ -169,8 +169,8 @@ namespace Optimum_Tech.Views.Dialogs
             buttonConfirm.BackColor = Color.White;
             buttonConfirm.FlatAppearance.BorderSize = 0;
             buttonConfirm.FlatStyle = FlatStyle.Flat;
-            buttonConfirm.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonConfirm.Location = new Point(676, 203);
+            buttonConfirm.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonConfirm.Location = new Point(676, 256);
             buttonConfirm.Name = "buttonConfirm";
             buttonConfirm.Size = new Size(84, 33);
             buttonConfirm.TabIndex = 18;
@@ -182,22 +182,22 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBoxPrice.BackColor = Color.White;
             textBoxPrice.BorderStyle = BorderStyle.None;
-            textBoxPrice.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPrice.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxPrice.Location = new Point(557, 30);
             textBoxPrice.Name = "textBoxPrice";
             textBoxPrice.ReadOnly = true;
-            textBoxPrice.Size = new Size(203, 24);
+            textBoxPrice.Size = new Size(203, 22);
             textBoxPrice.TabIndex = 20;
             // 
             // textBoxAmount
             // 
             textBoxAmount.BackColor = Color.White;
             textBoxAmount.BorderStyle = BorderStyle.None;
-            textBoxAmount.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAmount.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAmount.Location = new Point(557, 0);
             textBoxAmount.Name = "textBoxAmount";
             textBoxAmount.ReadOnly = true;
-            textBoxAmount.Size = new Size(203, 24);
+            textBoxAmount.Size = new Size(203, 22);
             textBoxAmount.TabIndex = 21;
             // 
             // panel1
@@ -218,7 +218,7 @@ namespace Optimum_Tech.Views.Dialogs
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(772, 313);
+            panel1.Size = new Size(772, 311);
             panel1.TabIndex = 30;
             // 
             // panel3
@@ -231,16 +231,28 @@ namespace Optimum_Tech.Views.Dialogs
             panel3.Size = new Size(748, 29);
             panel3.TabIndex = 36;
             // 
+            // textBoxId
+            // 
+            textBoxId.BackColor = Color.White;
+            textBoxId.BorderStyle = BorderStyle.None;
+            textBoxId.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxId.ForeColor = Color.Black;
+            textBoxId.Location = new Point(70, 4);
+            textBoxId.Name = "textBoxId";
+            textBoxId.ReadOnly = true;
+            textBoxId.Size = new Size(675, 22);
+            textBoxId.TabIndex = 1;
+            // 
             // textBox55
             // 
             textBox55.BackColor = Color.White;
             textBox55.BorderStyle = BorderStyle.None;
-            textBox55.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox55.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox55.ForeColor = Color.Black;
-            textBox55.Location = new Point(3, 2);
+            textBox55.Location = new Point(3, 3);
             textBox55.Name = "textBox55";
             textBox55.ReadOnly = true;
-            textBox55.Size = new Size(71, 24);
+            textBox55.Size = new Size(71, 22);
             textBox55.TabIndex = 0;
             textBox55.Text = "Order id:";
             // 
@@ -248,11 +260,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox9.BackColor = Color.FromArgb(40, 40, 40);
             textBox9.BorderStyle = BorderStyle.None;
-            textBox9.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox9.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
             textBox9.ForeColor = Color.Gray;
             textBox9.Location = new Point(12, 192);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(269, 18);
+            textBox9.Size = new Size(269, 16);
             textBox9.TabIndex = 35;
             textBox9.Text = "Format: +380689998877";
             // 
@@ -260,11 +272,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox8.BackColor = Color.FromArgb(40, 40, 40);
             textBox8.BorderStyle = BorderStyle.None;
-            textBox8.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox8.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
             textBox8.ForeColor = Color.Gray;
             textBox8.Location = new Point(12, 138);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(269, 18);
+            textBox8.Size = new Size(269, 16);
             textBox8.TabIndex = 34;
             textBox8.Text = "Format: user123@mail.com";
             // 
@@ -272,11 +284,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox7.BackColor = Color.FromArgb(40, 40, 40);
             textBox7.BorderStyle = BorderStyle.None;
-            textBox7.Font = new Font("Poppins SemiBold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox7.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox7.ForeColor = Color.White;
             textBox7.Location = new Point(12, 216);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 28);
+            textBox7.Size = new Size(100, 26);
             textBox7.TabIndex = 33;
             textBox7.Text = "Deliver to";
             // 
@@ -284,11 +296,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox4.BackColor = Color.FromArgb(40, 40, 40);
             textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Font = new Font("Poppins SemiBold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox4.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox4.ForeColor = Color.White;
-            textBox4.Location = new Point(473, 73);
+            textBox4.Location = new Point(473, 76);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(287, 28);
+            textBox4.Size = new Size(287, 26);
             textBox4.TabIndex = 32;
             textBox4.Text = "Products";
             // 
@@ -296,11 +308,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox3.BackColor = Color.FromArgb(40, 40, 40);
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Poppins SemiBold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox3.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox3.ForeColor = Color.White;
-            textBox3.Location = new Point(12, 72);
+            textBox3.Location = new Point(12, 76);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(212, 28);
+            textBox3.Size = new Size(212, 26);
             textBox3.TabIndex = 31;
             textBox3.Text = "Fill in order data";
             // 
@@ -308,11 +320,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox2.BackColor = Color.FromArgb(40, 40, 40);
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.White;
             textBox2.Location = new Point(12, 162);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(129, 24);
+            textBox2.Size = new Size(112, 22);
             textBox2.TabIndex = 30;
             textBox2.Text = "Phone number:";
             // 
@@ -320,11 +332,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox1.BackColor = Color.FromArgb(40, 40, 40);
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(12, 108);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(53, 24);
+            textBox1.Size = new Size(44, 22);
             textBox1.TabIndex = 23;
             textBox1.Text = "Email:";
             // 
@@ -340,20 +352,20 @@ namespace Optimum_Tech.Views.Dialogs
             panel2.Controls.Add(textBoxAmount);
             panel2.Controls.Add(textBoxPrice);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 313);
+            panel2.Location = new Point(0, 311);
             panel2.Name = "panel2";
-            panel2.Size = new Size(772, 248);
+            panel2.Size = new Size(772, 301);
             panel2.TabIndex = 31;
             // 
             // textBox11
             // 
             textBox11.BackColor = Color.FromArgb(40, 40, 40);
             textBox11.BorderStyle = BorderStyle.None;
-            textBox11.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox11.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
             textBox11.ForeColor = Color.Gray;
-            textBox11.Location = new Point(473, 144);
+            textBox11.Location = new Point(473, 159);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(168, 18);
+            textBox11.Size = new Size(168, 16);
             textBox11.TabIndex = 37;
             textBox11.Text = "First select product";
             // 
@@ -361,11 +373,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox10.BackColor = Color.FromArgb(40, 40, 40);
             textBox10.BorderStyle = BorderStyle.None;
-            textBox10.Font = new Font("Poppins SemiBold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox10.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox10.ForeColor = Color.White;
-            textBox10.Location = new Point(473, 71);
+            textBox10.Location = new Point(473, 88);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(182, 28);
+            textBox10.Size = new Size(182, 26);
             textBox10.TabIndex = 37;
             textBox10.Text = "Manage products";
             // 
@@ -374,8 +386,8 @@ namespace Optimum_Tech.Views.Dialogs
             buttonRemove.BackColor = Color.White;
             buttonRemove.FlatAppearance.BorderSize = 0;
             buttonRemove.FlatStyle = FlatStyle.Flat;
-            buttonRemove.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonRemove.Location = new Point(528, 105);
+            buttonRemove.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonRemove.Location = new Point(528, 120);
             buttonRemove.Name = "buttonRemove";
             buttonRemove.Size = new Size(84, 33);
             buttonRemove.TabIndex = 36;
@@ -388,8 +400,8 @@ namespace Optimum_Tech.Views.Dialogs
             buttonAdd.BackColor = Color.White;
             buttonAdd.FlatAppearance.BorderSize = 0;
             buttonAdd.FlatStyle = FlatStyle.Flat;
-            buttonAdd.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonAdd.Location = new Point(473, 105);
+            buttonAdd.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAdd.Location = new Point(473, 120);
             buttonAdd.Name = "buttonAdd";
             buttonAdd.Size = new Size(49, 33);
             buttonAdd.TabIndex = 35;
@@ -401,11 +413,11 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox6.BackColor = Color.FromArgb(40, 40, 40);
             textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox6.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox6.ForeColor = Color.White;
             textBox6.Location = new Point(473, 30);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(78, 24);
+            textBox6.Size = new Size(78, 22);
             textBox6.TabIndex = 34;
             textBox6.Text = "Price:";
             // 
@@ -413,32 +425,20 @@ namespace Optimum_Tech.Views.Dialogs
             // 
             textBox5.BackColor = Color.FromArgb(40, 40, 40);
             textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox5.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.ForeColor = Color.White;
             textBox5.Location = new Point(473, 0);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(78, 24);
+            textBox5.Size = new Size(78, 22);
             textBox5.TabIndex = 33;
             textBox5.Text = "Amount:";
-            // 
-            // textBoxId
-            // 
-            textBoxId.BackColor = Color.White;
-            textBoxId.BorderStyle = BorderStyle.None;
-            textBoxId.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxId.ForeColor = Color.Black;
-            textBoxId.Location = new Point(80, 2);
-            textBoxId.Name = "textBoxId";
-            textBoxId.ReadOnly = true;
-            textBoxId.Size = new Size(665, 24);
-            textBoxId.TabIndex = 1;
             // 
             // FormOrder
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 40, 40);
-            ClientSize = new Size(772, 561);
+            ClientSize = new Size(772, 612);
             Controls.Add(panelTitle);
             Controls.Add(panel1);
             Controls.Add(panel2);

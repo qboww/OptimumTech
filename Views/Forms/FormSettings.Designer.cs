@@ -66,11 +66,11 @@
             textBoxStatus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             textBoxStatus.BackColor = Color.FromArgb(30, 30, 30);
             textBoxStatus.BorderStyle = BorderStyle.None;
-            textBoxStatus.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxStatus.Font = new Font("Segoe UI Variable Display", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxStatus.ForeColor = Color.White;
             textBoxStatus.Location = new Point(2250, 3);
             textBoxStatus.Name = "textBoxStatus";
-            textBoxStatus.Size = new Size(279, 28);
+            textBoxStatus.Size = new Size(279, 25);
             textBoxStatus.TabIndex = 6;
             textBoxStatus.Text = "Status: Unlogged";
             textBoxStatus.TextAlign = HorizontalAlignment.Right;
@@ -79,12 +79,12 @@
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
             textBoxAccountPrefferences.Location = new Point(20, 3);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
             textBoxAccountPrefferences.ReadOnly = true;
-            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.Size = new Size(245, 26);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Settings";
             // 
@@ -114,12 +114,12 @@
             // 
             textBox3.BackColor = Color.FromArgb(25, 25, 25);
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.White;
             textBox3.Location = new Point(9, 9);
             textBox3.Margin = new Padding(9);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(226, 24);
+            textBox3.Size = new Size(226, 22);
             textBox3.TabIndex = 0;
             textBox3.Text = "Update NovaPost API:";
             // 
@@ -128,7 +128,7 @@
             buttonUpdate.BackColor = Color.White;
             buttonUpdate.FlatAppearance.BorderSize = 0;
             buttonUpdate.FlatStyle = FlatStyle.Flat;
-            buttonUpdate.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonUpdate.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buttonUpdate.Location = new Point(392, 12);
             buttonUpdate.Margin = new Padding(9);
             buttonUpdate.Name = "buttonUpdate";
@@ -142,11 +142,11 @@
             // 
             textBox4.BackColor = Color.FromArgb(25, 25, 25);
             textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.ForeColor = Color.White;
             textBox4.Location = new Point(9, 36);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(53, 24);
+            textBox4.Size = new Size(41, 22);
             textBox4.TabIndex = 2;
             textBox4.Text = "State:";
             // 
@@ -154,11 +154,11 @@
             // 
             textBoxStatusAPI.BackColor = Color.FromArgb(25, 25, 25);
             textBoxStatusAPI.BorderStyle = BorderStyle.None;
-            textBoxStatusAPI.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxStatusAPI.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxStatusAPI.ForeColor = Color.Red;
-            textBoxStatusAPI.Location = new Point(68, 36);
+            textBoxStatusAPI.Location = new Point(56, 36);
             textBoxStatusAPI.Name = "textBoxStatusAPI";
-            textBoxStatusAPI.Size = new Size(156, 24);
+            textBoxStatusAPI.Size = new Size(156, 22);
             textBoxStatusAPI.TabIndex = 3;
             textBoxStatusAPI.Text = "Not checked";
             // 
@@ -178,12 +178,12 @@
             // 
             textBox1.BackColor = Color.FromArgb(25, 25, 25);
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(9, 9);
             textBox1.Margin = new Padding(9);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(226, 24);
+            textBox1.Size = new Size(226, 22);
             textBox1.TabIndex = 0;
             textBox1.Text = "Disable home page banner:";
             // 
@@ -192,13 +192,13 @@
             buttonBanner.BackColor = Color.White;
             buttonBanner.FlatAppearance.BorderSize = 0;
             buttonBanner.FlatStyle = FlatStyle.Flat;
-            buttonBanner.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonBanner.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buttonBanner.Location = new Point(392, 12);
             buttonBanner.Margin = new Padding(9);
             buttonBanner.Name = "buttonBanner";
             buttonBanner.Size = new Size(84, 29);
             buttonBanner.TabIndex = 1;
-            buttonBanner.Text = "Change";
+            buttonBanner.Text = "Interact";
             buttonBanner.UseVisualStyleBackColor = false;
             buttonBanner.Click += buttonBanner_Click;
             // 
@@ -206,11 +206,11 @@
             // 
             textBox2.BackColor = Color.FromArgb(25, 25, 25);
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.White;
             textBox2.Location = new Point(9, 36);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(53, 24);
+            textBox2.Size = new Size(41, 22);
             textBox2.TabIndex = 2;
             textBox2.Text = "State:";
             // 
@@ -218,11 +218,11 @@
             // 
             textBoxState.BackColor = Color.FromArgb(25, 25, 25);
             textBoxState.BorderStyle = BorderStyle.None;
-            textBoxState.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxState.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxState.ForeColor = Color.LimeGreen;
-            textBoxState.Location = new Point(68, 36);
+            textBoxState.Location = new Point(56, 36);
             textBoxState.Name = "textBoxState";
-            textBoxState.Size = new Size(78, 24);
+            textBoxState.Size = new Size(78, 22);
             textBoxState.TabIndex = 3;
             textBoxState.Text = "Enabled";
             // 

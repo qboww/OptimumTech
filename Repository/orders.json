@@ -226,3 +226,74 @@
     "Username": "evhen"
   }
 ]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 30,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      }
+    ],
+    "Id": "3321f762-e5b8-40a0-b61c-0ae586ca39df",
+    "DeliveryType": 0,
+    "Date": "2023-05-21T16:11:53.3745013+03:00",
+    "Email": "user123@mail.com",
+    "Address": "Харків, просп. Героїв Харкова, 272д (маг. АТБ)",
+    "PhoneNumber": "+380689998877",
+    "TotalPrice": 2279.96,
+    "TotalAmount": 4,
+    "Username": "evhen"
+  }
+]

@@ -49,12 +49,12 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             textBoxDescription.BackColor = Color.FromArgb(20, 20, 20);
             textBoxDescription.BorderStyle = BorderStyle.None;
-            textBoxDescription.Font = new Font("Poppins", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxDescription.Font = new Font("Segoe UI Variable Display", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxDescription.ForeColor = Color.White;
-            textBoxDescription.Location = new Point(12, 1);
+            textBoxDescription.Location = new Point(12, 3);
             textBoxDescription.Name = "textBoxDescription";
             textBoxDescription.ReadOnly = true;
-            textBoxDescription.Size = new Size(372, 26);
+            textBoxDescription.Size = new Size(372, 23);
             textBoxDescription.TabIndex = 0;
             textBoxDescription.TabStop = false;
             textBoxDescription.Text = "Register";
@@ -85,10 +85,10 @@ namespace Optimum_Tech.Forms.Dialogs
             // textBoxLogin
             // 
             textBoxLogin.BorderStyle = BorderStyle.None;
-            textBoxLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxLogin.Location = new Point(105, 52);
+            textBoxLogin.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxLogin.Location = new Point(65, 52);
             textBoxLogin.Name = "textBoxLogin";
-            textBoxLogin.Size = new Size(189, 24);
+            textBoxLogin.Size = new Size(229, 22);
             textBoxLogin.TabIndex = 18;
             textBoxLogin.TabStop = false;
             textBoxLogin.Text = "Login";
@@ -100,7 +100,7 @@ namespace Optimum_Tech.Forms.Dialogs
             buttonRegister.BackColor = Color.White;
             buttonRegister.FlatAppearance.BorderSize = 0;
             buttonRegister.FlatStyle = FlatStyle.Flat;
-            buttonRegister.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonRegister.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buttonRegister.Location = new Point(361, 161);
             buttonRegister.Name = "buttonRegister";
             buttonRegister.Size = new Size(80, 29);
@@ -112,10 +112,10 @@ namespace Optimum_Tech.Forms.Dialogs
             // textBoxPassword
             // 
             textBoxPassword.BorderStyle = BorderStyle.None;
-            textBoxPassword.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPassword.Location = new Point(105, 104);
+            textBoxPassword.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPassword.Location = new Point(92, 104);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(189, 24);
+            textBoxPassword.Size = new Size(202, 22);
             textBoxPassword.TabIndex = 22;
             textBoxPassword.TabStop = false;
             textBoxPassword.Text = "Password";
@@ -124,22 +124,22 @@ namespace Optimum_Tech.Forms.Dialogs
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(8, 52);
+            label1.Location = new Point(8, 53);
             label1.Name = "label1";
-            label1.Size = new Size(57, 28);
+            label1.Size = new Size(51, 21);
             label1.TabIndex = 23;
             label1.Text = "Login:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(8, 100);
+            label2.Location = new Point(8, 105);
             label2.Name = "label2";
-            label2.Size = new Size(91, 28);
+            label2.Size = new Size(78, 21);
             label2.TabIndex = 24;
             label2.Text = "Password:";
             // 
@@ -147,11 +147,11 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             textBox1.BackColor = Color.FromArgb(40, 40, 40);
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.Gray;
             textBox1.Location = new Point(12, 78);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(282, 20);
+            textBox1.Size = new Size(282, 16);
             textBox1.TabIndex = 25;
             textBox1.Text = "Login should contain at least 3 letters";
             // 
@@ -159,11 +159,11 @@ namespace Optimum_Tech.Forms.Dialogs
             // 
             textBox2.BackColor = Color.FromArgb(40, 40, 40);
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.Gray;
-            textBox2.Location = new Point(12, 131);
+            textBox2.Location = new Point(12, 132);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(282, 20);
+            textBox2.Size = new Size(282, 16);
             textBox2.TabIndex = 26;
             textBox2.Text = "Password length range 5-15 symbols";
             // 

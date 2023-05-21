@@ -60,21 +60,21 @@
             // 
             labelClockSpeedBoost.AutoSize = true;
             labelClockSpeedBoost.BackColor = SystemColors.Control;
-            labelClockSpeedBoost.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelClockSpeedBoost.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelClockSpeedBoost.ForeColor = SystemColors.ControlText;
-            labelClockSpeedBoost.Location = new Point(6, 404);
+            labelClockSpeedBoost.Location = new Point(6, 399);
             labelClockSpeedBoost.Name = "labelClockSpeedBoost";
-            labelClockSpeedBoost.Size = new Size(113, 28);
+            labelClockSpeedBoost.Size = new Size(98, 21);
             labelClockSpeedBoost.TabIndex = 23;
             labelClockSpeedBoost.Text = "Boost speed:";
             // 
             // textBoxClockSpeedBoost
             // 
             textBoxClockSpeedBoost.BorderStyle = BorderStyle.None;
-            textBoxClockSpeedBoost.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxClockSpeedBoost.Location = new Point(126, 404);
+            textBoxClockSpeedBoost.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxClockSpeedBoost.Location = new Point(126, 399);
             textBoxClockSpeedBoost.Name = "textBoxClockSpeedBoost";
-            textBoxClockSpeedBoost.Size = new Size(542, 24);
+            textBoxClockSpeedBoost.Size = new Size(542, 22);
             textBoxClockSpeedBoost.TabIndex = 22;
             textBoxClockSpeedBoost.Text = "some-data";
             // 
@@ -82,21 +82,21 @@
             // 
             labelClockSpeedDefault.AutoSize = true;
             labelClockSpeedDefault.BackColor = SystemColors.Control;
-            labelClockSpeedDefault.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelClockSpeedDefault.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelClockSpeedDefault.ForeColor = SystemColors.ControlText;
-            labelClockSpeedDefault.Location = new Point(6, 374);
+            labelClockSpeedDefault.Location = new Point(6, 369);
             labelClockSpeedDefault.Name = "labelClockSpeedDefault";
-            labelClockSpeedDefault.Size = new Size(126, 28);
+            labelClockSpeedDefault.Size = new Size(109, 21);
             labelClockSpeedDefault.TabIndex = 21;
             labelClockSpeedDefault.Text = "Default speed:";
             // 
             // textBoxClockSpeedDefault
             // 
             textBoxClockSpeedDefault.BorderStyle = BorderStyle.None;
-            textBoxClockSpeedDefault.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxClockSpeedDefault.Location = new Point(139, 374);
+            textBoxClockSpeedDefault.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxClockSpeedDefault.Location = new Point(139, 369);
             textBoxClockSpeedDefault.Name = "textBoxClockSpeedDefault";
-            textBoxClockSpeedDefault.Size = new Size(529, 24);
+            textBoxClockSpeedDefault.Size = new Size(529, 22);
             textBoxClockSpeedDefault.TabIndex = 20;
             textBoxClockSpeedDefault.Text = "some-data";
             // 
@@ -104,21 +104,21 @@
             // 
             labelThreads.AutoSize = true;
             labelThreads.BackColor = SystemColors.Control;
-            labelThreads.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelThreads.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelThreads.ForeColor = SystemColors.ControlText;
-            labelThreads.Location = new Point(6, 344);
+            labelThreads.Location = new Point(6, 339);
             labelThreads.Name = "labelThreads";
-            labelThreads.Size = new Size(80, 28);
+            labelThreads.Size = new Size(68, 21);
             labelThreads.TabIndex = 19;
             labelThreads.Text = "Threads:";
             // 
             // textBoxThreads
             // 
             textBoxThreads.BorderStyle = BorderStyle.None;
-            textBoxThreads.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxThreads.Location = new Point(93, 344);
+            textBoxThreads.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxThreads.Location = new Point(93, 339);
             textBoxThreads.Name = "textBoxThreads";
-            textBoxThreads.Size = new Size(575, 24);
+            textBoxThreads.Size = new Size(575, 22);
             textBoxThreads.TabIndex = 18;
             textBoxThreads.Text = "some-data";
             // 
@@ -126,21 +126,21 @@
             // 
             labelCores.AutoSize = true;
             labelCores.BackColor = SystemColors.Control;
-            labelCores.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCores.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelCores.ForeColor = SystemColors.ControlText;
-            labelCores.Location = new Point(6, 314);
+            labelCores.Location = new Point(6, 309);
             labelCores.Name = "labelCores";
-            labelCores.Size = new Size(61, 28);
+            labelCores.Size = new Size(54, 21);
             labelCores.TabIndex = 17;
             labelCores.Text = "Cores:";
             // 
             // textBoxCores
             // 
             textBoxCores.BorderStyle = BorderStyle.None;
-            textBoxCores.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxCores.Location = new Point(74, 314);
+            textBoxCores.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCores.Location = new Point(74, 309);
             textBoxCores.Name = "textBoxCores";
-            textBoxCores.Size = new Size(594, 24);
+            textBoxCores.Size = new Size(594, 22);
             textBoxCores.TabIndex = 16;
             textBoxCores.Text = "some-data";
             // 
@@ -148,21 +148,21 @@
             // 
             labelSocket.AutoSize = true;
             labelSocket.BackColor = SystemColors.Control;
-            labelSocket.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelSocket.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelSocket.ForeColor = SystemColors.ControlText;
-            labelSocket.Location = new Point(6, 284);
+            labelSocket.Location = new Point(6, 279);
             labelSocket.Name = "labelSocket";
-            labelSocket.Size = new Size(68, 28);
+            labelSocket.Size = new Size(61, 21);
             labelSocket.TabIndex = 15;
             labelSocket.Text = "Socket:";
             // 
             // textBoxSocket
             // 
             textBoxSocket.BorderStyle = BorderStyle.None;
-            textBoxSocket.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSocket.Location = new Point(81, 284);
+            textBoxSocket.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSocket.Location = new Point(81, 279);
             textBoxSocket.Name = "textBoxSocket";
-            textBoxSocket.Size = new Size(587, 24);
+            textBoxSocket.Size = new Size(587, 22);
             textBoxSocket.TabIndex = 14;
             textBoxSocket.Text = "some-data";
             // 
@@ -170,31 +170,31 @@
             // 
             labelManufacturer.AutoSize = true;
             labelManufacturer.BackColor = SystemColors.Control;
-            labelManufacturer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelManufacturer.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelManufacturer.ForeColor = SystemColors.ControlText;
-            labelManufacturer.Location = new Point(6, 254);
+            labelManufacturer.Location = new Point(6, 249);
             labelManufacturer.Name = "labelManufacturer";
-            labelManufacturer.Size = new Size(124, 28);
+            labelManufacturer.Size = new Size(109, 21);
             labelManufacturer.TabIndex = 13;
             labelManufacturer.Text = "Manufacturer:";
             // 
             // textBoxManufacturer
             // 
             textBoxManufacturer.BorderStyle = BorderStyle.None;
-            textBoxManufacturer.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxManufacturer.Location = new Point(137, 254);
+            textBoxManufacturer.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxManufacturer.Location = new Point(137, 249);
             textBoxManufacturer.Name = "textBoxManufacturer";
-            textBoxManufacturer.Size = new Size(531, 24);
+            textBoxManufacturer.Size = new Size(531, 22);
             textBoxManufacturer.TabIndex = 12;
             textBoxManufacturer.Text = "some-data";
             // 
             // textBoxId
             // 
             textBoxId.BorderStyle = BorderStyle.None;
-            textBoxId.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxId.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxId.Location = new Point(42, 37);
             textBoxId.Name = "textBoxId";
-            textBoxId.Size = new Size(626, 24);
+            textBoxId.Size = new Size(626, 22);
             textBoxId.TabIndex = 25;
             textBoxId.Text = "some-data";
             // 
@@ -202,11 +202,11 @@
             // 
             labelId.AutoSize = true;
             labelId.BackColor = SystemColors.Control;
-            labelId.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelId.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelId.ForeColor = SystemColors.ControlText;
             labelId.Location = new Point(8, 37);
             labelId.Name = "labelId";
-            labelId.Size = new Size(30, 28);
+            labelId.Size = new Size(26, 21);
             labelId.TabIndex = 26;
             labelId.Text = "Id:";
             // 
@@ -214,31 +214,31 @@
             // 
             labelName.AutoSize = true;
             labelName.BackColor = SystemColors.Control;
-            labelName.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelName.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelName.ForeColor = SystemColors.ControlText;
             labelName.Location = new Point(8, 66);
             labelName.Name = "labelName";
-            labelName.Size = new Size(63, 28);
+            labelName.Size = new Size(55, 21);
             labelName.TabIndex = 28;
             labelName.Text = "Name:";
             // 
             // textBoxName
             // 
             textBoxName.BorderStyle = BorderStyle.None;
-            textBoxName.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxName.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxName.Location = new Point(75, 66);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(593, 24);
+            textBoxName.Size = new Size(593, 22);
             textBoxName.TabIndex = 27;
             textBoxName.Text = "some-data";
             // 
             // textBoxPrice
             // 
             textBoxPrice.BorderStyle = BorderStyle.None;
-            textBoxPrice.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPrice.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxPrice.Location = new Point(75, 96);
             textBoxPrice.Name = "textBoxPrice";
-            textBoxPrice.Size = new Size(593, 24);
+            textBoxPrice.Size = new Size(593, 22);
             textBoxPrice.TabIndex = 29;
             textBoxPrice.Text = "some-data";
             // 
@@ -246,11 +246,11 @@
             // 
             labelPrice.AutoSize = true;
             labelPrice.BackColor = SystemColors.Control;
-            labelPrice.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPrice.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelPrice.ForeColor = SystemColors.ControlText;
             labelPrice.Location = new Point(8, 96);
             labelPrice.Name = "labelPrice";
-            labelPrice.Size = new Size(54, 28);
+            labelPrice.Size = new Size(48, 21);
             labelPrice.TabIndex = 30;
             labelPrice.Text = "Price:";
             // 
@@ -258,21 +258,21 @@
             // 
             labelResponses.AutoSize = true;
             labelResponses.BackColor = SystemColors.Control;
-            labelResponses.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelResponses.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelResponses.ForeColor = SystemColors.ControlText;
             labelResponses.Location = new Point(8, 126);
             labelResponses.Name = "labelResponses";
-            labelResponses.Size = new Size(100, 28);
+            labelResponses.Size = new Size(86, 21);
             labelResponses.TabIndex = 32;
             labelResponses.Text = "Responses:";
             // 
             // textBoxResponses
             // 
             textBoxResponses.BorderStyle = BorderStyle.None;
-            textBoxResponses.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxResponses.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxResponses.Location = new Point(112, 126);
             textBoxResponses.Name = "textBoxResponses";
-            textBoxResponses.Size = new Size(556, 24);
+            textBoxResponses.Size = new Size(556, 22);
             textBoxResponses.TabIndex = 31;
             textBoxResponses.Text = "some-data";
             // 
@@ -280,21 +280,21 @@
             // 
             labelRating.AutoSize = true;
             labelRating.BackColor = SystemColors.Control;
-            labelRating.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelRating.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelRating.ForeColor = SystemColors.ControlText;
             labelRating.Location = new Point(8, 156);
             labelRating.Name = "labelRating";
-            labelRating.Size = new Size(67, 28);
+            labelRating.Size = new Size(58, 21);
             labelRating.TabIndex = 34;
             labelRating.Text = "Rating:";
             // 
             // textBoxRating
             // 
             textBoxRating.BorderStyle = BorderStyle.None;
-            textBoxRating.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxRating.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxRating.Location = new Point(79, 157);
             textBoxRating.Name = "textBoxRating";
-            textBoxRating.Size = new Size(589, 24);
+            textBoxRating.Size = new Size(589, 22);
             textBoxRating.TabIndex = 33;
             textBoxRating.Text = "some-data";
             // 
@@ -302,21 +302,21 @@
             // 
             labelAvailable.AutoSize = true;
             labelAvailable.BackColor = SystemColors.Control;
-            labelAvailable.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelAvailable.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelAvailable.ForeColor = SystemColors.ControlText;
             labelAvailable.Location = new Point(8, 187);
             labelAvailable.Name = "labelAvailable";
-            labelAvailable.Size = new Size(90, 28);
+            labelAvailable.Size = new Size(76, 21);
             labelAvailable.TabIndex = 36;
             labelAvailable.Text = "Available:";
             // 
             // textBoxAvailable
             // 
             textBoxAvailable.BorderStyle = BorderStyle.None;
-            textBoxAvailable.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAvailable.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAvailable.Location = new Point(102, 187);
             textBoxAvailable.Name = "textBoxAvailable";
-            textBoxAvailable.Size = new Size(566, 24);
+            textBoxAvailable.Size = new Size(566, 22);
             textBoxAvailable.TabIndex = 35;
             textBoxAvailable.Text = "some-data";
             // 
@@ -324,13 +324,13 @@
             // 
             textBox1.BackColor = Color.FromArgb(30, 30, 30);
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(9, 8);
             textBox1.Margin = new Padding(5, 3, 5, 5);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(659, 24);
+            textBox1.Size = new Size(659, 22);
             textBox1.TabIndex = 37;
             textBox1.Text = " Product data:";
             // 
@@ -338,13 +338,13 @@
             // 
             textBox2.BackColor = Color.FromArgb(30, 30, 30);
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.White;
             textBox2.Location = new Point(9, 219);
             textBox2.Margin = new Padding(5);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(659, 24);
+            textBox2.Size = new Size(659, 22);
             textBox2.TabIndex = 38;
             textBox2.Text = " Device data:";
             // 

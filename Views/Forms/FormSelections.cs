@@ -18,7 +18,7 @@ namespace Optimum_Tech.View.Forms
         public FormSelections(FormMain formMain)
         {
             InitializeComponent();
-            this.formMain = formMain; 
+            this.formMain = formMain;
         }
 
         private void FormSelections_Load(object sender, EventArgs e)

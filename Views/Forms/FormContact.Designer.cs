@@ -101,7 +101,7 @@
             textBoxStatus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             textBoxStatus.BackColor = Color.FromArgb(30, 30, 30);
             textBoxStatus.BorderStyle = BorderStyle.None;
-            textBoxStatus.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxStatus.Font = new Font("Segoe UI Variable Display", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxStatus.ForeColor = Color.White;
             textBoxStatus.Location = new Point(2298, 3);
             textBoxStatus.Name = "textBoxStatus";
@@ -114,12 +114,12 @@
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
-            textBoxAccountPrefferences.Location = new Point(12, 3);
+            textBoxAccountPrefferences.Location = new Point(12, 5);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
             textBoxAccountPrefferences.ReadOnly = true;
-            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.Size = new Size(245, 26);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Contact";
             // 
@@ -158,11 +158,11 @@
             // 
             textBox6.BackColor = Color.FromArgb(25, 25, 25);
             textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox6.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox6.ForeColor = Color.White;
-            textBox6.Location = new Point(199, 34);
+            textBox6.Location = new Point(199, 36);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(143, 24);
+            textBox6.Size = new Size(143, 22);
             textBox6.TabIndex = 34;
             textBox6.Text = "+380680980403";
             // 
@@ -170,11 +170,11 @@
             // 
             textBox5.BackColor = Color.FromArgb(25, 25, 25);
             textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox5.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.ForeColor = Color.White;
             textBox5.Location = new Point(199, 6);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(141, 24);
+            textBox5.Size = new Size(141, 22);
             textBox5.TabIndex = 33;
             textBox5.Text = "+380663816228";
             // 
@@ -182,12 +182,12 @@
             // 
             textBoxVodafone.BackColor = Color.FromArgb(25, 25, 25);
             textBoxVodafone.BorderStyle = BorderStyle.None;
-            textBoxVodafone.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxVodafone.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxVodafone.ForeColor = Color.White;
             textBoxVodafone.Location = new Point(11, 6);
             textBoxVodafone.Name = "textBoxVodafone";
             textBoxVodafone.ReadOnly = true;
-            textBoxVodafone.Size = new Size(83, 24);
+            textBoxVodafone.Size = new Size(83, 22);
             textBoxVodafone.TabIndex = 31;
             textBoxVodafone.Text = "Vodafone:";
             // 
@@ -195,12 +195,12 @@
             // 
             textBoxKyivstar.BackColor = Color.FromArgb(25, 25, 25);
             textBoxKyivstar.BorderStyle = BorderStyle.None;
-            textBoxKyivstar.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxKyivstar.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxKyivstar.ForeColor = Color.White;
             textBoxKyivstar.Location = new Point(11, 36);
             textBoxKyivstar.Name = "textBoxKyivstar";
             textBoxKyivstar.ReadOnly = true;
-            textBoxKyivstar.Size = new Size(83, 24);
+            textBoxKyivstar.Size = new Size(83, 22);
             textBoxKyivstar.TabIndex = 32;
             textBoxKyivstar.Text = "Kyivstar:";
             // 
@@ -238,7 +238,7 @@
             // label6
             // 
             label6.BackColor = Color.FromArgb(25, 25, 25);
-            label6.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
             label6.ImageAlign = ContentAlignment.MiddleRight;
             label6.Location = new Point(0, 0);
@@ -261,9 +261,9 @@
             // label12
             // 
             label12.BackColor = Color.FromArgb(25, 25, 25);
-            label12.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(0, 3);
+            label12.Location = new Point(0, 0);
             label12.Name = "label12";
             label12.Size = new Size(171, 34);
             label12.TabIndex = 0;
@@ -283,7 +283,7 @@
             // label11
             // 
             label11.BackColor = Color.FromArgb(25, 25, 25);
-            label11.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
             label11.Location = new Point(0, 0);
             label11.Name = "label11";
@@ -313,9 +313,9 @@
             // label1
             // 
             label1.BackColor = Color.FromArgb(25, 25, 25);
-            label1.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(0, 3);
+            label1.Location = new Point(0, 2);
             label1.Name = "label1";
             label1.Size = new Size(141, 31);
             label1.TabIndex = 0;
@@ -339,12 +339,12 @@
             // 
             textBox4.BackColor = Color.FromArgb(25, 25, 25);
             textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.ForeColor = Color.White;
             textBox4.Location = new Point(11, 14);
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
-            textBox4.Size = new Size(56, 24);
+            textBox4.Size = new Size(56, 22);
             textBox4.TabIndex = 23;
             textBox4.Text = "Links:";
             // 
@@ -416,18 +416,18 @@
             // 
             textBoxState.BackColor = Color.FromArgb(25, 25, 25);
             textBoxState.BorderStyle = BorderStyle.None;
-            textBoxState.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxState.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxState.ForeColor = Color.White;
             textBoxState.Location = new Point(11, 121);
             textBoxState.Name = "textBoxState";
             textBoxState.ReadOnly = true;
-            textBoxState.Size = new Size(126, 24);
+            textBoxState.Size = new Size(126, 22);
             textBoxState.TabIndex = 33;
             textBoxState.Text = "Earnings state:";
             // 
             // linkLabelDonate
             // 
-            linkLabelDonate.Font = new Font("Poppins", 12F, FontStyle.Underline, GraphicsUnit.Point);
+            linkLabelDonate.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabelDonate.LinkColor = Color.MediumPurple;
             linkLabelDonate.Location = new Point(199, 36);
             linkLabelDonate.Margin = new Padding(0);
@@ -442,11 +442,11 @@
             // 
             textBoxName.BackColor = Color.FromArgb(25, 25, 25);
             textBoxName.BorderStyle = BorderStyle.None;
-            textBoxName.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxName.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxName.ForeColor = Color.White;
             textBoxName.Location = new Point(204, 241);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(131, 24);
+            textBoxName.Size = new Size(131, 22);
             textBoxName.TabIndex = 30;
             textBoxName.Text = "name";
             // 
@@ -454,12 +454,12 @@
             // 
             textBoxNameText.BackColor = Color.FromArgb(25, 25, 25);
             textBoxNameText.BorderStyle = BorderStyle.None;
-            textBoxNameText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxNameText.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxNameText.ForeColor = Color.White;
             textBoxNameText.Location = new Point(11, 211);
             textBoxNameText.Name = "textBoxNameText";
             textBoxNameText.ReadOnly = true;
-            textBoxNameText.Size = new Size(83, 24);
+            textBoxNameText.Size = new Size(83, 22);
             textBoxNameText.TabIndex = 29;
             textBoxNameText.Text = "Jar name:";
             // 
@@ -467,11 +467,11 @@
             // 
             textBoxOwner.BackColor = Color.FromArgb(25, 25, 25);
             textBoxOwner.BorderStyle = BorderStyle.None;
-            textBoxOwner.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxOwner.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxOwner.ForeColor = Color.White;
             textBoxOwner.Location = new Point(204, 211);
             textBoxOwner.Name = "textBoxOwner";
-            textBoxOwner.Size = new Size(125, 24);
+            textBoxOwner.Size = new Size(125, 22);
             textBoxOwner.TabIndex = 28;
             textBoxOwner.Text = "name";
             // 
@@ -479,12 +479,12 @@
             // 
             textBoxOwnerText.BackColor = Color.FromArgb(25, 25, 25);
             textBoxOwnerText.BorderStyle = BorderStyle.None;
-            textBoxOwnerText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxOwnerText.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxOwnerText.ForeColor = Color.White;
             textBoxOwnerText.Location = new Point(11, 241);
             textBoxOwnerText.Name = "textBoxOwnerText";
             textBoxOwnerText.ReadOnly = true;
-            textBoxOwnerText.Size = new Size(83, 24);
+            textBoxOwnerText.Size = new Size(83, 22);
             textBoxOwnerText.TabIndex = 27;
             textBoxOwnerText.Text = "Jar owner:";
             // 
@@ -492,11 +492,11 @@
             // 
             textBoxCurrent.BackColor = Color.FromArgb(25, 25, 25);
             textBoxCurrent.BorderStyle = BorderStyle.None;
-            textBoxCurrent.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCurrent.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCurrent.ForeColor = Color.White;
             textBoxCurrent.Location = new Point(204, 151);
             textBoxCurrent.Name = "textBoxCurrent";
-            textBoxCurrent.Size = new Size(131, 24);
+            textBoxCurrent.Size = new Size(131, 22);
             textBoxCurrent.TabIndex = 26;
             textBoxCurrent.Text = "num";
             // 
@@ -504,11 +504,11 @@
             // 
             textBoxGoal.BackColor = Color.FromArgb(25, 25, 25);
             textBoxGoal.BorderStyle = BorderStyle.None;
-            textBoxGoal.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxGoal.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxGoal.ForeColor = Color.White;
             textBoxGoal.Location = new Point(204, 181);
             textBoxGoal.Name = "textBoxGoal";
-            textBoxGoal.Size = new Size(125, 24);
+            textBoxGoal.Size = new Size(125, 22);
             textBoxGoal.TabIndex = 25;
             textBoxGoal.Text = "num";
             // 
@@ -516,12 +516,12 @@
             // 
             textBoxCurrentText.BackColor = Color.FromArgb(25, 25, 25);
             textBoxCurrentText.BorderStyle = BorderStyle.None;
-            textBoxCurrentText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCurrentText.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCurrentText.ForeColor = Color.White;
             textBoxCurrentText.Location = new Point(11, 151);
             textBoxCurrentText.Name = "textBoxCurrentText";
             textBoxCurrentText.ReadOnly = true;
-            textBoxCurrentText.Size = new Size(154, 24);
+            textBoxCurrentText.Size = new Size(154, 22);
             textBoxCurrentText.TabIndex = 24;
             textBoxCurrentText.Text = "Current donations:";
             // 
@@ -529,12 +529,12 @@
             // 
             textBoxGoalText.BackColor = Color.FromArgb(25, 25, 25);
             textBoxGoalText.BorderStyle = BorderStyle.None;
-            textBoxGoalText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxGoalText.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxGoalText.ForeColor = Color.White;
             textBoxGoalText.Location = new Point(11, 181);
             textBoxGoalText.Name = "textBoxGoalText";
             textBoxGoalText.ReadOnly = true;
-            textBoxGoalText.Size = new Size(131, 24);
+            textBoxGoalText.Size = new Size(131, 22);
             textBoxGoalText.TabIndex = 23;
             textBoxGoalText.Text = "Donate goal:";
             // 
@@ -542,12 +542,12 @@
             // 
             textBox3.BackColor = Color.FromArgb(25, 25, 25);
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.White;
             textBox3.Location = new Point(11, 36);
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
-            textBox3.Size = new Size(131, 24);
+            textBox3.Size = new Size(131, 22);
             textBox3.TabIndex = 21;
             textBox3.Text = "Monobank jar:";
             // 
@@ -555,12 +555,12 @@
             // 
             textBox2.BackColor = Color.FromArgb(25, 25, 25);
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.White;
             textBox2.Location = new Point(11, 6);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(135, 24);
+            textBox2.Size = new Size(135, 22);
             textBox2.TabIndex = 20;
             textBox2.Text = "Monobank card:";
             // 
@@ -568,11 +568,11 @@
             // 
             textBox1.BackColor = Color.FromArgb(25, 25, 25);
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(204, 6);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 24);
+            textBox1.Size = new Size(172, 22);
             textBox1.TabIndex = 19;
             textBox1.Text = "4441 1144 2829 1270";
             // 

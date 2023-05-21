@@ -10,7 +10,7 @@ namespace Optimum_Tech.View.Forms
     {
         public FormContact()
         {
-            InitializeComponent();     
+            InitializeComponent();
         }
 
         private async Task LoadDonationDataAsync()

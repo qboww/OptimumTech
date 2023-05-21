@@ -11,7 +11,7 @@ namespace Optimum_Tech.Forms
         public FormFavorites(FormMain formMain)
         {
             InitializeComponent();
-            this.formMain = formMain;     
+            this.formMain = formMain;
         }
 
         private void FormFavorites_Load(object sender, EventArgs e)

@@ -41,7 +41,7 @@
             textBoxUnderLogo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxUnderLogo.BackColor = SystemColors.ButtonFace;
             textBoxUnderLogo.BorderStyle = BorderStyle.None;
-            textBoxUnderLogo.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxUnderLogo.Font = new Font("PopSegoe UI Variable Displaypins", 16F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxUnderLogo.ForeColor = SystemColors.WindowFrame;
             textBoxUnderLogo.Location = new Point(-1, 352);
             textBoxUnderLogo.Name = "textBoxUnderLogo";
@@ -75,7 +75,7 @@
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Segoe UI Variable Display", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
             textBoxAccountPrefferences.Location = new Point(12, 3);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";

@@ -34,5 +34,14 @@
     "Login": "tolik123",
     "Password": "tolik123",
     "Access": 2
+  },
+  {
+    "disposed": false,
+    "Orders": [],
+    "Favorites": [],
+    "Selections": [],
+    "Login": "evhen",
+    "Password": "evhen",
+    "Access": 2
   }
 ]

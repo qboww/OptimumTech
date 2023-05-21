@@ -60,12 +60,12 @@
             // 
             textBoxGraphicsCards.BackColor = Color.FromArgb(30, 30, 30);
             textBoxGraphicsCards.BorderStyle = BorderStyle.None;
-            textBoxGraphicsCards.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxGraphicsCards.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxGraphicsCards.ForeColor = Color.White;
             textBoxGraphicsCards.Location = new Point(12, 3);
             textBoxGraphicsCards.Name = "textBoxGraphicsCards";
             textBoxGraphicsCards.ReadOnly = true;
-            textBoxGraphicsCards.Size = new Size(154, 28);
+            textBoxGraphicsCards.Size = new Size(154, 26);
             textBoxGraphicsCards.TabIndex = 9;
             textBoxGraphicsCards.Text = "Graphics Cards";
             // 

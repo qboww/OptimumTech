@@ -46,11 +46,11 @@
             listBoxProducts = new ListBox();
             textBoxProducts = new TextBox();
             panel3 = new Panel();
+            buttonRepository = new Button();
             textBoxSearchText = new TextBox();
             textBoxSearch = new TextBox();
             buttonSearch = new Button();
             buttonSave = new Button();
-            buttonRepository = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel6.SuspendLayout();
@@ -114,11 +114,11 @@
             // 
             textBoxState.BackColor = Color.FromArgb(30, 30, 30);
             textBoxState.BorderStyle = BorderStyle.None;
-            textBoxState.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxState.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxState.ForeColor = Color.White;
-            textBoxState.Location = new Point(64, 72);
+            textBoxState.Location = new Point(55, 72);
             textBoxState.Name = "textBoxState";
-            textBoxState.Size = new Size(109, 24);
+            textBoxState.Size = new Size(109, 22);
             textBoxState.TabIndex = 8;
             textBoxState.Text = "isn't selected";
             // 
@@ -127,7 +127,7 @@
             buttonDelSave.BackColor = SystemColors.Window;
             buttonDelSave.FlatAppearance.BorderSize = 0;
             buttonDelSave.FlatStyle = FlatStyle.Flat;
-            buttonDelSave.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonDelSave.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buttonDelSave.Location = new Point(252, 102);
             buttonDelSave.Name = "buttonDelSave";
             buttonDelSave.Size = new Size(75, 29);
@@ -141,7 +141,7 @@
             buttonDelete.BackColor = SystemColors.Window;
             buttonDelete.FlatAppearance.BorderSize = 0;
             buttonDelete.FlatStyle = FlatStyle.Flat;
-            buttonDelete.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonDelete.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buttonDelete.Location = new Point(89, 102);
             buttonDelete.Name = "buttonDelete";
             buttonDelete.Size = new Size(75, 29);
@@ -154,11 +154,11 @@
             // 
             textBox3.BackColor = Color.FromArgb(30, 30, 30);
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.White;
             textBox3.Location = new Point(8, 72);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(50, 24);
+            textBox3.Size = new Size(41, 22);
             textBox3.TabIndex = 5;
             textBox3.Text = "State:";
             // 
@@ -167,7 +167,7 @@
             buttonSearchUser.BackColor = SystemColors.Window;
             buttonSearchUser.FlatAppearance.BorderSize = 0;
             buttonSearchUser.FlatStyle = FlatStyle.Flat;
-            buttonSearchUser.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSearchUser.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSearchUser.Location = new Point(8, 102);
             buttonSearchUser.Name = "buttonSearchUser";
             buttonSearchUser.Size = new Size(75, 29);
@@ -180,22 +180,22 @@
             // 
             textBox1.BackColor = Color.FromArgb(30, 30, 30);
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(8, 5);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(319, 28);
+            textBox1.Size = new Size(319, 26);
             textBox1.TabIndex = 3;
             textBox1.Text = "Delete user by name:";
             // 
             // textBoxSearchUserText
             // 
             textBoxSearchUserText.BorderStyle = BorderStyle.None;
-            textBoxSearchUserText.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxSearchUserText.Location = new Point(8, 39);
+            textBoxSearchUserText.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSearchUserText.Location = new Point(8, 44);
             textBoxSearchUserText.Name = "textBoxSearchUserText";
-            textBoxSearchUserText.Size = new Size(319, 24);
+            textBoxSearchUserText.Size = new Size(319, 22);
             textBoxSearchUserText.TabIndex = 4;
             textBoxSearchUserText.Text = "Search";
             textBoxSearchUserText.Click += textBoxSearchUserText_Click;
@@ -217,7 +217,7 @@
             textBoxStatus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             textBoxStatus.BackColor = Color.FromArgb(30, 30, 30);
             textBoxStatus.BorderStyle = BorderStyle.None;
-            textBoxStatus.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxStatus.Font = new Font("Segoe UI Variable Display", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxStatus.ForeColor = Color.White;
             textBoxStatus.Location = new Point(1386, 3);
             textBoxStatus.Name = "textBoxStatus";
@@ -230,12 +230,12 @@
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
-            textBoxAccountPrefferences.Location = new Point(20, 3);
+            textBoxAccountPrefferences.Location = new Point(20, 5);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
             textBoxAccountPrefferences.ReadOnly = true;
-            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.Size = new Size(245, 26);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Admin";
             // 
@@ -255,12 +255,12 @@
             // listBoxProducts
             // 
             listBoxProducts.BorderStyle = BorderStyle.None;
-            listBoxProducts.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            listBoxProducts.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             listBoxProducts.FormattingEnabled = true;
-            listBoxProducts.ItemHeight = 23;
-            listBoxProducts.Location = new Point(8, 39);
+            listBoxProducts.ItemHeight = 17;
+            listBoxProducts.Location = new Point(8, 42);
             listBoxProducts.Name = "listBoxProducts";
-            listBoxProducts.Size = new Size(309, 92);
+            listBoxProducts.Size = new Size(309, 85);
             listBoxProducts.TabIndex = 9;
             listBoxProducts.SelectedIndexChanged += listBoxProducts_SelectedIndexChanged;
             // 
@@ -268,12 +268,12 @@
             // 
             textBoxProducts.BackColor = Color.FromArgb(30, 30, 30);
             textBoxProducts.BorderStyle = BorderStyle.None;
-            textBoxProducts.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxProducts.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxProducts.ForeColor = Color.White;
             textBoxProducts.Location = new Point(8, 8);
             textBoxProducts.Name = "textBoxProducts";
             textBoxProducts.ReadOnly = true;
-            textBoxProducts.Size = new Size(319, 28);
+            textBoxProducts.Size = new Size(319, 26);
             textBoxProducts.TabIndex = 10;
             textBoxProducts.Text = "Select product to edit:";
             // 
@@ -292,26 +292,40 @@
             panel3.Size = new Size(325, 140);
             panel3.TabIndex = 11;
             // 
+            // buttonRepository
+            // 
+            buttonRepository.BackColor = SystemColors.Window;
+            buttonRepository.FlatAppearance.BorderSize = 0;
+            buttonRepository.FlatStyle = FlatStyle.Flat;
+            buttonRepository.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonRepository.Location = new Point(184, 102);
+            buttonRepository.Name = "buttonRepository";
+            buttonRepository.Size = new Size(133, 29);
+            buttonRepository.TabIndex = 7;
+            buttonRepository.Text = "Open repository";
+            buttonRepository.UseVisualStyleBackColor = false;
+            buttonRepository.Click += buttonRepository_Click;
+            // 
             // textBoxSearchText
             // 
             textBoxSearchText.BackColor = Color.FromArgb(30, 30, 30);
             textBoxSearchText.BorderStyle = BorderStyle.None;
-            textBoxSearchText.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSearchText.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSearchText.ForeColor = Color.White;
             textBoxSearchText.Location = new Point(8, 8);
             textBoxSearchText.Name = "textBoxSearchText";
             textBoxSearchText.ReadOnly = true;
-            textBoxSearchText.Size = new Size(319, 28);
+            textBoxSearchText.Size = new Size(319, 26);
             textBoxSearchText.TabIndex = 3;
             textBoxSearchText.Text = "Edit product by name:";
             // 
             // textBoxSearch
             // 
             textBoxSearch.BorderStyle = BorderStyle.None;
-            textBoxSearch.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSearch.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxSearch.Location = new Point(8, 42);
             textBoxSearch.Name = "textBoxSearch";
-            textBoxSearch.Size = new Size(309, 24);
+            textBoxSearch.Size = new Size(309, 22);
             textBoxSearch.TabIndex = 4;
             textBoxSearch.Text = "Search";
             textBoxSearch.Click += textBoxSearch_Click;
@@ -321,7 +335,7 @@
             buttonSearch.BackColor = SystemColors.Window;
             buttonSearch.FlatAppearance.BorderSize = 0;
             buttonSearch.FlatStyle = FlatStyle.Flat;
-            buttonSearch.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSearch.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSearch.Location = new Point(8, 102);
             buttonSearch.Name = "buttonSearch";
             buttonSearch.Size = new Size(75, 29);
@@ -335,7 +349,7 @@
             buttonSave.BackColor = SystemColors.Window;
             buttonSave.FlatAppearance.BorderSize = 0;
             buttonSave.FlatStyle = FlatStyle.Flat;
-            buttonSave.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSave.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSave.Location = new Point(89, 102);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(75, 29);
@@ -343,20 +357,6 @@
             buttonSave.Text = "Save";
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += buttonSave_Click;
-            // 
-            // buttonRepository
-            // 
-            buttonRepository.BackColor = SystemColors.Window;
-            buttonRepository.FlatAppearance.BorderSize = 0;
-            buttonRepository.FlatStyle = FlatStyle.Flat;
-            buttonRepository.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonRepository.Location = new Point(184, 102);
-            buttonRepository.Name = "buttonRepository";
-            buttonRepository.Size = new Size(133, 29);
-            buttonRepository.TabIndex = 7;
-            buttonRepository.Text = "Open repository";
-            buttonRepository.UseVisualStyleBackColor = false;
-            buttonRepository.Click += buttonRepository_Click;
             // 
             // FormAdmin
             // 

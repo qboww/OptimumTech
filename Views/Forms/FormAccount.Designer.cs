@@ -80,11 +80,11 @@ namespace Optimum_Tech.Forms
             // 
             textBox1.BackColor = Color.FromArgb(30, 30, 30);
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(63, 1);
+            textBox1.Location = new Point(63, 3);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 24);
+            textBox1.Size = new Size(100, 22);
             textBox1.TabIndex = 5;
             textBox1.Text = "Register";
             // 
@@ -116,12 +116,12 @@ namespace Optimum_Tech.Forms
             textBoxStatus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             textBoxStatus.BackColor = Color.FromArgb(30, 30, 30);
             textBoxStatus.BorderStyle = BorderStyle.None;
-            textBoxStatus.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxStatus.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxStatus.ForeColor = Color.FromArgb(2, 158, 71);
             textBoxStatus.Location = new Point(509, 3);
             textBoxStatus.Name = "textBoxStatus";
             textBoxStatus.ReadOnly = true;
-            textBoxStatus.Size = new Size(279, 28);
+            textBoxStatus.Size = new Size(279, 26);
             textBoxStatus.TabIndex = 6;
             textBoxStatus.Text = "Status: Unlogged";
             textBoxStatus.TextAlign = HorizontalAlignment.Right;
@@ -130,12 +130,12 @@ namespace Optimum_Tech.Forms
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
             textBoxAccountPrefferences.Location = new Point(12, 3);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
             textBoxAccountPrefferences.ReadOnly = true;
-            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.Size = new Size(245, 26);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Account Prefferences";
             // 
@@ -154,11 +154,11 @@ namespace Optimum_Tech.Forms
             // 
             textBoxLogout.BackColor = Color.FromArgb(30, 30, 30);
             textBoxLogout.BorderStyle = BorderStyle.None;
-            textBoxLogout.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxLogout.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxLogout.ForeColor = Color.White;
-            textBoxLogout.Location = new Point(63, 1);
+            textBoxLogout.Location = new Point(63, 3);
             textBoxLogout.Name = "textBoxLogout";
-            textBoxLogout.Size = new Size(100, 24);
+            textBoxLogout.Size = new Size(100, 22);
             textBoxLogout.TabIndex = 5;
             textBoxLogout.Text = "Logout";
             // 
@@ -189,11 +189,11 @@ namespace Optimum_Tech.Forms
             // 
             textBoxLogin.BackColor = Color.FromArgb(30, 30, 30);
             textBoxLogin.BorderStyle = BorderStyle.None;
-            textBoxLogin.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxLogin.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxLogin.ForeColor = Color.White;
-            textBoxLogin.Location = new Point(63, 1);
+            textBoxLogin.Location = new Point(63, 3);
             textBoxLogin.Name = "textBoxLogin";
-            textBoxLogin.Size = new Size(100, 24);
+            textBoxLogin.Size = new Size(100, 22);
             textBoxLogin.TabIndex = 4;
             textBoxLogin.Text = "Login";
             // 

@@ -31,12 +31,12 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
             panel2 = new Panel();
+            textBox1 = new TextBox();
             buttonPurchase = new Button();
             textBoxAmount = new TextBox();
             textBoxPrice = new TextBox();
             panel5 = new Panel();
             textBoxAccountPrefferences = new TextBox();
-            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel5.SuspendLayout();
@@ -75,13 +75,25 @@
             panel2.Size = new Size(1064, 96);
             panel2.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(30, 30, 30);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.Gray;
+            textBox1.Location = new Point(12, 72);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(424, 18);
+            textBox1.TabIndex = 4;
+            textBox1.Text = "Hint: you are able to increment prduct amount in order pane*";
+            // 
             // buttonPurchase
             // 
             buttonPurchase.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonPurchase.BackColor = Color.FromArgb(2, 158, 71);
             buttonPurchase.FlatAppearance.BorderSize = 0;
             buttonPurchase.FlatStyle = FlatStyle.Flat;
-            buttonPurchase.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonPurchase.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             buttonPurchase.ForeColor = Color.White;
             buttonPurchase.Location = new Point(928, 30);
             buttonPurchase.Name = "buttonPurchase";
@@ -95,11 +107,11 @@
             // 
             textBoxAmount.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAmount.BorderStyle = BorderStyle.None;
-            textBoxAmount.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAmount.Font = new Font("Segoe UI Variable Display", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAmount.ForeColor = Color.White;
-            textBoxAmount.Location = new Point(12, 34);
+            textBoxAmount.Location = new Point(12, 37);
             textBoxAmount.Name = "textBoxAmount";
-            textBoxAmount.Size = new Size(206, 32);
+            textBoxAmount.Size = new Size(206, 28);
             textBoxAmount.TabIndex = 1;
             textBoxAmount.Text = "Amount: ";
             // 
@@ -107,11 +119,11 @@
             // 
             textBoxPrice.BackColor = Color.FromArgb(30, 30, 30);
             textBoxPrice.BorderStyle = BorderStyle.None;
-            textBoxPrice.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPrice.Font = new Font("Segoe UI Variable Display", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxPrice.ForeColor = Color.White;
-            textBoxPrice.Location = new Point(12, 0);
+            textBoxPrice.Location = new Point(12, 3);
             textBoxPrice.Name = "textBoxPrice";
-            textBoxPrice.Size = new Size(206, 32);
+            textBoxPrice.Size = new Size(206, 28);
             textBoxPrice.TabIndex = 0;
             textBoxPrice.Text = "Price: ";
             // 
@@ -129,25 +141,13 @@
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
-            textBoxAccountPrefferences.Location = new Point(12, 3);
+            textBoxAccountPrefferences.Location = new Point(12, 5);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
-            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.Size = new Size(245, 26);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Cart";
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(30, 30, 30);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.Gray;
-            textBox1.Location = new Point(12, 72);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(424, 20);
-            textBox1.TabIndex = 4;
-            textBox1.Text = "Hint: you are able to increment prduct amount in order pane*";
             // 
             // FormSelections
             // 

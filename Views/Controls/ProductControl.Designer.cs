@@ -84,7 +84,7 @@ namespace OptimumTech.Controls
             // 
             textBoxProductName.BackColor = Color.White;
             textBoxProductName.BorderStyle = BorderStyle.None;
-            textBoxProductName.Font = new Font("Poppins", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxProductName.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxProductName.Location = new Point(7, 215);
             textBoxProductName.Name = "textBoxProductName";
             textBoxProductName.ReadOnly = true;
@@ -135,7 +135,7 @@ namespace OptimumTech.Controls
             // 
             textBoxResponses.BackColor = Color.White;
             textBoxResponses.BorderStyle = BorderStyle.None;
-            textBoxResponses.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxResponses.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxResponses.ForeColor = Color.FromArgb(43, 43, 43);
             textBoxResponses.Location = new Point(98, 247);
             textBoxResponses.Name = "textBoxResponses";
@@ -147,7 +147,7 @@ namespace OptimumTech.Controls
             // 
             textBoxAvailable.BackColor = Color.White;
             textBoxAvailable.BorderStyle = BorderStyle.None;
-            textBoxAvailable.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAvailable.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAvailable.ForeColor = Color.FromArgb(0, 160, 70);
             textBoxAvailable.Location = new Point(7, 270);
             textBoxAvailable.Name = "textBoxAvailable";
@@ -159,11 +159,11 @@ namespace OptimumTech.Controls
             // 
             textBoxPrice.BackColor = Color.White;
             textBoxPrice.BorderStyle = BorderStyle.None;
-            textBoxPrice.Font = new Font("Poppins", 18.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPrice.Location = new Point(7, 298);
+            textBoxPrice.Font = new Font("Segoe UI Variable Display", 18.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPrice.Location = new Point(7, 302);
             textBoxPrice.Name = "textBoxPrice";
             textBoxPrice.ReadOnly = true;
-            textBoxPrice.Size = new Size(187, 38);
+            textBoxPrice.Size = new Size(187, 34);
             textBoxPrice.TabIndex = 8;
             textBoxPrice.Text = "000.00$";
             // 

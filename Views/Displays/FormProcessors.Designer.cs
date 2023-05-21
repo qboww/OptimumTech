@@ -60,12 +60,12 @@
             // 
             textBoxProcessors.BackColor = Color.FromArgb(30, 30, 30);
             textBoxProcessors.BorderStyle = BorderStyle.None;
-            textBoxProcessors.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxProcessors.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxProcessors.ForeColor = Color.White;
             textBoxProcessors.Location = new Point(12, 3);
             textBoxProcessors.Name = "textBoxProcessors";
             textBoxProcessors.ReadOnly = true;
-            textBoxProcessors.Size = new Size(106, 28);
+            textBoxProcessors.Size = new Size(106, 26);
             textBoxProcessors.TabIndex = 6;
             textBoxProcessors.Text = "Processors";
             // 

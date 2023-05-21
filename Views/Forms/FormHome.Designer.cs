@@ -32,17 +32,18 @@ namespace Optimum_Tech.Forms
         {
             panel1 = new Panel();
             panelBanner = new Panel();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
             panel5 = new Panel();
             textBoxAccountPrefferences = new TextBox();
             textBoxUnderLogo = new TextBox();
             pictureBoxLogo = new PictureBox();
+            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             panelBanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -62,33 +63,21 @@ namespace Optimum_Tech.Forms
             // 
             panelBanner.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panelBanner.BackColor = Color.FromArgb(91, 119, 66);
-            panelBanner.Controls.Add(label1);
+            panelBanner.Controls.Add(pictureBox2);
             panelBanner.Controls.Add(pictureBox1);
             panelBanner.Location = new Point(0, 40);
             panelBanner.Name = "panelBanner";
-            panelBanner.Size = new Size(1078, 55);
+            panelBanner.Size = new Size(1078, 51);
             panelBanner.TabIndex = 15;
-            // 
-            // label1
-            // 
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Laqonic 4F Unicase", 20.2499981F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(656, 55);
-            label1.TabIndex = 16;
-            label1.Text = "ТВОРИМО ІСТОРІЮ РАЗОМ! ПІДТРИМАЙТЕ БФ\"ПОВЕРНИСЬ ЖИВИМ\"";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = FormsMedia.donate_button;
-            pictureBox1.Location = new Point(908, 0);
+            pictureBox1.Location = new Point(908, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(157, 55);
+            pictureBox1.Size = new Size(157, 45);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -108,12 +97,12 @@ namespace Optimum_Tech.Forms
             // 
             textBoxAccountPrefferences.BackColor = Color.FromArgb(30, 30, 30);
             textBoxAccountPrefferences.BorderStyle = BorderStyle.None;
-            textBoxAccountPrefferences.Font = new Font("Poppins", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxAccountPrefferences.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxAccountPrefferences.ForeColor = Color.White;
-            textBoxAccountPrefferences.Location = new Point(12, 3);
+            textBoxAccountPrefferences.Location = new Point(12, 5);
             textBoxAccountPrefferences.Name = "textBoxAccountPrefferences";
             textBoxAccountPrefferences.ReadOnly = true;
-            textBoxAccountPrefferences.Size = new Size(245, 28);
+            textBoxAccountPrefferences.Size = new Size(245, 26);
             textBoxAccountPrefferences.TabIndex = 4;
             textBoxAccountPrefferences.Text = "Home";
             // 
@@ -122,10 +111,10 @@ namespace Optimum_Tech.Forms
             textBoxUnderLogo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxUnderLogo.BackColor = SystemColors.Control;
             textBoxUnderLogo.BorderStyle = BorderStyle.None;
-            textBoxUnderLogo.Font = new Font("Poppins", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxUnderLogo.Font = new Font("Segoe UI Variable Display", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxUnderLogo.Location = new Point(-1, 377);
             textBoxUnderLogo.Name = "textBoxUnderLogo";
-            textBoxUnderLogo.Size = new Size(1078, 32);
+            textBoxUnderLogo.Size = new Size(1078, 28);
             textBoxUnderLogo.TabIndex = 5;
             textBoxUnderLogo.Text = "Build PC with less effort!";
             textBoxUnderLogo.TextAlign = HorizontalAlignment.Center;
@@ -141,6 +130,16 @@ namespace Optimum_Tech.Forms
             pictureBoxLogo.TabIndex = 4;
             pictureBoxLogo.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = FormsMedia.banner;
+            pictureBox2.Location = new Point(12, 8);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(665, 40);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 16;
+            pictureBox2.TabStop = false;
+            // 
             // FormHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -154,10 +153,12 @@ namespace Optimum_Tech.Forms
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panelBanner.ResumeLayout(false);
+            panelBanner.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -169,8 +170,8 @@ namespace Optimum_Tech.Forms
         private Panel panel5;
         private TextBox textBoxAccountPrefferences;
         private PictureBox pictureBox1;
-        private Label label1;
 
         public Panel panelBanner;
+        private PictureBox pictureBox2;
     }
 }

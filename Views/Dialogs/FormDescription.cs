@@ -7,7 +7,7 @@ namespace Optimum_Tech.Forms.Dialogs
     public partial class FormDescription : Form
     {
         Product product;
-        
+
         public FormDescription(Product product)
         {
             InitializeComponent();
