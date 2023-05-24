@@ -8,13 +8,13 @@ namespace OptimumTech.Controls
 {
     public partial class ProductControl : UserControl
     {
-        private FormDescription formDescription;
-
-        public delegate void SelectionChangedEventHandler(object sender, EventArgs e);
-        public event SelectionChangedEventHandler IsSelectionChanged;
-
         public delegate void FavoriteChangedEventHandler(object sender, EventArgs e);
+        public delegate void SelectionChangedEventHandler(object sender, EventArgs e);
+
+        public event SelectionChangedEventHandler IsSelectionChanged;
         public event FavoriteChangedEventHandler IsFavoriteChanged;
+
+        private FormDescription formDescription;
 
         private bool isFavorite;
         public bool isSelected;

@@ -1,8 +1,6 @@
 ﻿using HtmlAgilityPack;
 using Newtonsoft.Json;
 using Optimum_Tech.Controls.Managers;
-using Optimum_Tech.Forms;
-using System.Drawing.Text;
 using System.Text.RegularExpressions;
 
 namespace Optimum_Tech.Views.Controls

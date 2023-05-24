@@ -1,6 +1,5 @@
 ﻿using Optimum_Tech.Controls.Managers;
 using OptimumTech.Controls;
-using System.Drawing.Text;
 
 namespace Optimum_Tech.Forms
 {

@@ -69,7 +69,6 @@ namespace Optimum_Tech.Models
                 }
                 catch (Exception ex)
                 {
-                    // Handle phone number validation errors
                     throw new ArgumentException("Invalid phone number: " + ex.Message);
                 }
             }

@@ -22,7 +22,7 @@ namespace Optimum_Tech.Model
         private string login;
         private string password;
 
-       public List<Order> Orders { get; set; }
+        public List<Order> Orders { get; set; }
 
         public User(string login, string password)
         {
@@ -62,7 +62,7 @@ namespace Optimum_Tech.Model
 
         public void GrantAccessUser()
         {
-           Access = Access.User;
+            Access = Access.User;
         }
         public void GrantAccessGuest()
         {
@@ -82,11 +82,6 @@ namespace Optimum_Tech.Model
         {
             if (disposed)
                 return;
-
-            if (disposing)
-            {
-
-            }
 
             disposed = true;
         }

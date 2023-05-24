@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using Optimum_Tech.Models;
+﻿using Optimum_Tech.Models;
 
 namespace Optimum_Tech.Model.Products
 {
@@ -31,7 +30,7 @@ namespace Optimum_Tech.Model.Products
             set
             {
                 if (string.IsNullOrEmpty(value))
-                    throw new ArgumentNullException(nameof(Manufacturer), "Manufacturer can't be null or empty value!");
+                    throw new ArgumentNullException("Manufacturer can't be null or empty value!");
 
                 manufacturer = value;
             }

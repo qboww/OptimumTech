@@ -1,54 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Optimum_Tech.Model.Products.GraphicsCard">
-    <Position X="6.75" Y="11.75" Width="2.5" />
+  <Class Name="Optimum_Tech.Forms.FormMain">
+    <Position X="11" Y="4.25" Width="4.25" />
     <TypeIdentifier>
-      <HashCode>AAggAAA4AgAAEAAAAIAgAAQAAAAEAAAAgCAAAIAAAAA=</HashCode>
-      <FileName>Models\Products\GraphicsCard.cs</FileName>
+      <HashCode>Bi5JAgAISPjMoCkKGMGkhWQGQhgSpQgA5AQCCAShsA4=</HashCode>
+      <FileName>Views\Forms\FormMain.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Optimum_Tech.Model.Products.Processor">
-    <Position X="0.75" Y="11.75" Width="2.75" />
+  <Class Name="OptimumTech.Controls.ProductControl">
+    <Position X="17.25" Y="4.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="OptimumTech.Controls.ProductControl.FavoriteChangedEventHandler">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\Controls\ProductControl.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="OptimumTech.Controls.ProductControl.SelectionChangedEventHandler">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\Controls\ProductControl.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAgAAAgIAAAIAgAAAQAAAAEAAAAAARAAgAGQAIAAAAA=</HashCode>
-      <FileName>Models\Products\Processor.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Optimum_Tech.Model.Products.Product">
-    <Position X="4" Y="11.75" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAADAEAAAQBAAAAAAAAAAAQAAQAEAAEAgAAAAIAAAgA=</HashCode>
-      <FileName>Models\Products\Product.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Optimum_Tech.Model.User">
-    <Position X="12.25" Y="7" Width="3.25" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAACAAAEQAAQgAACABAAAAEAACAAiQAggAGAA=</HashCode>
-      <FileName>Models\User.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Optimum_Tech.Models.Order">
-    <Position X="9" Y="7" Width="2.75" />
-    <TypeIdentifier>
-      <HashCode>AAACAAQAACAQAAAgEQAAQAFAAEIAQAADAAAAAAAAAAQ=</HashCode>
-      <FileName>Models\Order.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Optimum_Tech.Controls.Managers.UserManager">
-    <Position X="4.5" Y="7" Width="4" />
-    <TypeIdentifier>
-      <HashCode>AAAAACAEAYhAAAAAAAAAACAEAAABAAAAEAISAAAACAA=</HashCode>
-      <FileName>Controls\Managers\UserManager.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Optimum_Tech.Controls.Managers.ProductManager">
-    <Position X="0.5" Y="7" Width="3.5" />
-    <TypeIdentifier>
-      <HashCode>gAgAAAIAAAAAAAAAAAgIAIAAAAJAAAEIAACAAAAAAAw=</HashCode>
-      <FileName>Controls\Managers\ProductManager.cs</FileName>
+      <HashCode>AAAIAhQQAKAFFCQIAAKAwAAWgAAAAAAAIIAAAAAIAAM=</HashCode>
+      <FileName>Views\Controls\ProductControl.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

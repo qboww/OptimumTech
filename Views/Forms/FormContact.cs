@@ -1,7 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
-using Optimum_Tech.Forms;
 using System.Diagnostics;
-using System.Drawing.Text;
 using System.Net;
 
 namespace Optimum_Tech.View.Forms
