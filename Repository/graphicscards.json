@@ -4,14 +4,14 @@
     "VRAM": 12,
     "MemoryInterface": 192,
     "MemoryType": "GDDR6X",
-    "ClockSpeed": 2.745,
+    "ClockSpeed": 2.8,
     "MinimumWattage": 700,
     "IsAvailable": true,
     "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
     "Name": "MSI Gaming RTX 4070",
-    "Price": 579.99,
-    "Responses": 17,
-    "Rating": 5
+    "Price": 599.99,
+    "Responses": 33,
+    "Rating": 4
   },
   {
     "Manufacturer": "PowerColor",

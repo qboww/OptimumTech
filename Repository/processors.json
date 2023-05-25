@@ -4,14 +4,14 @@
     "Socket": "LGA 1700",
     "Cores": 16,
     "Threads": 32,
-    "ClockSpeedDefault": 3.5,
+    "ClockSpeedDefault": 3.65,
     "ClockSpeedBoost": 5.0,
     "IsAvailable": true,
     "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
     "Name": "Intel Core i9 13900KF",
-    "Price": 539.99,
-    "Responses": 30,
-    "Rating": 3
+    "Price": 559.99,
+    "Responses": 45,
+    "Rating": 5
   },
   {
     "Manufacturer": "AMD",

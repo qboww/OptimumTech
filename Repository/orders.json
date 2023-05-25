@@ -297,3 +297,459 @@
     "Username": "evhen"
   }
 ]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 30,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 30,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      }
+    ],
+    "Id": "46bf07c5-c289-46ec-8305-25e3e661116c",
+    "DeliveryType": 0,
+    "Date": "2023-05-25T10:27:18.5188533+03:00",
+    "Email": "user12345@mail.com",
+    "Address": "Харків, Полтавський Шлях, 177б (НП №101)",
+    "PhoneNumber": "+380689998878",
+    "TotalPrice": 2239.96,
+    "TotalAmount": 4,
+    "Username": "petro12345"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 30,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "PowerColor",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.6,
+        "MinimumWattage": 650,
+        "IsAvailable": true,
+        "Id": "709954db-2211-4ff9-a5d8-cbfb7b0ad0ce",
+        "Name": "PowerColor RX 6700 XT",
+        "Price": 429.99,
+        "Responses": 99,
+        "Rating": 5
+      }
+    ],
+    "Id": "7630bcd6-d7b9-4bee-b0c4-5fff95ca0dfd",
+    "DeliveryType": 0,
+    "Date": "2023-05-25T10:35:09.2025157+03:00",
+    "Email": "user12345@mail.com",
+    "Address": "Харків, Плеханівська, 39",
+    "PhoneNumber": "+380689998888",
+    "TotalPrice": 969.98,
+    "TotalAmount": 2,
+    "Username": "petro234"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 30,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "PowerColor",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.6,
+        "MinimumWattage": 650,
+        "IsAvailable": true,
+        "Id": "709954db-2211-4ff9-a5d8-cbfb7b0ad0ce",
+        "Name": "PowerColor RX 6700 XT",
+        "Price": 429.99,
+        "Responses": 99,
+        "Rating": 5
+      }
+    ],
+    "Id": "6836d453-db99-41eb-a853-d053023d1f18",
+    "DeliveryType": 0,
+    "Date": "2023-05-25T10:38:54.5742452+03:00",
+    "Email": "user12345@mail.com",
+    "Address": "Харків, Перемоги, 89, під'їзд №3 (ТІЛЬКИ ДЛЯ МЕШКАНЦІВ)",
+    "PhoneNumber": "+380689998899",
+    "TotalPrice": 2129.96,
+    "TotalAmount": 4,
+    "Username": "user123"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 30,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 539.99,
+        "Responses": 30,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      }
+    ],
+    "Id": "30892a98-b84e-4568-814f-c4d7743da2d7",
+    "DeliveryType": 0,
+    "Date": "2023-05-25T10:47:53.0289897+03:00",
+    "Email": "user234@mail.com",
+    "Address": "Харків, Шевченка, 24а",
+    "PhoneNumber": "+380689998888",
+    "TotalPrice": 1659.97,
+    "TotalAmount": 3,
+    "Username": "user234"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.55,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 549.99,
+        "Responses": 40,
+        "Rating": 4
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "MSI",
+        "VRAM": 12,
+        "MemoryInterface": 192,
+        "MemoryType": "GDDR6X",
+        "ClockSpeed": 2.745,
+        "MinimumWattage": 700,
+        "IsAvailable": true,
+        "Id": "b2b4e251-ac26-4af3-9c60-b1887195206f",
+        "Name": "MSI Gaming RTX 4070",
+        "Price": 579.99,
+        "Responses": 17,
+        "Rating": 5
+      }
+    ],
+    "Id": "e29338a8-061e-49a9-b154-86bb5f5e752f",
+    "DeliveryType": 0,
+    "Date": "2023-05-25T10:54:58.5518009+03:00",
+    "Email": "user12345@mail.com",
+    "Address": "Харків, Чернишевська, 1",
+    "PhoneNumber": "+380689998888",
+    "TotalPrice": 1709.97,
+    "TotalAmount": 3,
+    "Username": "user123"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.55,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 549.99,
+        "Responses": 40,
+        "Rating": 4
+      },
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.55,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 549.99,
+        "Responses": 40,
+        "Rating": 4
+      },
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.55,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 549.99,
+        "Responses": 40,
+        "Rating": 4
+      }
+    ],
+    "Id": "919a4cb8-87fe-4f08-b237-d7ad3f1712ce",
+    "DeliveryType": 0,
+    "Date": "2023-05-25T10:59:40.2875946+03:00",
+    "Email": "user12345@mail.com",
+    "Address": "Харків, вул. Академіка Павлова, 140л (в клієнтській зоні відділення)",
+    "PhoneNumber": "+380689998888",
+    "TotalPrice": 1649.97,
+    "TotalAmount": 3,
+    "Username": "user123"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.65,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 559.99,
+        "Responses": 45,
+        "Rating": 5
+      },
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.65,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 559.99,
+        "Responses": 45,
+        "Rating": 5
+      }
+    ],
+    "Id": "c422dbff-146f-4037-9f73-2893a8c517c1",
+    "DeliveryType": 0,
+    "Date": "2023-05-25T11:03:02.1499439+03:00",
+    "Email": "user12345@mail.com",
+    "Address": "Харків, пров. Донбасівський, 17 (Бизон Маркет)",
+    "PhoneNumber": "+380689998888",
+    "TotalPrice": 1119.98,
+    "TotalAmount": 2,
+    "Username": "evhen"
+  }
+]
+[
+  {
+    "Products": [
+      {
+        "Manufacturer": "AMD",
+        "Socket": "AM5",
+        "Cores": 24,
+        "Threads": 48,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 4.9,
+        "IsAvailable": true,
+        "Id": "9b49e7c8-b6e8-4dbf-b6fc-d0b0b2c8a7cb",
+        "Name": "AMD Ryzen 9 7950X3D",
+        "Price": 997.54,
+        "Responses": 54,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "AMD",
+        "Socket": "AM5",
+        "Cores": 24,
+        "Threads": 48,
+        "ClockSpeedDefault": 3.5,
+        "ClockSpeedBoost": 4.9,
+        "IsAvailable": true,
+        "Id": "9b49e7c8-b6e8-4dbf-b6fc-d0b0b2c8a7cb",
+        "Name": "AMD Ryzen 9 7950X3D",
+        "Price": 997.54,
+        "Responses": 54,
+        "Rating": 3
+      },
+      {
+        "Manufacturer": "Intel",
+        "Socket": "LGA 1700",
+        "Cores": 16,
+        "Threads": 32,
+        "ClockSpeedDefault": 3.65,
+        "ClockSpeedBoost": 5.0,
+        "IsAvailable": true,
+        "Id": "21a3a3f3-131d-47ac-a06e-925af6b8f7df",
+        "Name": "Intel Core i9 13900KF",
+        "Price": 559.99,
+        "Responses": 45,
+        "Rating": 5
+      }
+    ],
+    "Id": "32593ad0-4161-4664-a79a-dafcd17197fd",
+    "DeliveryType": 0,
+    "Date": "2023-05-25T11:26:29.2137963+03:00",
+    "Email": "user12355@mail.com",
+    "Address": "Харків, Ахсарова, 21",
+    "PhoneNumber": "+380689998899",
+    "TotalPrice": 2555.07,
+    "TotalAmount": 3,
+    "Username": "evhen123"
+  }
+]

@@ -15,7 +15,7 @@ namespace Optimum_Tech.Controls.Managers
         public static string? graphicsCardsPath = @"..\..\..\Repository\graphicscards.json";
         public static string? postFilePath = @"..\..\..\Repository\novapost.json";
         public static string? ordersPath = @"..\..\..\Repository\orders.json";
-        public static string? repositoryPath = @"..\..\..\OptimumTech\Repository";
+        public static string? repositoryPath = @"..\..\..\Repository";
 
         public static List<Product> LoadProducts()
         {

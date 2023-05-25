@@ -40,8 +40,26 @@
     "Orders": [],
     "Favorites": [],
     "Selections": [],
-    "Login": "evhen",
-    "Password": "evhen",
+    "Login": "petro12345",
+    "Password": "11111",
+    "Access": 2
+  },
+  {
+    "disposed": false,
+    "Orders": [],
+    "Favorites": [],
+    "Selections": [],
+    "Login": "user123",
+    "Password": "11111",
+    "Access": 2
+  },
+  {
+    "disposed": false,
+    "Orders": [],
+    "Favorites": [],
+    "Selections": [],
+    "Login": "evhen123",
+    "Password": "11111",
     "Access": 2
   }
 ]
