@@ -1,6 +1,6 @@
 # Optimum Tech
 
-**Coursework - OOP.Net - Term 4
+**Coursework - OOP.Net - Term 4**
 
 Program represents functionality of store based on Rozetka model, but without using any dbs and patterns like MVP.
 
