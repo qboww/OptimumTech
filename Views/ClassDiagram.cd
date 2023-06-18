@@ -1,33 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Optimum_Tech.Models.Order">
-    <Position X="10.5" Y="3.5" Width="3.5" />
-    <TypeIdentifier>
-      <HashCode>AAACAAQAACAQAAAgEQAAQAFAAEIAQAADAAAAAAAAAAQ=</HashCode>
-      <FileName>Models\Order.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Products" />
-    </ShowAsCollectionAssociation>
-  </Class>
-  <Class Name="Optimum_Tech.Model.User">
-    <Position X="17.5" Y="3.5" Width="3.25" />
-    <TypeIdentifier>
-      <HashCode>AAMAAAAAACAAAEQAAQgAACABAAAAEAACAAiQAggAGAA=</HashCode>
-      <FileName>Models\User.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Orders" />
-    </ShowAsCollectionAssociation>
-    <Lollipop Position="0.2" />
-  </Class>
   <Class Name="Optimum_Tech.Models.Product">
-    <Position X="10" Y="10.25" Width="3.75" />
+    <Position X="6.25" Y="8" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAADAEAAAQBAAAAAAAAAAAQAAQAEAAEAgAAAAIAAAgA=</HashCode>
       <FileName>Models\Product.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Optimum_Tech.Model.Products.Processor">
+    <Position X="9" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAgIAAAIAgAAAQAAAAEAAAAAARAAgAGQAIAAAAA=</HashCode>
+      <FileName>Models\Products\Processor.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
