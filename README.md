@@ -1,11 +1,11 @@
 # Optimum Tech
 ## Coursework - OOP.Net - Term 4
 
->Program represents functionality of store based on Rozetka model, but without using any dbs and patterns like MVP.
->
->App is written with **WinForms .Net Core and NUnit** for testing.
->
->Thanks for open source documentation to **Monobank-API** and **NovaPost-API** teams
+Program represents functionality of store based on Rozetka model, but without using any dbs and patterns like MVP.
+
+App is written with **WinForms .Net Core and NUnit** for testing.
+
+Thanks for open source documentation to **Monobank-API** and **NovaPost-API** teams
 
 ![alt text](https://github.com/EvheniiSarancha/OptimumTech/blob/master/Views/Resources/ReadmePics/mainframe.jpg)
 ![alt text](https://github.com/EvheniiSarancha/OptimumTech/blob/master/Views/Resources/ReadmePics/categoryframe.jpg)
