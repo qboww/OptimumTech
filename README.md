@@ -1,8 +1,11 @@
 # Optimum Tech
 
+
+**Alert: That project was made only to solve given tasks**
+**Project is not about any patterns, work with DBs, SOLID or Clean Code!!!!**
 **Coursework - OOP.Net - Term 4**
 
-Program represents functionality of store based on Rozetka model, but without using any dbs and patterns like MVP.
+Program represents functionality of store based on Rozetka model.
 
 App is written with **WinForms .Net Core and NUnit** for testing.
 
