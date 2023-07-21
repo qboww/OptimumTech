@@ -1,5 +1,4 @@
-# Optimum Tech
-**Coursework - OOP.Net - Term 4**
+# Optimum Tech [Coursework - OOP.Net - Term 4]
 
 ## That project was made only to solve given tasks. Project is not about any patterns, work with DBs, SOLID or Clean Code!!!! ##
 
