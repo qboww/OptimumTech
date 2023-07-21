@@ -1,6 +1,6 @@
 # Optimum Tech [Coursework - OOP.Net - Term 4]
 
-## That project was made only to solve given tasks. Project is not about any patterns, work with DBs, SOLID or Clean Code!!!! ##
+## Project was made only to solve given tasks. Project is not about using any patterns, work with DBs, SOLID or Clean Code!!!! ##
 
 Program represents functionality of store based on Rozetka model.
 
