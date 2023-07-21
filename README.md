@@ -20,3 +20,5 @@ Thanks for open source documentation to **Monobank-API** and **NovaPost-API** te
 ![alt text](https://github.com/EvheniiSarancha/OptimumTech/blob/master/Views/Resources/ReadmePics/contactframe.jpg)
 ![alt text](https://github.com/EvheniiSarancha/OptimumTech/blob/master/Views/Resources/ReadmePics/searchframe.jpg)
 ![alt text](https://github.com/EvheniiSarancha/OptimumTech/blob/master/Views/Resources/ReadmePics/settingsframe.jpg)
+![alt text](https://github.com/EvheniiSarancha/OptimumTech/blob/master/Views/Resources/ReadmePics/classes.png)
+![alt text](https://github.com/EvheniiSarancha/OptimumTech/blob/master/Views/Resources/ReadmePics/roles.png)
